@@ -3,7 +3,7 @@
 [← 返回案例目录](../README.md) · 分析与评测
 
 - **作者 / 来源归属：** pablodiazjorge
-- **核对日期：** 2026-10-16
+- **核对日期：** 2026-10-19
 - **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
 - **分析目标：** Windows 小型挑战、更大含诱饵二进制及真实开源程序
 
@@ -19,11 +19,11 @@
 
 以下是来源作者报告的成果：
 
-Study 1 报告两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。作者报告 REA 组耗时与成本更高。
+作者现已公开五项预注册研究：Study 1 为两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。新增 Study 4 用 DeepSeek 模型为 20/20 与 19/20，未检测到显著差异；Study 5 的改进 skill 相对官方版本成本增加 14%（p=0.012），准确率未显著改变。
 
 ## 局限与未验证项
 
-后两组差异未达来源所用统计检验的显著水平；样本、任务、模型、版本都受限，不能推广成 REA 对所有任务无效。数值按公开 README 转述，未复跑。
+所有研究固定 REA 6.4.0、Claude Code 2.1.296 与各自模型、任务及权限配置，不能外推当前版本或所有逆向工作。Study 2、3 的成功率差异未达原作者统计检验的显著水平。Study 3 的 Evidence 认证由初报 142/144 更正为 grader 修正后的 144/144，解题数字未改；Study 4 样本仅 20 对。Study 5 比较的是注入提示中的 skill 内容，并非客户端自动加载效果。本仓库仅复核报告，没有复跑。
 
 ## 可以借鉴什么
 
@@ -37,7 +37,10 @@ Study 1 报告两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；
 
 ## 原始来源
 
-- [公开原文 / 固定版本证据](https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md)
+- [公开原文 / 固定版本证据](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md)
 - [项目 / 演示](https://github.com/pablodiazjorge/rea-lab)
+- [补充来源 1](https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md)
+- [补充来源 2](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-4/README.md)
+- [补充来源 3](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-5/README.md)
 
 本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。

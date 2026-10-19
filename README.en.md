@@ -8,9 +8,13 @@
 
 An independent collection of public, source-backed uses of [morluto/rea](https://github.com/morluto/rea), the Reverse Engineer Anything MCP server and CLI.
 
-**21 cases: 5 official showcases and 16 community projects. Source review date: 2026-10-16.** Each Chinese case note explains the target, REA's role, reported output, limitations and original sources. We reviewed the sources; we did not independently reproduce the projects or their tests.
+**29 cases: 5 official showcases and 24 community projects or author experiments. Latest update: 2026-10-19; each entry retains its own review date.** Each Chinese case note explains the target, REA's role, reported output, limitations and original sources. We reviewed the sources; we did not independently reproduce the projects or their tests.
 
 Search by software or purpose: Ghostty, PowerToys, Electron, game porting, screen recording, Android, or Windows. The [online directory](https://awesome-rea-e7l.pages.dev/) includes category filters and links to all primary sources.
+
+## Latest update — 2026-10-19
+
+Eight new source-reviewed cases, plus rea-lab studies 4 and 5 and the study 3 Evidence authentication correction (144/144 after the grader fix, originally 142/144). Results remain tied to the reported versions and tasks; none were independently rerun here. See [CHANGELOG.md](CHANGELOG.md) for scope.
 
 ## Public cases
 
@@ -35,8 +39,16 @@ Search by software or purpose: Ghostty, PowerToys, Electron, game porting, scree
 | netcat-analysis | Static analysis of a shipped netcat binary | [Case note](cases/netcat-analysis.md) · [Primary source](https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md) |
 | rea-on-rea | Provider-selection investigation with falsifiable predictions | [Case note](cases/rea-on-rea.md) · [Primary source](https://github.com/az9713/REA-demo/blob/d01fc8ac812abaddae85e86f7ff116cd8b9b52c3/README.md) |
 | rea-groundtruth | Known-source checks for Electron analysis blind spots | [Case note](cases/rea-groundtruth.md) · [Primary source](https://github.com/UnknownHacker1/rea-groundtruth/blob/5b48f366368c9fbe2abaaab810aba6814c27190b/README.md) |
-| rea-lab | Controlled Windows reverse-engineering studies | [Case note](cases/rea-lab.md) · [Primary source](https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md) |
+| rea-lab | Controlled Windows reverse-engineering studies | [Case note](cases/rea-lab.md) · [Primary source](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md) |
 | rea-playbook | Small Electron evidence-to-reconstruction lab | [Case note](cases/rea-playbook.md) · [Primary source](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
+| disklens | WinDirStat binary investigation and a Rust/Tauri disk analyzer | [Case note](cases/disklens.md) · [Primary source](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
+| hyper3d-clone | Captured Hyper3D JavaScript analysis and an independent 3D prototype | [Case note](cases/hyper3d-clone.md) · [Primary source](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| watch-esim-helper | Pixel Watch companion APK research and an eSIM handoff helper | [Case note](cases/watch-esim-helper.md) · [Primary source](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
+| picoprint | LX-D02 printer interoperability with REA setup and Hermes analysis | [Case note](cases/picoprint.md) · [Primary source](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
+| bzip2-groundtruth | Stripped bzip2 function and call-graph checks against known ground truth | [Case note](cases/bzip2-groundtruth.md) · [Primary source](https://github.com/morluto/rea/discussions/2254) |
+| local-model-mcp | A 32K local model uses REA through a ten-tool MCP allowlist | [Case note](cases/local-model-mcp.md) · [Primary source](https://github.com/morluto/rea/discussions/3098) |
+| opensource-rea-lab | Pinned npm artifact audit and a bounded REA dispatcher analysis | [Case note](cases/opensource-rea-lab.md) · [Primary source](https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/analyses/rea-agents-6.4.0/README.md) |
+| reafuse | REA-backed behavior specs combine two JavaScript libraries into new tools | [Case note](cases/reafuse.md) · [Primary source](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
 
 ## Inclusion
 

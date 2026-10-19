@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-16",
+  "updated_on": "2026-10-19",
   "scope": "Public cases explicitly reporting use of morluto/rea; source review only, no independent reproduction.",
   "cases": [
     {
@@ -364,17 +364,21 @@
       "category": "分析与评测",
       "author": "pablodiazjorge",
       "project_url": "https://github.com/pablodiazjorge/rea-lab",
-      "source_url": "https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md",
-      "checked_on": "2026-10-16",
+      "source_url": "https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md",
+      "checked_on": "2026-10-19",
       "review_status": "source-reviewed-not-reproduced",
       "target": "Windows 小型挑战、更大含诱饵二进制及真实开源程序",
       "question": "加上 REA 后，代理解决任务的成功率、耗时和成本怎样变化？",
       "rea_role": "搭建 Windows + Ghidra 环境，做预注册对照研究，核验引用 Evidence，公开 writeups、环境与上游修复。",
-      "reported_result": "Study 1 报告两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。作者报告 REA 组耗时与成本更高。",
-      "limitations": "后两组差异未达来源所用统计检验的显著水平；样本、任务、模型、版本都受限，不能推广成 REA 对所有任务无效。数值按公开 README 转述，未复跑。",
+      "reported_result": "作者现已公开五项预注册研究：Study 1 为两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。新增 Study 4 用 DeepSeek 模型为 20/20 与 19/20，未检测到显著差异；Study 5 的改进 skill 相对官方版本成本增加 14%（p=0.012），准确率未显著改变。",
+      "limitations": "所有研究固定 REA 6.4.0、Claude Code 2.1.296 与各自模型、任务及权限配置，不能外推当前版本或所有逆向工作。Study 2、3 的成功率差异未达原作者统计检验的显著水平。Study 3 的 Evidence 认证由初报 142/144 更正为 grader 修正后的 144/144，解题数字未改；Study 4 样本仅 20 对。Study 5 比较的是注入提示中的 skill 内容，并非客户端自动加载效果。本仓库仅复核报告，没有复跑。",
       "takeaway": "评估工具时同时看对照组、任务分布、成本与证据质量。",
       "rea_evidence_excerpt": "Study 1, preregistered: on ten small Windows crackmes, rea did not change how many Claude Code solved",
-      "additional_sources": []
+      "additional_sources": [
+        "https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md",
+        "https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-4/README.md",
+        "https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-5/README.md"
+      ]
     },
     {
       "id": "rea-playbook",
@@ -393,6 +397,169 @@
       "takeaway": "入门可以从可控小样本开始，把证据、可读规格和回归检查串起来。",
       "rea_evidence_excerpt": "npm run analyze will fetch rea-agents@6.3.0 on first use via npx fallback.",
       "additional_sources": []
+    },
+    {
+      "id": "disklens",
+      "title": "DiskLens：用已发布程序核对磁盘扫描与树图算法",
+      "category": "应用实践",
+      "author": "KarlssonChristoffer",
+      "target": "WinDirStat 2.5.0 的 Windows 可执行文件与公开源码",
+      "question": "怎样确认磁盘扫描、矩形树图和重复文件检测的实现，再做独立界面？",
+      "rea_role": "Claude Code 使用 REA + Ghidra 检查已安装的 WinDirStat.exe，确认目录枚举、NTFS MFT 读取器、树图默认值与 SHA-512 去重。作者明确说明算法细节主要来自阅读 WinDirStat 源码，REA 用于核对发行版并定位调查方向。",
+      "reported_result": "公开 Rust 引擎与 Tauri/Svelte 界面、REA evidence IDs；作者报告 24 个引擎测试，以及约 130 万文件的单机扫描与树图检查。",
+      "limitations": "作者明确未审阅 AI 生成代码，多项文件操作和系统集成尚未在真实界面验证；缺少快速 MFT 扫描，硬链接会重复计数。部分算法直接移植 GPL 源码，不属于闭源软件的净室重建；单机耗时不是对照性能结论。",
+      "takeaway": "有公开源码时，把二进制观察与源码阅读分别归因，同时列出文件操作的实际验证范围。",
+      "rea_evidence_excerpt": "Claude used REA on the WinDirStat 2.5.0 installed on my PC",
+      "project_url": "https://github.com/KarlssonChristoffer/DiskLens",
+      "source_url": "https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md",
+      "checked_on": "2026-10-19",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/docs/research.md"
+      ]
+    },
+    {
+      "id": "hyper3d-clone",
+      "title": "Hyper3D：从网页包分析到独立 3D 生成原型",
+      "category": "应用实践",
+      "author": "payswapdotorg",
+      "target": "Hyper3D Rodin 网站捕获的 JavaScript 包与工作区行为",
+      "question": "怎样把网页分析得到的界面与接口观察转化为一个可导出模型的原型？",
+      "rea_role": "作者用 rea-agents 6.5.0 静态分析捕获的 21 个 JS 文件，为最初视觉原型提供模块与行为线索；之后的功能链路依据登录工作区的网络观察和 API blueprint 另行设计。REA 未恢复原产品的 3D 模型权重或生成后端。",
+      "reported_result": "公开 Next.js 16 原型、API blueprint 与差异说明；作者报告 67 个测试，支持图像/文本到场景规格、three.js 几何生成，以及 GLB、GLTF、OBJ、STL、USDZ 导出。",
+      "limitations": "默认生成器是独立的场景规划与确定性几何流水线，不能视为 Rodin 模型质量或原后端等价；外部生成服务需另配凭据，3D Editing 与 WorldGen 未实现。REA 的贡献限于最初网页分析，测试为作者报告。",
+      "takeaway": "把前端观察、接口契约与独立功能实现分开记录；导出格式测试不能证明生成质量等价。",
+      "rea_evidence_excerpt": "rea-agents@6.5.0 analyze-javascript-application",
+      "project_url": "https://github.com/payswapdotorg/hyper3d-clone",
+      "source_url": "https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md",
+      "checked_on": "2026-10-19",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/recon/API-BLUEPRINT.md",
+        "https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/DECISIONS.md"
+      ]
+    },
+    {
+      "id": "watch-esim-helper",
+      "title": "Pixel Watch：分析配套 APK 后做 eSIM 导航助手",
+      "category": "硬件与兼容",
+      "author": "AllMySlop",
+      "target": "Google Pixel Watch 配套 Android APK 5.0.0.958206140",
+      "question": "怎样找到配套应用已有的手表 eSIM 下载入口，并从独立助手交接？",
+      "rea_role": "作者说明 Codex 借助 morluto/rea 找到原版配套 APK 中的配置入口与导航路径；助手只解析二维码或手动输入，在确认后把激活信息交给原版应用，不直接操作 eSIM。",
+      "reported_result": "公开 Android 助手、companion-analysis.md 和测试记录；测试文档报告 25 个单元测试与模拟器交接。作者在 README 后续补充：Pixel Watch 2 LTE 安装成功，并在支持的运营商上验证 data-only eSIM 联网。",
+      "limitations": "README 的后续联网报告比 TESTING.md 更新，后者仍记载早期网络受限；不能混为同一次验证。作者未审阅生成代码，Codex 未在真表测试；助手没有安装结果回调，区域、运营商、固件和配套应用版本兼容性均有限。",
+      "takeaway": "区分启动原应用、配置交付、安装成功与蜂窝联网；来源更新不一致时明确各自阶段。",
+      "rea_evidence_excerpt": "using https://github.com/morluto/rea",
+      "project_url": "https://github.com/AllMySlop/pixel-watch-esim-writer",
+      "source_url": "https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md",
+      "checked_on": "2026-10-19",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/docs/companion-analysis.md",
+        "https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/TESTING.md"
+      ]
+    },
+    {
+      "id": "picoprint",
+      "title": "PicoPrint：让手机热敏打印机接入 Windows 打印",
+      "category": "硬件与兼容",
+      "author": "bigtower17",
+      "target": "LX-D02 蓝牙热敏打印机与 Funny Print 的 React Native Android 应用",
+      "question": "已有驱动能连接却不出纸时，怎样定位握手差异并接入 Windows 打印系统？",
+      "rea_role": "作者在 REA discussion #4152 说明：REA 6.5.0 负责 doctor、ADB 设备检查与 Android 调查入口；真正的 Hermes 字节码反编译使用 hermes-dec，协议推导与流量对照不能归为 REA 单独完成。",
+      "reported_result": "公开基于 thermoprint 的 Go 打印服务与协议说明；作者报告在 Windows 11 + LX-D02 真机上，通过系统 Ctrl+P 打印文本、图片和文档，并将握手修正反馈上游。",
+      "limitations": "早期项目，尚无一键安装器、托盘状态与自动重连。原讨论明确 REA 当时未覆盖该目标的 Hermes 分析步骤；单一设备与系统的成功不证明全部固件或 Windows 版本兼容。",
+      "takeaway": "先区分连接成功与打印成功；记录每个工具实际解决的环节，避免把整条链路归给一个工具。",
+      "rea_evidence_excerpt": "used to analyse the Android app.",
+      "project_url": "https://github.com/bigtower17/picoprint",
+      "source_url": "https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md",
+      "checked_on": "2026-10-19",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/doc/lx-d02-app-check.md",
+        "https://github.com/morluto/rea/discussions/4152"
+      ]
+    },
+    {
+      "id": "bzip2-groundtruth",
+      "title": "bzip2：用带符号构建核对去符号二进制分析",
+      "category": "分析与评测",
+      "author": "CassieFox23",
+      "source_url": "https://github.com/morluto/rea/discussions/2254",
+      "project_url": "https://github.com/morluto/rea/discussions/2254",
+      "target": "gcc -O2 编译并去符号的 bzip2 1.0.8，Linux x86-64",
+      "question": "没有函数名时，怎样从一条输出字符串找出函数，再核对调用关系？",
+      "rea_role": "REA 6.4.0 + Ghidra 从字符串定位目标函数、列出调用者与被调用者，返回带 observed/derived 标记的 Evidence；作者另外使用同源未去符号构建、源码、nm 与 objdump 核对。",
+      "reported_result": "作者报告定位到 uncompress，1 个调用者与 24 个被调用者和对照构建一致；公开构建步骤、裁剪后的 MCP 调用记录及两类错误返回。",
+      "limitations": "仅覆盖一个程序、编译设置与目标函数，不是工具优劣对照；24 条边是 provider 解析出的直接调用，不能外推完整运行时图。完整客户端脚本未公开，压缩包只记录 hash，未验签；本仓库未复跑。",
+      "takeaway": "用同源带符号构建建立 ground truth，把工具观察、推导与对照验证分开。",
+      "rea_evidence_excerpt": "REA's function, one caller and 24 callees all matched an unstripped build and the source.",
+      "checked_on": "2026-10-19",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": []
+    },
+    {
+      "id": "local-model-mcp",
+      "title": "本地 27B 模型：压缩 MCP 工具列表后完成函数调查",
+      "category": "分析与评测",
+      "author": "CassieFox23",
+      "source_url": "https://github.com/morluto/rea/discussions/3098",
+      "project_url": "https://github.com/morluto/rea/discussions/3098",
+      "target": "自建 C token 检查程序；Qwen3.8-27B、llama.cpp、OpenCode 与 REA MCP",
+      "question": "本地模型只有 32K 上下文时，怎样让 REA 的工具描述与实际调查一起装得下？",
+      "rea_role": "作者使用 PR #3026 的 d993ffeb1 版本和 Ghidra 12.1.4，通过工具族与 OpenCode 客户端 allowlist 仅暴露 10 个 REA 工具；模型打开目标、查找函数、反编译并关闭会话。",
+      "reported_result": "作者报告完整 206 工具提示超出上下文；62 工具配置在读提示后遭遇 GPU reset；10 工具配置提示为 4,407 tokens，三次均找到目标字符串并解释检查逻辑，每次约 80 秒。",
+      "limitations": "三次使用同一个极小程序与提示，不是三个独立任务；未比较其他模型或客户端。实验运行在当时的 PR 提交，不能把历史工具数量、开关或时间当成当前发行版保证。",
+      "takeaway": "先测工具 schema 的上下文占用，再做最小工具集合实验；同一任务重复成功不能代表普遍能力。",
+      "rea_evidence_excerpt": "With the full tool list, nothing fits.",
+      "checked_on": "2026-10-19",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/morluto/rea/pull/3026"
+      ]
+    },
+    {
+      "id": "opensource-rea-lab",
+      "title": "Open-source REA Lab：固定 npm 包后只分析入口切片",
+      "category": "分析与评测",
+      "author": "martinlofranodeoliveira",
+      "target": "官方 npm rea-agents 6.4.0 包的 package.json 与 scripts/rea.mjs",
+      "question": "怎样先固定发布物身份，再在有限预算里回答入口文件做什么？",
+      "rea_role": "独立 Python 审计器先检查压缩包结构与 hash；REA 静态分析从已核对包提取的两个原样文件。入口分支的语义说明还结合人工语法检查，不能把独立审计器或人工结论归为 REA 输出。",
+      "reported_result": "公开固定摘要、审计 JSON、脱敏 Evidence 摘要和复现脚本；切片报告 1 个已解析 JS、469 AST 节点、14 条 findings、零解析失败，并明确完整包分析曾因语义扩展而中断。",
+      "limitations": "14 条 findings 不是漏洞数；切片保留 110 个语义未知项，缺失 dist 实现，不能推出完整包安全或运行正确。脱敏摘要不是可重放的 canonical Evidence，完整包仅有部分覆盖；本仓库未复跑。",
+      "takeaway": "缩小问题与输入边界，保留中断和未知项；结构检查、字节身份与运行安全是不同结论。",
+      "rea_evidence_excerpt": "Can REA statically parse the actual shipped dispatcher?",
+      "project_url": "https://github.com/martinlofranodeoliveira/opensource-rea-lab",
+      "source_url": "https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/analyses/rea-agents-6.4.0/README.md",
+      "checked_on": "2026-10-19",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/analyses/rea-agents-6.4.0/rea-excerpt.json",
+        "https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/README.md"
+      ]
+    },
+    {
+      "id": "reafuse",
+      "title": "ReaFuse：分析两个开源库的行为后组合新工具",
+      "category": "学习与复现",
+      "author": "sickpyramid",
+      "target": "ms + pretty-bytes，以及 dequal + klona 两组 JavaScript 开源库",
+      "question": "怎样把两个项目的行为整理成规格，再实现一个同时利用两者的新工具？",
+      "rea_role": "使用 REA 6.4.0 的 JavaScript 静态分析读取两个输入项目，结合 README 与测试生成行为规格；模型另行提出组合方案、编写验收契约和新代码，再执行作者的测试与相似性扫描。",
+      "reported_result": "公开 ratewise（传输速率与 ETA）和 objdelta（结构 diff/patch）源码、报告与 Evidence；作者分别报告 18/18 和 17/17 契约测试通过，并记录自己的 7/7、6/6 测试。两个示例合并为一个项目案例。",
+      "limitations": "仅核对公开的两个 JS 示例，项目处于 v0.1 alpha；同一流程生成规格与实现，不应把作者的 clean-room 标签当成独立法律结论。相似性扫描与全绿测试不能证明普遍原创性或完整等价，未由本仓库复跑。",
+      "takeaway": "用行为规格连接分析与实现，并把测试逐条对应到输入项目或新组合功能。",
+      "rea_evidence_excerpt": "Every donor goes through REA's static JavaScript analysis",
+      "project_url": "https://github.com/sickpyramid/ReaFuse",
+      "source_url": "https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md",
+      "checked_on": "2026-10-19",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/showcase/ratewise/REPORT.md",
+        "https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/showcase/objdelta/REPORT.md"
+      ]
     }
   ]
 }

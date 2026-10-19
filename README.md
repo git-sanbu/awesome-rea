@@ -8,11 +8,17 @@
 
 **中文** · [English](README.en.md) · [在线搜索案例](https://awesome-rea-e7l.pages.dev/) · [投稿案例](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml) · [收录标准](CONTRIBUTING.md)
 
-这是独立社区案例集。首批 **21 个案例**均附公开原始来源，其中 5 个来自官方 Showcase，16 个来自社区项目。最后核对：**2026-10-16**。
+这是独立社区案例集。现有 **29 个案例**均附公开原始来源，其中 5 个来自官方 Showcase，24 个来自社区项目与作者实验。最近更新：**2026-10-19**；各条目保留独立核对日期。
 
 > 这里的“已收录”表示已阅读来源并找到明确的 REA 使用说明。成果和测试数字按原作者报告转述，本仓库未独立复跑，不代表完整兼容或生产可用。
 
 想找具体软件？打开 [可搜索案例目录](https://awesome-rea-e7l.pages.dev/)，输入 `Ghostty`、`PowerToys`、`Electron`、`游戏移植` 或 `录屏`。也可以按案例类别筛选。
+
+## 最近更新 · 2026-10-19
+
+- 新增 **8 个案例**：DiskLens、Hyper3D 原型、Pixel Watch eSIM 助手、PicoPrint、bzip2 源码对照、本地模型 MCP 实验、Open-source REA Lab、ReaFuse。
+- 更新 [rea-lab](cases/rea-lab.md)：补充 Study 4、5 和 Study 3 的证据认证更正，保留固定实验版本与历史数据。
+- 复查原有 16 个社区项目的提交与 README 差异；未改变的历史结论不自动刷新核对日期。详见 [更新记录](CHANGELOG.md) 与 [来源记录](SOURCES.md)。
 
 ## 从你的目的开始
 
@@ -55,6 +61,8 @@
 | [hexgrab：从 PowerToys 二进制研究取色器](cases/hexgrab.md) | 全局快捷键、像素取色和剪贴板怎样配合？ | 公开源码与 docs/rea-findings.md；作者报告 9 条发现中 8 条完全正确。 |
 | [AdamTerm：研究 Ghostty 外壳后做自己的终端](cases/adamterm.md) | 终端核心、原生窗口、菜单和服务之间怎么分工？ | 作者以 AppKit + SwiftTerm 做了带原生标签页的精简 macOS 终端，并提供自检命令。 |
 | [Ledger Reborn：研究 QuickBooks 后做本地账本](cases/ledger-reborn.md) | 如何理解桌面会计工作流，并做独立本地应用？ | 公开 preview 包、源码和案例记录；作者列出发票、付款、库存、银行对账和报表等已实现流程。 |
+| [DiskLens：用已发布程序核对磁盘扫描与树图算法](cases/disklens.md) | 怎样确认磁盘扫描、矩形树图和重复文件检测的实现，再做独立界面？ | 公开 Rust 引擎与 Tauri/Svelte 界面、REA evidence IDs；作者报告 24 个引擎测试，以及约 130 万文件的单机扫描与树图检查。 |
+| [Hyper3D：从网页包分析到独立 3D 生成原型](cases/hyper3d-clone.md) | 怎样把网页分析得到的界面与接口观察转化为一个可导出模型的原型？ | 公开 Next.js 16 原型、API blueprint 与差异说明；作者报告 67 个测试，支持图像/文本到场景规格、three.js 几何生成，以及 GLB、GLTF、OBJ、STL、USDZ 导出。 |
 
 ### 硬件与兼容
 
@@ -62,6 +70,8 @@
 | --- | --- | --- |
 | [VSL-DSP：把厂商库分析用于声卡 DSP 工具](cases/vsl-dsp.md) | 厂商控制程序如何发现设备、注册参数和表示增益？ | 作者将调查结果用于 dB 命令、参数命名和线性/dB 转换，并提供 CMocka 测试。 |
 | [Virtual Desktop Streamer：替换平台层实现 Linux 移植](cases/vd-streamer-linux.md) | 如何保留协议库，把采集、编码、音频和输入换成 Linux 实现？ | 公开 Linux 移植源码、构建与模拟头显测试，使用 PipeWire/X11、GStreamer 和 uinput。 |
+| [Pixel Watch：分析配套 APK 后做 eSIM 导航助手](cases/watch-esim-helper.md) | 怎样找到配套应用已有的手表 eSIM 下载入口，并从独立助手交接？ | 公开 Android 助手、companion-analysis.md 和测试记录；测试文档报告 25 个单元测试与模拟器交接。作者在 README 后续补充：Pixel Watch 2 LTE 安装成功，并在支持的运营商上验证 data-only eSIM 联网。 |
+| [PicoPrint：让手机热敏打印机接入 Windows 打印](cases/picoprint.md) | 已有驱动能连接却不出纸时，怎样定位握手差异并接入 Windows 打印系统？ | 公开基于 thermoprint 的 Go 打印服务与协议说明；作者报告在 Windows 11 + LX-D02 真机上，通过系统 Ctrl+P 打印文本、图片和文档，并将握手修正反馈上游。 |
 
 ### 分析与评测
 
@@ -70,13 +80,17 @@
 | [OpenBSD netcat：静态审计已发布 ELF](cases/netcat-analysis.md) | 已发布 netcat 包含哪些网络、代理和安全相关实现？ | 公开函数/字符串/调用路径调查、results.txt 与 files/ 下的原始 JSON 结果。 |
 | [REA on REA：分析工具自身并检验预测](cases/rea-on-rea.md) | REA 如何选择原生分析 provider，又怎样判断 provider 不可用？ | 公开完整过程与测试回执；作者报告四个回答都只部分正确，八个 Ghidra 检查结果中预测错了三个。 |
 | [rea-groundtruth：对照已知源码找分析盲点](cases/rea-groundtruth.md) | 工具报告零个 IPC/窗口时，是程序真的没有，还是分析漏掉了？ | 作者公开一键复现：特定 webpack 形态的 Electron API 没被识别，并记录签名后 ASAR integrity mismatch 的处理方式。 |
-| [rea-lab：测量 REA 对 Windows 逆向任务的实际帮助](cases/rea-lab.md) | 加上 REA 后，代理解决任务的成功率、耗时和成本怎样变化？ | Study 1 报告两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。作者报告 REA 组耗时与成本更高。 |
+| [rea-lab：测量 REA 对 Windows 逆向任务的实际帮助](cases/rea-lab.md) | 加上 REA 后，代理解决任务的成功率、耗时和成本怎样变化？ | 作者现已公开五项预注册研究：Study 1 为两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。新增 Study 4 用 DeepSeek 模型为 20/20 与 19/20，未检测到显著差异；Study 5 的改进 skill 相对官方版本成本增加 14%（p=0.012），准确率未显著改变。 |
+| [bzip2：用带符号构建核对去符号二进制分析](cases/bzip2-groundtruth.md) | 没有函数名时，怎样从一条输出字符串找出函数，再核对调用关系？ | 作者报告定位到 uncompress，1 个调用者与 24 个被调用者和对照构建一致；公开构建步骤、裁剪后的 MCP 调用记录及两类错误返回。 |
+| [本地 27B 模型：压缩 MCP 工具列表后完成函数调查](cases/local-model-mcp.md) | 本地模型只有 32K 上下文时，怎样让 REA 的工具描述与实际调查一起装得下？ | 作者报告完整 206 工具提示超出上下文；62 工具配置在读提示后遭遇 GPU reset；10 工具配置提示为 4,407 tokens，三次均找到目标字符串并解释检查逻辑，每次约 80 秒。 |
+| [Open-source REA Lab：固定 npm 包后只分析入口切片](cases/opensource-rea-lab.md) | 怎样先固定发布物身份，再在有限预算里回答入口文件做什么？ | 公开固定摘要、审计 JSON、脱敏 Evidence 摘要和复现脚本；切片报告 1 个已解析 JS、469 AST 节点、14 条 findings、零解析失败，并明确完整包分析曾因语义扩展而中断。 |
 
 ### 学习与复现
 
 | 案例 | 用 REA 干什么 | 成果与状态 |
 | --- | --- | --- |
 | [rea-playbook：把 Electron Evidence 变成可读报告与重建](cases/rea-playbook.md) | 拿到巨大 Evidence JSON 后，怎样提取可读事实并验证重建？ | 公开脱敏 Evidence fixture、file:line 报告、recreate 与断言；作者报告 10/10 重建检查通过。 |
+| [ReaFuse：分析两个开源库的行为后组合新工具](cases/reafuse.md) | 怎样把两个项目的行为整理成规格，再实现一个同时利用两者的新工具？ | 公开 ratewise（传输速率与 ETA）和 objdelta（结构 diff/patch）源码、报告与 Evidence；作者分别报告 18/18 和 17/17 契约测试通过，并记录自己的 7/7、6/6 测试。两个示例合并为一个项目案例。 |
 
 ## 我们怎样收录
 

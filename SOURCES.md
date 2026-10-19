@@ -1,6 +1,6 @@
 # 检索与来源记录
 
-核对日期：**2026-10-16**。对象：morluto/rea（npm `rea-agents`），而非其他同名 REA 项目。
+最近更新：**2026-10-19**；每条来源保留各自核对日期。对象：morluto/rea（npm `rea-agents`），而非其他同名 REA 项目。
 
 ## 检索方法
 
@@ -16,7 +16,7 @@
 
 官方案例通过 [REA Showcases](https://rea.tools/showcase/) 与 [REA 源码仓库](https://github.com/morluto/rea) 发现。各项目成果归原作者，详见下表与案例页。
 
-## 首批收录的证据
+## 已收录的证据
 
 “公开来源已核对”只表示阅读了明确的 REA 使用说明。对源码、编译字节、测试通过、硬件可用等结论，仍以原作者记录和各案例局限为准。来源固定到本次检查时的提交，不保证之后仍代表最新功能或 bug 状态。
 
@@ -41,8 +41,24 @@
 | [netcat-analysis](cases/netcat-analysis.md) | 作者项目 README | [原文](https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md) | 2026-10-16 |
 | [rea-on-rea](cases/rea-on-rea.md) | 作者项目 README | [原文](https://github.com/az9713/REA-demo/blob/d01fc8ac812abaddae85e86f7ff116cd8b9b52c3/README.md) | 2026-10-16 |
 | [rea-groundtruth](cases/rea-groundtruth.md) | 作者项目 README | [原文](https://github.com/UnknownHacker1/rea-groundtruth/blob/5b48f366368c9fbe2abaaab810aba6814c27190b/README.md) | 2026-10-16 |
-| [rea-lab](cases/rea-lab.md) | 作者项目 README | [原文](https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md) | 2026-10-16 |
+| [rea-lab](cases/rea-lab.md) | 作者项目 README | [原文](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md) | 2026-10-19 |
 | [rea-playbook](cases/rea-playbook.md) | 作者项目 README | [原文](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) | 2026-10-16 |
+| [disklens](cases/disklens.md) | 作者项目 / 固定提交 | [原文](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) | 2026-10-19 |
+| [hyper3d-clone](cases/hyper3d-clone.md) | 作者项目 / 固定提交 | [原文](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) | 2026-10-19 |
+| [watch-esim-helper](cases/watch-esim-helper.md) | 作者项目 / 固定提交 | [原文](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) | 2026-10-19 |
+| [picoprint](cases/picoprint.md) | 作者项目 / 固定提交 | [原文](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) | 2026-10-19 |
+| [bzip2-groundtruth](cases/bzip2-groundtruth.md) | 作者讨论 / 可编辑原帖 | [原文](https://github.com/morluto/rea/discussions/2254) | 2026-10-19 |
+| [local-model-mcp](cases/local-model-mcp.md) | 作者讨论 / 可编辑原帖 | [原文](https://github.com/morluto/rea/discussions/3098) | 2026-10-19 |
+| [opensource-rea-lab](cases/opensource-rea-lab.md) | 作者项目 / 固定提交 | [原文](https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/analyses/rea-agents-6.4.0/README.md) | 2026-10-19 |
+| [reafuse](cases/reafuse.md) | 作者项目 / 固定提交 | [原文](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) | 2026-10-19 |
+
+## 2026-10-19 更新范围
+
+- 新增 8 项实践；同一 ReaFuse 项目的两个示例只计一个案例。
+- 复查原有 16 个社区仓库的 HEAD 与 README 差异：12 个 README 无变化；paper-rs、rec-rs、VSL-DSP 仅新增站点、工具或许可证说明；rea-lab 的研究结论有更新，已同步 Study 4、5 和 Study 3 的更正。原始 5 个官方案例仍保留 2026-10-16 的核对日期。
+- GitHub discussion #2254、#3098 为作者一手实验记录，但讨论可编辑，没有不可变提交链接；日期表示本次阅读时间。其历史版本与工具数量不代表当前发行版。
+- Pixel Watch README 后续报告已联网，TESTING.md 仍记录早期网络受限，两者分别注明；PicoPrint 的 Hermes 反编译归于 hermes-dec。
+- 未收录只有可用工作流或框架说明、缺少目标实践证据的条目；没有复跑第三方软件或作者测试。
 
 ## 本轮没有作为案例收录的内容
 
@@ -51,4 +67,4 @@
 - 仅说明 Claude/Codex + IDA/Ghidra 的项目：没有找到明确的 morluto/rea 归因时不收录。
 - 社交帖子中的“完整克隆”宣传：缺少可核对的一手过程或产出时不据此认定。
 
-这是首批人工筛选，覆盖有限，不声称穷尽全网实践；欢迎提供遗漏案例的原始链接。
+这是人工筛选，覆盖有限，不声称穷尽全网实践；欢迎提供遗漏案例的原始链接。
