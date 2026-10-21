@@ -3,7 +3,7 @@
 [← 返回案例目录](../README.md) · 应用实践
 
 - **作者 / 来源归属：** michaelshimeles
-- **核对日期：** 2026-10-16
+- **核对日期：** 2026-10-21
 - **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
 - **分析目标：** TradingView 公开、未登录图表页面的行为
 
@@ -19,7 +19,7 @@
 
 以下是来源作者报告的成果：
 
-项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。
+项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。 2026-10-21 复核：作者新增 151 个内置指标及参数、边界输入测试说明，并提供 macOS universal 发布脚本；这些是后续实现进展，不代表新做了 REA 分析。
 
 ## 局限与未验证项
 
@@ -37,7 +37,8 @@
 
 ## 原始来源
 
-- [公开原文 / 固定版本证据](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
+- [公开原文 / 固定版本证据](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
 - [项目 / 演示](https://github.com/michaelshimeles/terminal-rs)
+- [补充来源 1](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
 
 本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。

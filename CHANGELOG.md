@@ -1,5 +1,15 @@
 # 更新记录
 
+## 2026-10-21
+
+- 案例由 29 增至 32：新增 OpenBattlefield2、GunZRs、V5VPN，合计 5 项官方 Showcase、27 项社区项目或作者实验。
+- OpenBattlefield2：以公开准星笔记的地址和 REA Evidence IDs 为使用证据；说明 REA、直接 Ghidra、游戏数据与服务器符号各自的作用，以及未实现的战斗功能。
+- GunZRs：只将 REA 原生文件调查、加壳结论与框架检查归于 REA；格式恢复与游戏实现主要来自数据分析，保留推断、平台和未公开原始 Evidence 的限制。
+- V5VPN：收录作者协议调查、Go/MyGo 实现及其报告的网关验证；限定 5.3.3.x / v2.0、门户与 HTTP CONNECT 路径，不宣称完整 VPN 功能或独立安全验证。
+- 刷新 4 个既有条目：paper-rs 更名 Sketch（ID 保留）；rec-rs 增加 Intel universal 发布说明（作者实测仍为 Apple Silicon）；terminal-rs 新增 151 指标的作者报告；rea-lab 明确 339 次为调用 REA 的运行口径，含 3 次中断重跑，总研究运行数为 482。
+- 复查 22 个既有 GitHub 社区项目：7 项 HEAD 有变化。其余改动与原收录的 REA 分析结论无新增关系或尚未完整复核，保留原固定版本和日期。审阅范围与待核查线索见 [本轮来源审阅](research/2026-10-21.md)。
+- 中英文 README、来源记录、案例数据、Markdown 与在线目录同步；所有成果均为公开来源核对，未安装或复跑第三方项目。
+
 ## 2026-10-19
 
 - 案例由 21 增至 29：新增 8 项公开实践，合计 5 项官方 Showcase、24 项社区项目或作者实验。

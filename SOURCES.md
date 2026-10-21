@@ -1,6 +1,6 @@
 # 检索与来源记录
 
-最近更新：**2026-10-19**；每条来源保留各自核对日期。对象：morluto/rea（npm `rea-agents`），而非其他同名 REA 项目。
+最近更新：**2026-10-21**；每条来源保留各自核对日期。对象：morluto/rea（npm `rea-agents`），而非其他同名 REA 项目。
 
 ## 检索方法
 
@@ -29,9 +29,9 @@
 | [ductf-masked-squares](cases/ductf-masked-squares.md) | 官方案例 / evidence notes | [原文](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/ctf-masked-squares.md) | 2026-10-16 |
 | [desktop-games-nostalgia](cases/desktop-games-nostalgia.md) | 作者项目 README | [原文](https://github.com/ucodia/desktop-games-nostalgia/blob/27946dfe49d4a9b522dfe017c14eefbc0ca40b2a/README.md) | 2026-10-16 |
 | [ski-or-die](cases/ski-or-die.md) | 作者项目 README | [原文](https://github.com/tuunanet/rea-ski-or-die-reconstruction/blob/0eac0671c90e21a16e663da7772b60710101ef7f/README.md) | 2026-10-16 |
-| [paper-rs](cases/paper-rs.md) | 作者项目 README | [原文](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md) | 2026-10-16 |
-| [rec-rs](cases/rec-rs.md) | 作者项目 README | [原文](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md) | 2026-10-16 |
-| [terminal-rs](cases/terminal-rs.md) | 作者项目 README | [原文](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md) | 2026-10-16 |
+| [paper-rs](cases/paper-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) | 2026-10-21 |
+| [rec-rs](cases/rec-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) | 2026-10-21 |
+| [terminal-rs](cases/terminal-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) | 2026-10-21 |
 | [wispr-flow](cases/wispr-flow.md) | 作者项目 README | [原文](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) | 2026-10-16 |
 | [hexgrab](cases/hexgrab.md) | 作者项目 README | [原文](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) | 2026-10-16 |
 | [adamterm](cases/adamterm.md) | 作者项目 README | [原文](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) | 2026-10-16 |
@@ -41,7 +41,7 @@
 | [netcat-analysis](cases/netcat-analysis.md) | 作者项目 README | [原文](https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md) | 2026-10-16 |
 | [rea-on-rea](cases/rea-on-rea.md) | 作者项目 README | [原文](https://github.com/az9713/REA-demo/blob/d01fc8ac812abaddae85e86f7ff116cd8b9b52c3/README.md) | 2026-10-16 |
 | [rea-groundtruth](cases/rea-groundtruth.md) | 作者项目 README | [原文](https://github.com/UnknownHacker1/rea-groundtruth/blob/5b48f366368c9fbe2abaaab810aba6814c27190b/README.md) | 2026-10-16 |
-| [rea-lab](cases/rea-lab.md) | 作者项目 README | [原文](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md) | 2026-10-19 |
+| [rea-lab](cases/rea-lab.md) | 作者项目 / 调查记录 | [原文](https://github.com/pablodiazjorge/rea-lab/blob/db3e90f60700cf7ad3d4149ddcc95a9389a63a2b/README.md) | 2026-10-21 |
 | [rea-playbook](cases/rea-playbook.md) | 作者项目 README | [原文](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) | 2026-10-16 |
 | [disklens](cases/disklens.md) | 作者项目 / 固定提交 | [原文](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) | 2026-10-19 |
 | [hyper3d-clone](cases/hyper3d-clone.md) | 作者项目 / 固定提交 | [原文](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) | 2026-10-19 |
@@ -51,6 +51,13 @@
 | [local-model-mcp](cases/local-model-mcp.md) | 作者讨论 / 可编辑原帖 | [原文](https://github.com/morluto/rea/discussions/3098) | 2026-10-19 |
 | [opensource-rea-lab](cases/opensource-rea-lab.md) | 作者项目 / 固定提交 | [原文](https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/analyses/rea-agents-6.4.0/README.md) | 2026-10-19 |
 | [reafuse](cases/reafuse.md) | 作者项目 / 固定提交 | [原文](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) | 2026-10-19 |
+| [openbattlefield2](cases/openbattlefield2.md) | 作者项目 / 调查记录 | [原文](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) | 2026-10-21 |
+| [gunzrs](cases/gunzrs.md) | 作者项目 / 调查记录 | [原文](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) | 2026-10-21 |
+| [v5vpn-rea-client](cases/v5vpn-rea-client.md) | 作者项目 / 调查记录 | [原文](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) | 2026-10-21 |
+
+## 2026-10-21 更新范围
+
+新增 3 项、刷新 4 项；既有来源提交比较、保留历史版本的理由与暂不收录线索见 [本轮审阅记录](research/2026-10-21.md)。
 
 ## 2026-10-19 更新范围
 

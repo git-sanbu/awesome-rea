@@ -3,7 +3,7 @@
 [← 返回案例目录](../README.md) · 分析与评测
 
 - **作者 / 来源归属：** pablodiazjorge
-- **核对日期：** 2026-10-19
+- **核对日期：** 2026-10-21
 - **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
 - **分析目标：** Windows 小型挑战、更大含诱饵二进制及真实开源程序
 
@@ -19,11 +19,11 @@
 
 以下是来源作者报告的成果：
 
-作者现已公开五项预注册研究：Study 1 为两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。新增 Study 4 用 DeepSeek 模型为 20/20 与 19/20，未检测到显著差异；Study 5 的改进 skill 相对官方版本成本增加 14%（p=0.012），准确率未显著改变。
+作者现已公开五项预注册研究：Study 1 为两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。新增 Study 4 用 DeepSeek 模型为 20/20 与 19/20，未检测到显著差异；Study 5 的改进 skill 相对官方版本成本增加 14%（p=0.012），准确率未显著改变。 2026-10-21 补充 Evidence 留存观察：作者明确总计 482 次研究运行中，336 次调用 REA，加上 3 次因重启中断后重跑，合计 339 次调用运行均未主动保留 Evidence，评分器从客户端记录重建。
 
 ## 局限与未验证项
 
-所有研究固定 REA 6.4.0、Claude Code 2.1.296 与各自模型、任务及权限配置，不能外推当前版本或所有逆向工作。Study 2、3 的成功率差异未达原作者统计检验的显著水平。Study 3 的 Evidence 认证由初报 142/144 更正为 grader 修正后的 144/144，解题数字未改；Study 4 样本仅 20 对。Study 5 比较的是注入提示中的 skill 内容，并非客户端自动加载效果。本仓库仅复核报告，没有复跑。
+所有研究固定 REA 6.4.0、Claude Code 2.1.296 与各自模型、任务及权限配置，不能外推当前版本或所有逆向工作。Study 2、3 的成功率差异未达原作者统计检验的显著水平。Study 3 的 Evidence 认证由初报 142/144 更正为 grader 修正后的 144/144，解题数字未改；Study 4 样本仅 20 对。Study 5 比较的是注入提示中的 skill 内容，并非客户端自动加载效果。本仓库仅复核报告，没有复跑。 339 次是调用过 REA 的运行口径，不是五项研究的总样本量；该观察不等于 Evidence 内容缺失或认证失败。
 
 ## 可以借鉴什么
 
@@ -37,10 +37,11 @@
 
 ## 原始来源
 
-- [公开原文 / 固定版本证据](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md)
+- [公开原文 / 固定版本证据](https://github.com/pablodiazjorge/rea-lab/blob/db3e90f60700cf7ad3d4149ddcc95a9389a63a2b/README.md)
 - [项目 / 演示](https://github.com/pablodiazjorge/rea-lab)
-- [补充来源 1](https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md)
-- [补充来源 2](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-4/README.md)
-- [补充来源 3](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-5/README.md)
+- [补充来源 1](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md)
+- [补充来源 2](https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md)
+- [补充来源 3](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-4/README.md)
+- [补充来源 4](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-5/README.md)
 
 本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。

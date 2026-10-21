@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-19",
+  "updated_on": "2026-10-21",
   "scope": "Public cases explicitly reporting use of morluto/rea; source review only, no independent reproduction.",
   "cases": [
     {
@@ -140,21 +140,23 @@
     },
     {
       "id": "paper-rs",
-      "title": "paper-rs：研究 Paper 后构建 Rust 无限画布",
+      "title": "Sketch（原 paper-rs）：研究 Paper 后构建 Rust 无限画布",
       "category": "应用实践",
       "author": "michaelshimeles",
       "project_url": "https://github.com/michaelshimeles/paper-rs",
-      "source_url": "https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md",
-      "checked_on": "2026-10-16",
+      "source_url": "https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md",
+      "checked_on": "2026-10-21",
       "review_status": "source-reviewed-not-reproduced",
       "target": "Paper 桌面设计应用的行为",
       "question": "怎样理解画布、布局和编辑器交互，并实现独立设计工具？",
       "rea_role": "作者声明用 REA 与 Claude Code 研究 Paper 桌面应用行为，再用 wgpu、winit、egui 实现独立 Rust 应用。",
-      "reported_result": "公开项目包含无限画布、页面、布局、矢量编辑、白板与 MCP 接口，并列出测试与功能差异。",
+      "reported_result": "公开项目包含无限画布、页面、布局、矢量编辑、白板与 MCP 接口，并列出测试与功能差异。 2026-10-21 复核：项目已更名 Sketch，程序名为 sketch-rs，作者说明首次启动迁移旧项目目录，并兼容旧文件和环境变量；不另计新案例。",
       "limitations": "作者明确未在真实 macOS 硬件启动过；部分功能近似或缺失。收录依据是作者公开声明，不是完整 Paper 等价验证。",
       "takeaway": "学习目标软件的行为和交互契约，明确独立实现的功能边界。",
       "rea_evidence_excerpt": "by studying the behavior of the Paper desktop app with REA and Claude Code",
-      "additional_sources": []
+      "additional_sources": [
+        "https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md"
+      ]
     },
     {
       "id": "rec-rs",
@@ -162,17 +164,19 @@
       "category": "应用实践",
       "author": "michaelshimeles",
       "project_url": "https://github.com/michaelshimeles/rec-rs",
-      "source_url": "https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md",
-      "checked_on": "2026-10-16",
+      "source_url": "https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md",
+      "checked_on": "2026-10-21",
       "review_status": "source-reviewed-not-reproduced",
       "target": "OBS Studio 的架构和行为",
       "question": "怎样做更聚焦的屏幕、摄像头与音频录制工具？",
       "rea_role": "作者声明使用 REA 与 Claude Code 研究 OBS，再以 Rust 和 Apple 原生框架实现独立工具。",
-      "reported_result": "项目公开屏幕/摄像头录制、音频混合、回放缓冲与直播功能；作者报告在 Apple Silicon Mac 上开发和测试。",
-      "limitations": "macOS 15+、Apple Silicon；属于特定场景实现，不能理解为完整 OBS 替代或跨平台重建。",
+      "reported_result": "项目公开屏幕/摄像头录制、音频混合、回放缓冲与直播功能；作者报告在 Apple Silicon Mac 上开发和测试。 2026-10-21 的 README 增加 Apple Silicon + Intel universal 发布、签名/公证及 Sparkle 更新说明。",
+      "limitations": "要求 macOS 15+；作者实测环境仍是 Apple Silicon M4 Pro，新增 Intel 下载与构建说明不能当成 Intel 实机录制验收。属于特定场景实现，不能理解为完整 OBS 替代或跨平台重建；本仓库未复跑。",
       "takeaway": "从成熟应用提取所需架构，为一个具体使用场景实现较小的产品。",
       "rea_evidence_excerpt": "by studying its architecture and behavior with REA and Claude Code",
-      "additional_sources": []
+      "additional_sources": [
+        "https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md"
+      ]
     },
     {
       "id": "terminal-rs",
@@ -180,17 +184,19 @@
       "category": "应用实践",
       "author": "michaelshimeles",
       "project_url": "https://github.com/michaelshimeles/terminal-rs",
-      "source_url": "https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md",
-      "checked_on": "2026-10-16",
+      "source_url": "https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md",
+      "checked_on": "2026-10-21",
       "review_status": "source-reviewed-not-reproduced",
       "target": "TradingView 公开、未登录图表页面的行为",
       "question": "如何把图表交互调查转化为独立 Rust 行情界面？",
       "rea_role": "作者使用 REA website mode 做公开页面的被动捕获，在 docs/analysis 记录发现、Evidence IDs 与设计含义。",
-      "reported_result": "项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。",
+      "reported_result": "项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。 2026-10-21 复核：作者新增 151 个内置指标及参数、边界输入测试说明，并提供 macOS universal 发布脚本；这些是后续实现进展，不代表新做了 REA 分析。",
       "limitations": "仅研究网页可见行为，不是 TradingView/Bloomberg 源码恢复；数据源、限流和数据使用条款另有约束。",
       "takeaway": "公开网页行为观察也可以形成可追溯的设计输入，无需把它称为二进制反编译。",
       "rea_evidence_excerpt": "tradingview.com with REA in website mode",
-      "additional_sources": []
+      "additional_sources": [
+        "https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md"
+      ]
     },
     {
       "id": "wispr-flow",
@@ -364,17 +370,18 @@
       "category": "分析与评测",
       "author": "pablodiazjorge",
       "project_url": "https://github.com/pablodiazjorge/rea-lab",
-      "source_url": "https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md",
-      "checked_on": "2026-10-19",
+      "source_url": "https://github.com/pablodiazjorge/rea-lab/blob/db3e90f60700cf7ad3d4149ddcc95a9389a63a2b/README.md",
+      "checked_on": "2026-10-21",
       "review_status": "source-reviewed-not-reproduced",
       "target": "Windows 小型挑战、更大含诱饵二进制及真实开源程序",
       "question": "加上 REA 后，代理解决任务的成功率、耗时和成本怎样变化？",
       "rea_role": "搭建 Windows + Ghidra 环境，做预注册对照研究，核验引用 Evidence，公开 writeups、环境与上游修复。",
-      "reported_result": "作者现已公开五项预注册研究：Study 1 为两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。新增 Study 4 用 DeepSeek 模型为 20/20 与 19/20，未检测到显著差异；Study 5 的改进 skill 相对官方版本成本增加 14%（p=0.012），准确率未显著改变。",
-      "limitations": "所有研究固定 REA 6.4.0、Claude Code 2.1.296 与各自模型、任务及权限配置，不能外推当前版本或所有逆向工作。Study 2、3 的成功率差异未达原作者统计检验的显著水平。Study 3 的 Evidence 认证由初报 142/144 更正为 grader 修正后的 144/144，解题数字未改；Study 4 样本仅 20 对。Study 5 比较的是注入提示中的 skill 内容，并非客户端自动加载效果。本仓库仅复核报告，没有复跑。",
+      "reported_result": "作者现已公开五项预注册研究：Study 1 为两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。新增 Study 4 用 DeepSeek 模型为 20/20 与 19/20，未检测到显著差异；Study 5 的改进 skill 相对官方版本成本增加 14%（p=0.012），准确率未显著改变。 2026-10-21 补充 Evidence 留存观察：作者明确总计 482 次研究运行中，336 次调用 REA，加上 3 次因重启中断后重跑，合计 339 次调用运行均未主动保留 Evidence，评分器从客户端记录重建。",
+      "limitations": "所有研究固定 REA 6.4.0、Claude Code 2.1.296 与各自模型、任务及权限配置，不能外推当前版本或所有逆向工作。Study 2、3 的成功率差异未达原作者统计检验的显著水平。Study 3 的 Evidence 认证由初报 142/144 更正为 grader 修正后的 144/144，解题数字未改；Study 4 样本仅 20 对。Study 5 比较的是注入提示中的 skill 内容，并非客户端自动加载效果。本仓库仅复核报告，没有复跑。 339 次是调用过 REA 的运行口径，不是五项研究的总样本量；该观察不等于 Evidence 内容缺失或认证失败。",
       "takeaway": "评估工具时同时看对照组、任务分布、成本与证据质量。",
       "rea_evidence_excerpt": "Study 1, preregistered: on ten small Windows crackmes, rea did not change how many Claude Code solved",
       "additional_sources": [
+        "https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md",
         "https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md",
         "https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-4/README.md",
         "https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-5/README.md"
@@ -559,6 +566,71 @@
       "additional_sources": [
         "https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/showcase/ratewise/REPORT.md",
         "https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/showcase/objdelta/REPORT.md"
+      ]
+    },
+    {
+      "id": "openbattlefield2",
+      "title": "OpenBattlefield2：用函数级 Evidence 重建战地 2 客户端",
+      "category": "游戏实践",
+      "author": "Moxnatiy",
+      "target": "Battlefield 2 1.5 的 Refractor 2 客户端、渲染 DLL 与原版数据",
+      "question": "怎样把准星、HUD 与客户端行为的二进制调查，转成可追溯的引擎实现？",
+      "rea_role": "使用 REA 4.1.0 + Ghidra 12.1.4 读取 32 位 PE，先获取函数完整 Evidence dossier，再用直接 Ghidra 查询、游戏数据及服务器符号补充。准星笔记记录 GuiIndex、位置和偏移累加函数的地址及 REA Evidence IDs；REA 只承担其中的分析环节。",
+      "reported_result": "公开 C++20 引擎、函数笔记、测试与截图；作者报告可读取自有 BF2 1.5 安装、连接原版专用服务器并显示士兵和 HUD。准星已在连接模式绘出并随移动扩散、停止后收拢，附 test_weapon_hud 等检查。",
+      "limitations": "研究项目尚缺开火、车辆驾驶、声音等功能；准星的切枪、缩放和开火更新仍有待完成，hosted 模式没有准星。主要平台为 macOS arm64，Windows 构建未实际运行验证。多工具协作的整体成果不能全部归于 REA；本仓库未复跑。",
+      "takeaway": "从一个具体可观察功能出发，把地址、Evidence、实现与验收命令放在同一条证据链上。",
+      "rea_evidence_excerpt": "Addresses are BF2.exe unless named otherwise; the evidence IDs are REA’s",
+      "project_url": "https://github.com/Moxnatiy/OpenBattlefield2",
+      "source_url": "https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md",
+      "checked_on": "2026-10-21",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/README.md",
+        "https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/CLAUDE.md",
+        "https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/tools/rea.sh"
+      ]
+    },
+    {
+      "id": "gunzrs",
+      "title": "GunZRs：先确认加壳边界，再从游戏数据重建",
+      "category": "游戏实践",
+      "author": "OpenRsG",
+      "target": "GunZ: The Duel 的 Steam 安装、Gunz.exe 与 .mrs 数据归档",
+      "question": "原生主程序被加壳、游戏逻辑不能静态读取时，怎样界定调查范围并继续重建？",
+      "rea_role": "通过 REA 与 Ghidra 调查原生文件；作者记录 Gunz.exe 的 Themida 节、入口 RVA 和解包桩，并标注本地 REA Evidence 路径。游戏格式随后主要由数据文件的结构分析恢复；另公开 REA 查询包装器和生成 ELF/PE fixture 的分析、缓存及失败传播检查。",
+      "reported_result": "公开 Rust + Bevy 重建、数据格式笔记、查询脚本与测试说明；作者报告 Linux 上可玩，支持读取自有安装、地图、动作、机器人、浏览器版本和 LAN。框架记录生成 ELF/PE 的函数分析及 snapshot replay 通过；这些 fixture 检查与游戏兼容性分别记录。",
+      "limitations": "不能将游戏全部功能归于 REA：主程序被 Themida 加壳，游戏代码未被静态恢复，部分行为和时序是推断。原始 Evidence 留在作者本地，公开的是说明和脚本；Windows/macOS 有 CI 构建测试，但作者未在其上游玩。地图统计随笔记范围不同，未将其作为完整兼容证明；未独立复跑。",
+      "takeaway": "分析失败也能给出有用边界：明确哪些事实来自二进制、数据文件或推断。",
+      "rea_evidence_excerpt": "stub (REA evidence under .local/re/a076a5d8…/). Game code is not statically readable",
+      "project_url": "https://github.com/OpenRsG/GunZRs",
+      "source_url": "https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md",
+      "checked_on": "2026-10-21",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/README.md",
+        "https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/reverse-engineering.md",
+        "https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/scripts/rea.sh"
+      ]
+    },
+    {
+      "id": "v5vpn-rea-client",
+      "title": "V5VPN：研究客户端协议后实现独立门户与隧道工具",
+      "category": "硬件与兼容",
+      "author": "hygkui",
+      "target": "LeadSec / 网御星云 V5VPN 5.3.3.x 客户端及 v2.0 网关协议",
+      "question": "怎样从原厂客户端调查认证、资源发现与连接流程，做一个范围明确的独立客户端？",
+      "rea_role": "作者明确以 morluto/rea 为逆向分析技术参考，并记录对 SecUI.exe、SecController.dll、SecLogin.dll、SecSSL.dll 和 VpnServ.exe 的符号、反汇编及内存映射调查。README 将认证、口令过期分支、资源发现和 HTTP CONNECT 流程关联到独立 Go/MyGo 实现；未公开完整 REA 调用日志。",
+      "reported_result": "公开 Go/MyGo 桌面与 CLI 源码、协议说明和测试文件；作者报告在 Windows 开发环境与两套生产网关完成端到端连通性验证，实现 SSL VPN 门户、授权资源获取与 HTTP CONNECT 隧道路径。",
+      "limitations": "作者报告仅覆盖 5.3.3.x 与协议 v2.0；Linux/macOS 仅编译通过、未实测。不实现内核虚拟网卡、IPsec 或全网路由；USB Key、匿名登录及国密套件未支持。收录依据为公开作者报告和源码，未独立连接网关或验证安全性，不把“完全破解”表述当作已证实结论。",
+      "takeaway": "将协议兼容范围和平台实测状态分开说明，独立客户端的可用性需要具体网关和场景验收。",
+      "rea_evidence_excerpt": "基于 REA (Reverse Engineer Anything) 逆向分析技术与 MyGo 跨平台桌面技术架构，重新实现的现代化 V5VPN 客户端。",
+      "project_url": "https://github.com/hygkui/v5vpn-rea-client",
+      "source_url": "https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md",
+      "checked_on": "2026-10-21",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/internal/protocol/auth_test.go",
+        "https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/internal/protocol/tunnel_test.go"
       ]
     }
   ]
