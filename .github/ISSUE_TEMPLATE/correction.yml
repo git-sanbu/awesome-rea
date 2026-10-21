@@ -1,17 +1,18 @@
-name: "资料纠错 / Correct a case"
-description: "修正归因、失效链接、成果或版本状态。"
-title: "[纠错] "
+name: "Correct a case / 资料纠错"
+description: "Correct attribution, translations, links, results or version status. Any supported language is welcome."
+title: "[Correction] "
 body:
   - type: input
     id: case
     attributes:
-      label: "案例名称或本仓库链接"
+      label: "Case and language / 案例与语言"
+      description: "Link to the affected case or translation."
     validations:
       required: true
   - type: textarea
     id: correction
     attributes:
-      label: "哪里需要修改？"
-      description: "请附新的原始出处、提交或日期；说明旧结论与新信息的关系。"
+      label: "What needs to change? / 修改内容"
+      description: "Link to a new primary source, commit or date; explain how it changes the old conclusion. For translation issues, quote the affected wording."
     validations:
       required: true

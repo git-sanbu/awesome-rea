@@ -1,44 +1,46 @@
-# Aegis：从 Android APK 找出动态验证码算法
+# Aegis: finding the Android TOTP algorithm
 
-[← 返回案例目录](../README.md) · 官方案例
+[← Back to all cases](../README.md) · Official showcases
 
-- **作者 / 来源归属：** REA 官方案例团队；原项目作者见来源
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Aegis Authenticator 3.4.3 Android APK
+[English](aegis-totp.md) · [简体中文](zh-CN/aegis-totp.md) · [繁體中文](zh-TW/aegis-totp.md) · [日本語](ja/aegis-totp.md) · [한국어](ko/aegis-totp.md) · [Español](es/aegis-totp.md) · [Français](fr/aegis-totp.md) · [Deutsch](de/aegis-totp.md) · [Português (Brasil)](pt-BR/aegis-totp.md) · [Русский](ru/aegis-totp.md) · [العربية](ar/aegis-totp.md) · [हिन्दी](hi/aegis-totp.md)
 
-## 想解决什么问题
+- **Author / attribution:** REA showcase team; original project authors credited in sources
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Aegis Authenticator 3.4.3 Android APK
 
-每 30 秒变化的六位登录码是怎么计算的？
+## The question
 
-## REA 具体做了什么
+How is a six-digit login code calculated every 30 seconds?
 
-REA Android 分析定位生成、显示和复制相关方法，阅读 HOTP/TOTP 计算，再编写可调整时钟的浏览器演示。
+## What REA did
 
-## 公开成果
+REA Android analysis locates generation, display and copy methods. The author reads the HOTP/TOTP calculation and builds a browser demo with an adjustable clock.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-官方页面报告：提取方法与独立实现对照 133 个用例，并核对 RFC 6238 的六个 SHA-1 参考样例。
+The official page reports 133 cases comparing the extracted method with an independent implementation, plus the six SHA-1 reference vectors from RFC 6238.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-范围是验证码生成计算；不代表完成密钥库、加密存储或整款应用的重建。本仓库没有复跑这些用例。
+The scope is code generation, not a reconstruction of the vault, encrypted storage or the whole app. This catalog did not rerun the cases.
 
-## 可以借鉴什么
+## What to learn
 
-选一个可独立验证的小功能，用公开标准测试向量约束实现。
+Choose a small feature that can be verified independently and constrain its implementation with public standard test vectors.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > Inspected with REA 6.1.0 on 9 October 2026.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/public/showcase/aegis/index.html)
-- [项目 / 演示](https://rea.tools/showcase/aegis/)
-- [补充来源 1](https://github.com/beemdevelopment/Aegis)
+- [Primary source / pinned evidence](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/public/showcase/aegis/index.html)
+- [Project / demo](https://rea.tools/showcase/aegis/)
+- [Additional source 1](https://github.com/beemdevelopment/Aegis)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

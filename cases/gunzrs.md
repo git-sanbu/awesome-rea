@@ -1,46 +1,48 @@
-# GunZRs：先确认加壳边界，再从游戏数据重建
+# GunZRs: identifying a packing boundary before rebuilding from game data
 
-[← 返回案例目录](../README.md) · 游戏实践
+[← Back to all cases](../README.md) · Games
 
-- **作者 / 来源归属：** OpenRsG
-- **核对日期：** 2026-10-21
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** GunZ: The Duel 的 Steam 安装、Gunz.exe 与 .mrs 数据归档
+[English](gunzrs.md) · [简体中文](zh-CN/gunzrs.md) · [繁體中文](zh-TW/gunzrs.md) · [日本語](ja/gunzrs.md) · [한국어](ko/gunzrs.md) · [Español](es/gunzrs.md) · [Français](fr/gunzrs.md) · [Deutsch](de/gunzrs.md) · [Português (Brasil)](pt-BR/gunzrs.md) · [Русский](ru/gunzrs.md) · [العربية](ar/gunzrs.md) · [हिन्दी](hi/gunzrs.md)
 
-## 想解决什么问题
+- **Author / attribution:** OpenRsG
+- **Source review date:** 2026-10-21
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** GunZ: The Duel Steam installation, Gunz.exe and .mrs archives
 
-原生主程序被加壳、游戏逻辑不能静态读取时，怎样界定调查范围并继续重建？
+## The question
 
-## REA 具体做了什么
+How can reconstruction continue when a packed executable prevents static recovery of game logic?
 
-通过 REA 与 Ghidra 调查原生文件；作者记录 Gunz.exe 的 Themida 节、入口 RVA 和解包桩，并标注本地 REA Evidence 路径。游戏格式随后主要由数据文件的结构分析恢复；另公开 REA 查询包装器和生成 ELF/PE fixture 的分析、缓存及失败传播检查。
+## What REA did
 
-## 公开成果
+REA and Ghidra investigate native files. The author records Themida sections, entry RVA and unpacking stubs in Gunz.exe, with local REA Evidence paths. Game formats are then mainly recovered from data-file structure. Public scripts also cover REA queries, generated ELF/PE fixtures, analysis, caching and failure propagation.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开 Rust + Bevy 重建、数据格式笔记、查询脚本与测试说明；作者报告 Linux 上可玩，支持读取自有安装、地图、动作、机器人、浏览器版本和 LAN。框架记录生成 ELF/PE 的函数分析及 snapshot replay 通过；这些 fixture 检查与游戏兼容性分别记录。
+The project publishes a Rust + Bevy reconstruction, format notes, query scripts and tests. The author reports Linux playability with an owned installation, maps, actions, bots, a browser build and LAN. Generated ELF/PE function analysis and snapshot-replay checks are recorded separately from game compatibility.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-不能将游戏全部功能归于 REA：主程序被 Themida 加壳，游戏代码未被静态恢复，部分行为和时序是推断。原始 Evidence 留在作者本地，公开的是说明和脚本；Windows/macOS 有 CI 构建测试，但作者未在其上游玩。地图统计随笔记范围不同，未将其作为完整兼容证明；未独立复跑。
+The packed game code was not statically recovered, and some behavior and timing are inferred. Original Evidence remains local to the author; public material includes descriptions and scripts. Windows/macOS CI builds are reported but were not played by the author. Map counts have different note scopes and do not prove full compatibility. This catalog did not rerun it.
 
-## 可以借鉴什么
+## What to learn
 
-分析失败也能给出有用边界：明确哪些事实来自二进制、数据文件或推断。
+An analysis failure can still establish a useful boundary: label binary facts, data-file observations and inferences separately.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > stub (REA evidence under .local/re/a076a5d8…/). Game code is not statically readable
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md)
-- [项目 / 演示](https://github.com/OpenRsG/GunZRs)
-- [补充来源 1](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/README.md)
-- [补充来源 2](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/reverse-engineering.md)
-- [补充来源 3](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/scripts/rea.sh)
+- [Primary source / pinned evidence](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md)
+- [Project / demo](https://github.com/OpenRsG/GunZRs)
+- [Additional source 1](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/README.md)
+- [Additional source 2](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/reverse-engineering.md)
+- [Additional source 3](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/scripts/rea.sh)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

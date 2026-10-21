@@ -1,44 +1,46 @@
-# DX-Ball：恢复声音左右声道计算
+# DX-Ball: reconstructing stereo sound panning
 
-[← 返回案例目录](../README.md) · 官方案例
+[← Back to all cases](../README.md) · Official showcases
 
-- **作者 / 来源归属：** REA 官方案例团队；原项目作者见来源
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** DX-Ball 1.07 的 Windows i386 可执行文件
+[English](dx-ball.md) · [简体中文](zh-CN/dx-ball.md) · [繁體中文](zh-TW/dx-ball.md) · [日本語](ja/dx-ball.md) · [한국어](ko/dx-ball.md) · [Español](es/dx-ball.md) · [Français](fr/dx-ball.md) · [Deutsch](de/dx-ball.md) · [Português (Brasil)](pt-BR/dx-ball.md) · [Русский](ru/dx-ball.md) · [العربية](ar/dx-ball.md) · [हिन्दी](hi/dx-ball.md)
 
-## 想解决什么问题
+- **Author / attribution:** REA showcase team; original project authors credited in sources
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** DX-Ball 1.07 Windows i386 executable
 
-画面中的位置怎样转换成音效声像？
+## The question
 
-## REA 具体做了什么
+How does an on-screen position become a sound-pan value?
 
-用 REA + Ghidra 查看目标函数、调用者、指令与常量；结合维护者的重建代码解释被反编译伪代码漏掉的 x87 表达式。
+## What REA did
 
-## 公开成果
+REA and Ghidra inspect the target function, callers, instructions and constants. The maintainer’s reconstruction explains an x87 expression omitted by the decompiled pseudocode.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-来源记录：该函数通过 3,205 个原始 x86 差分用例，历史编译器重编译后的完整 63 字节匹配。
+The source records 3,205 differential cases against the original x86 function and a complete 63-byte match after recompilation with the historical compiler.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-验证仅覆盖一个函数与指定 checkpoint；网页更新复用了已有执行和编译记录，不能据此说整个游戏被完整还原。
+Validation covers one function and a specific checkpoint. The updated showcase reuses earlier execution and compilation records; it does not establish a complete game reconstruction.
 
-## 可以借鉴什么
+## What to learn
 
-伪代码不完整时，追到调用者、汇编和常量；把语义测试与字节匹配分别记录。
+When pseudocode is incomplete, follow callers, assembly and constants. Record semantic tests separately from byte matching.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > Recorded analysis: REA 4.1.0, Ghidra 12.1.4, Linux x64 host.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/dx-ball-sound-pan.md)
-- [项目 / 演示](https://rea.tools/showcase/dx-ball/)
-- [补充来源 1](https://github.com/N0zoM1z0/dx-ball)
+- [Primary source / pinned evidence](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/dx-ball-sound-pan.md)
+- [Project / demo](https://rea.tools/showcase/dx-ball/)
+- [Additional source 1](https://github.com/N0zoM1z0/dx-ball)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

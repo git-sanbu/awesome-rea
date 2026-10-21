@@ -1,14 +1,15 @@
-## 案例 / 更新
+## Case or update
 
-原始来源：
+Original author and primary sources:
 
-REA 的具体用途与使用证据：
+Actual REA role and usage evidence:
 
-公开成果和局限：
+Public results, limitations and affected languages:
 
-## 检查
+## Checks
 
-- [ ] 保留作者署名，使用一手公开来源。
-- [ ] 已同步案例页、两个 README 和 `data/cases.json`。
-- [ ] 已写明核对日期、版本和未独立复跑的状态。
-- [ ] 没有把镜像、计划或未确认使用 REA 的项目当作案例。
+- [ ] Preserve authorship and use public primary sources.
+- [ ] Update English catalog data and all affected translations; keep original quotes and fixed source links.
+- [ ] Record review dates, versions and independent-reproduction status.
+- [ ] Run the generator, `--check`, `python3 scripts/check-site.py` and `git diff --check`.
+- [ ] Do not include mirrors, proposals or unconfirmed REA attribution as completed cases.

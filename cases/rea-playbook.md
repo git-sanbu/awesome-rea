@@ -1,43 +1,45 @@
-# rea-playbook：把 Electron Evidence 变成可读报告与重建
+# rea-playbook: turning Electron Evidence into a report and reconstruction
 
-[← 返回案例目录](../README.md) · 学习与复现
+[← Back to all cases](../README.md) · Learning and reproduction
 
-- **作者 / 来源归属：** jinshi666888
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** 仓库自带的八文件最小 Electron 示例
+[English](rea-playbook.md) · [简体中文](zh-CN/rea-playbook.md) · [繁體中文](zh-TW/rea-playbook.md) · [日本語](ja/rea-playbook.md) · [한국어](ko/rea-playbook.md) · [Español](es/rea-playbook.md) · [Français](fr/rea-playbook.md) · [Deutsch](de/rea-playbook.md) · [Português (Brasil)](pt-BR/rea-playbook.md) · [Русский](ru/rea-playbook.md) · [العربية](ar/rea-playbook.md) · [हिन्दी](hi/rea-playbook.md)
 
-## 想解决什么问题
+- **Author / attribution:** jinshi666888
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** An eight-file minimal Electron example included in the repository
 
-拿到巨大 Evidence JSON 后，怎样提取可读事实并验证重建？
+## The question
 
-## REA 具体做了什么
+How can large Evidence JSON become readable facts and a checked reconstruction?
 
-固定 REA 6.3.0，提供 analyze → extract → verify 命令链，另有 MCP handshake 与真实工具调用 probe。
+## What REA did
 
-## 公开成果
+The project pins REA 6.3.0 and supplies an analyze → extract → verify pipeline, MCP handshake and real tool-call probes.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开脱敏 Evidence fixture、file:line 报告、recreate 与断言；作者报告 10/10 重建检查通过。
+The author publishes a sanitized Evidence fixture, file:line report, reconstruction and assertions, reporting 10/10 reconstruction checks passing.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-离线 demo 只读取已有 fixture，不能冒充新运行 REA；自建小目标也不能代表复杂商业应用。
+The offline demo reads an existing fixture; it is not a fresh REA run. A small self-built target does not represent a complex commercial app.
 
-## 可以借鉴什么
+## What to learn
 
-入门可以从可控小样本开始，把证据、可读规格和回归检查串起来。
+Start with a controlled small sample and connect evidence, readable specifications and regression checks.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > npm run analyze will fetch rea-agents@6.3.0 on first use via npx fallback.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md)
-- [项目 / 演示](https://github.com/jinshi666888/rea-playbook)
+- [Primary source / pinned evidence](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md)
+- [Project / demo](https://github.com/jinshi666888/rea-playbook)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

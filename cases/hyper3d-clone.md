@@ -1,45 +1,47 @@
-# Hyper3D：从网页包分析到独立 3D 生成原型
+# Hyper3D: from captured web bundles to an independent 3D prototype
 
-[← 返回案例目录](../README.md) · 应用实践
+[← Back to all cases](../README.md) · Applications
 
-- **作者 / 来源归属：** payswapdotorg
-- **核对日期：** 2026-10-19
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Hyper3D Rodin 网站捕获的 JavaScript 包与工作区行为
+[English](hyper3d-clone.md) · [简体中文](zh-CN/hyper3d-clone.md) · [繁體中文](zh-TW/hyper3d-clone.md) · [日本語](ja/hyper3d-clone.md) · [한국어](ko/hyper3d-clone.md) · [Español](es/hyper3d-clone.md) · [Français](fr/hyper3d-clone.md) · [Deutsch](de/hyper3d-clone.md) · [Português (Brasil)](pt-BR/hyper3d-clone.md) · [Русский](ru/hyper3d-clone.md) · [العربية](ar/hyper3d-clone.md) · [हिन्दी](hi/hyper3d-clone.md)
 
-## 想解决什么问题
+- **Author / attribution:** payswapdotorg
+- **Source review date:** 2026-10-19
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Captured Hyper3D Rodin JavaScript bundles and workspace behavior
 
-怎样把网页分析得到的界面与接口观察转化为一个可导出模型的原型？
+## The question
 
-## REA 具体做了什么
+How can interface and API observations inform a prototype that exports 3D models?
 
-作者用 rea-agents 6.5.0 静态分析捕获的 21 个 JS 文件，为最初视觉原型提供模块与行为线索；之后的功能链路依据登录工作区的网络观察和 API blueprint 另行设计。REA 未恢复原产品的 3D 模型权重或生成后端。
+## What REA did
 
-## 公开成果
+The author uses rea-agents 6.5.0 to statically analyze 21 captured JavaScript files for initial visual-prototype clues. Later functionality is designed separately from authenticated-workspace network observations and an API blueprint. REA did not recover the original 3D-model weights or generation backend.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开 Next.js 16 原型、API blueprint 与差异说明；作者报告 67 个测试，支持图像/文本到场景规格、three.js 几何生成，以及 GLB、GLTF、OBJ、STL、USDZ 导出。
+The project publishes a Next.js 16 prototype, API blueprint and differences. The author reports 67 tests covering image/text-to-scene specifications, three.js geometry and GLB, GLTF, OBJ, STL and USDZ export.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-默认生成器是独立的场景规划与确定性几何流水线，不能视为 Rodin 模型质量或原后端等价；外部生成服务需另配凭据，3D Editing 与 WorldGen 未实现。REA 的贡献限于最初网页分析，测试为作者报告。
+The default generator uses an independent scene-planning and deterministic-geometry pipeline, not equivalent Rodin model quality or backend behavior. External generation services require separate credentials. 3D Editing and WorldGen are not implemented. REA’s contribution is limited to initial web analysis; tests are author-reported.
 
-## 可以借鉴什么
+## What to learn
 
-把前端观察、接口契约与独立功能实现分开记录；导出格式测试不能证明生成质量等价。
+Distinguish frontend observations, API contracts and independent functionality. Export-format tests do not establish generation-quality equivalence.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > rea-agents@6.5.0 analyze-javascript-application
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md)
-- [项目 / 演示](https://github.com/payswapdotorg/hyper3d-clone)
-- [补充来源 1](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/recon/API-BLUEPRINT.md)
-- [补充来源 2](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/DECISIONS.md)
+- [Primary source / pinned evidence](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md)
+- [Project / demo](https://github.com/payswapdotorg/hyper3d-clone)
+- [Additional source 1](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/recon/API-BLUEPRINT.md)
+- [Additional source 2](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/DECISIONS.md)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

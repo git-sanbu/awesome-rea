@@ -1,43 +1,45 @@
-# Virtual Desktop Streamer：替换平台层实现 Linux 移植
+# Virtual Desktop Streamer: a Linux port through a replacement platform layer
 
-[← 返回案例目录](../README.md) · 硬件与兼容
+[← Back to all cases](../README.md) · Hardware and compatibility
 
-- **作者 / 来源归属：** cudanexus
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Virtual Desktop 官方 macOS 和 Windows 安装包
+[English](vd-streamer-linux.md) · [简体中文](zh-CN/vd-streamer-linux.md) · [繁體中文](zh-TW/vd-streamer-linux.md) · [日本語](ja/vd-streamer-linux.md) · [한국어](ko/vd-streamer-linux.md) · [Español](es/vd-streamer-linux.md) · [Français](fr/vd-streamer-linux.md) · [Deutsch](de/vd-streamer-linux.md) · [Português (Brasil)](pt-BR/vd-streamer-linux.md) · [Русский](ru/vd-streamer-linux.md) · [العربية](ar/vd-streamer-linux.md) · [हिन्दी](hi/vd-streamer-linux.md)
 
-## 想解决什么问题
+- **Author / attribution:** cudanexus
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Official Virtual Desktop macOS and Windows installation packages
 
-如何保留协议库，把采集、编码、音频和输入换成 Linux 实现？
+## The question
 
-## REA 具体做了什么
+How can capture, encoding, audio and input move to Linux while retaining the protocol library?
 
-作者声明使用 Claude Code + REA 分析两种安装包，复用读者自行提供的 macOS 协议库，重写 Linux 平台层。
+## What REA did
 
-## 公开成果
+The author states that Claude Code and REA analyze both packages. A macOS protocol library supplied by the reader is reused, while the Linux platform layer is rewritten.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开 Linux 移植源码、构建与模拟头显测试，使用 PipeWire/X11、GStreamer 和 uinput。
+The public Linux port includes source, build instructions and simulated-headset tests using PipeWire/X11, GStreamer and uinput.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-没有真实头显、Wi-Fi 和 GPU 编码器测试；不支持 Windows streamer 的 SteamVR/OpenXR 游戏功能。依赖厂商协议库，不能理解为完整独立协议重写。
+No real headset, Wi-Fi or GPU-encoder tests were performed. The Windows streamer’s SteamVR/OpenXR game features are unsupported. Dependence on the vendor protocol library means this is not a fully independent protocol rewrite.
 
-## 可以借鉴什么
+## What to learn
 
-兼容移植可以聚焦平台边界；模拟设备测试和真实硬件验收需分别报告。
+Focus compatibility work on platform boundaries and distinguish simulated-device tests from real-hardware acceptance.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > This port was built by Claude Code (Claude Opus) with the REA reverse-engineering tools
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/cudanexus/vd-streamer-linux/blob/e65c302f13639f044742bdc4951ab1a424c1c929/README.md)
-- [项目 / 演示](https://github.com/cudanexus/vd-streamer-linux)
+- [Primary source / pinned evidence](https://github.com/cudanexus/vd-streamer-linux/blob/e65c302f13639f044742bdc4951ab1a424c1c929/README.md)
+- [Project / demo](https://github.com/cudanexus/vd-streamer-linux)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

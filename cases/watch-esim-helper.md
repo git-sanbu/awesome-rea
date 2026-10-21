@@ -1,45 +1,47 @@
-# Pixel Watch：分析配套 APK 后做 eSIM 导航助手
+# Pixel Watch: an eSIM handoff helper informed by companion-APK analysis
 
-[← 返回案例目录](../README.md) · 硬件与兼容
+[← Back to all cases](../README.md) · Hardware and compatibility
 
-- **作者 / 来源归属：** AllMySlop
-- **核对日期：** 2026-10-19
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Google Pixel Watch 配套 Android APK 5.0.0.958206140
+[English](watch-esim-helper.md) · [简体中文](zh-CN/watch-esim-helper.md) · [繁體中文](zh-TW/watch-esim-helper.md) · [日本語](ja/watch-esim-helper.md) · [한국어](ko/watch-esim-helper.md) · [Español](es/watch-esim-helper.md) · [Français](fr/watch-esim-helper.md) · [Deutsch](de/watch-esim-helper.md) · [Português (Brasil)](pt-BR/watch-esim-helper.md) · [Русский](ru/watch-esim-helper.md) · [العربية](ar/watch-esim-helper.md) · [हिन्दी](hi/watch-esim-helper.md)
 
-## 想解决什么问题
+- **Author / attribution:** AllMySlop
+- **Source review date:** 2026-10-19
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Google Pixel Watch companion Android APK 5.0.0.958206140
 
-怎样找到配套应用已有的手表 eSIM 下载入口，并从独立助手交接？
+## The question
 
-## REA 具体做了什么
+How can a separate helper find and open the companion app’s existing watch-eSIM download flow?
 
-作者说明 Codex 借助 morluto/rea 找到原版配套 APK 中的配置入口与导航路径；助手只解析二维码或手动输入，在确认后把激活信息交给原版应用，不直接操作 eSIM。
+## What REA did
 
-## 公开成果
+The author states that Codex used morluto/rea to locate configuration entry points and navigation in the original APK. The helper parses a QR code or manual input, requests confirmation and hands activation information to the original app; it does not operate the eSIM directly.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开 Android 助手、companion-analysis.md 和测试记录；测试文档报告 25 个单元测试与模拟器交接。作者在 README 后续补充：Pixel Watch 2 LTE 安装成功，并在支持的运营商上验证 data-only eSIM 联网。
+The Android helper, companion-analysis.md and test records are public. TESTING.md reports 25 unit tests and emulator handoff. A later README update reports successful installation on a Pixel Watch 2 LTE and data-only eSIM connectivity on a supported carrier.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-README 的后续联网报告比 TESTING.md 更新，后者仍记载早期网络受限；不能混为同一次验证。作者未审阅生成代码，Codex 未在真表测试；助手没有安装结果回调，区域、运营商、固件和配套应用版本兼容性均有限。
+The later README connectivity report is newer than TESTING.md’s early network restriction; they are different validation stages. The author did not review generated code and Codex did not test a real watch. There is no installation-result callback, and compatibility depends on region, carrier, firmware and companion version.
 
-## 可以借鉴什么
+## What to learn
 
-区分启动原应用、配置交付、安装成功与蜂窝联网；来源更新不一致时明确各自阶段。
+Distinguish opening the original app, delivering configuration, installation and cellular connectivity. Date conflicting source reports.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > using https://github.com/morluto/rea
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md)
-- [项目 / 演示](https://github.com/AllMySlop/pixel-watch-esim-writer)
-- [补充来源 1](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/docs/companion-analysis.md)
-- [补充来源 2](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/TESTING.md)
+- [Primary source / pinned evidence](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md)
+- [Project / demo](https://github.com/AllMySlop/pixel-watch-esim-writer)
+- [Additional source 1](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/docs/companion-analysis.md)
+- [Additional source 2](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/TESTING.md)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

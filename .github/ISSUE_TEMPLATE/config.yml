@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: "REA 上游项目 / Upstream REA"
+  - name: "Upstream REA / REA 上游项目"
     url: "https://github.com/morluto/rea"
-    about: "REA 自身的安装、功能和 bug 请查看上游项目。"
+    about: "For REA installation, features and tool bugs, consult the upstream project."

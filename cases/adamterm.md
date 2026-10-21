@@ -1,43 +1,45 @@
-# AdamTerm：研究 Ghostty 外壳后做自己的终端
+# AdamTerm: investigating Ghostty’s shell and building a terminal
 
-[← 返回案例目录](../README.md) · 应用实践
+[← Back to all cases](../README.md) · Applications
 
-- **作者 / 来源归属：** AdamLinCodes
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Ghostty 1.3.1 macOS app bundle
+[English](adamterm.md) · [简体中文](zh-CN/adamterm.md) · [繁體中文](zh-TW/adamterm.md) · [日本語](ja/adamterm.md) · [한국어](ko/adamterm.md) · [Español](es/adamterm.md) · [Français](fr/adamterm.md) · [Deutsch](de/adamterm.md) · [Português (Brasil)](pt-BR/adamterm.md) · [Русский](ru/adamterm.md) · [العربية](ar/adamterm.md) · [हिन्दी](hi/adamterm.md)
 
-## 想解决什么问题
+- **Author / attribution:** AdamLinCodes
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Ghostty 1.3.1 macOS app bundle
 
-终端核心、原生窗口、菜单和服务之间怎么分工？
+## The question
 
-## REA 具体做了什么
+How are the terminal core, native windows, menus and services divided?
 
-使用 REA 检查 Mach-O、plist、签名、Objective-C 元数据、Interface Builder 与动态库解析；该路径未使用 Hopper/Ghidra。
+## What REA did
 
-## 公开成果
+REA inspects Mach-O, plists, signatures, Objective-C metadata, Interface Builder and dynamic-library resolution. This path did not use Hopper or Ghidra.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-作者以 AppKit + SwiftTerm 做了带原生标签页的精简 macOS 终端，并提供自检命令。
+The author builds a smaller macOS terminal with AppKit, SwiftTerm and native tabs, and provides self-check commands.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-使用 SwiftTerm 而非重建 Ghostty 的 Zig 核心；分屏、搜索栏、配置文件、快捷终端等未实现。
+It uses SwiftTerm rather than rebuilding Ghostty’s Zig core. Split panes, a search bar, configuration files and a quick terminal are not implemented.
 
-## 可以借鉴什么
+## What to learn
 
-包元数据和界面资源就能回答一部分架构问题，不必一开始深度反编译。
+Package metadata and interface resources can answer some architecture questions before deep decompilation.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > A minimal macOS terminal built by reverse-engineering Ghostty 1.3.1 with REA
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md)
-- [项目 / 演示](https://github.com/AdamLinCodes/AdamTerm)
+- [Primary source / pinned evidence](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md)
+- [Project / demo](https://github.com/AdamLinCodes/AdamTerm)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

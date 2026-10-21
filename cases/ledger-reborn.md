@@ -1,43 +1,45 @@
-# Ledger Reborn：研究 QuickBooks 后做本地账本
+# Ledger Reborn: a local ledger informed by QuickBooks research
 
-[← 返回案例目录](../README.md) · 应用实践
+[← Back to all cases](../README.md) · Applications
 
-- **作者 / 来源归属：** lxistired
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** QuickBooks Desktop for Mac
+[English](ledger-reborn.md) · [简体中文](zh-CN/ledger-reborn.md) · [繁體中文](zh-TW/ledger-reborn.md) · [日本語](ja/ledger-reborn.md) · [한국어](ko/ledger-reborn.md) · [Español](es/ledger-reborn.md) · [Français](fr/ledger-reborn.md) · [Deutsch](de/ledger-reborn.md) · [Português (Brasil)](pt-BR/ledger-reborn.md) · [Русский](ru/ledger-reborn.md) · [العربية](ar/ledger-reborn.md) · [हिन्दी](hi/ledger-reborn.md)
 
-## 想解决什么问题
+- **Author / attribution:** lxistired
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** QuickBooks Desktop for Mac
 
-如何理解桌面会计工作流，并做独立本地应用？
+## The question
 
-## REA 具体做了什么
+How can desktop accounting workflows inform an independent local app?
 
-作者声明用 REA 调查 QuickBooks，再实现本地 SQLite 会计引擎与桌面界面，并公开 CASE_STUDY。
+## What REA did
 
-## 公开成果
+The author attributes the QuickBooks investigation to REA, then implements a local SQLite accounting engine and desktop interface and publishes a CASE_STUDY.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开 preview 包、源码和案例记录；作者列出发票、付款、库存、银行对账和报表等已实现流程。
+The project publishes a preview package, source and case study. The author lists implemented invoice, payment, inventory, bank-reconciliation and reporting workflows.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-仍为 preview、单用户单机 USD；工资、报税、在线银行、多币种和完整 QuickBooks 文件迁移未实现；未完成全面交互/像素等价验证。
+Still a preview: single user, one machine and USD only. Payroll, tax filing, online banking, multiple currencies and full QuickBooks-file migration are not implemented. Comprehensive interaction or pixel equivalence was not verified.
 
-## 可以借鉴什么
+## What to learn
 
-把逆向调查落到可检查的业务流程，同时写清财务规则和不支持的业务。
+Turn research into inspectable business workflows and document financial rules and unsupported operations.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > We used REA to investigate QuickBooks Desktop for Mac and independently implement a desktop accounting tool.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md)
-- [项目 / 演示](https://github.com/lxistired/ledger-reborn)
+- [Primary source / pinned evidence](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md)
+- [Project / demo](https://github.com/lxistired/ledger-reborn)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

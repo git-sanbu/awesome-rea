@@ -1,43 +1,45 @@
-# VSL-DSP：把厂商库分析用于声卡 DSP 工具
+# VSL-DSP: applying vendor-library findings to audio DSP tools
 
-[← 返回案例目录](../README.md) · 硬件与兼容
+[← Back to all cases](../README.md) · Hardware and compatibility
 
-- **作者 / 来源归属：** grisuno
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** PreSonus Universal Control 的 libucnet.so 与 libfatchannelplugins.so
+[English](vsl-dsp.md) · [简体中文](zh-CN/vsl-dsp.md) · [繁體中文](zh-TW/vsl-dsp.md) · [日本語](ja/vsl-dsp.md) · [한국어](ko/vsl-dsp.md) · [Español](es/vsl-dsp.md) · [Français](fr/vsl-dsp.md) · [Deutsch](de/vsl-dsp.md) · [Português (Brasil)](pt-BR/vsl-dsp.md) · [Русский](ru/vsl-dsp.md) · [العربية](ar/vsl-dsp.md) · [हिन्दी](hi/vsl-dsp.md)
 
-## 想解决什么问题
+- **Author / attribution:** grisuno
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** PreSonus Universal Control libucnet.so and libfatchannelplugins.so
 
-厂商控制程序如何发现设备、注册参数和表示增益？
+## The question
 
-## REA 具体做了什么
+How does the vendor controller discover devices, register parameters and represent gain?
 
-通过 LazyOwn 的 rea 扩展驱动 REA + Ghidra 分析厂商库，保留 Evidence envelope 并形成协议与参数规格。
+## What REA did
 
-## 公开成果
+LazyOwn’s rea extension drives REA and Ghidra against the vendor libraries, preserving the Evidence envelope and producing protocol and parameter specifications.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-作者将调查结果用于 dB 命令、参数命名和线性/dB 转换，并提供 CMocka 测试。
+The author applies findings to dB commands, parameter names and linear/dB conversion, and provides CMocka tests.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-REA 的作用限定为部分厂商库发现与后续改进，不应把整个驱动归功于 REA；mute wire code 没有恢复。
+REA’s role is limited to specific vendor-library findings and subsequent improvements, not the whole driver. The mute wire code was not recovered.
 
-## 可以借鉴什么
+## What to learn
 
-协议调查适合补齐现有项目中的具体缺口，未知控制码要保持未知。
+Protocol research can fill a concrete gap in an existing project. Unknown control codes should remain unknown.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > lazyaddon, which drives REA (Reverse Engineer Anything) with Ghidra 12.1.4
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/grisuno/VSL-DSP/blob/e619f0877ffca3c183be37cdd9474f2d7e348ad5/README.md)
-- [项目 / 演示](https://github.com/grisuno/VSL-DSP)
+- [Primary source / pinned evidence](https://github.com/grisuno/VSL-DSP/blob/e619f0877ffca3c183be37cdd9474f2d7e348ad5/README.md)
+- [Project / demo](https://github.com/grisuno/VSL-DSP)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

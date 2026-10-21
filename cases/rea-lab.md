@@ -1,47 +1,49 @@
-# rea-lab：测量 REA 对 Windows 逆向任务的实际帮助
+# rea-lab: measuring REA’s contribution to Windows reverse engineering
 
-[← 返回案例目录](../README.md) · 分析与评测
+[← Back to all cases](../README.md) · Analysis and evaluation
 
-- **作者 / 来源归属：** pablodiazjorge
-- **核对日期：** 2026-10-21
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Windows 小型挑战、更大含诱饵二进制及真实开源程序
+[English](rea-lab.md) · [简体中文](zh-CN/rea-lab.md) · [繁體中文](zh-TW/rea-lab.md) · [日本語](ja/rea-lab.md) · [한국어](ko/rea-lab.md) · [Español](es/rea-lab.md) · [Français](fr/rea-lab.md) · [Deutsch](de/rea-lab.md) · [Português (Brasil)](pt-BR/rea-lab.md) · [Русский](ru/rea-lab.md) · [العربية](ar/rea-lab.md) · [हिन्दी](hi/rea-lab.md)
 
-## 想解决什么问题
+- **Author / attribution:** pablodiazjorge
+- **Source review date:** 2026-10-21
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Small Windows challenges, larger binaries with decoys and real open-source programs
 
-加上 REA 后，代理解决任务的成功率、耗时和成本怎样变化？
+## The question
 
-## REA 具体做了什么
+How does adding REA affect an agent’s success rate, time and cost?
 
-搭建 Windows + Ghidra 环境，做预注册对照研究，核验引用 Evidence，公开 writeups、环境与上游修复。
+## What REA did
 
-## 公开成果
+The author sets up Windows and Ghidra, runs preregistered controlled studies, verifies cited Evidence and publishes writeups, environments and upstream fixes.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-作者现已公开五项预注册研究：Study 1 为两组均解出 28/30；Study 2 为无 REA 11/24、用 REA 4/24；Study 3 为 71/72 与 68/72。新增 Study 4 用 DeepSeek 模型为 20/20 与 19/20，未检测到显著差异；Study 5 的改进 skill 相对官方版本成本增加 14%（p=0.012），准确率未显著改变。 2026-10-21 补充 Evidence 留存观察：作者明确总计 482 次研究运行中，336 次调用 REA，加上 3 次因重启中断后重跑，合计 339 次调用运行均未主动保留 Evidence，评分器从客户端记录重建。
+Five preregistered studies are public. Study 1: 28/30 in both groups. Study 2: 11/24 without REA versus 4/24 with REA. Study 3: 71/72 versus 68/72. Study 4 uses DeepSeek: 20/20 versus 19/20, with no significant difference detected. In Study 5, the revised skill costs 14% more than the official skill (p=0.012), without a significant accuracy change. The 2026-10-21 Evidence-retention note distinguishes 482 study runs, 336 that called REA and 3 restart-interrupted reruns: none of these 339 REA-calling runs proactively retained Evidence; the grader reconstructed it from client records.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-所有研究固定 REA 6.4.0、Claude Code 2.1.296 与各自模型、任务及权限配置，不能外推当前版本或所有逆向工作。Study 2、3 的成功率差异未达原作者统计检验的显著水平。Study 3 的 Evidence 认证由初报 142/144 更正为 grader 修正后的 144/144，解题数字未改；Study 4 样本仅 20 对。Study 5 比较的是注入提示中的 skill 内容，并非客户端自动加载效果。本仓库仅复核报告，没有复跑。 339 次是调用过 REA 的运行口径，不是五项研究的总样本量；该观察不等于 Evidence 内容缺失或认证失败。
+All studies pin REA 6.4.0, Claude Code 2.1.296 and their respective models, tasks and permissions; results cannot be generalized to current versions or all reverse engineering. Study 2 and 3 success-rate differences were not statistically significant under the author’s tests. Study 3 Evidence certification was corrected from 142/144 to 144/144 after a grader fix; solve counts were unchanged. Study 4 has only 20 pairs. Study 5 compares skill text injected into prompts, not automatic client loading. This catalog did not rerun the studies. The 339 count is REA-calling runs, not the total study sample, and does not imply missing Evidence content or failed certification.
 
-## 可以借鉴什么
+## What to learn
 
-评估工具时同时看对照组、任务分布、成本与证据质量。
+Evaluate controls, task distribution, cost and evidence quality together.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > Study 1, preregistered: on ten small Windows crackmes, rea did not change how many Claude Code solved
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/pablodiazjorge/rea-lab/blob/db3e90f60700cf7ad3d4149ddcc95a9389a63a2b/README.md)
-- [项目 / 演示](https://github.com/pablodiazjorge/rea-lab)
-- [补充来源 1](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md)
-- [补充来源 2](https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md)
-- [补充来源 3](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-4/README.md)
-- [补充来源 4](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-5/README.md)
+- [Primary source / pinned evidence](https://github.com/pablodiazjorge/rea-lab/blob/db3e90f60700cf7ad3d4149ddcc95a9389a63a2b/README.md)
+- [Project / demo](https://github.com/pablodiazjorge/rea-lab)
+- [Additional source 1](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/README.md)
+- [Additional source 2](https://github.com/pablodiazjorge/rea-lab/blob/8796545134a00023b0fba3d75dbbaf77a9be68d8/README.md)
+- [Additional source 3](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-4/README.md)
+- [Additional source 4](https://github.com/pablodiazjorge/rea-lab/blob/67caf0e9687d3dc4912d6214a61695ebb3f4076c/writeups/2026-10-study-5/README.md)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

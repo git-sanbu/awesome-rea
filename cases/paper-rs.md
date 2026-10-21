@@ -1,44 +1,46 @@
-# Sketch（原 paper-rs）：研究 Paper 后构建 Rust 无限画布
+# Sketch (formerly paper-rs): a Paper-inspired Rust infinite canvas
 
-[← 返回案例目录](../README.md) · 应用实践
+[← Back to all cases](../README.md) · Applications
 
-- **作者 / 来源归属：** michaelshimeles
-- **核对日期：** 2026-10-21
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Paper 桌面设计应用的行为
+[English](paper-rs.md) · [简体中文](zh-CN/paper-rs.md) · [繁體中文](zh-TW/paper-rs.md) · [日本語](ja/paper-rs.md) · [한국어](ko/paper-rs.md) · [Español](es/paper-rs.md) · [Français](fr/paper-rs.md) · [Deutsch](de/paper-rs.md) · [Português (Brasil)](pt-BR/paper-rs.md) · [Русский](ru/paper-rs.md) · [العربية](ar/paper-rs.md) · [हिन्दी](hi/paper-rs.md)
 
-## 想解决什么问题
+- **Author / attribution:** michaelshimeles
+- **Source review date:** 2026-10-21
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Behavior of the Paper desktop design application
 
-怎样理解画布、布局和编辑器交互，并实现独立设计工具？
+## The question
 
-## REA 具体做了什么
+How can canvas, layout and editor interactions inform an independent design tool?
 
-作者声明用 REA 与 Claude Code 研究 Paper 桌面应用行为，再用 wgpu、winit、egui 实现独立 Rust 应用。
+## What REA did
 
-## 公开成果
+The author states that REA and Claude Code were used to investigate Paper’s desktop behavior before implementing a separate Rust app with wgpu, winit and egui.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开项目包含无限画布、页面、布局、矢量编辑、白板与 MCP 接口，并列出测试与功能差异。 2026-10-21 复核：项目已更名 Sketch，程序名为 sketch-rs，作者说明首次启动迁移旧项目目录，并兼容旧文件和环境变量；不另计新案例。
+The project publishes an infinite canvas, pages, layouts, vector editing, whiteboarding and MCP interfaces, with tests and feature differences. Reviewed on 2026-10-21: it is now named Sketch, with the sketch-rs executable, first-launch migration of the old project directory and compatibility with old files and environment variables. It remains one case.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-作者明确未在真实 macOS 硬件启动过；部分功能近似或缺失。收录依据是作者公开声明，不是完整 Paper 等价验证。
+The author explicitly had not launched it on real macOS hardware. Some features are approximated or missing. Inclusion relies on the author’s public attribution, not verified equivalence to Paper.
 
-## 可以借鉴什么
+## What to learn
 
-学习目标软件的行为和交互契约，明确独立实现的功能边界。
+Learn behavior and interaction contracts while stating the boundaries of the independent implementation.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > by studying the behavior of the Paper desktop app with REA and Claude Code
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
-- [项目 / 演示](https://github.com/michaelshimeles/paper-rs)
-- [补充来源 1](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
+- [Primary source / pinned evidence](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
+- [Project / demo](https://github.com/michaelshimeles/paper-rs)
+- [Additional source 1](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

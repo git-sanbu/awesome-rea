@@ -1,43 +1,45 @@
-# bzip2：用带符号构建核对去符号二进制分析
+# bzip2: checking stripped-binary findings against a symbolized build
 
-[← 返回案例目录](../README.md) · 分析与评测
+[← Back to all cases](../README.md) · Analysis and evaluation
 
-- **作者 / 来源归属：** CassieFox23
-- **核对日期：** 2026-10-19
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** gcc -O2 编译并去符号的 bzip2 1.0.8，Linux x86-64
+[English](bzip2-groundtruth.md) · [简体中文](zh-CN/bzip2-groundtruth.md) · [繁體中文](zh-TW/bzip2-groundtruth.md) · [日本語](ja/bzip2-groundtruth.md) · [한국어](ko/bzip2-groundtruth.md) · [Español](es/bzip2-groundtruth.md) · [Français](fr/bzip2-groundtruth.md) · [Deutsch](de/bzip2-groundtruth.md) · [Português (Brasil)](pt-BR/bzip2-groundtruth.md) · [Русский](ru/bzip2-groundtruth.md) · [العربية](ar/bzip2-groundtruth.md) · [हिन्दी](hi/bzip2-groundtruth.md)
 
-## 想解决什么问题
+- **Author / attribution:** CassieFox23
+- **Source review date:** 2026-10-19
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** bzip2 1.0.8 compiled with gcc -O2 and stripped, Linux x86-64
 
-没有函数名时，怎样从一条输出字符串找出函数，再核对调用关系？
+## The question
 
-## REA 具体做了什么
+How can a function be found from an output string and its call relationships checked?
 
-REA 6.4.0 + Ghidra 从字符串定位目标函数、列出调用者与被调用者，返回带 observed/derived 标记的 Evidence；作者另外使用同源未去符号构建、源码、nm 与 objdump 核对。
+## What REA did
 
-## 公开成果
+REA 6.4.0 and Ghidra locate a function from a string, list callers and callees, and return Evidence labeled observed/derived. The author separately checks an unstripped build from the same source with source code, nm and objdump.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-作者报告定位到 uncompress，1 个调用者与 24 个被调用者和对照构建一致；公开构建步骤、裁剪后的 MCP 调用记录及两类错误返回。
+The author reports finding uncompress with 1 caller and 24 callees matching the reference build. Build steps, trimmed MCP records and two classes of error responses are public.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-仅覆盖一个程序、编译设置与目标函数，不是工具优劣对照；24 条边是 provider 解析出的直接调用，不能外推完整运行时图。完整客户端脚本未公开，压缩包只记录 hash，未验签；本仓库未复跑。
+One program, compilation setup and function, without a tool comparison. The 24 edges are provider-resolved direct calls, not a full runtime graph. The complete client script is not public; the archive has a recorded hash but no signature verification. This catalog did not rerun it.
 
-## 可以借鉴什么
+## What to learn
 
-用同源带符号构建建立 ground truth，把工具观察、推导与对照验证分开。
+Build ground truth from a matching symbolized build and separate observations, inferences and reference checks.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > REA's function, one caller and 24 callees all matched an unstripped build and the source.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 核对时可编辑的讨论原帖](https://github.com/morluto/rea/discussions/2254)
-- [项目 / 演示](https://github.com/morluto/rea/discussions/2254)
+- [Public discussion / editable at review time](https://github.com/morluto/rea/discussions/2254)
+- [Project / demo](https://github.com/morluto/rea/discussions/2254)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

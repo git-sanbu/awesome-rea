@@ -1,43 +1,45 @@
-# OpenBSD netcat：静态审计已发布 ELF
+# OpenBSD netcat: static analysis of a shipped ELF
 
-[← 返回案例目录](../README.md) · 分析与评测
+[← Back to all cases](../README.md) · Analysis and evaluation
 
-- **作者 / 来源归属：** NullLabTests
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Ubuntu netcat-openbsd 1.234-1 二进制
+[English](netcat-analysis.md) · [简体中文](zh-CN/netcat-analysis.md) · [繁體中文](zh-TW/netcat-analysis.md) · [日本語](ja/netcat-analysis.md) · [한국어](ko/netcat-analysis.md) · [Español](es/netcat-analysis.md) · [Français](fr/netcat-analysis.md) · [Deutsch](de/netcat-analysis.md) · [Português (Brasil)](pt-BR/netcat-analysis.md) · [Русский](ru/netcat-analysis.md) · [العربية](ar/netcat-analysis.md) · [हिन्दी](hi/netcat-analysis.md)
 
-## 想解决什么问题
+- **Author / attribution:** NullLabTests
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Ubuntu netcat-openbsd 1.234-1 binary
 
-已发布 netcat 包含哪些网络、代理和安全相关实现？
+## The question
 
-## REA 具体做了什么
+Which network, proxy and security-related implementations are in the shipped netcat binary?
 
-用 REA 的 pwntools 布局检查与 Ghidra 路径分析同一镜像，再用 readelf、objdump、nm、strings 交叉核对。
+## What REA did
 
-## 公开成果
+REA’s pwntools layout checks and Ghidra path analyze the same image, with readelf, objdump, nm and strings used for cross-checks.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开函数/字符串/调用路径调查、results.txt 与 files/ 下的原始 JSON 结果。
+The author publishes function, string and call-path investigations, results.txt and raw JSON output under files/.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-这是特定构建的静态分析；不能从 imports 或伪代码直接断言所有运行场景，更不是完整安全认证。
+This is static analysis of a specific build. Imports and pseudocode alone do not establish every runtime behavior or constitute a security certification.
 
-## 可以借鉴什么
+## What to learn
 
-同时保存 REA 原始输出和独立工具核对结果，让结论可审查。
+Keep raw REA output alongside independent tool checks so conclusions can be reviewed.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > We ran two providers against the same image and cross-checked with readelf, objdump, nm, and strings.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md)
-- [项目 / 演示](https://github.com/NullLabTests/OpenBSD_netcat_REA)
+- [Primary source / pinned evidence](https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md)
+- [Project / demo](https://github.com/NullLabTests/OpenBSD_netcat_REA)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

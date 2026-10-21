@@ -2,3 +2,9 @@
 
 # Local Cloudflare CLI cache
 .wrangler/
+
+# Local translation responses and SEO verification cache
+.translation-cache/
+.seo-cache/
+
+__pycache__/

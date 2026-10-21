@@ -1,43 +1,45 @@
-# rea-groundtruth：对照已知源码找分析盲点
+# rea-groundtruth: checking analysis blind spots against known source
 
-[← 返回案例目录](../README.md) · 分析与评测
+[← Back to all cases](../README.md) · Analysis and evaluation
 
-- **作者 / 来源归属：** UnknownHacker1
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** MongoDB Compass 1.43.4 及手写 Electron fixtures
+[English](rea-groundtruth.md) · [简体中文](zh-CN/rea-groundtruth.md) · [繁體中文](zh-TW/rea-groundtruth.md) · [日本語](ja/rea-groundtruth.md) · [한국어](ko/rea-groundtruth.md) · [Español](es/rea-groundtruth.md) · [Français](fr/rea-groundtruth.md) · [Deutsch](de/rea-groundtruth.md) · [Português (Brasil)](pt-BR/rea-groundtruth.md) · [Русский](ru/rea-groundtruth.md) · [العربية](ar/rea-groundtruth.md) · [हिन्दी](hi/rea-groundtruth.md)
 
-## 想解决什么问题
+- **Author / attribution:** UnknownHacker1
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** MongoDB Compass 1.43.4 and handwritten Electron fixtures
 
-工具报告零个 IPC/窗口时，是程序真的没有，还是分析漏掉了？
+## The question
 
-## REA 具体做了什么
+Does a report of zero IPC calls or windows reflect the app or an analysis gap?
 
-使用 REA 6.4.0 分析源码已知的应用，再用不同 webpack 包装形式的最小样本做对照。
+## What REA did
 
-## 公开成果
+REA 6.4.0 analyzes an app with known source. Minimal examples with different webpack wrappers provide controls.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-作者公开一键复现：特定 webpack 形态的 Electron API 没被识别，并记录签名后 ASAR integrity mismatch 的处理方式。
+The author publishes a one-command reproduction of Electron APIs missed in a particular webpack form and records how a post-signing ASAR integrity mismatch was handled.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-报告针对 Windows 11 与 REA 6.4.0 的特定构建；后续版本可能修复。这里没有把历史发现表述为最新版本仍存在的 bug。
+The report concerns specific builds on Windows 11 and REA 6.4.0. Later versions may fix the issue; this catalog does not claim the historical bug persists in the latest version.
 
-## 可以借鉴什么
+## What to learn
 
-零发现不等于不存在；有源码的 fixtures 能验证分析器覆盖范围。
+Zero findings do not establish absence. Fixtures with known source can test analyzer coverage.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > Tested with rea-agents 6.4.0 on Windows 11 x64, Node 22.22.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/UnknownHacker1/rea-groundtruth/blob/5b48f366368c9fbe2abaaab810aba6814c27190b/README.md)
-- [项目 / 演示](https://github.com/UnknownHacker1/rea-groundtruth)
+- [Primary source / pinned evidence](https://github.com/UnknownHacker1/rea-groundtruth/blob/5b48f366368c9fbe2abaaab810aba6814c27190b/README.md)
+- [Project / demo](https://github.com/UnknownHacker1/rea-groundtruth)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

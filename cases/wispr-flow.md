@@ -1,44 +1,46 @@
-# Wispr Flow：拆解语音输入链路并做本地小原型
+# Wispr Flow: a speech-input teardown and a small local prototype
 
-[← 返回案例目录](../README.md) · 应用实践
+[← Back to all cases](../README.md) · Applications
 
-- **作者 / 来源归属：** az9713
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Wispr Flow 1.6.1102 的 Electron 包与原生 helper
+[English](wispr-flow.md) · [简体中文](zh-CN/wispr-flow.md) · [繁體中文](zh-TW/wispr-flow.md) · [日本語](ja/wispr-flow.md) · [한국어](ko/wispr-flow.md) · [Español](es/wispr-flow.md) · [Français](fr/wispr-flow.md) · [Deutsch](de/wispr-flow.md) · [Português (Brasil)](pt-BR/wispr-flow.md) · [Русский](ru/wispr-flow.md) · [العربية](ar/wispr-flow.md) · [हिन्दी](hi/wispr-flow.md)
 
-## 想解决什么问题
+- **Author / attribution:** az9713
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Wispr Flow 1.6.1102 Electron package and native helper
 
-录音、转写、上下文和粘贴是如何串起来的？
+## The question
 
-## REA 具体做了什么
+How are recording, transcription, context and pasting connected?
 
-结合 REA CLI 的 JavaScript 静态分析、直接阅读 bundles，以及 REA + Ghidra 对 helper 粘贴代码的调查；报告标记 proven / inferred / hidden。
+## What REA did
 
-## 公开成果
+The report combines REA CLI JavaScript static analysis, direct bundle reading and REA + Ghidra investigation of helper paste code. Claims are marked proven, inferred or hidden.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开拆解报告、Ghidra 补充调查、开发过程与本地 flowlite.py 原型。
+The author publishes a teardown, supplementary Ghidra investigation, development record and local flowlite.py prototype.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-最初两个 MCP 调用超时；部分结论来自其他工具和人工读代码；未运行原应用或捕获网络，服务端模型与行为仍不可见。原型跳过上下文、流式处理和完整验证。
+The first two MCP calls timed out. Some conclusions come from other tools or manual code reading. The original app was not run and network traffic was not captured, so server models and behavior remain hidden. The prototype omits context, streaming and complete validation.
 
-## 可以借鉴什么
+## What to learn
 
-完整记录失败和补充工具；客户端分析无法替代对服务端能力的了解。
+Record failures and supplementary tools. Client analysis cannot establish how a server-side model works.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > Wispr Flow, reverse engineered with REA
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md)
-- [项目 / 演示](https://github.com/az9713/wispr-flow-rea-teardown)
-- [补充来源 1](https://az9713.github.io/wispr-flow-rea-teardown/wispr-flow-teardown.html)
+- [Primary source / pinned evidence](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md)
+- [Project / demo](https://github.com/az9713/wispr-flow-rea-teardown)
+- [Additional source 1](https://az9713.github.io/wispr-flow-rea-teardown/wispr-flow-teardown.html)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

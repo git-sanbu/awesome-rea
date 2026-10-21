@@ -1,44 +1,46 @@
-# terminal-rs：研究 TradingView 交互后做行情终端
+# terminal-rs: a market terminal informed by TradingView interactions
 
-[← 返回案例目录](../README.md) · 应用实践
+[← Back to all cases](../README.md) · Applications
 
-- **作者 / 来源归属：** michaelshimeles
-- **核对日期：** 2026-10-21
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** TradingView 公开、未登录图表页面的行为
+[English](terminal-rs.md) · [简体中文](zh-CN/terminal-rs.md) · [繁體中文](zh-TW/terminal-rs.md) · [日本語](ja/terminal-rs.md) · [한국어](ko/terminal-rs.md) · [Español](es/terminal-rs.md) · [Français](fr/terminal-rs.md) · [Deutsch](de/terminal-rs.md) · [Português (Brasil)](pt-BR/terminal-rs.md) · [Русский](ru/terminal-rs.md) · [العربية](ar/terminal-rs.md) · [हिन्दी](hi/terminal-rs.md)
 
-## 想解决什么问题
+- **Author / attribution:** michaelshimeles
+- **Source review date:** 2026-10-21
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Behavior of public, logged-out TradingView chart pages
 
-如何把图表交互调查转化为独立 Rust 行情界面？
+## The question
 
-## REA 具体做了什么
+How can chart-interaction research inform an independent Rust market interface?
 
-作者使用 REA website mode 做公开页面的被动捕获，在 docs/analysis 记录发现、Evidence IDs 与设计含义。
+## What REA did
 
-## 公开成果
+The author uses REA website mode for passive capture of public pages. Findings, Evidence IDs and design implications are recorded in docs/analysis.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。 2026-10-21 复核：作者新增 151 个内置指标及参数、边界输入测试说明，并提供 macOS universal 发布脚本；这些是后续实现进展，不代表新做了 REA 分析。
+The project publishes Rust GPU charts, keyboard commands, panel layouts and data integration with a Bloomberg-style interface. Reviewed on 2026-10-21: 151 built-in indicators, parameter and boundary-input tests, and a macOS universal release script were added. These are later implementation changes, not a new REA investigation.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-仅研究网页可见行为，不是 TradingView/Bloomberg 源码恢复；数据源、限流和数据使用条款另有约束。
+Only web-visible behavior was studied; this is not recovery of TradingView or Bloomberg source code. Data sources, rate limits and data-use terms impose separate constraints.
 
-## 可以借鉴什么
+## What to learn
 
-公开网页行为观察也可以形成可追溯的设计输入，无需把它称为二进制反编译。
+Public web observations can provide traceable design input without being described as binary decompilation.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > tradingview.com with REA in website mode
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
-- [项目 / 演示](https://github.com/michaelshimeles/terminal-rs)
-- [补充来源 1](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
+- [Primary source / pinned evidence](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
+- [Project / demo](https://github.com/michaelshimeles/terminal-rs)
+- [Additional source 1](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

@@ -1,82 +1,108 @@
-# Awesome REA — Reverse Engineer Anything use cases & examples
+# Awesome REA — Reverse Engineer Anything
 
-![Awesome REA: real projects, original sources, honest limits](assets/cover.svg)
+![Awesome REA](assets/cover.svg)
 
-[中文完整目录](README.md) · **English** · [Search the case directory](https://awesome-rea-e7l.pages.dev/)
+**English** · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português (Brasil)](README.pt-BR.md) · [Русский](README.ru.md) · [العربية](README.ar.md) · [हिन्दी](README.hi.md)
 
-**Real-world REA use cases, examples, tutorials and AI-assisted reverse engineering case studies.**
+**Understand software with REA. What will you build?**
 
-An independent collection of public, source-backed uses of [morluto/rea](https://github.com/morluto/rea), the Reverse Engineer Anything MCP server and CLI.
+From legacy game ports to a small color picker, explore public projects using Reverse Engineer Anything. See what was built, how REA contributed, and what remains unverified.
 
-**34 cases: 5 official showcases and 29 community projects or author experiments. Latest update: 2026-10-21; each entry retains its own review date.** Each Chinese case note explains the target, REA's role, reported output, limitations and original sources. We reviewed the sources; we did not independently reproduce the projects or their tests.
+[Explore and star the collection on GitHub](https://github.com/git-sanbu/awesome-rea) · [Search software, purpose or keywords](https://awesome-rea-e7l.pages.dev/) · [Submit a case](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-Search by software or purpose: Ghostty, PowerToys, Electron, game porting, screen recording, Android, or Windows. The [online directory](https://awesome-rea-e7l.pages.dev/) includes category filters and links to all primary sources.
+**34 public cases** — 5 official showcases and 29 community projects or author experiments. Updated: 2026-10-21. Each case retains its own source-review date.
 
-## Latest update — 2026-10-21
+> Sources reviewed; author tests not independently rerun.
 
-This second refresh adds Co-op Anything (721 stars) and sparkDash (738 stars), with a dated popularity section. The earlier refresh added three cases: OpenBattlefield2's crosshair Evidence, GunZRs' packed-binary boundary and data-led reconstruction, and a V5VPN portal/tunnel client. Refreshed Sketch (formerly paper-rs), rec-rs release architecture, terminal-rs indicators and rea-lab's 339 REA-calling-run denominator. Earlier pinned sources remain linked; all results are author-reported and were not independently rerun. See [CHANGELOG.md](CHANGELOG.md).
+[CHANGELOG](CHANGELOG.md) · [Localization (English)](LOCALIZATION.md)
 
-## Popular projects — 2026-10-21 snapshot
+## Popular projects
 
-Source-reviewed catalog projects with at least 100 GitHub stars, sorted by stars. This is a dated attention snapshot, not a growth, quality or compatibility score. [Machine-readable source](data/popularity.json).
+Snapshot: 2026-10-21. Source-reviewed catalog projects with at least 100 GitHub Stars, sorted by stars. Stars indicate attention, not independent reproduction or production readiness. [Snapshot sources](data/popularity.json).
 
-| Project | Stars | Evidence |
+| Project / demo | GitHub Stars | Process and limitations |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [Case note](cases/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Case note](cases/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [Case note](cases/terminal-rs.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash: integrating REA analysis into a multi-device dashboard](cases/sparkdash-rea.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything: investigating campaign multiplayer entry points](cases/coop-anything.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs: a market terminal informed by TradingView interactions](cases/terminal-rs.md) |
 
-## Public cases
+## Official showcases
 
-| Project | Use | Case note and original source |
+| Project / demo | The question | Primary source |
 | --- | --- | --- |
-| dx-ball | Windows x86 sound-pan reconstruction | [Case note](cases/dx-ball.md) · [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/dx-ball-sound-pan.md) |
-| notion-clipboard | Electron rich-clipboard bridge | [Case note](cases/notion-clipboard.md) · [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/notion-clipboard.md) |
-| th04 | PC-98 DOS bullet-ring maths | [Case note](cases/th04.md) · [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/th04-bullet-ring.md) |
-| aegis-totp | Android TOTP calculation | [Case note](cases/aegis-totp.md) · [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/public/showcase/aegis/index.html) |
-| ductf-masked-squares | CTF flag-checker analysis and process verification | [Case note](cases/ductf-masked-squares.md) · [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/ctf-masked-squares.md) |
-| desktop-games-nostalgia | Legacy desktop toy port to macOS and browser | [Case note](cases/desktop-games-nostalgia.md) · [Primary source](https://github.com/ucodia/desktop-games-nostalgia/blob/27946dfe49d4a9b522dfe017c14eefbc0ca40b2a/README.md) |
-| ski-or-die | DOS minigame reconstructed in Rust/SDL2 | [Case note](cases/ski-or-die.md) · [Primary source](https://github.com/tuunanet/rea-ski-or-die-reconstruction/blob/0eac0671c90e21a16e663da7772b60710101ef7f/README.md) |
-| paper-rs | Sketch, formerly paper-rs: Paper-inspired native infinite canvas | [Case note](cases/paper-rs.md) · [Primary source](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
-| rec-rs | OBS-inspired macOS recorder | [Case note](cases/rec-rs.md) · [Primary source](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
-| terminal-rs | Public TradingView chart behaviour research | [Case note](cases/terminal-rs.md) · [Primary source](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
-| wispr-flow | Speech-to-text pipeline teardown and local prototype | [Case note](cases/wispr-flow.md) · [Primary source](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
-| hexgrab | PowerToys-inspired Windows color picker | [Case note](cases/hexgrab.md) · [Primary source](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
-| adamterm | Ghostty shell investigation and SwiftTerm terminal | [Case note](cases/adamterm.md) · [Primary source](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
-| ledger-reborn | QuickBooks workflow research and local ledger | [Case note](cases/ledger-reborn.md) · [Primary source](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
-| vsl-dsp | Vendor audio-library findings for DSP tooling | [Case note](cases/vsl-dsp.md) · [Primary source](https://github.com/grisuno/VSL-DSP/blob/e619f0877ffca3c183be37cdd9474f2d7e348ad5/README.md) |
-| vd-streamer-linux | Linux platform layer for VR desktop streaming | [Case note](cases/vd-streamer-linux.md) · [Primary source](https://github.com/cudanexus/vd-streamer-linux/blob/e65c302f13639f044742bdc4951ab1a424c1c929/README.md) |
-| netcat-analysis | Static analysis of a shipped netcat binary | [Case note](cases/netcat-analysis.md) · [Primary source](https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md) |
-| rea-on-rea | Provider-selection investigation with falsifiable predictions | [Case note](cases/rea-on-rea.md) · [Primary source](https://github.com/az9713/REA-demo/blob/d01fc8ac812abaddae85e86f7ff116cd8b9b52c3/README.md) |
-| rea-groundtruth | Known-source checks for Electron analysis blind spots | [Case note](cases/rea-groundtruth.md) · [Primary source](https://github.com/UnknownHacker1/rea-groundtruth/blob/5b48f366368c9fbe2abaaab810aba6814c27190b/README.md) |
-| rea-lab | Controlled Windows reverse-engineering studies | [Case note](cases/rea-lab.md) · [Primary source](https://github.com/pablodiazjorge/rea-lab/blob/db3e90f60700cf7ad3d4149ddcc95a9389a63a2b/README.md) |
-| rea-playbook | Small Electron evidence-to-reconstruction lab | [Case note](cases/rea-playbook.md) · [Primary source](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
-| disklens | WinDirStat binary investigation and a Rust/Tauri disk analyzer | [Case note](cases/disklens.md) · [Primary source](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
-| hyper3d-clone | Captured Hyper3D JavaScript analysis and an independent 3D prototype | [Case note](cases/hyper3d-clone.md) · [Primary source](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
-| watch-esim-helper | Pixel Watch companion APK research and an eSIM handoff helper | [Case note](cases/watch-esim-helper.md) · [Primary source](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
-| picoprint | LX-D02 printer interoperability with REA setup and Hermes analysis | [Case note](cases/picoprint.md) · [Primary source](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
-| bzip2-groundtruth | Stripped bzip2 function and call-graph checks against known ground truth | [Case note](cases/bzip2-groundtruth.md) · [Primary source](https://github.com/morluto/rea/discussions/2254) |
-| local-model-mcp | A 32K local model uses REA through a ten-tool MCP allowlist | [Case note](cases/local-model-mcp.md) · [Primary source](https://github.com/morluto/rea/discussions/3098) |
-| opensource-rea-lab | Pinned npm artifact audit and a bounded REA dispatcher analysis | [Case note](cases/opensource-rea-lab.md) · [Primary source](https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/analyses/rea-agents-6.4.0/README.md) |
-| reafuse | REA-backed behavior specs combine two JavaScript libraries into new tools | [Case note](cases/reafuse.md) · [Primary source](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
-| openbattlefield2 | Function-level REA Evidence for a Battlefield 2 crosshair and client engine | [Case note](cases/openbattlefield2.md) · [Primary source](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
-| gunzrs | REA packed-binary boundary checks and data-led Rust game reconstruction | [Case note](cases/gunzrs.md) · [Primary source](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
-| v5vpn-rea-client | V5VPN protocol research and a scoped Go portal/tunnel client | [Case note](cases/v5vpn-rea-client.md) · [Primary source](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
-| coop-anything | REA/Ghidra investigations of campaign multiplayer seams; unfinished co-op experiments | [Case note](cases/coop-anything.md) · [Primary source](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
-| sparkdash-rea | Implemented remote REA CLI jobs, paged Evidence results and dashboard integration | [Case note](cases/sparkdash-rea.md) · [Primary source](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [DX-Ball: reconstructing stereo sound panning](cases/dx-ball.md) | How does an on-screen position become a sound-pan value? | [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/dx-ball-sound-pan.md) |
+| [Notion: tracing the Electron rich-text clipboard bridge](cases/notion-clipboard.md) | How does a web editor write rich text through the desktop clipboard? | [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/notion-clipboard.md) |
+| [TH04: recovering PC-98 bullet-ring angles](cases/th04.md) | How are bullets evenly distributed around a ring and aimed toward the player? | [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/th04-bullet-ring.md) |
+| [Aegis: finding the Android TOTP algorithm](cases/aegis-totp.md) | How is a six-digit login code calculated every 30 seconds? | [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/public/showcase/aegis/index.html) |
+| [DownUnderCTF: recovering flag-checking equations](cases/ductf-masked-squares.md) | How can input validation be recovered without symbols or source code? | [Primary source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/ctf-masked-squares.md) |
 
-## Inclusion
+## Games
 
-A primary source must explicitly attribute some work to REA. AI-assisted rewrites without confirmed REA use, mirrors, news reposts and unimplemented proposals are excluded. Reported results, independent verification and limitations remain distinct. A project is counted once.
+| Project / demo | The question | Primary source |
+| --- | --- | --- |
+| [Desktop Games: porting a desktop toy to macOS and the browser](cases/desktop-games-nostalgia.md) | How can the Peter interpreter, program tree, interactions and assets be understood and ported? | [Primary source](https://github.com/ucodia/desktop-games-nostalgia/blob/27946dfe49d4a9b522dfe017c14eefbc0ca40b2a/README.md) |
+| [Ski or Die: rebuilding Snowball War in Rust](cases/ski-or-die.md) | How can throwing, collision, spawning and scoring rules be recovered from a DOS game? | [Primary source](https://github.com/tuunanet/rea-ski-or-die-reconstruction/blob/0eac0671c90e21a16e663da7772b60710101ef7f/README.md) |
+| [OpenBattlefield2: function-level Evidence for a Battlefield 2 client](cases/openbattlefield2.md) | How can crosshair, HUD and binary-behavior research inform a traceable engine implementation? | [Primary source](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
+| [GunZRs: identifying a packing boundary before rebuilding from game data](cases/gunzrs.md) | How can reconstruction continue when a packed executable prevents static recovery of game logic? | [Primary source](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
+| [Co-op Anything: investigating campaign multiplayer entry points](cases/coop-anything.md) | How can a campaign retain its scripts and sides while letting a second player join? | [Primary source](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
 
-[Submit a case](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml) or send a pull request using the [case template](templates/case.md). Submissions in Chinese or English are welcome. Preserve authorship, link to original evidence and describe what remains unknown.
+## Applications
 
-See [CONTRIBUTING.md](CONTRIBUTING.md), [SOURCES.md](SOURCES.md), and [data/cases.json](data/cases.json). Original catalog text is MIT-licensed; linked projects and quoted material retain their own rights.
+| Project / demo | The question | Primary source |
+| --- | --- | --- |
+| [Sketch (formerly paper-rs): a Paper-inspired Rust infinite canvas](cases/paper-rs.md) | How can canvas, layout and editor interactions inform an independent design tool? | [Primary source](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
+| [rec-rs: an OBS-inspired native macOS recorder](cases/rec-rs.md) | How can a focused screen, camera and audio recorder be built? | [Primary source](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
+| [terminal-rs: a market terminal informed by TradingView interactions](cases/terminal-rs.md) | How can chart-interaction research inform an independent Rust market interface? | [Primary source](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
+| [Wispr Flow: a speech-input teardown and a small local prototype](cases/wispr-flow.md) | How are recording, transcription, context and pasting connected? | [Primary source](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
+| [hexgrab: investigating the PowerToys color picker](cases/hexgrab.md) | How do global hotkeys, pixel sampling and the clipboard work together? | [Primary source](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
+| [AdamTerm: investigating Ghostty’s shell and building a terminal](cases/adamterm.md) | How are the terminal core, native windows, menus and services divided? | [Primary source](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
+| [Ledger Reborn: a local ledger informed by QuickBooks research](cases/ledger-reborn.md) | How can desktop accounting workflows inform an independent local app? | [Primary source](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
+| [DiskLens: checking disk-scanning and treemap algorithms in a released binary](cases/disklens.md) | How can disk scanning, treemaps and duplicate detection be checked before building a new interface? | [Primary source](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
+| [Hyper3D: from captured web bundles to an independent 3D prototype](cases/hyper3d-clone.md) | How can interface and API observations inform a prototype that exports 3D models? | [Primary source](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 
-## Frequently asked questions
+## Hardware and compatibility
 
-**What are REA, rea-agents and Reverse Engineer Anything?** This collection is specifically about [morluto/rea](https://github.com/morluto/rea), whose npm package is `rea-agents`. It provides CLI and MCP analysis tools for coding agents. Unrelated projects sharing the name REA are excluded.
+| Project / demo | The question | Primary source |
+| --- | --- | --- |
+| [VSL-DSP: applying vendor-library findings to audio DSP tools](cases/vsl-dsp.md) | How does the vendor controller discover devices, register parameters and represent gain? | [Primary source](https://github.com/grisuno/VSL-DSP/blob/e619f0877ffca3c183be37cdd9474f2d7e348ad5/README.md) |
+| [Virtual Desktop Streamer: a Linux port through a replacement platform layer](cases/vd-streamer-linux.md) | How can capture, encoding, audio and input move to Linux while retaining the protocol library? | [Primary source](https://github.com/cudanexus/vd-streamer-linux/blob/e65c302f13639f044742bdc4951ab1a424c1c929/README.md) |
+| [Pixel Watch: an eSIM handoff helper informed by companion-APK analysis](cases/watch-esim-helper.md) | How can a separate helper find and open the companion app’s existing watch-eSIM download flow? | [Primary source](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
+| [PicoPrint: connecting a mobile thermal printer to Windows printing](cases/picoprint.md) | When a driver connects but does not print, how can handshake differences be found? | [Primary source](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
+| [V5VPN: protocol research for a scoped portal and tunnel client](cases/v5vpn-rea-client.md) | How can authentication, resource discovery and connection research inform a scoped independent client? | [Primary source](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
 
-**Do all examples need Ghidra or IDA?** No. JavaScript/Electron static analysis and several package-metadata paths work without a native analysis engine. See each case and the official prerequisites.
+## Analysis and evaluation
 
-**Can I contribute someone else's project or a failed experiment?** Yes. Link to the original author's public report and explain REA's actual role, reported results and limitations. Chinese and English submissions are welcome. Star the repository if you want to find it again later.
+| Project / demo | The question | Primary source |
+| --- | --- | --- |
+| [OpenBSD netcat: static analysis of a shipped ELF](cases/netcat-analysis.md) | Which network, proxy and security-related implementations are in the shipped netcat binary? | [Primary source](https://github.com/NullLabTests/OpenBSD_netcat_REA/blob/cc1870d34e83bad0b8a6ca2489f6fa177efa6a2a/README.md) |
+| [REA on REA: investigating the tool and testing predictions](cases/rea-on-rea.md) | How does REA choose a native-analysis provider and detect an unavailable provider? | [Primary source](https://github.com/az9713/REA-demo/blob/d01fc8ac812abaddae85e86f7ff116cd8b9b52c3/README.md) |
+| [rea-groundtruth: checking analysis blind spots against known source](cases/rea-groundtruth.md) | Does a report of zero IPC calls or windows reflect the app or an analysis gap? | [Primary source](https://github.com/UnknownHacker1/rea-groundtruth/blob/5b48f366368c9fbe2abaaab810aba6814c27190b/README.md) |
+| [rea-lab: measuring REA’s contribution to Windows reverse engineering](cases/rea-lab.md) | How does adding REA affect an agent’s success rate, time and cost? | [Primary source](https://github.com/pablodiazjorge/rea-lab/blob/db3e90f60700cf7ad3d4149ddcc95a9389a63a2b/README.md) |
+| [bzip2: checking stripped-binary findings against a symbolized build](cases/bzip2-groundtruth.md) | How can a function be found from an output string and its call relationships checked? | [Primary source](https://github.com/morluto/rea/discussions/2254) |
+| [A local 27B model: a smaller MCP tool list enables function analysis](cases/local-model-mcp.md) | How can REA tool descriptions and analysis fit into a local model’s 32K context? | [Primary source](https://github.com/morluto/rea/discussions/3098) |
+| [Open-source REA Lab: pinning an npm artifact and analyzing its entry slice](cases/opensource-rea-lab.md) | How can a release artifact be identified before answering a bounded entry-file question? | [Primary source](https://github.com/martinlofranodeoliveira/opensource-rea-lab/blob/f1496d87bf196d637ba1a69d33a9fced7774f2df/analyses/rea-agents-6.4.0/README.md) |
+
+## Learning and reproduction
+
+| Project / demo | The question | Primary source |
+| --- | --- | --- |
+| [rea-playbook: turning Electron Evidence into a report and reconstruction](cases/rea-playbook.md) | How can large Evidence JSON become readable facts and a checked reconstruction? | [Primary source](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
+| [ReaFuse: combining two libraries after investigating their behavior](cases/reafuse.md) | How can two projects become behavior specifications and then a new combined tool? | [Primary source](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+
+## Tools and integrations
+
+| Project / demo | The question | Primary source |
+| --- | --- | --- |
+| [sparkDash: integrating REA analysis into a multi-device dashboard](cases/sparkdash-rea.md) | How can a web interface submit long-running remote REA jobs and load large results on demand? | [Primary source](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+
+## Which cases are included?
+
+A public primary source must explicitly show REA use, a concrete question, a process and output. Analysis, independent implementation and historical work are attributed separately. Failed experiments, evaluations and implemented REA integrations are welcome. Tool introductions, mirrors and unimplemented plans are excluded.
+
+[Contributing](CONTRIBUTING.md) · [REA FAQ (English)](ABOUT.md) · [Source records](SOURCES.md) · [Open case data](data/cases.json)
+
+[For installation and version requirements, see the REA upstream project.](https://github.com/morluto/rea)
+
+An independent community collection curated by Sanbu. Not affiliated with the REA upstream project.
+
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here. [MIT](LICENSE).

@@ -1,6 +1,14 @@
-# 更新记录
+# Changelog
 
 ## 2026-10-21
+
+### English-first multilingual release
+
+- English becomes the default repository README, case notes and website. The original Chinese text remains available in a complete Simplified Chinese edition.
+- Add complete editions in Traditional Chinese, Japanese, Korean, Spanish, French, German, Brazilian Portuguese, Russian, Arabic and Hindi: 34 cases and one index per language, 420 HTML pages in total. The catalog still contains 34 distinct projects.
+- Add native language navigation that keeps the current case and preserves index search/filter state. Arabic uses RTL layout. Each edition has localized metadata/schema, self-canonicals, reciprocal hreflang and English x-default; all canonical pages are in the sitemap.
+- English and original Simplified Chinese remain editorial. Other translations are labeled as machine translation or script conversion; quotations and source links remain unchanged. Builds reject stale or missing translations instead of silently falling back to English.
+- Document translation refresh, validation and provenance in LOCALIZATION.md. Preserve the existing English FAQ in ABOUT.md.
 
 ### 第二轮：热门项目
 

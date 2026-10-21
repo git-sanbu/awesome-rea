@@ -1,44 +1,46 @@
-# REA on REA：分析工具自身并检验预测
+# REA on REA: investigating the tool and testing predictions
 
-[← 返回案例目录](../README.md) · 分析与评测
+[← Back to all cases](../README.md) · Analysis and evaluation
 
-- **作者 / 来源归属：** az9713
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** 已安装的 rea-agents 6.3.0 包
+[English](rea-on-rea.md) · [简体中文](zh-CN/rea-on-rea.md) · [繁體中文](zh-TW/rea-on-rea.md) · [日本語](ja/rea-on-rea.md) · [한국어](ko/rea-on-rea.md) · [Español](es/rea-on-rea.md) · [Français](fr/rea-on-rea.md) · [Deutsch](de/rea-on-rea.md) · [Português (Brasil)](pt-BR/rea-on-rea.md) · [Русский](ru/rea-on-rea.md) · [العربية](ar/rea-on-rea.md) · [हिन्दी](hi/rea-on-rea.md)
 
-## 想解决什么问题
+- **Author / attribution:** az9713
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Installed rea-agents 6.3.0 package
 
-REA 如何选择原生分析 provider，又怎样判断 provider 不可用？
+## The question
 
-## REA 具体做了什么
+How does REA choose a native-analysis provider and detect an unavailable provider?
 
-REA 静态分析自身五个目录，代理先写可证伪预测，再运行 doctor，最后查看源码答案并自评。
+## What REA did
 
-## 公开成果
+REA statically analyzes five of its own directories. The agent writes falsifiable predictions, runs doctor, then reads the source answers and assesses its predictions.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开完整过程与测试回执；作者报告四个回答都只部分正确，八个 Ghidra 检查结果中预测错了三个。
+The author publishes the process and test receipts: all four answers were only partly correct, and three of eight predicted Ghidra-check outcomes were wrong.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-单次自评，且 doctor 测试不等同于 open_binary 测试；存在安装包与源码 checkpoint 差异。
+A single self-assessment; doctor tests are not open_binary tests. The installed package and source checkpoint also differ.
 
-## 可以借鉴什么
+## What to learn
 
-把听起来合理的解释转化为能验证的预测，并公开失败。
+Turn plausible explanations into testable predictions and publish failures.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > REA analyzed 5 folders of the installed rea-agents 6.3.0 package with analyze_javascript_application.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/az9713/REA-demo/blob/d01fc8ac812abaddae85e86f7ff116cd8b9b52c3/README.md)
-- [项目 / 演示](https://github.com/az9713/REA-demo)
-- [补充来源 1](https://az9713.github.io/REA-demo/rea-on-rea-receipt.html)
+- [Primary source / pinned evidence](https://github.com/az9713/REA-demo/blob/d01fc8ac812abaddae85e86f7ff116cd8b9b52c3/README.md)
+- [Project / demo](https://github.com/az9713/REA-demo)
+- [Additional source 1](https://az9713.github.io/REA-demo/rea-on-rea-receipt.html)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

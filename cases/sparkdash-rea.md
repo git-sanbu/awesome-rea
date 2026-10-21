@@ -1,47 +1,49 @@
-# sparkDash：把 REA 分析任务接入多设备仪表盘
+# sparkDash: integrating REA analysis into a multi-device dashboard
 
-[← 返回案例目录](../README.md) · 工具与集成
+[← Back to all cases](../README.md) · Tools and integrations
 
-- **作者 / 来源归属：** MiaAI-Lab
-- **核对日期：** 2026-10-21
-- **收录状态：** 已阅读公开来源；本仓库未独立复跑。
-- **分析目标：** Linux 远程设备上的 REA CLI、待分析文件，以及分析结果与 Evidence 视图
+[English](sparkdash-rea.md) · [简体中文](zh-CN/sparkdash-rea.md) · [繁體中文](zh-TW/sparkdash-rea.md) · [日本語](ja/sparkdash-rea.md) · [한국어](ko/sparkdash-rea.md) · [Español](es/sparkdash-rea.md) · [Français](fr/sparkdash-rea.md) · [Deutsch](de/sparkdash-rea.md) · [Português (Brasil)](pt-BR/sparkdash-rea.md) · [Русский](ru/sparkdash-rea.md) · [العربية](ar/sparkdash-rea.md) · [हिन्दी](hi/sparkdash-rea.md)
 
-## 想解决什么问题
+- **Author / attribution:** MiaAI-Lab
+- **Source review date:** 2026-10-21
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** REA CLI, input files and analysis/Evidence views on remote Linux devices
 
-怎样从网页提交远程 REA 任务，让长分析在断开浏览器后继续，并按需查看大结果？
+## The question
 
-## REA 具体做了什么
+How can a web interface submit long-running remote REA jobs and load large results on demand?
 
-项目实际通过 CLI 调用上游 REA，固定 rea-agents 6.4.0 及 lockfile。server/rea 实现后台任务、输入上传、运行状态、结果分页和导出；命令模块驱动 inspect-analysis-view 与 compare 等 REA 能力，仪表盘本身不实现反编译器。
+## What REA did
 
-## 公开成果
+The project actually calls upstream REA through its CLI, pinning rea-agents 6.4.0 and its lockfile. server/rea implements detached jobs, uploads, status, paged results and exports. Commands drive inspect-analysis-view and compare; the dashboard does not implement a decompiler.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开 Tools → REA 页面及服务端实现：远程分离运行、日志、摘要、limitations/unknowns、按需结果视图、JSON 导出与 Evidence 比较。源码同时公开版本固定、任务管理和上传测试；核对的是已实现的 REA 集成功能，没有把安装步骤本身当作分析成果。
+The public Tools → REA page and server implementation support detached remote execution, logs, summaries, limitations/unknowns, on-demand views, JSON exports and Evidence comparison. Version pinning, job-management and upload tests are public. Inclusion concerns implemented integration, not installation instructions alone.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-本条为工具集成案例，不是用 REA 重建 sparkDash，也不证明所有上游分析路径已通过实机验收。仅支持 Linux 设备，功能默认关闭，目标格式依赖额外 provider。所读 manager 测试使用 fake REA 和本地 shell，不能替代真实 Ghidra/远程设备验证；本仓库未安装、运行或复跑。
+This is an integration case, not a REA reconstruction of sparkDash or proof that every upstream analysis path passed hardware acceptance. Devices must run Linux, the feature is off by default and target formats need additional providers. Reviewed manager tests use fake REA and a local shell, which do not replace real Ghidra or remote-device tests. This catalog did not install or run it.
 
-## 可以借鉴什么
+## What to learn
 
-将上游能力和自己的调度界面分开归因，保留分析结果的证据、限制和失败状态，而不只显示任务成功。
+Attribute upstream capabilities separately from scheduling and UI work, preserving evidence, limitations and failures in the displayed results.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文定位摘录（排版简化，完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > sparkDash uses the CLI only
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md)
-- [项目入口](https://github.com/MiaAI-Lab/sparkDash)
-- [补充来源 1](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/commands.js)
-- [补充来源 2](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/ReaManager.js)
-- [补充来源 3](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/pinned/package.json)
-- [补充来源 4](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/__tests__/manager.test.js)
+- [Primary source / pinned evidence](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md)
+- [Project / demo](https://github.com/MiaAI-Lab/sparkDash)
+- [Additional source 1](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/commands.js)
+- [Additional source 2](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/ReaManager.js)
+- [Additional source 3](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/pinned/package.json)
+- [Additional source 4](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/__tests__/manager.test.js)
 
-本页为独立中文整理，署名与成果归原作者。没有分发目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

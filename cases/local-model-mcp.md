@@ -1,44 +1,46 @@
-# 本地 27B 模型：压缩 MCP 工具列表后完成函数调查
+# A local 27B model: a smaller MCP tool list enables function analysis
 
-[← 返回案例目录](../README.md) · 分析与评测
+[← Back to all cases](../README.md) · Analysis and evaluation
 
-- **作者 / 来源归属：** CassieFox23
-- **核对日期：** 2026-10-19
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** 自建 C token 检查程序；Qwen3.8-27B、llama.cpp、OpenCode 与 REA MCP
+[English](local-model-mcp.md) · [简体中文](zh-CN/local-model-mcp.md) · [繁體中文](zh-TW/local-model-mcp.md) · [日本語](ja/local-model-mcp.md) · [한국어](ko/local-model-mcp.md) · [Español](es/local-model-mcp.md) · [Français](fr/local-model-mcp.md) · [Deutsch](de/local-model-mcp.md) · [Português (Brasil)](pt-BR/local-model-mcp.md) · [Русский](ru/local-model-mcp.md) · [العربية](ar/local-model-mcp.md) · [हिन्दी](hi/local-model-mcp.md)
 
-## 想解决什么问题
+- **Author / attribution:** CassieFox23
+- **Source review date:** 2026-10-19
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Self-built C token checker; Qwen3.8-27B, llama.cpp, OpenCode and REA MCP
 
-本地模型只有 32K 上下文时，怎样让 REA 的工具描述与实际调查一起装得下？
+## The question
 
-## REA 具体做了什么
+How can REA tool descriptions and analysis fit into a local model’s 32K context?
 
-作者使用 PR #3026 的 d993ffeb1 版本和 Ghidra 12.1.4，通过工具族与 OpenCode 客户端 allowlist 仅暴露 10 个 REA 工具；模型打开目标、查找函数、反编译并关闭会话。
+## What REA did
 
-## 公开成果
+The author uses PR #3026 commit d993ffeb1 and Ghidra 12.1.4. Tool families and an OpenCode allowlist expose only 10 REA tools; the model opens the target, locates and decompiles the function, then closes the session.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-作者报告完整 206 工具提示超出上下文；62 工具配置在读提示后遭遇 GPU reset；10 工具配置提示为 4,407 tokens，三次均找到目标字符串并解释检查逻辑，每次约 80 秒。
+The author reports that all 206 tool descriptions exceeded context. A 62-tool setup hit a GPU reset after reading the prompt. The 10-tool prompt used 4,407 tokens; three runs found the target string and explained the checker, each taking about 80 seconds.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-三次使用同一个极小程序与提示，不是三个独立任务；未比较其他模型或客户端。实验运行在当时的 PR 提交，不能把历史工具数量、开关或时间当成当前发行版保证。
+The three runs repeat one tiny program and prompt, not three independent tasks. No other model or client was compared. Results use a historical PR commit; tool counts, switches and timings are not guarantees for the current release.
 
-## 可以借鉴什么
+## What to learn
 
-先测工具 schema 的上下文占用，再做最小工具集合实验；同一任务重复成功不能代表普遍能力。
+Measure schema context cost before testing a minimal tool set. Repetition on one task does not establish general capability.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > With the full tool list, nothing fits.
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 核对时可编辑的讨论原帖](https://github.com/morluto/rea/discussions/3098)
-- [项目 / 演示](https://github.com/morluto/rea/discussions/3098)
-- [补充来源 1](https://github.com/morluto/rea/pull/3026)
+- [Public discussion / editable at review time](https://github.com/morluto/rea/discussions/3098)
+- [Project / demo](https://github.com/morluto/rea/discussions/3098)
+- [Additional source 1](https://github.com/morluto/rea/pull/3026)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

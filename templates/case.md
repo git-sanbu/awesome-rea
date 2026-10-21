@@ -1,39 +1,39 @@
-# 案例名称：一句话说明做了什么
+# Case name: one sentence about the work
 
-[← 返回案例目录](../README.md)
+Use this as a drafting aid. Add the final structured entry to `data/cases.json` and its translations; the build generates the published Markdown. See [CONTRIBUTING.md](../CONTRIBUTING.md) and [LOCALIZATION.md](../LOCALIZATION.md).
 
-- **作者：** 原作者与主页
-- **核对日期：** YYYY-MM-DD
-- **收录状态：** 已阅读公开来源；未独立复跑
-- **REA / 工具版本：** 原文未说明时写未知
-- **分析目标：** 软件、平台、样本或版本
+- **Author:** original author and profile
+- **Review date:** YYYY-MM-DD
+- **Status:** primary sources reviewed; not independently reproduced
+- **REA / tool version:** unknown if not stated
+- **Target:** software, platform, sample and version
 
-## 想解决什么问题
+## The question
 
-具体问题，以及为什么要调查它。
+A concrete question and why it needed investigation.
 
-## REA 具体做了什么
+## What REA did
 
-操作、证据、其他工具，以及人工补充分别说明。不要把整个项目都归功于 REA。
+Distinguish REA operations and evidence from other tools and manual work. Do not attribute the whole project to one tool.
 
-## 公开成果
+## Author-reported results
 
-原作者报告的代码、演示、测试、规格或调查结果。带数值的结论注明范围和原始出处。
+Public code, demos, tests, specifications or findings. Explain the scope and primary source of every metric.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-失败、近似、缺失功能、版本限制、静态分析与运行验证的差异。
+Failures, approximations, missing functionality, version restrictions, and the difference between static findings and runtime verification.
 
-## 可以借鉴什么
+## What to learn
 
-对读者有用的一条具体方法。
+One concrete method readers can reuse.
 
-## REA 使用证据
+## REA usage evidence
 
-> 从原文摘录一小段明确提到 REA 实际使用情况的文字。
+> A short quotation from the original author explicitly documenting actual REA use. Preserve the original language.
 
-## 原始来源
+## Original sources
 
-- 原作者文章 / README，尽量固定到提交
-- 项目 / 演示入口
-- 测试 / 证据 / 过程记录
+- Original author report / README, preferably pinned to a full commit SHA
+- Project / demo
+- Tests / Evidence / investigation records

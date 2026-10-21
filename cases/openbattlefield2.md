@@ -1,46 +1,48 @@
-# OpenBattlefield2：用函数级 Evidence 重建战地 2 客户端
+# OpenBattlefield2: function-level Evidence for a Battlefield 2 client
 
-[← 返回案例目录](../README.md) · 游戏实践
+[← Back to all cases](../README.md) · Games
 
-- **作者 / 来源归属：** Moxnatiy
-- **核对日期：** 2026-10-21
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Battlefield 2 1.5 的 Refractor 2 客户端、渲染 DLL 与原版数据
+[English](openbattlefield2.md) · [简体中文](zh-CN/openbattlefield2.md) · [繁體中文](zh-TW/openbattlefield2.md) · [日本語](ja/openbattlefield2.md) · [한국어](ko/openbattlefield2.md) · [Español](es/openbattlefield2.md) · [Français](fr/openbattlefield2.md) · [Deutsch](de/openbattlefield2.md) · [Português (Brasil)](pt-BR/openbattlefield2.md) · [Русский](ru/openbattlefield2.md) · [العربية](ar/openbattlefield2.md) · [हिन्दी](hi/openbattlefield2.md)
 
-## 想解决什么问题
+- **Author / attribution:** Moxnatiy
+- **Source review date:** 2026-10-21
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Battlefield 2 1.5 Refractor 2 client, rendering DLLs and original game data
 
-怎样把准星、HUD 与客户端行为的二进制调查，转成可追溯的引擎实现？
+## The question
 
-## REA 具体做了什么
+How can crosshair, HUD and binary-behavior research inform a traceable engine implementation?
 
-使用 REA 4.1.0 + Ghidra 12.1.4 读取 32 位 PE，先获取函数完整 Evidence dossier，再用直接 Ghidra 查询、游戏数据及服务器符号补充。准星笔记记录 GuiIndex、位置和偏移累加函数的地址及 REA Evidence IDs；REA 只承担其中的分析环节。
+## What REA did
 
-## 公开成果
+REA 4.1.0 and Ghidra 12.1.4 read 32-bit PE files and collect full function Evidence dossiers. Direct Ghidra queries, game data and server symbols supplement this. Crosshair notes include GuiIndex, position and offset-accumulation addresses and REA Evidence IDs; REA handles only the analysis stage.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开 C++20 引擎、函数笔记、测试与截图；作者报告可读取自有 BF2 1.5 安装、连接原版专用服务器并显示士兵和 HUD。准星已在连接模式绘出并随移动扩散、停止后收拢，附 test_weapon_hud 等检查。
+The project publishes a C++20 engine, function notes, tests and screenshots. The author reports loading an owned BF2 1.5 installation, connecting to an original dedicated server and displaying soldiers and HUD. In connected mode the crosshair renders, expands during movement and contracts when stopped, with checks such as test_weapon_hud.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-研究项目尚缺开火、车辆驾驶、声音等功能；准星的切枪、缩放和开火更新仍有待完成，hosted 模式没有准星。主要平台为 macOS arm64，Windows 构建未实际运行验证。多工具协作的整体成果不能全部归于 REA；本仓库未复跑。
+The research project still lacks firing, vehicle driving and sound. Crosshair weapon-switch, zoom and firing updates remain unfinished; hosted mode has no crosshair. The main platform is macOS arm64, and the Windows build was not run. Results involve multiple tools and cannot all be attributed to REA. This catalog did not rerun it.
 
-## 可以借鉴什么
+## What to learn
 
-从一个具体可观察功能出发，把地址、Evidence、实现与验收命令放在同一条证据链上。
+Connect addresses, Evidence, implementation and acceptance commands for one observable feature.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > Addresses are BF2.exe unless named otherwise; the evidence IDs are REA’s
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md)
-- [项目 / 演示](https://github.com/Moxnatiy/OpenBattlefield2)
-- [补充来源 1](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/README.md)
-- [补充来源 2](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/CLAUDE.md)
-- [补充来源 3](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/tools/rea.sh)
+- [Primary source / pinned evidence](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md)
+- [Project / demo](https://github.com/Moxnatiy/OpenBattlefield2)
+- [Additional source 1](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/README.md)
+- [Additional source 2](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/CLAUDE.md)
+- [Additional source 3](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/tools/rea.sh)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->

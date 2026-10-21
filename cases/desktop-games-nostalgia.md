@@ -1,44 +1,46 @@
-# Desktop Games：把砸桌面小游戏移植到 macOS 和浏览器
+# Desktop Games: porting a desktop toy to macOS and the browser
 
-[← 返回案例目录](../README.md) · 游戏实践
+[← Back to all cases](../README.md) · Games
 
-- **作者 / 来源归属：** ucodia
-- **核对日期：** 2026-10-16
-- **收录状态：** 已阅读公开来源，确认原文明确使用 REA；本仓库未独立复跑。
-- **分析目标：** Gemtree 2000 年 Desktop Games / Stress Reducers 的 Windows 程序
+[English](desktop-games-nostalgia.md) · [简体中文](zh-CN/desktop-games-nostalgia.md) · [繁體中文](zh-TW/desktop-games-nostalgia.md) · [日本語](ja/desktop-games-nostalgia.md) · [한국어](ko/desktop-games-nostalgia.md) · [Español](es/desktop-games-nostalgia.md) · [Français](fr/desktop-games-nostalgia.md) · [Deutsch](de/desktop-games-nostalgia.md) · [Português (Brasil)](pt-BR/desktop-games-nostalgia.md) · [Русский](ru/desktop-games-nostalgia.md) · [العربية](ar/desktop-games-nostalgia.md) · [हिन्दी](hi/desktop-games-nostalgia.md)
 
-## 想解决什么问题
+- **Author / attribution:** ucodia
+- **Source review date:** 2026-10-16
+- **Review status:** Sources reviewed; author tests not independently rerun.
+- **Target:** Gemtree’s 2000 Desktop Games / Stress Reducers Windows program
 
-怎样理解 Peter 解释器和程序树，并移植交互与资源？
+## The question
 
-## REA 具体做了什么
+How can the Peter interpreter, program tree, interactions and assets be understood and ported?
 
-作者使用 Claude Code、REA 与 Ghidra；REA 用于解释器中图像压缩、资源布局、计时、精灵运动、声音与坐标规则的调查；配套 Python 工具处理程序树和资源。
+## What REA did
 
-## 公开成果
+The author uses Claude Code, REA and Ghidra. REA investigates image compression, resource layout, timing, sprite movement, sound and coordinates in the interpreter; Python tools process the program tree and assets.
 
-以下是来源作者报告的成果：
+## Author-reported results
 
-公开仓库包含 Swift macOS 版、浏览器版、反编译程序树及资源处理脚本。
+The public repository includes a Swift macOS version, browser version, decompiled program tree and asset-processing scripts.
 
-## 局限与未验证项
+## Limitations and unverified claims
 
-作者注明使用真彩色而非原调色板，并调整了阴影实现；案例收录不表示本仓库验证了完整兼容性或第三方素材的再分发权。
+The author uses true color instead of the original palette and changes shadow rendering. Inclusion does not verify complete compatibility or redistribution rights for third-party assets.
 
-## 可以借鉴什么
+## What to learn
 
-遇到嵌入解释器的程序，要区分解释器、程序树和资源三个层次。
+For software with an embedded interpreter, distinguish the interpreter, program tree and assets.
 
-## REA 使用证据
+## REA usage evidence in the source
 
-原文中的定位摘录（Markdown 排版已简化；完整上下文以链接为准）：
+Excerpt formatting is simplified. Read the original source for full context.
 
 > The interpreter was decompiled with REA
 
-## 原始来源
+## Original sources
 
-- [公开原文 / 固定版本证据](https://github.com/ucodia/desktop-games-nostalgia/blob/27946dfe49d4a9b522dfe017c14eefbc0ca40b2a/README.md)
-- [项目 / 演示](https://github.com/ucodia/desktop-games-nostalgia)
-- [补充来源 1](https://ucodia.github.io/desktop-games-nostalgia/)
+- [Primary source / pinned evidence](https://github.com/ucodia/desktop-games-nostalgia/blob/27946dfe49d4a9b522dfe017c14eefbc0ca40b2a/README.md)
+- [Project / demo](https://github.com/ucodia/desktop-games-nostalgia)
+- [Additional source 1](https://ucodia.github.io/desktop-games-nostalgia/)
 
-本页为独立中文整理，署名与成果归原作者。没有重新发布目标软件、安装包或完整反编译输出。
+Independent editorial summary. Credit belongs to the original authors. Target software, installers and complete decompiler output are not redistributed here.
+
+<!-- Generated from catalog data; edit the data files to update this note. -->
