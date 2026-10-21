@@ -8,13 +8,23 @@
 
 An independent collection of public, source-backed uses of [morluto/rea](https://github.com/morluto/rea), the Reverse Engineer Anything MCP server and CLI.
 
-**32 cases: 5 official showcases and 27 community projects or author experiments. Latest update: 2026-10-21; each entry retains its own review date.** Each Chinese case note explains the target, REA's role, reported output, limitations and original sources. We reviewed the sources; we did not independently reproduce the projects or their tests.
+**34 cases: 5 official showcases and 29 community projects or author experiments. Latest update: 2026-10-21; each entry retains its own review date.** Each Chinese case note explains the target, REA's role, reported output, limitations and original sources. We reviewed the sources; we did not independently reproduce the projects or their tests.
 
 Search by software or purpose: Ghostty, PowerToys, Electron, game porting, screen recording, Android, or Windows. The [online directory](https://awesome-rea-e7l.pages.dev/) includes category filters and links to all primary sources.
 
 ## Latest update — 2026-10-21
 
-Three new cases: OpenBattlefield2's crosshair Evidence, GunZRs' packed-binary boundary and data-led reconstruction, and a V5VPN portal/tunnel client. Refreshed Sketch (formerly paper-rs), rec-rs release architecture, terminal-rs indicators and rea-lab's 339 REA-calling-run denominator. Earlier pinned sources remain linked; all results are author-reported and were not independently rerun. See [CHANGELOG.md](CHANGELOG.md).
+This second refresh adds Co-op Anything (721 stars) and sparkDash (738 stars), with a dated popularity section. The earlier refresh added three cases: OpenBattlefield2's crosshair Evidence, GunZRs' packed-binary boundary and data-led reconstruction, and a V5VPN portal/tunnel client. Refreshed Sketch (formerly paper-rs), rec-rs release architecture, terminal-rs indicators and rea-lab's 339 REA-calling-run denominator. Earlier pinned sources remain linked; all results are author-reported and were not independently rerun. See [CHANGELOG.md](CHANGELOG.md).
+
+## Popular projects — 2026-10-21 snapshot
+
+Source-reviewed catalog projects with at least 100 GitHub stars, sorted by stars. This is a dated attention snapshot, not a growth, quality or compatibility score. [Machine-readable source](data/popularity.json).
+
+| Project | Stars | Evidence |
+| --- | ---: | --- |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [Case note](cases/sparkdash-rea.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Case note](cases/coop-anything.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [Case note](cases/terminal-rs.md) |
 
 ## Public cases
 
@@ -52,6 +62,8 @@ Three new cases: OpenBattlefield2's crosshair Evidence, GunZRs' packed-binary bo
 | openbattlefield2 | Function-level REA Evidence for a Battlefield 2 crosshair and client engine | [Case note](cases/openbattlefield2.md) · [Primary source](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | gunzrs | REA packed-binary boundary checks and data-led Rust game reconstruction | [Case note](cases/gunzrs.md) · [Primary source](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | v5vpn-rea-client | V5VPN protocol research and a scoped Go portal/tunnel client | [Case note](cases/v5vpn-rea-client.md) · [Primary source](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
+| coop-anything | REA/Ghidra investigations of campaign multiplayer seams; unfinished co-op experiments | [Case note](cases/coop-anything.md) · [Primary source](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| sparkdash-rea | Implemented remote REA CLI jobs, paged Evidence results and dashboard integration | [Case note](cases/sparkdash-rea.md) · [Primary source](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
 
 ## Inclusion
 

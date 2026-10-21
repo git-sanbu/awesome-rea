@@ -632,6 +632,50 @@
         "https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/internal/protocol/auth_test.go",
         "https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/internal/protocol/tunnel_test.go"
       ]
+    },
+    {
+      "id": "coop-anything",
+      "title": "Co-op Anything：用 REA 调查单机战役的联机接入点",
+      "category": "游戏实践",
+      "author": "cranebeaker 与社区贡献者",
+      "target": "C&C3 Tiberium Wars / Kane’s Wrath 的 Steam 构建，以及 World in Conflict 的客户端与专用服务器",
+      "question": "单机战役怎样保留任务脚本和阵营，再允许第二位玩家加入？",
+      "rea_role": "公开 C&C3 笔记明确记录 REA/Ghidra 12.1.4 对 TW 1.10 可执行文件的观察，定位准备多人/遭遇战时移除战役阵营的函数。World in Conflict 笔记记录 Ghidra 经 REA 分析专用服务器的角色选择函数，区分单人角色限制、服务器状态与待验证推断。其他脚本、调试器和运行测试单独承担后续工作。",
+      "reported_result": "公开 MCP/技能、同步测试工具和具体游戏调查笔记。C&C3 笔记给出函数地址、数据格式及实验记录；World in Conflict 作者报告局域网战役主机可运行任务，第二客户端能加入并看到实时同步的单位，但仍不能控制自己的单位。整个项目有多个游戏条目，各自保留 QA 级别。",
+      "limitations": "仅把已阅读的 C&C3 与 World in Conflict 调查归于 REA，不把目录内所有模组都说成 REA 成果。World in Conflict 的第二玩家控制、部署区、视野和互联网联机仍未完成，相关记录仅验证 LAN；C&C3 也有战役失败与上下文未解决问题。星标反映关注度，不证明战役可通关；本仓库未运行游戏或复跑测试。",
+      "takeaway": "从引擎的具体状态分支建立实验，把“第二客户端连上”“看到同步”和“真正能协作通关”分别验收。",
+      "rea_evidence_excerpt": "Engine seams (observed in the TW 1.10 exe with REA/Ghidra 12.1.4)",
+      "project_url": "https://github.com/cranebeaker/coop-anything",
+      "source_url": "https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md",
+      "checked_on": "2026-10-21",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/README.md",
+        "https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/world-in-conflict/NOTES.md"
+      ]
+    },
+    {
+      "id": "sparkdash-rea",
+      "title": "sparkDash：把 REA 分析任务接入多设备仪表盘",
+      "category": "工具与集成",
+      "author": "MiaAI-Lab",
+      "target": "Linux 远程设备上的 REA CLI、待分析文件，以及分析结果与 Evidence 视图",
+      "question": "怎样从网页提交远程 REA 任务，让长分析在断开浏览器后继续，并按需查看大结果？",
+      "rea_role": "项目实际通过 CLI 调用上游 REA，固定 rea-agents 6.4.0 及 lockfile。server/rea 实现后台任务、输入上传、运行状态、结果分页和导出；命令模块驱动 inspect-analysis-view 与 compare 等 REA 能力，仪表盘本身不实现反编译器。",
+      "reported_result": "公开 Tools → REA 页面及服务端实现：远程分离运行、日志、摘要、limitations/unknowns、按需结果视图、JSON 导出与 Evidence 比较。源码同时公开版本固定、任务管理和上传测试；核对的是已实现的 REA 集成功能，没有把安装步骤本身当作分析成果。",
+      "limitations": "本条为工具集成案例，不是用 REA 重建 sparkDash，也不证明所有上游分析路径已通过实机验收。仅支持 Linux 设备，功能默认关闭，目标格式依赖额外 provider。所读 manager 测试使用 fake REA 和本地 shell，不能替代真实 Ghidra/远程设备验证；本仓库未安装、运行或复跑。",
+      "takeaway": "将上游能力和自己的调度界面分开归因，保留分析结果的证据、限制和失败状态，而不只显示任务成功。",
+      "rea_evidence_excerpt": "sparkDash uses the CLI only",
+      "project_url": "https://github.com/MiaAI-Lab/sparkDash",
+      "source_url": "https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md",
+      "checked_on": "2026-10-21",
+      "review_status": "source-reviewed-not-reproduced",
+      "additional_sources": [
+        "https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/commands.js",
+        "https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/ReaManager.js",
+        "https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/pinned/package.json",
+        "https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/__tests__/manager.test.js"
+      ]
     }
   ]
 }

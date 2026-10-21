@@ -8,7 +8,7 @@
 
 **中文** · [English](README.en.md) · [在线搜索案例](https://awesome-rea-e7l.pages.dev/) · [投稿案例](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml) · [收录标准](CONTRIBUTING.md)
 
-这是独立社区案例集。现有 **32 个案例**均附公开原始来源，其中 5 个来自官方 Showcase，27 个来自社区项目与作者实验。最近更新：**2026-10-21**；各条目保留独立核对日期。
+这是独立社区案例集。现有 **34 个案例**均附公开原始来源，其中 5 个来自官方 Showcase，29 个来自社区项目与作者实验。最近更新：**2026-10-21**；各条目保留独立核对日期。
 
 > 这里的“已收录”表示已阅读来源并找到明确的 REA 使用说明。成果和测试数字按原作者报告转述，本仓库未独立复跑，不代表完整兼容或生产可用。
 
@@ -16,9 +16,20 @@
 
 ## 最近更新 · 2026-10-21
 
-- 新增 **3 个案例**：[OpenBattlefield2](cases/openbattlefield2.md) 准星 Evidence 与客户端重建、[GunZRs](cases/gunzrs.md) 加壳边界调查、[V5VPN](cases/v5vpn-rea-client.md) 门户与隧道兼容实现。
+- 本日第二轮新增 **2 个热门项目**：Co-op Anything（721 Stars）的游戏调查，sparkDash（738 Stars）的实际 CLI 集成；增加带日期的热门项目入口。
+- 第一轮新增 **3 个案例**：[OpenBattlefield2](cases/openbattlefield2.md) 准星 Evidence 与客户端重建、[GunZRs](cases/gunzrs.md) 加壳边界调查、[V5VPN](cases/v5vpn-rea-client.md) 门户与隧道兼容实现。
 - 更新 Sketch（原 paper-rs）名称、rec-rs 的 Intel 发布范围、terminal-rs 的指标实现进展，以及 rea-lab 的 339 次 REA 调用运行口径；保留原有固定来源。
 - 复查已有 22 个 GitHub 社区项目的 HEAD，7 项与收录版本不同；仅对已复核并影响摘要的 4 项刷新核对日期。详见 [更新记录](CHANGELOG.md) 与 [来源记录](SOURCES.md)。
+
+## 热门项目 · 2026-10-21 快照
+
+按 GitHub Stars 展示本目录已核对、达到 **100 Stars** 的项目。只用于比较当前关注度，不表示增长速度、实现质量或生产可用。数字来自 [GitHub API 快照](data/popularity.json)，不会自动实时刷新。
+
+| 项目 | Stars | REA 的具体用途 |
+| --- | ---: | --- |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | 项目实际通过 CLI 调用上游 REA，固定 rea-agents 6.4.0 及 lockfile。 [详情](cases/sparkdash-rea.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | 公开 C&C3 笔记明确记录 REA/Ghidra 12.1.4 对 TW 1.10 可执行文件的观察，定位准备多人/遭遇战时移除战役阵营的函数。 [详情](cases/coop-anything.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | 作者使用 REA website mode 做公开页面的被动捕获，在 docs/analysis 记录发现、Evidence IDs 与设计含义。 [详情](cases/terminal-rs.md) |
 
 ## 从你的目的开始
 
@@ -51,6 +62,7 @@
 | [Ski or Die：用 Rust 重建 Snowball War](cases/ski-or-die.md) | 怎样从旧 DOS 程序恢复投掷、碰撞、刷怪与计分规则？ | 作者公开了 Rust + SDL2 可玩重建、行为规格、逆向笔记与资产提取工具。 |
 | [OpenBattlefield2：用函数级 Evidence 重建战地 2 客户端](cases/openbattlefield2.md) | 怎样把准星、HUD 与客户端行为的二进制调查，转成可追溯的引擎实现？ | 公开 C++20 引擎、函数笔记、测试与截图；作者报告可读取自有 BF2 1.5 安装、连接原版专用服务器并显示士兵和 HUD。准星已在连接模式绘出并随移动扩散、停止后收拢，附 test_weapon_hud 等检查。 |
 | [GunZRs：先确认加壳边界，再从游戏数据重建](cases/gunzrs.md) | 原生主程序被加壳、游戏逻辑不能静态读取时，怎样界定调查范围并继续重建？ | 公开 Rust + Bevy 重建、数据格式笔记、查询脚本与测试说明；作者报告 Linux 上可玩，支持读取自有安装、地图、动作、机器人、浏览器版本和 LAN。框架记录生成 ELF/PE 的函数分析及 snapshot replay 通过；这些 fixture 检查与游戏兼容性分别记录。 |
+| [Co-op Anything：用 REA 调查单机战役的联机接入点](cases/coop-anything.md) | 单机战役怎样保留任务脚本和阵营，再允许第二位玩家加入？ | 公开 MCP/技能、同步测试工具和具体游戏调查笔记。C&C3 笔记给出函数地址、数据格式及实验记录；World in Conflict 作者报告局域网战役主机可运行任务，第二客户端能加入并看到实时同步的单位，但仍不能控制自己的单位。整个项目有多个游戏条目，各自保留 QA 级别。 |
 
 ### 应用实践
 
@@ -94,6 +106,12 @@
 | --- | --- | --- |
 | [rea-playbook：把 Electron Evidence 变成可读报告与重建](cases/rea-playbook.md) | 拿到巨大 Evidence JSON 后，怎样提取可读事实并验证重建？ | 公开脱敏 Evidence fixture、file:line 报告、recreate 与断言；作者报告 10/10 重建检查通过。 |
 | [ReaFuse：分析两个开源库的行为后组合新工具](cases/reafuse.md) | 怎样把两个项目的行为整理成规格，再实现一个同时利用两者的新工具？ | 公开 ratewise（传输速率与 ETA）和 objdelta（结构 diff/patch）源码、报告与 Evidence；作者分别报告 18/18 和 17/17 契约测试通过，并记录自己的 7/7、6/6 测试。两个示例合并为一个项目案例。 |
+
+### 工具与集成
+
+| 案例 | 用 REA 干什么 | 成果与状态 |
+| --- | --- | --- |
+| [sparkDash：把 REA 分析任务接入多设备仪表盘](cases/sparkdash-rea.md) | 怎样从网页提交远程 REA 任务，让长分析在断开浏览器后继续，并按需查看大结果？ | 公开 Tools → REA 页面及服务端实现：远程分离运行、日志、摘要、limitations/unknowns、按需结果视图、JSON 导出与 Evidence 比较。源码同时公开版本固定、任务管理和上传测试；核对的是已实现的 REA 集成功能，没有把安装步骤本身当作分析成果。 |
 
 ## 我们怎样收录
 

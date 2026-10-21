@@ -2,6 +2,16 @@
 
 ## 2026-10-21
 
+### 第二轮：热门项目
+
+- 新增 Co-op Anything（721 Stars）与 sparkDash（738 Stars），案例由 32 增至 34；当前合计 5 个官方案例、29 个社区项目或作者实验。
+- Co-op Anything 固定 C&C3 与 World in Conflict 的具体调查笔记，只归因已明确记录的 REA/Ghidra 工作；保留第二玩家控制、战役与网络验收限制。
+- sparkDash 单列“工具与集成”：核对真实 CLI 调用代码、任务与结果界面，说明其 fake REA 测试不能代替远程设备实测。
+- 新增 GitHub Stars 日期快照、README 中英文热门入口及在线热门项目区；仅展示已收录项目中达到 100 Stars 的条目，不代表完整 GitHub 排名或质量评估。
+- BaoCut 原作者归因链接与博客本轮访问返回 403，未以第三方转述替代核实；pkg-unpacker 仅发现 REA 对接用法说明，暂未作为已完成 REA 分析案例加入。详细记录见 research/2026-10-21-popular.md。
+
+### 第一轮：案例与已有项目更新
+
 - 案例由 29 增至 32：新增 OpenBattlefield2、GunZRs、V5VPN，合计 5 项官方 Showcase、27 项社区项目或作者实验。
 - OpenBattlefield2：以公开准星笔记的地址和 REA Evidence IDs 为使用证据；说明 REA、直接 Ghidra、游戏数据与服务器符号各自的作用，以及未实现的战斗功能。
 - GunZRs：只将 REA 原生文件调查、加壳结论与框架检查归于 REA；格式恢复与游戏实现主要来自数据分析，保留推断、平台和未公开原始 Evidence 的限制。

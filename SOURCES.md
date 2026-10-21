@@ -54,6 +54,12 @@
 | [openbattlefield2](cases/openbattlefield2.md) | 作者项目 / 调查记录 | [原文](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) | 2026-10-21 |
 | [gunzrs](cases/gunzrs.md) | 作者项目 / 调查记录 | [原文](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) | 2026-10-21 |
 | [v5vpn-rea-client](cases/v5vpn-rea-client.md) | 作者项目 / 调查记录 | [原文](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) | 2026-10-21 |
+| [coop-anything](cases/coop-anything.md) | 作者项目 / 具体游戏调查笔记 | [原文](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) | 2026-10-21 |
+| [sparkdash-rea](cases/sparkdash-rea.md) | 作者项目 / 已实现的 REA 集成 | [原文](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) | 2026-10-21 |
+
+## 2026-10-21 热门项目补充
+
+第二轮新增 2 项（合计 34 项），热度按 GitHub API 的 Stars 日期快照记录。REA 工具集成、目标软件调查与安装推荐分别注明。详见 [热门项目审阅](research/2026-10-21-popular.md) 与 [数据快照](data/popularity.json)。
 
 ## 2026-10-21 更新范围
 
