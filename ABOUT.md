@@ -9,4 +9,3 @@
 **Do all examples need Ghidra or IDA?** No. JavaScript/Electron static analysis and several package-metadata paths work without a native analysis engine. See each case and the official prerequisites.
 
 **Can I contribute someone else's project or a failed experiment?** Yes. Link to the original author's public report and explain REA's actual role, reported results and limitations. Chinese and English submissions are welcome. Star the repository if you want to find it again later.
-
