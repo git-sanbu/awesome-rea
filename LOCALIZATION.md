@@ -1,6 +1,6 @@
 # Localization
 
-English is the editorial reference and the default at `/`, `README.md` and `cases/<id>.md`. All 34 cases have complete editions in 12 languages: English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese, Korean, Spanish, French, German, Brazilian Portuguese, Russian, Arabic and Hindi.
+English is the editorial reference and the default at `/`, `README.md` and `cases/<id>.md`. All 38 cases have complete editions in 12 languages: English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese, Korean, Spanish, French, German, Brazilian Portuguese, Russian, Arabic and Hindi.
 
 Each non-English edition uses `/<locale>/` and `/<locale>/cases/<id>/`, `README.<locale>.md` and `cases/<locale>/<id>.md`. Existing case URLs remain available in English. `README.en.md` remains an English compatibility entry.
 

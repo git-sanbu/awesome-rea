@@ -1,6 +1,6 @@
 {
-  "source_digest": "fe8cde5466ac700e20ee0c2e0052d7afdc1ae94c5de21ffc8a4d62b19d8fcb30",
-  "updated_on": "2026-10-21",
+  "source_digest": "59e191cf47c02978a7ee19505c29c38bc167b77975a4288691128d1f593c1ff1",
+  "updated_on": "2026-10-26",
   "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA — Reverse Engineer Anything 사용 사례 및 예",
@@ -418,6 +418,46 @@
       "limitations": "이는 sparkDash의 REA 재구성이나 모든 업스트림 분석 경로가 하드웨어 승인을 통과했다는 증거가 아닌 통합 사례입니다. 장치는 Linux를 실행해야 하며, 이 기능은 기본적으로 꺼져 있으며 대상 형식에는 추가 공급자가 필요합니다. 검토된 관리자 테스트는 실제 Ghidra 또는 원격 장치 테스트를 대체하지 않는 가짜 REA 및 로컬 셸을 사용합니다. 이 카탈로그는 설치 또는 실행되지 않았습니다.",
       "takeaway": "일정 및 UI 작업과 별도로 업스트림 기능의 속성을 지정하여 표시된 결과의 증거, 제한 사항 및 실패를 보존합니다.",
       "author": "MiaAI-Lab"
+    },
+    "open-claude-ui": {
+      "title": "Open Claude UI: 데스크톱 상호 작용 문서화 및 재사용 가능한 UI 구성 요소 게시",
+      "target": "클로드 데스크탑 macOS 패키지; 작성자가 보고한 @ant/desktop 2.37337.1 기준선 및 번들 웹 UI",
+      "question": "입력 구성, 스크롤 및 데스크탑 상호 작용 규칙은 재사용 가능한 인터페이스 구성 요소에 어떻게 알릴 수 있습니까?",
+      "rea_role": "저자는 ASAR, JavaScript AST 및 CSS 조사를 REA 6.5.0.로 간주합니다. 상호 작용 장은 번들 코드 발췌 부분을 입력 가드 및 스크롤 규칙에 연결합니다. 별도의 TypeScript 예제는 이러한 동작을 구현합니다.",
+      "reported_result": "저장소는 RichComposerWithMentions.tsx에 구성 상태 확인 및 구성 후 Enter 가드를 포함하여 버전이 지정된 디자인 노트, 구성 요소 스토리북, CSS 토큰 및 구현 예제를 게시합니다.",
+      "limitations": "이는 완전한 Claude 클라이언트 또는 모델 서비스가 아닌 UI 라이브러리 및 작성자가 보고한 분해입니다. 원시 REA 세션 기록과 독립적인 행동 또는 시각적 동등성 테스트는 검토된 파일에서 발견되지 않았습니다. 버전 및 충실도에 대한 주장은 작성자의 소유입니다.",
+      "takeaway": "하나의 상호 작용 규칙을 인용된 번들 위치 및 구현에 연결합니다. 설계 문서와 측정된 동등성을 구별합니다.",
+      "author": "Caho1"
+    },
+    "open-scrantic": {
+      "title": "Open Scrantic: Rust에서 Johnny Castaway 화면 보호기 엔진 재구축",
+      "target": "화면 장난: Johnny Castaway(1992), Windows 3.1 SCRANTIC.SCR 및 일치하는 리소스 파일",
+      "question": "16-bit 화면 보호기의 스크립트 해석기, 스토리 일정 및 무작위 동작을 최신 시스템에서 어떻게 실행할 수 있습니까?",
+      "rea_role": "개발자는 SCRANTIC.SCR 분해 및 디컴파일, 리소스 형식 및 스크립트 의미 복구, Rust 구현 및 문서 생성에 대해 Claude Code와 REA를 명시적으로 인정합니다.",
+      "reported_result": "공개 Rust 엔진은 리소스 로딩, TTM/ADS 스크립트 실행, 스토리 진행, 타이밍 및 원래 난수 생성기를 구현합니다. ENGINE.md는 복구된 규칙과 의도적인 차이점을 기록합니다. 저자는 Windows, macOS 및 Linux 릴리스 경로를 제공합니다.",
+      "limitations": "엔진은 사용자 자신의 일치하는 원본 파일을 요구하고 다른 실행 가능한 빌드를 거부합니다. 풀프레임 다시 그리기, 옵션 image/audio 처리 및 설정이 원본과 다릅니다. 플랫폼 간 동작 및 동등성은 여기서 독립적으로 테스트되지 않았습니다. 검토된 파일에서 원시 REA 세션을 찾을 수 없습니다.",
+      "takeaway": "원래 자산 소유권을 엔진 코드와 별도로 유지하고, 산술 및 일정 규칙을 보존하고, 의도적인 호환성 차이를 문서화합니다.",
+      "author": "glauberlima"
+    },
+    "rea-safe-agents": {
+      "title": "REA Safe Agent: 포함된 두 프로세스 간의 정적 분석 중개",
+      "target": "REA 6.7.0는 Ghidra 12.1.4 및 JADX와 통합됩니다. 양성 ELF 설비 및 F-Droid APK",
+      "question": "입력, 호스트 도구 및 모델 요청에 대한 액세스가 제한된 상태에서 에이전트가 REA를 쿼리하려면 어떻게 해야 합니까?",
+      "rea_role": "구현에서는 별도의 Docker 컨테이너에서 REA와 해당 수신 에이전트를 실행하고 호스트 컨트롤러를 통해 허용 목록에 있는 MCP 호출을 릴레이합니다. 고정된 입력 스냅샷, tool/path 검사 및 제한된 결과는 경계를 넘는 것을 제한합니다. REA는 실제 정적 분석을 제공합니다.",
+      "reported_result": "날짜가 지정된 macOS ARM64 영수증은 동일한 양성 ELF에서 Claude와 9 및 Codex를 사용하여 11 성공적인 REA 호출을 보고하고 알려진 소스에 대해 해시, FNV-1a 상수 및 디코딩된 문자열을 확인합니다. 검증 기록은 라이브 F-Droid 2.0.2 분석에 대한 39 성공적인 REA 호출을 별도로 보고합니다.",
+      "limitations": "이는 작성자가 공개한 검증 기록이며 독립적인 보안 인증이 아닙니다. 정적 분석은 대상을 실행하지 않습니다. 격리는 Docker와 호스트 컨트롤러에 의존하며 분석된 텍스트는 모델 서비스로 전송됩니다. Windows Docker 통합은 실험 단계입니다. 별도의 npm 감사 결과가 깨끗해도 전체 이미지의 취약점 발견은 남아 있습니다.",
+      "takeaway": "별도의 모의 정책 테스트, 실제 도구 호출 및 라이브 모델 실행 날짜가 적힌 대상, 호스트 및 영수증에 각 청구서를 첨부하십시오.",
+      "author": "dagoSte"
+    },
+    "rea-spanish-lab": {
+      "title": "REA in Spanish: 작성자 소유 키 유효성 검사기 재구성",
+      "target": "작성자 소유의 교육용 licencia-cli.stripped 바이너리 및 기호화된 참조 빌드",
+      "question": "작은 스트립 프로그램의 승인 규칙을 어떻게 원본과 비교하여 재구성하고 확인할 수 있습니까?",
+      "rea_role": "저자는 REA 및 Ghidra 의사코드와 0x102040에서 읽은 바이트를 사용하여 문자 변환, 가중치 누적, 회전 및 승인 검사를 복구한 다음 별도의 Python 검증기를 작성했다고 보고합니다.",
+      "reported_result": "무료 스페인어 샘플에는 랩 설정 및 작업 사례, 제거되고 기호화된 연습 바이너리, 참조 C 소스 및 재구성된 Python 검증기가 포함되어 있습니다. 검증자는 4 예상 예를 나열합니다. 저자는 실제 바이너리에 대해 재구성을 확인했다고 보고합니다.",
+      "limitations": "이 연습은 상업용 라이센스 우회나 보호된 소프트웨어에 대한 일반적인 결과가 아닌 작성자 자신의 소규모 비보호 프로그램입니다. 4 예는 완전한 동등성이 아닌 제한된 점검입니다. 이 카탈로그는 바이너리를 실행하거나 비교를 다시 실행하지 않았습니다. 제안된 전체 과정은 아직 제공되지 않았습니다.",
+      "takeaway": "숨겨진 참조 소스가 있는 자체 픽스처를 사용하고, 제한된 규칙 하나를 복구하고, 소스와 비교하기 전에 허용 및 거부된 입력을 테스트합니다.",
+      "author": "harkiventures"
     }
   }
 }

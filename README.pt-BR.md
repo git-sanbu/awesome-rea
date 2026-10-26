@@ -10,7 +10,7 @@ Desde portas de jogos antigas até um pequeno seletor de cores, explore projetos
 
 [Explore e marque a coleção em GitHub](https://github.com/git-sanbu/awesome-rea) · [Pesquise software, finalidade ou palavras-chave](https://awesome-rea-e7l.pages.dev/pt-BR/) · [Envie um caso](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**34 casos públicos** — 5 vitrines oficiais e projetos comunitários 29 ou experimentos de autores. Atualizado: 2026-10-21. Cada caso mantém sua própria data de revisão da fonte.
+**38 casos públicos** — 5 vitrines oficiais e projetos comunitários 33 ou experimentos de autores. Atualizado: 2026-10-26. Cada caso mantém sua própria data de revisão da fonte.
 
 > Fontes revisadas; os testes do autor não são executados de forma independente.
 
@@ -20,13 +20,15 @@ Esta edição foi traduzida automaticamente da versão editorial em inglês. As 
 
 ## Projetos populares
 
-Instantâneo: 2026-10-21. Projetos de catálogo revisados ​​pela fonte com pelo menos 100 GitHub Stars, classificados por estrelas. Stars indica atenção, não reprodução independente ou prontidão para produção. [Fontes de instantâneos](data/popularity.json).
+Instantâneo: 2026-10-26. Projetos de catálogo revisados ​​pela fonte com pelo menos 100 GitHub Stars, classificados por estrelas. Stars indica atenção, não reprodução independente ou prontidão para produção. [Fontes de instantâneos](data/popularity.json).
 
 | Projeto / demonstração | GitHub Stars | Processo e limitações |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash: integração da análise REA em um painel para vários dispositivos](cases/pt-BR/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything: investigando pontos de entrada multijogador da campanha](cases/pt-BR/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs: um terminal de mercado informado pelas interações TradingView](cases/pt-BR/terminal-rs.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: documentando interações na área de trabalho e publicando componentes de UI reutilizáveis](cases/pt-BR/open-claude-ui.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: investigando pontos de entrada multijogador da campanha](cases/pt-BR/coop-anything.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: integração da análise REA em um painel para vários dispositivos](cases/pt-BR/sparkdash-rea.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: um terminal de mercado informado pelas interações TradingView](cases/pt-BR/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: um gravador macOS nativo inspirado em OBS](cases/pt-BR/rec-rs.md) |
 
 ## Vitrines oficiais
 
@@ -47,6 +49,7 @@ Instantâneo: 2026-10-21. Projetos de catálogo revisados ​​pela fonte com p
 | [OpenBattlefield2: Evidence de nível de função para um cliente Battlefield 2](cases/pt-BR/openbattlefield2.md) | Como a pesquisa de mira, HUD e comportamento binário pode informar uma implementação de mecanismo rastreável? | [Fonte primária](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | [GunZRs: identificando um limite de empacotamento antes de reconstruir a partir dos dados do jogo](cases/pt-BR/gunzrs.md) | Como a reconstrução pode continuar quando um executável compactado impede a recuperação estática da lógica do jogo? | [Fonte primária](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | [Co-op Anything: investigando pontos de entrada multijogador da campanha](cases/pt-BR/coop-anything.md) | Como uma campanha pode manter seus roteiros e lados enquanto permite a entrada de um segundo jogador? | [Fonte primária](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| [Open Scrantic: reconstruindo o mecanismo de proteção de tela Johnny Castaway em Rust](cases/pt-BR/open-scrantic.md) | Como o interpretador de script, a programação da história e o comportamento aleatório de um protetor de tela 16-bit podem ser executados em sistemas modernos? | [Fonte primária](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) |
 
 ## Aplicativos
 
@@ -61,6 +64,7 @@ Instantâneo: 2026-10-21. Projetos de catálogo revisados ​​pela fonte com p
 | [Ledger Reborn: um livro-razão local informado pela pesquisa QuickBooks](cases/pt-BR/ledger-reborn.md) | Como os fluxos de trabalho de contabilidade de desktop podem informar um aplicativo local independente? | [Fonte primária](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
 | [DiskLens: verificando algoritmos de varredura de disco e mapa de árvore em um binário lançado](cases/pt-BR/disklens.md) | Como a verificação de disco, mapas de árvore e detecção de duplicatas podem ser verificadas antes de construir uma nova interface? | [Fonte primária](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: de pacotes de web capturados a um protótipo 3D independente](cases/pt-BR/hyper3d-clone.md) | Como as observações de interface e API podem informar um protótipo que exporta modelos 3D? | [Fonte primária](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| [Open Claude UI: documentando interações na área de trabalho e publicando componentes de UI reutilizáveis](cases/pt-BR/open-claude-ui.md) | Como as regras de composição de entrada, rolagem e interação da área de trabalho podem informar componentes de interface reutilizáveis? | [Fonte primária](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 
 ## Hardware e compatibilidade
 
@@ -90,12 +94,14 @@ Instantâneo: 2026-10-21. Projetos de catálogo revisados ​​pela fonte com p
 | --- | --- | --- |
 | [rea-playbook: transformando Electron Evidence em um relatório e reconstrução](cases/pt-BR/rea-playbook.md) | Como o JSON Evidence grande pode se tornar fatos legíveis e uma reconstrução verificada? | [Fonte primária](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
 | [ReaFuse: combinando duas bibliotecas após investigar seu comportamento](cases/pt-BR/reafuse.md) | Como podem dois projetos tornar-se especificações de comportamento e depois uma nova ferramenta combinada? | [Fonte primária](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+| [REA in Spanish: reconstruindo um validador de chave de propriedade do autor](cases/pt-BR/rea-spanish-lab.md) | Como a regra de aceitação de um pequeno programa despojado pode ser reconstruída e verificada em relação ao original? | [Fonte primária](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) |
 
 ## Ferramentas e integrações
 
 | Projeto / demonstração | A questão | Fonte primária |
 | --- | --- | --- |
 | [sparkDash: integração da análise REA em um painel para vários dispositivos](cases/pt-BR/sparkdash-rea.md) | Como uma interface da web pode enviar trabalhos REA remotos de longa duração e carregar grandes resultados sob demanda? | [Fonte primária](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [REA Safe Agent: intermediando análise estática entre dois processos contidos](cases/pt-BR/rea-safe-agents.md) | Como um agente pode consultar REA enquanto o acesso a entradas, ferramentas de host e solicitações de modelo permanece limitado? | [Fonte primária](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
 
 ## Quais casos estão incluídos?
 

@@ -1,6 +1,6 @@
 {
-  "source_digest": "fe8cde5466ac700e20ee0c2e0052d7afdc1ae94c5de21ffc8a4d62b19d8fcb30",
-  "updated_on": "2026-10-21",
+  "source_digest": "59e191cf47c02978a7ee19505c29c38bc167b77975a4288691128d1f593c1ff1",
+  "updated_on": "2026-10-26",
   "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA — Casos de uso y ejemplos de Reverse Engineer Anything",
@@ -418,6 +418,46 @@
       "limitations": "Este es un caso de integración, no una reconstrucción de REA de sparkDash o una prueba de que cada ruta de análisis ascendente pasó la aceptación del hardware. Los dispositivos deben ejecutar Linux, la función está desactivada de forma predeterminada y los formatos de destino necesitan proveedores adicionales. Las pruebas de administrador revisadas utilizan REA falso y un shell local, que no reemplazan el Ghidra real ni las pruebas de dispositivos remotos. Este catálogo no lo instaló ni lo ejecutó.",
       "takeaway": "Atribuya las capacidades ascendentes por separado de la programación y el trabajo de la interfaz de usuario, preservando evidencia, limitaciones y fallas en los resultados mostrados.",
       "author": "MiaAI-Lab"
+    },
+    "open-claude-ui": {
+      "title": "Open Claude UI: documentar las interacciones del escritorio y publicar componentes de UI reutilizables",
+      "target": "Paquete Claude Desktop macOS; reportado por el autor @ant/desktop 2.37337.1 interfaz de usuario web incluida y de referencia",
+      "question": "¿Cómo pueden las reglas de composición de entrada, desplazamiento e interacción del escritorio informar a los componentes de interfaz reutilizables?",
+      "rea_role": "El autor atribuye la investigación de ASAR, JavaScript AST y CSS a REA 6.5.0.. El capítulo de interacción vincula extractos de código incluido con protecciones de entrada y reglas de desplazamiento; ejemplos separados de TypeScript implementan esos comportamientos.",
+      "reported_result": "El repositorio publica notas de diseño versionadas, un libro de historia de componentes, tokens CSS y ejemplos de implementación, incluidas comprobaciones de estado de composición y una protección Enter posterior a la composición en RichComposerWithMentions.tsx.",
+      "limitations": "Esta es una biblioteca de interfaz de usuario y un desmontaje informado por el autor, no un cliente Claude completo ni un servicio modelo. No se encontraron registros de sesión REA sin procesar ni pruebas independientes de equivalencia visual o de comportamiento en los archivos revisados. Las afirmaciones de versión y fidelidad siguen siendo propiedad del autor.",
+      "takeaway": "Conecte una regla de interacción con la ubicación e implementación del paquete citado; distinguir la documentación de diseño de la equivalencia medida.",
+      "author": "Caho1"
+    },
+    "open-scrantic": {
+      "title": "Open Scrantic: reconstruyendo el motor del salvapantallas Johnny Castaway en Rust",
+      "target": "Travesuras de pantalla: Johnny Castaway (1992), Windows 3.1 SCRANTIC.SCR y archivos de recursos coincidentes",
+      "question": "¿Cómo se pueden ejecutar el intérprete de guiones, el cronograma de la historia y el comportamiento aleatorio de un salvapantallas 16-bit en sistemas modernos?",
+      "rea_role": "El desarrollador acredita explícitamente a Claude Code con REA por desensamblar y descompilar SCRANTIC.SCR, recuperar formatos de recursos y semántica de scripts y producir la implementación y documentación de Rust.",
+      "reported_result": "El motor público Rust implementa la carga de recursos, la ejecución del script TTM/ADS, la progresión de la historia, el tiempo y el generador de números aleatorios original. ENGINE.md registra reglas recuperadas y diferencias deliberadas; el autor proporciona las rutas de lanzamiento Windows, macOS y Linux.",
+      "limitations": "El motor requiere los archivos originales coincidentes del usuario y rechaza otras compilaciones ejecutables. Redibujado de fotograma completo, procesamiento y configuración opcionales image/audio difieren del original. El comportamiento y la equivalencia entre plataformas no se probaron aquí de forma independiente; No se encontraron sesiones REA sin procesar en los archivos revisados.",
+      "takeaway": "Mantenga la propiedad de los activos originales separada del código del motor, preserve las reglas aritméticas y de programación y documente las diferencias de compatibilidad deliberadas.",
+      "author": "glauberlima"
+    },
+    "rea-safe-agents": {
+      "title": "REA Safe Agent: intermediación de análisis estático entre dos procesos contenidos",
+      "target": "Integración REA 6.7.0 con Ghidra 12.1.4 y JADX; Accesorios ELF benignos y un APK F-Droid",
+      "question": "¿Cómo puede un agente consultar REA mientras el acceso a las entradas, las herramientas del host y las solicitudes de modelo permanece limitado?",
+      "rea_role": "La implementación ejecuta REA y su agente receptor en contenedores Docker separados y retransmite llamadas MCP permitidas a través de un controlador de host. Las instantáneas de entrada congeladas, las comprobaciones tool/path y los resultados acotados restringen lo que cruza el límite; REA proporciona el análisis estático real.",
+      "reported_result": "Los recibos de macOS ARM64 con fecha informan de 11 llamadas exitosas de REA con Claude y 9 con Codex en el mismo ELF benigno, verificando su hash, las constantes de FNV-1a y la cadena decodificada con una fuente conocida. El registro de validación informa por separado 39 llamadas exitosas de REA para un análisis en vivo de F-Droid 2.0.2.",
+      "limitations": "Son registros publicados por el autor, no una certificación de seguridad independiente. El análisis estático no ejecuta el objetivo. El aislamiento depende de Docker y del controlador anfitrión; el texto analizado llega al servicio del modelo y la integración de Docker en Windows es experimental. Persisten hallazgos de vulnerabilidades en las imágenes completas, aunque la auditoría de npm por separado no detecte problemas.",
+      "takeaway": "Separe pruebas de políticas simuladas, llamadas a herramientas reales y ejecuciones de modelos en vivo; adjunte cada reclamo a un destino, host y recibo fechados.",
+      "author": "dagoSte"
+    },
+    "rea-spanish-lab": {
+      "title": "REA in Spanish: reconstruyendo un validador de claves de autor",
+      "target": "Licencia educativa de propiedad del autor. binario eliminado y su compilación de referencia simbolizada",
+      "question": "¿Cómo se puede reconstruir y comparar la regla de aceptación de un programa pequeño con el original?",
+      "rea_role": "El autor informa que utilizó el pseudocódigo REA y Ghidra más bytes leídos en 0x102040 para recuperar la conversión de caracteres, la acumulación ponderada, la rotación y las comprobaciones de aceptación, y luego escribió un verificador de Python independiente.",
+      "reported_result": "La muestra gratuita en español incluye configuración de laboratorio y un caso trabajado, binarios de práctica simplificados y simbolizados, fuente C de referencia y un verificador Python reconstruido. El verificador enumera los ejemplos esperados 4; el autor informa comparar la reconstrucción con el binario real.",
+      "limitations": "El ejercicio es el pequeño programa desprotegido del autor, no una elusión de una licencia comercial ni un resultado general para el software protegido. Los ejemplos de 4 son comprobaciones limitadas, no equivalencias exhaustivas. Este catálogo no ejecutó los archivos binarios ni volvió a ejecutar la comparación; el curso completo propuesto aún no se ha entregado.",
+      "takeaway": "Utilice un dispositivo propio con una fuente de referencia oculta, recupere una regla limitada y pruebe las entradas aceptadas y rechazadas antes de compararlas con la fuente.",
+      "author": "harkiventures"
     }
   }
 }

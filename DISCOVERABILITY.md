@@ -37,7 +37,7 @@ python3 -m http.server 4178 --directory docs
 npx wrangler pages deploy docs --project-name awesome-rea --branch main
 ```
 
-在线目录使用 Cloudflare Pages 的独立地址 `https://awesome-rea-e7l.pages.dev/`。GitHub Pages 实际继承账号主站的旧域名 `tjystu.top` 并发生跳转，本次未修改账号主站。编辑 `data/cases.json` 后同步生成页面与 README；以 Cloudflare 部署回执和线上检查确认上线。网站共 22 个 HTML 页面，sitemap 对应主页和 21 个案例。
+在线目录使用 Cloudflare Pages 的独立地址 `https://awesome-rea-e7l.pages.dev/`。GitHub Pages 实际继承账号主站的旧域名 `tjystu.top` 并发生跳转，本次未修改账号主站。编辑 `data/cases.json` 后同步生成页面与 README；以 Cloudflare 部署回执和线上检查确认上线。截至 2026-10-26，网站为 38 个案例提供 12 种语言版本，共 468 个 HTML 页面；sitemap 覆盖各语言主页与案例页。
 
 ## 本次 GitHub 搜索实测
 

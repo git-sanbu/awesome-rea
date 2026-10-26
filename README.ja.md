@@ -10,7 +10,7 @@
 
 [GitHub でコレクションを探索してスターを付けましょう](https://github.com/git-sanbu/awesome-rea) · [ソフトウェア、目的、キーワードを検索する](https://awesome-rea-e7l.pages.dev/ja/) · [ケースを送信する](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**34 公開ケース** — 5 公式ショーケースおよび 29 コミュニティ プロジェクトまたは著者の実験. 更新日: 2026-10-21。各ケースには独自の情報源レビュー日が保持されます。
+**38 公開ケース** — 5 公式ショーケースおよび 33 コミュニティ プロジェクトまたは著者の実験. 更新日: 2026-10-26。各ケースには独自の情報源レビュー日が保持されます。
 
 > 情報源をレビューしました。著者のテストは独立して再実行されません。
 
@@ -20,13 +20,15 @@
 
 ## 人気プロジェクト
 
-スナップショット: 2026-10-21。少なくとも 100 GitHub Stars を含む、ソースでレビューされたカタログ プロジェクト (星順に並べ替え)。 Stars は注意を示すものであり、独立した複製や制作の準備が整っていることを示すものではありません。 [スナップショットソース](data/popularity.json).
+スナップショット: 2026-10-26。少なくとも 100 GitHub Stars を含む、ソースでレビューされたカタログ プロジェクト (星順に並べ替え)。 Stars は注意を示すものであり、独立した複製や制作の準備が整っていることを示すものではありません。 [スナップショットソース](data/popularity.json).
 
 | プロジェクト/デモ | GitHub Stars | プロセスと制限事項 |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash: REA 分析をマルチデバイス ダッシュボードに統合](cases/ja/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything: キャンペーンのマルチプレイヤー エントリ ポイントを調査しています](cases/ja/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs: TradingView インタラクションによって通知される市場端末](cases/ja/terminal-rs.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: デスクトップ操作の文書化と再利用可能な UI コンポーネントの公開](cases/ja/open-claude-ui.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: キャンペーンのマルチプレイヤー エントリ ポイントを調査しています](cases/ja/coop-anything.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: REA 分析をマルチデバイス ダッシュボードに統合](cases/ja/sparkdash-rea.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: TradingView インタラクションによって通知される市場端末](cases/ja/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: OBS からインスピレーションを得たネイティブ macOS レコーダー](cases/ja/rec-rs.md) |
 
 ## 公式ショーケース
 
@@ -47,6 +49,7 @@
 | [OpenBattlefield2: 関数レベル Evidence (Battlefield 2 クライアント用)](cases/ja/openbattlefield2.md) | クロスヘア、HUD、およびバイナリ動作の調査は、追跡可能なエンジンの実装にどのように情報を提供できるでしょうか? | [一次情報源](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | [GunZRs: ゲーム データから再構築する前にパッキング境界を特定する](cases/ja/gunzrs.md) | パックされた実行可能ファイルによってゲーム ロジックの静的回復が妨げられている場合、どのようにして再構築を続行できるでしょうか? | [一次情報源](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | [Co-op Anything: キャンペーンのマルチプレイヤー エントリ ポイントを調査しています](cases/ja/coop-anything.md) | 2 人目のプレイヤーを参加させながら、キャンペーンのスクリプトとサイドを維持するにはどうすればよいでしょうか? | [一次情報源](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| [Open Scrantic: Rust で Johnny Castaway スクリーンセーバー エンジンを再構築する](cases/ja/open-scrantic.md) | 16-bit スクリーンセーバーのスクリプト インタプリタ、ストーリー スケジュール、およびランダムな動作は、最新のシステムでどのように実行できるのでしょうか? | [一次情報源](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) |
 
 ## アプリケーション
 
@@ -61,6 +64,7 @@
 | [Ledger Reborn: QuickBooks の調査に基づいたローカル台帳](cases/ja/ledger-reborn.md) | デスクトップ会計ワークフローはどのようにして独立したローカル アプリに情報を提供できるのでしょうか? | [一次情報源](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
 | [DiskLens: リリースされたバイナリでのディスク スキャンおよびツリーマップ アルゴリズムのチェック](cases/ja/disklens.md) | 新しいインターフェイスを構築する前に、ディスク スキャン、ツリーマップ、重複検出をどのようにチェックできますか? | [一次情報源](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: キャプチャされた Web バンドルから独立した 3D プロトタイプまで](cases/ja/hyper3d-clone.md) | インターフェイスと API の観察は、3D モデルをエクスポートするプロトタイプにどのように情報を提供できるでしょうか? | [一次情報源](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| [Open Claude UI: デスクトップ操作の文書化と再利用可能な UI コンポーネントの公開](cases/ja/open-claude-ui.md) | 入力構成、スクロール、およびデスクトップのインタラクション ルールは、再利用可能なインターフェイス コンポーネントにどのように通知されるのでしょうか? | [一次情報源](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 
 ## ハードウェアと互換性
 
@@ -90,12 +94,14 @@
 | --- | --- | --- |
 | [rea-playbook: Electron Evidence をレポートにして再構成する](cases/ja/rea-playbook.md) | 大きな Evidence JSON をどのようにして読み取り可能なファクトとチェックされた再構成にすることができるでしょうか? | [一次情報源](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
 | [ReaFuse: 2 つのライブラリの動作を調査した後に結合する](cases/ja/reafuse.md) | 2 つのプロジェクトがどのようにして動作仕様になり、さらに新しい統合ツールになるのでしょうか? | [一次情報源](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+| [REA in Spanish: 作成者所有のキーバリデーターの再構築](cases/ja/rea-spanish-lab.md) | 削除された小さなプログラムの受け入れルールを再構築し、オリジナルと照合するにはどうすればよいでしょうか? | [一次情報源](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) |
 
 ## ツールと統合
 
 | プロジェクト/デモ | 質問 | 一次情報源 |
 | --- | --- | --- |
 | [sparkDash: REA 分析をマルチデバイス ダッシュボードに統合](cases/ja/sparkdash-rea.md) | Web インターフェイスは、長時間実行されるリモート REA ジョブを送信し、オンデマンドで大量の結果を読み込むにはどうすればよいでしょうか? | [一次情報源](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [REA Safe Agent: 含まれる 2 つのプロセス間の静的分析を仲介します](cases/ja/rea-safe-agents.md) | 入力、ホスト ツール、モデル リクエストへのアクセスが制限されている間、エージェントはどのようにして REA をクエリできるでしょうか? | [一次情報源](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
 
 ## どのケースが含まれますか?
 

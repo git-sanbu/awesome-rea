@@ -10,7 +10,7 @@
 
 [Исследуйте и отмечайте коллекцию на GitHub](https://github.com/git-sanbu/awesome-rea) · [Программное обеспечение для поиска, цель или ключевые слова](https://awesome-rea-e7l.pages.dev/ru/) · [Отправить дело](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**34 общественные дела** — Официальные презентации 5 и проекты сообщества 29 или авторские эксперименты. Обновлено: 2026-10-21. В каждом случае сохраняется своя дата рассмотрения источника.
+**38 общественные дела** — Официальные презентации 5 и проекты сообщества 33 или авторские эксперименты. Обновлено: 2026-10-26. В каждом случае сохраняется своя дата рассмотрения источника.
 
 > Источники рассмотрены; авторские тесты самостоятельно не перепроводятся.
 
@@ -20,13 +20,15 @@
 
 ## Популярные проекты
 
-Снимок: 2026-10-21. Проекты каталога с рецензированием источника с минимумом 100 GitHub Stars, отсортированные по звездам. Stars указывают на внимание, а не на самостоятельное воспроизведение или готовность к производству. [Источники снимков](data/popularity.json).
+Снимок: 2026-10-26. Проекты каталога с рецензированием источника с минимумом 100 GitHub Stars, отсортированные по звездам. Stars указывают на внимание, а не на самостоятельное воспроизведение или готовность к производству. [Источники снимков](data/popularity.json).
 
 | Проект/демо | GitHub Stars | Процесс и ограничения |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash: интеграция анализа REA в панель мониторинга для нескольких устройств.](cases/ru/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything: исследование точек входа в многопользовательскую кампанию.](cases/ru/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs: рыночный терминал, информированный о взаимодействиях TradingView](cases/ru/terminal-rs.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: документирование взаимодействия с рабочим столом и публикация повторно используемых компонентов пользовательского интерфейса.](cases/ru/open-claude-ui.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: исследование точек входа в многопользовательскую кампанию.](cases/ru/coop-anything.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: интеграция анализа REA в панель мониторинга для нескольких устройств.](cases/ru/sparkdash-rea.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: рыночный терминал, информированный о взаимодействиях TradingView](cases/ru/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: встроенный рекордер macOS в стиле OBS.](cases/ru/rec-rs.md) |
 
 ## Официальные витрины
 
@@ -47,6 +49,7 @@
 | [OpenBattlefield2: function-level Evidence for a Battlefield 2 client](cases/ru/openbattlefield2.md) | How can crosshair, HUD and binary-behavior research inform a traceable engine implementation? | [Первоисточник](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | [GunZRs: identifying a packing boundary before rebuilding from game data](cases/ru/gunzrs.md) | Как можно продолжить восстановление, если упакованный исполняемый файл не позволяет статическому восстановлению игровой логики? | [Первоисточник](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | [Co-op Anything: исследование точек входа в многопользовательскую кампанию.](cases/ru/coop-anything.md) | Как кампания может сохранить свои сценарии и стороны, позволяя при этом присоединиться второму игроку? | [Первоисточник](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| [Open Scrantic: восстановление движка заставки Johnny Castaway в Rust](cases/ru/open-scrantic.md) | Как интерпретатор сценариев, расписание сюжетов и случайное поведение заставки 16-bit могут работать в современных системах? | [Первоисточник](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) |
 
 ## Приложения
 
@@ -61,6 +64,7 @@
 | [Ledger Reborn: локальный реестр, основанный на исследовании QuickBooks](cases/ru/ledger-reborn.md) | Как рабочие процессы учета на рабочем столе могут информировать независимое локальное приложение? | [Первоисточник](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
 | [DiskLens: проверка алгоритмов сканирования диска и древовидной карты в выпущенном двоичном файле](cases/ru/disklens.md) | Как можно проверить сканирование диска, древовидные карты и обнаружение дубликатов перед созданием нового интерфейса? | [Первоисточник](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: от захваченных веб-пакетов к независимому прототипу 3D](cases/ru/hyper3d-clone.md) | Как наблюдения интерфейса и API могут дать информацию прототипу, который экспортирует модели 3D? | [Первоисточник](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| [Open Claude UI: документирование взаимодействия с рабочим столом и публикация повторно используемых компонентов пользовательского интерфейса.](cases/ru/open-claude-ui.md) | Как правила композиции ввода, прокрутки и взаимодействия с рабочим столом могут информировать повторно используемые компоненты интерфейса? | [Первоисточник](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 
 ## Аппаратное обеспечение и совместимость
 
@@ -90,12 +94,14 @@
 | --- | --- | --- |
 | [rea-playbook: превращение Electron Evidence в отчет и реконструкцию](cases/ru/rea-playbook.md) | Как большой JSON Evidence может стать читаемыми фактами и проверенной реконструкцией? | [Первоисточник](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
 | [ReaFuse: combining two libraries after investigating their behavior](cases/ru/reafuse.md) | How can two projects become behavior specifications and then a new combined tool? | [Первоисточник](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+| [REA in Spanish: реконструкция валидатора ключей, принадлежащего автору.](cases/ru/rea-spanish-lab.md) | Как можно восстановить и сверить правило приемки небольшой урезанной программы с оригиналом? | [Первоисточник](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) |
 
 ## Инструменты и интеграции
 
 | Проект/демо | Вопрос | Первоисточник |
 | --- | --- | --- |
 | [sparkDash: интеграция анализа REA в панель мониторинга для нескольких устройств.](cases/ru/sparkdash-rea.md) | Как веб-интерфейс может отправлять длительные удаленные задания REA и загружать большие результаты по требованию? | [Первоисточник](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [REA Safe Agent: проведение статического анализа между двумя изолированными процессами.](cases/ru/rea-safe-agents.md) | Как агент может запросить REA, если доступ к входным данным, инструментам хоста и запросам моделей остается ограниченным? | [Первоисточник](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
 
 ## Какие случаи включены?
 

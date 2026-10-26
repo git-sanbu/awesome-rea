@@ -10,7 +10,7 @@
 
 [استكشف المجموعة وقم بتمييزها بنجمة على GitHub](https://github.com/git-sanbu/awesome-rea) · [برنامج البحث أو الغرض أو الكلمات الرئيسية](https://awesome-rea-e7l.pages.dev/ar/) · [إرسال حالة](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**34 الحالات العامة** — يعرض 5 الرسمي ومشاريع مجتمع 29 أو تجارب المؤلف. تم التحديث: 2026-10-21. تحتفظ كل حالة بتاريخ مراجعة المصدر الخاص بها.
+**38 الحالات العامة** — يعرض 5 الرسمي ومشاريع مجتمع 33 أو تجارب المؤلف. تم التحديث: 2026-10-26. تحتفظ كل حالة بتاريخ مراجعة المصدر الخاص بها.
 
 > تمت مراجعة المصادر؛ لا يتم إعادة تشغيل اختبارات المؤلف بشكل مستقل.
 
@@ -20,13 +20,15 @@
 
 ## مشاريع شعبية
 
-لقطة: 2026-10-21. مشاريع الكتالوج التي تمت مراجعتها من المصدر والتي تحتوي على الأقل على 100 GitHub Stars، مرتبة حسب النجوم. تشير Stars إلى الاهتمام، وليس التكاثر المستقل أو الاستعداد للإنتاج. [مصادر اللقطات](data/popularity.json).
+لقطة: 2026-10-26. مشاريع الكتالوج التي تمت مراجعتها من المصدر والتي تحتوي على الأقل على 100 GitHub Stars، مرتبة حسب النجوم. تشير Stars إلى الاهتمام، وليس التكاثر المستقل أو الاستعداد للإنتاج. [مصادر اللقطات](data/popularity.json).
 
 | المشروع / التجريبي | GitHub Stars | العملية والقيود |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash: دمج تحليل REA في لوحة معلومات متعددة الأجهزة](cases/ar/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything: التحقق من نقاط دخول الحملة متعددة اللاعبين](cases/ar/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs: محطة سوق مستنيرة بتفاعلات TradingView](cases/ar/terminal-rs.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: توثيق تفاعلات سطح المكتب ونشر مكونات واجهة المستخدم القابلة لإعادة الاستخدام](cases/ar/open-claude-ui.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: التحقق من نقاط دخول الحملة متعددة اللاعبين](cases/ar/coop-anything.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: دمج تحليل REA في لوحة معلومات متعددة الأجهزة](cases/ar/sparkdash-rea.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: محطة سوق مستنيرة بتفاعلات TradingView](cases/ar/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: مسجل macOS أصلي مستوحى من OBS](cases/ar/rec-rs.md) |
 
 ## المعارض الرسمية
 
@@ -47,6 +49,7 @@
 | [OpenBattlefield2: Evidence على مستوى الوظيفة لعميل Battlefield 2](cases/ar/openbattlefield2.md) | كيف يمكن لأبحاث التقاطع وHUD والسلوك الثنائي أن تفيد في تنفيذ محرك يمكن تتبعه؟ | [المصدر الأساسي](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | [GunZRs: تحديد حدود التعبئة قبل إعادة البناء من بيانات اللعبة](cases/ar/gunzrs.md) | كيف يمكن أن تستمر إعادة الإعمار عندما يمنع الملف القابل للتنفيذ المعبأ الاسترداد الثابت لمنطق اللعبة؟ | [المصدر الأساسي](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | [Co-op Anything: التحقق من نقاط دخول الحملة متعددة اللاعبين](cases/ar/coop-anything.md) | كيف يمكن للحملة الاحتفاظ بنصوصها وجوانبها مع السماح للاعب آخر بالانضمام؟ | [المصدر الأساسي](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| [Open Scrantic: إعادة بناء محرك شاشة التوقف Johnny Castaway في Rust](cases/ar/open-scrantic.md) | كيف يمكن تشغيل مترجم نص شاشة التوقف 16-bit وجدول القصة والسلوك العشوائي على الأنظمة الحديثة؟ | [المصدر الأساسي](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) |
 
 ## التطبيقات
 
@@ -61,6 +64,7 @@
 | [Ledger Reborn: دفتر أستاذ محلي مستنير بأبحاث QuickBooks](cases/ar/ledger-reborn.md) | كيف يمكن لسير عمل محاسبة سطح المكتب أن يفيد تطبيقًا محليًا مستقلاً؟ | [المصدر الأساسي](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
 | [DiskLens: فحص خوارزميات مسح القرص والتخطيط الهيكلي في ملف ثنائي تم إصداره](cases/ar/disklens.md) | كيف يمكن التحقق من فحص القرص والخرائط الهيكلية والكشف عن التكرارات قبل إنشاء واجهة جديدة؟ | [المصدر الأساسي](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: من حزم الويب التي تم التقاطها إلى نموذج 3D الأولي المستقل](cases/ar/hyper3d-clone.md) | كيف يمكن لملاحظات الواجهة وواجهة برمجة التطبيقات (API) إبلاغ النموذج الأولي الذي يصدر نماذج 3D؟ | [المصدر الأساسي](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| [Open Claude UI: توثيق تفاعلات سطح المكتب ونشر مكونات واجهة المستخدم القابلة لإعادة الاستخدام](cases/ar/open-claude-ui.md) | كيف يمكن لقواعد تكوين الإدخال والتمرير وتفاعل سطح المكتب إبلاغ مكونات الواجهة القابلة لإعادة الاستخدام؟ | [المصدر الأساسي](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 
 ## الأجهزة والتوافق
 
@@ -90,12 +94,14 @@
 | --- | --- | --- |
 | [rea-playbook: تحويل Electron Evidence إلى تقرير وإعادة البناء](cases/ar/rea-playbook.md) | كيف يمكن أن يصبح Evidence JSON الكبير حقائق قابلة للقراءة وإعادة بناء تم التحقق منها؟ | [المصدر الأساسي](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
 | [ReaFuse: الجمع بين مكتبتين بعد التحقق من سلوكهما](cases/ar/reafuse.md) | كيف يمكن لمشروعين أن يصبحا مواصفات سلوكية ومن ثم أداة مشتركة جديدة؟ | [المصدر الأساسي](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+| [REA in Spanish: إعادة بناء أداة التحقق من صحة المفاتيح المملوكة للمؤلف](cases/ar/rea-spanish-lab.md) | كيف يمكن إعادة بناء قاعدة قبول برنامج صغير ومطابقتها مع القاعدة الأصلية؟ | [المصدر الأساسي](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) |
 
 ## الأدوات والتكاملات
 
 | المشروع / التجريبي | السؤال | المصدر الأساسي |
 | --- | --- | --- |
 | [sparkDash: دمج تحليل REA في لوحة معلومات متعددة الأجهزة](cases/ar/sparkdash-rea.md) | كيف يمكن لواجهة الويب إرسال مهام REA عن بعد طويلة الأمد وتحميل نتائج كبيرة عند الطلب؟ | [المصدر الأساسي](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [REA Safe Agent: وسيط في التحليل الثابت بين عمليتين مضمنتين](cases/ar/rea-safe-agents.md) | كيف يمكن للوكيل الاستعلام عن REA بينما يظل الوصول إلى المدخلات وأدوات المضيف وطلبات النماذج محدودًا؟ | [المصدر الأساسي](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
 
 ## ما هي الحالات المشمولة؟
 

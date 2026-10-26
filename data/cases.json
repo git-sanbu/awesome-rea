@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-21",
+  "updated_on": "2026-10-26",
   "scope": "Public cases explicitly reporting use of morluto/rea; source review only, no independent reproduction.",
   "cases": [
     {
@@ -710,6 +710,99 @@
         "https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/server/rea/__tests__/manager.test.js"
       ],
       "rea_evidence_language": "en"
+    },
+    {
+      "title": "Open Claude UI: documenting desktop interactions and publishing reusable UI components",
+      "target": "Claude Desktop macOS package; author-reported @ant/desktop 2.37337.1 baseline and bundled web UI",
+      "question": "How can input composition, scrolling and desktop interaction rules inform reusable interface components?",
+      "rea_role": "The author attributes ASAR, JavaScript AST and CSS investigation to REA 6.5.0. The interaction chapter links bundled-code excerpts to input guards and scrolling rules; separate TypeScript examples implement those behaviors.",
+      "reported_result": "The repository publishes versioned design notes, a component storybook, CSS tokens and implementation examples, including composition-state checks and a post-composition Enter guard in RichComposerWithMentions.tsx.",
+      "limitations": "This is a UI library and author-reported teardown, not a complete Claude client or model service. Raw REA session records and independent behavioral or visual equivalence tests were not found in the reviewed files. Version and fidelity claims remain the author’s.",
+      "takeaway": "Connect one interaction rule to its cited bundle location and implementation; distinguish design documentation from measured equivalence.",
+      "id": "open-claude-ui",
+      "category": "apps",
+      "author": "Caho1",
+      "project_url": "https://github.com/Caho1/open-claude-ui",
+      "source_url": "https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx",
+      "checked_on": "2026-10-26",
+      "review_status": "source-reviewed-not-reproduced",
+      "rea_evidence_excerpt": "逆向还原自官方 Claude Desktop / Web 核心输入组件 (REA v6.5.0 取证):",
+      "rea_evidence_language": "zh-CN",
+      "additional_sources": [
+        "https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/README.md",
+        "https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/docs/v1/03-%E4%BC%9A%E8%AF%9D%E6%A0%B8%E5%BF%83%E6%B5%81%E4%B8%8E%E6%8C%87%E4%BB%A4%E4%BA%A4%E4%BA%92%E5%BC%95%E6%93%8E.md",
+        "https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/docs/v2/01-%E7%BB%BC%E8%BF%B0%E4%B8%8E%E7%89%88%E6%9C%AC%E8%BE%B9%E7%95%8C.md"
+      ]
+    },
+    {
+      "title": "Open Scrantic: rebuilding the Johnny Castaway screensaver engine in Rust",
+      "target": "Screen Antics: Johnny Castaway (1992), Windows 3.1 SCRANTIC.SCR and matching resource files",
+      "question": "How can a 16-bit screensaver’s script interpreter, story schedule and random behavior run on modern systems?",
+      "rea_role": "The developer explicitly credits Claude Code with REA for disassembling and decompiling SCRANTIC.SCR, recovering resource formats and script semantics, and producing the Rust implementation and documentation.",
+      "reported_result": "The public Rust engine implements resource loading, TTM/ADS script execution, story progression, timing and the original random-number generator. ENGINE.md records recovered rules and deliberate differences; the author supplies Windows, macOS and Linux release paths.",
+      "limitations": "The engine requires the user’s own matching original files and rejects other executable builds. Full-frame redraw, optional image/audio processing and settings differ from the original. Cross-platform behavior and equivalence were not independently tested here; raw REA sessions were not found in the reviewed files.",
+      "takeaway": "Keep original asset ownership separate from engine code, preserve arithmetic and scheduling rules, and document deliberate compatibility differences.",
+      "id": "open-scrantic",
+      "category": "games",
+      "author": "glauberlima",
+      "project_url": "https://github.com/glauberlima/open-scrantic",
+      "source_url": "https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md",
+      "checked_on": "2026-10-26",
+      "review_status": "source-reviewed-not-reproduced",
+      "rea_evidence_excerpt": "Together they were used to disassemble and decompile the original\n`SCRANTIC.SCR`, recover the resource formats and script semantics, and write the Rust code, tests and\ndocumentation.",
+      "rea_evidence_language": "en",
+      "additional_sources": [
+        "https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/docs/ENGINE.md",
+        "https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/src/engine/rng.rs",
+        "https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/src/engine/config.rs"
+      ]
+    },
+    {
+      "title": "REA Safe Agent: brokering static analysis between two contained processes",
+      "target": "REA 6.7.0 integration with Ghidra 12.1.4 and JADX; benign ELF fixtures and an F-Droid APK",
+      "question": "How can an agent query REA while access to inputs, host tools and model requests remains bounded?",
+      "rea_role": "The implementation runs REA and its receiving agent in separate Docker containers and relays allowlisted MCP calls through a host controller. Frozen input snapshots, tool/path checks and bounded results constrain what crosses the boundary; REA supplies the actual static analysis.",
+      "reported_result": "Dated macOS ARM64 receipts report 11 successful REA calls with Claude and 9 with Codex on the same benign ELF, checking its hash, FNV-1a constants and decoded string against known source. The validation record separately reports 39 successful REA calls for a live F-Droid 2.0.2 analysis.",
+      "limitations": "These are author-published receipts, not an independent security certification. Static analysis does not execute the target. Containment depends on Docker and the host controller; analyzed text reaches the model service, and Windows Docker integration is experimental. Whole-image vulnerability findings remain despite the separate clean npm audit.",
+      "takeaway": "Separate mock-policy tests, real tool calls and live model runs; attach each claim to a dated target, host and receipt.",
+      "id": "rea-safe-agents",
+      "category": "integrations",
+      "author": "dagoSte",
+      "project_url": "https://github.com/dagoSte/rea-safe-agents",
+      "source_url": "https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md",
+      "checked_on": "2026-10-26",
+      "review_status": "source-reviewed-not-reproduced",
+      "rea_evidence_excerpt": "\"rea_version\": \"6.7.0\",",
+      "rea_evidence_language": "en",
+      "additional_sources": [
+        "https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/evidence/live-claude-subscription-macos-arm64-2026-10-19.json",
+        "https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/evidence/live-codex-chatgpt-macos-arm64-2026-10-19.json",
+        "https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/skills/rea-isolated/scripts/tunnel.py",
+        "https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/skills/rea-isolated/scripts/agent_session.py"
+      ]
+    },
+    {
+      "title": "REA in Spanish: reconstructing an author-owned key validator",
+      "target": "Author-owned educational licencia-cli.stripped binary and its symbolized reference build",
+      "question": "How can a small stripped program’s acceptance rule be reconstructed and checked against the original?",
+      "rea_role": "The author reports using REA and Ghidra pseudocode plus bytes read at 0x102040 to recover character conversion, weighted accumulation, rotation and acceptance checks, then writing a separate Python verifier.",
+      "reported_result": "The free Spanish sample includes lab setup and a worked case, stripped and symbolized practice binaries, reference C source and a reconstructed Python verifier. The verifier lists 4 expected examples; the author reports checking the reconstruction against the real binary.",
+      "limitations": "The exercise is the author’s own small unprotected program, not a commercial licensing bypass or a general result for protected software. The 4 examples are limited checks, not exhaustive equivalence. This catalog did not execute the binaries or rerun the comparison; the proposed full course is not yet delivered.",
+      "takeaway": "Use an owned fixture with a hidden reference source, recover one bounded rule, and test accepted and rejected inputs before comparing with the source.",
+      "id": "rea-spanish-lab",
+      "category": "learning",
+      "author": "harkiventures",
+      "project_url": "https://github.com/harkiventures/rea-muestra-gratuita",
+      "source_url": "https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py",
+      "checked_on": "2026-10-26",
+      "review_status": "source-reviewed-not-reproduced",
+      "rea_evidence_excerpt": "Reimplementacion de la validacion del Caso A escrita SOLO desde el\npseudocodigo que REA/Ghidra devolvio (analisis/caso-a/05 y 06) y de los\nbytes leidos en 0x102040 (07).",
+      "rea_evidence_language": "es",
+      "additional_sources": [
+        "https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/README.md",
+        "https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/LEEME.md",
+        "https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/licencia-cli.c"
+      ]
     }
   ]
 }

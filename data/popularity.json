@@ -1,12 +1,12 @@
 {
-  "checked_on": "2026-10-21",
+  "checked_on": "2026-10-26",
   "metric": "GitHub repository stargazers_count; point-in-time attention only, not growth, quality or compatibility.",
   "scope": "Catalog entries whose project_url is a GitHub repository; primary-source-reviewed entries only.",
   "repositories": [
     {
       "case_id": "desktop-games-nostalgia",
       "repository": "ucodia/desktop-games-nostalgia",
-      "stars": 6,
+      "stars": 8,
       "source_url": "https://api.github.com/repos/ucodia/desktop-games-nostalgia"
     },
     {
@@ -18,19 +18,19 @@
     {
       "case_id": "paper-rs",
       "repository": "michaelshimeles/paper-rs",
-      "stars": 58,
+      "stars": 68,
       "source_url": "https://api.github.com/repos/michaelshimeles/paper-rs"
     },
     {
       "case_id": "rec-rs",
       "repository": "michaelshimeles/rec-rs",
-      "stars": 84,
+      "stars": 104,
       "source_url": "https://api.github.com/repos/michaelshimeles/rec-rs"
     },
     {
       "case_id": "terminal-rs",
       "repository": "michaelshimeles/terminal-rs",
-      "stars": 259,
+      "stars": 301,
       "source_url": "https://api.github.com/repos/michaelshimeles/terminal-rs"
     },
     {
@@ -54,7 +54,7 @@
     {
       "case_id": "ledger-reborn",
       "repository": "lxistired/ledger-reborn",
-      "stars": 31,
+      "stars": 38,
       "source_url": "https://api.github.com/repos/lxistired/ledger-reborn"
     },
     {
@@ -66,13 +66,13 @@
     {
       "case_id": "vd-streamer-linux",
       "repository": "cudanexus/vd-streamer-linux",
-      "stars": 1,
+      "stars": 2,
       "source_url": "https://api.github.com/repos/cudanexus/vd-streamer-linux"
     },
     {
       "case_id": "netcat-analysis",
       "repository": "NullLabTests/OpenBSD_netcat_REA",
-      "stars": 4,
+      "stars": 5,
       "source_url": "https://api.github.com/repos/NullLabTests/OpenBSD_netcat_REA"
     },
     {
@@ -108,7 +108,7 @@
     {
       "case_id": "hyper3d-clone",
       "repository": "payswapdotorg/hyper3d-clone",
-      "stars": 1,
+      "stars": 2,
       "source_url": "https://api.github.com/repos/payswapdotorg/hyper3d-clone"
     },
     {
@@ -120,7 +120,7 @@
     {
       "case_id": "picoprint",
       "repository": "bigtower17/picoprint",
-      "stars": 0,
+      "stars": 1,
       "source_url": "https://api.github.com/repos/bigtower17/picoprint"
     },
     {
@@ -132,38 +132,62 @@
     {
       "case_id": "reafuse",
       "repository": "sickpyramid/ReaFuse",
-      "stars": 5,
+      "stars": 7,
       "source_url": "https://api.github.com/repos/sickpyramid/ReaFuse"
     },
     {
       "case_id": "openbattlefield2",
       "repository": "Moxnatiy/OpenBattlefield2",
-      "stars": 53,
+      "stars": 57,
       "source_url": "https://api.github.com/repos/Moxnatiy/OpenBattlefield2"
     },
     {
       "case_id": "gunzrs",
       "repository": "OpenRsG/GunZRs",
-      "stars": 2,
+      "stars": 3,
       "source_url": "https://api.github.com/repos/OpenRsG/GunZRs"
     },
     {
       "case_id": "v5vpn-rea-client",
       "repository": "hygkui/v5vpn-rea-client",
-      "stars": 7,
+      "stars": 9,
       "source_url": "https://api.github.com/repos/hygkui/v5vpn-rea-client"
     },
     {
       "case_id": "coop-anything",
       "repository": "cranebeaker/coop-anything",
-      "stars": 721,
+      "stars": 1391,
       "source_url": "https://api.github.com/repos/cranebeaker/coop-anything"
     },
     {
       "case_id": "sparkdash-rea",
       "repository": "MiaAI-Lab/sparkDash",
-      "stars": 738,
+      "stars": 763,
       "source_url": "https://api.github.com/repos/MiaAI-Lab/sparkDash"
+    },
+    {
+      "case_id": "open-claude-ui",
+      "repository": "Caho1/open-claude-ui",
+      "stars": 1415,
+      "source_url": "https://api.github.com/repos/Caho1/open-claude-ui"
+    },
+    {
+      "case_id": "open-scrantic",
+      "repository": "glauberlima/open-scrantic",
+      "stars": 33,
+      "source_url": "https://api.github.com/repos/glauberlima/open-scrantic"
+    },
+    {
+      "case_id": "rea-safe-agents",
+      "repository": "dagoSte/rea-safe-agents",
+      "stars": 7,
+      "source_url": "https://api.github.com/repos/dagoSte/rea-safe-agents"
+    },
+    {
+      "case_id": "rea-spanish-lab",
+      "repository": "harkiventures/rea-muestra-gratuita",
+      "stars": 0,
+      "source_url": "https://api.github.com/repos/harkiventures/rea-muestra-gratuita"
     }
   ]
 }

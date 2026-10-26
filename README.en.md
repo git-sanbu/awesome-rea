@@ -10,7 +10,7 @@ From legacy game ports to a small color picker, explore public projects using Re
 
 [Explore and star the collection on GitHub](https://github.com/git-sanbu/awesome-rea) · [Search software, purpose or keywords](https://awesome-rea-e7l.pages.dev/) · [Submit a case](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**34 public cases** — 5 official showcases and 29 community projects or author experiments. Updated: 2026-10-21. Each case retains its own source-review date.
+**38 public cases** — 5 official showcases and 33 community projects or author experiments. Updated: 2026-10-26. Each case retains its own source-review date.
 
 > Sources reviewed; author tests not independently rerun.
 
@@ -18,13 +18,15 @@ From legacy game ports to a small color picker, explore public projects using Re
 
 ## Popular projects
 
-Snapshot: 2026-10-21. Source-reviewed catalog projects with at least 100 GitHub Stars, sorted by stars. Stars indicate attention, not independent reproduction or production readiness. [Snapshot sources](data/popularity.json).
+Snapshot: 2026-10-26. Source-reviewed catalog projects with at least 100 GitHub Stars, sorted by stars. Stars indicate attention, not independent reproduction or production readiness. [Snapshot sources](data/popularity.json).
 
 | Project / demo | GitHub Stars | Process and limitations |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash: integrating REA analysis into a multi-device dashboard](cases/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything: investigating campaign multiplayer entry points](cases/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs: a market terminal informed by TradingView interactions](cases/terminal-rs.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: documenting desktop interactions and publishing reusable UI components](cases/open-claude-ui.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: investigating campaign multiplayer entry points](cases/coop-anything.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: integrating REA analysis into a multi-device dashboard](cases/sparkdash-rea.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: a market terminal informed by TradingView interactions](cases/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: an OBS-inspired native macOS recorder](cases/rec-rs.md) |
 
 ## Official showcases
 
@@ -45,6 +47,7 @@ Snapshot: 2026-10-21. Source-reviewed catalog projects with at least 100 GitHub 
 | [OpenBattlefield2: function-level Evidence for a Battlefield 2 client](cases/openbattlefield2.md) | How can crosshair, HUD and binary-behavior research inform a traceable engine implementation? | [Primary source](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | [GunZRs: identifying a packing boundary before rebuilding from game data](cases/gunzrs.md) | How can reconstruction continue when a packed executable prevents static recovery of game logic? | [Primary source](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | [Co-op Anything: investigating campaign multiplayer entry points](cases/coop-anything.md) | How can a campaign retain its scripts and sides while letting a second player join? | [Primary source](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| [Open Scrantic: rebuilding the Johnny Castaway screensaver engine in Rust](cases/open-scrantic.md) | How can a 16-bit screensaver’s script interpreter, story schedule and random behavior run on modern systems? | [Primary source](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) |
 
 ## Applications
 
@@ -59,6 +62,7 @@ Snapshot: 2026-10-21. Source-reviewed catalog projects with at least 100 GitHub 
 | [Ledger Reborn: a local ledger informed by QuickBooks research](cases/ledger-reborn.md) | How can desktop accounting workflows inform an independent local app? | [Primary source](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
 | [DiskLens: checking disk-scanning and treemap algorithms in a released binary](cases/disklens.md) | How can disk scanning, treemaps and duplicate detection be checked before building a new interface? | [Primary source](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: from captured web bundles to an independent 3D prototype](cases/hyper3d-clone.md) | How can interface and API observations inform a prototype that exports 3D models? | [Primary source](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| [Open Claude UI: documenting desktop interactions and publishing reusable UI components](cases/open-claude-ui.md) | How can input composition, scrolling and desktop interaction rules inform reusable interface components? | [Primary source](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 
 ## Hardware and compatibility
 
@@ -88,12 +92,14 @@ Snapshot: 2026-10-21. Source-reviewed catalog projects with at least 100 GitHub 
 | --- | --- | --- |
 | [rea-playbook: turning Electron Evidence into a report and reconstruction](cases/rea-playbook.md) | How can large Evidence JSON become readable facts and a checked reconstruction? | [Primary source](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
 | [ReaFuse: combining two libraries after investigating their behavior](cases/reafuse.md) | How can two projects become behavior specifications and then a new combined tool? | [Primary source](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+| [REA in Spanish: reconstructing an author-owned key validator](cases/rea-spanish-lab.md) | How can a small stripped program’s acceptance rule be reconstructed and checked against the original? | [Primary source](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) |
 
 ## Tools and integrations
 
 | Project / demo | The question | Primary source |
 | --- | --- | --- |
 | [sparkDash: integrating REA analysis into a multi-device dashboard](cases/sparkdash-rea.md) | How can a web interface submit long-running remote REA jobs and load large results on demand? | [Primary source](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [REA Safe Agent: brokering static analysis between two contained processes](cases/rea-safe-agents.md) | How can an agent query REA while access to inputs, host tools and model requests remains bounded? | [Primary source](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
 
 ## Which cases are included?
 

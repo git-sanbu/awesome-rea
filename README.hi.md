@@ -10,7 +10,7 @@
 
 [GitHub पर संग्रह को खोजें और तारांकित करें](https://github.com/git-sanbu/awesome-rea) · [सॉफ़्टवेयर, उद्देश्य या कीवर्ड खोजें](https://awesome-rea-e7l.pages.dev/hi/) · [एक मामला प्रस्तुत करें](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**34 सार्वजनिक मामले** — 5 आधिकारिक शोकेस और 29 सामुदायिक परियोजनाएं या लेखक प्रयोग. अपडेट किया गया: 2026-10-21। प्रत्येक मामले की अपनी स्रोत-समीक्षा तिथि बरकरार रहती है।
+**38 सार्वजनिक मामले** — 5 आधिकारिक शोकेस और 33 सामुदायिक परियोजनाएं या लेखक प्रयोग. अपडेट किया गया: 2026-10-26। प्रत्येक मामले की अपनी स्रोत-समीक्षा तिथि बरकरार रहती है।
 
 > सूत्रों की समीक्षा की गई; लेखक परीक्षण स्वतंत्र रूप से दोबारा नहीं चलाए गए।
 
@@ -20,13 +20,15 @@
 
 ## लोकप्रिय परियोजनाएँ
 
-स्नैपशॉट: 2026-10-21. सितारों द्वारा क्रमबद्ध, कम से कम 100 GitHub Stars के साथ स्रोत-समीक्षित कैटलॉग परियोजनाएं। Stars ध्यान का संकेत देता है, स्वतंत्र पुनरुत्पादन या उत्पादन की तैयारी का नहीं। [स्नैपशॉट स्रोत](data/popularity.json).
+स्नैपशॉट: 2026-10-26. सितारों द्वारा क्रमबद्ध, कम से कम 100 GitHub Stars के साथ स्रोत-समीक्षित कैटलॉग परियोजनाएं। Stars ध्यान का संकेत देता है, स्वतंत्र पुनरुत्पादन या उत्पादन की तैयारी का नहीं। [स्नैपशॉट स्रोत](data/popularity.json).
 
 | प्रोजेक्ट/डेमो | GitHub Stars | प्रक्रिया और सीमाएँ |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash: REA विश्लेषण को मल्टी-डिवाइस डैशबोर्ड में एकीकृत करना](cases/hi/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything: अभियान मल्टीप्लेयर प्रवेश बिंदुओं की जांच](cases/hi/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs: TradingView इंटरैक्शन द्वारा सूचित एक मार्केट टर्मिनल](cases/hi/terminal-rs.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: डेस्कटॉप इंटरैक्शन का दस्तावेजीकरण करना और पुन: प्रयोज्य यूआई घटकों को प्रकाशित करना](cases/hi/open-claude-ui.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: अभियान मल्टीप्लेयर प्रवेश बिंदुओं की जांच](cases/hi/coop-anything.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: REA विश्लेषण को मल्टी-डिवाइस डैशबोर्ड में एकीकृत करना](cases/hi/sparkdash-rea.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: TradingView इंटरैक्शन द्वारा सूचित एक मार्केट टर्मिनल](cases/hi/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: एक OBS-प्रेरित देशी macOS रिकॉर्डर](cases/hi/rec-rs.md) |
 
 ## आधिकारिक शोकेस
 
@@ -47,6 +49,7 @@
 | [OpenBattlefield2: फ़ंक्शन-स्तर Evidence](cases/hi/openbattlefield2.md) | क्रॉसहेयर, एचयूडी और बाइनरी-व्यवहार अनुसंधान एक ट्रेस करने योग्य इंजन कार्यान्वयन को कैसे सूचित कर सकते हैं? | [प्राथमिक स्रोत](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | [GunZRs: गेम डेटा से पुनर्निर्माण से पहले पैकिंग सीमा की पहचान करना](cases/hi/gunzrs.md) | जब एक पैक्ड निष्पादन योग्य गेम लॉजिक की स्थैतिक पुनर्प्राप्ति को रोकता है तो पुनर्निर्माण कैसे जारी रह सकता है? | [प्राथमिक स्रोत](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | [Co-op Anything: अभियान मल्टीप्लेयर प्रवेश बिंदुओं की जांच](cases/hi/coop-anything.md) | किसी दूसरे खिलाड़ी को शामिल होने देते समय कोई अभियान अपनी स्क्रिप्ट और पक्षों को कैसे बरकरार रख सकता है? | [प्राथमिक स्रोत](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| [Open Scrantic: Rust में जॉनी कास्टअवे स्क्रीनसेवर इंजन का पुनर्निर्माण](cases/hi/open-scrantic.md) | 16-bit स्क्रीनसेवर का स्क्रिप्ट दुभाषिया, कहानी शेड्यूल और यादृच्छिक व्यवहार आधुनिक सिस्टम पर कैसे चल सकता है? | [प्राथमिक स्रोत](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) |
 
 ## अनुप्रयोग
 
@@ -61,6 +64,7 @@
 | [Ledger Reborn: QuickBooks अनुसंधान द्वारा सूचित एक स्थानीय लेजर](cases/hi/ledger-reborn.md) | डेस्कटॉप अकाउंटिंग वर्कफ़्लो एक स्वतंत्र स्थानीय ऐप को कैसे सूचित कर सकता है? | [प्राथमिक स्रोत](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
 | [DiskLens: जारी बाइनरी में डिस्क-स्कैनिंग और ट्रीमैप एल्गोरिदम की जाँच करना](cases/hi/disklens.md) | नया इंटरफ़ेस बनाने से पहले डिस्क स्कैनिंग, ट्रीमैप्स और डुप्लिकेट डिटेक्शन की जाँच कैसे की जा सकती है? | [प्राथमिक स्रोत](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: कैप्चर किए गए वेब बंडलों से एक स्वतंत्र 3D प्रोटोटाइप तक](cases/hi/hyper3d-clone.md) | इंटरफ़ेस और एपीआई अवलोकन एक प्रोटोटाइप को कैसे सूचित कर सकते हैं जो 3D मॉडल निर्यात करता है? | [प्राथमिक स्रोत](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| [Open Claude UI: डेस्कटॉप इंटरैक्शन का दस्तावेजीकरण करना और पुन: प्रयोज्य यूआई घटकों को प्रकाशित करना](cases/hi/open-claude-ui.md) | इनपुट संरचना, स्क्रॉलिंग और डेस्कटॉप इंटरैक्शन नियम पुन: प्रयोज्य इंटरफ़ेस घटकों को कैसे सूचित कर सकते हैं? | [प्राथमिक स्रोत](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 
 ## हार्डवेयर और अनुकूलता
 
@@ -90,12 +94,14 @@
 | --- | --- | --- |
 | [rea-playbook: Electron Evidence को एक रिपोर्ट और पुनर्निर्माण में बदलना](cases/hi/rea-playbook.md) | बड़ा Evidence JSON पठनीय तथ्य और जाँचा गया पुनर्निर्माण कैसे बन सकता है? | [प्राथमिक स्रोत](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
 | [ReaFuse: दो पुस्तकालयों के व्यवहार की जांच के बाद उनका संयोजन](cases/hi/reafuse.md) | दो परियोजनाएँ व्यवहार विशिष्टताएँ और फिर एक नया संयुक्त उपकरण कैसे बन सकती हैं? | [प्राथमिक स्रोत](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+| [REA in Spanish: लेखक के स्वामित्व वाले कुंजी सत्यापनकर्ता का पुनर्निर्माण](cases/hi/rea-spanish-lab.md) | एक छोटे से छीने गए प्रोग्राम के स्वीकृति नियम का पुनर्निर्माण और मूल के विरुद्ध जाँच कैसे की जा सकती है? | [प्राथमिक स्रोत](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) |
 
 ## उपकरण और एकीकरण
 
 | प्रोजेक्ट/डेमो | सवाल | प्राथमिक स्रोत |
 | --- | --- | --- |
 | [sparkDash: REA विश्लेषण को मल्टी-डिवाइस डैशबोर्ड में एकीकृत करना](cases/hi/sparkdash-rea.md) | एक वेब इंटरफ़ेस लंबे समय से चलने वाली दूरस्थ REA नौकरियां कैसे सबमिट कर सकता है और मांग पर बड़े परिणाम कैसे लोड कर सकता है? | [प्राथमिक स्रोत](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [REA Safe Agent: दो निहित प्रक्रियाओं के बीच स्थैतिक विश्लेषण करना](cases/hi/rea-safe-agents.md) | एक एजेंट REA से कैसे पूछताछ कर सकता है जबकि इनपुट, होस्ट टूल और मॉडल अनुरोधों तक पहुंच सीमित है? | [प्राथमिक स्रोत](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
 
 ## कौन से मामले शामिल हैं?
 

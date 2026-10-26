@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-26
+
+- Add four source-reviewed projects: Open Claude UI (desktop interaction notes and reusable components), Open Scrantic (Johnny Castaway engine), REA Safe Agent (implemented static-analysis integration) and a Spanish lab using an author-owned validator. The catalog now contains 38 distinct cases: 5 official and 33 community projects or experiments.
+- Pin every new source to a complete commit; distinguish author reports, code examples, real REA calls and limited tests. No third-party binaries were installed or run.
+- Synchronize all 12 editions, READMEs, case notes and the 468-page static catalog. Preserve original quotations and all prior case review dates; translate only added editorial fields.
+- Refresh the 31-repository GitHub Stars snapshot dated 2026-10-26. Open Claude UI and rec-rs now appear in the existing 100-Star popular section; Stars remain attention metrics, not verification.
+- Record discovery queries, exclusions and remaining review gaps in [research notes](research/2026-10-26.md). Update source records and the documented site count.
+
 ## 2026-10-21
 
 ### English-first multilingual release

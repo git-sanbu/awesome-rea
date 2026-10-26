@@ -10,7 +10,7 @@ Entdecken Sie öffentliche Projekte mit Reverse Engineer Anything, von älteren 
 
 [Entdecken und präsentieren Sie die Kollektion auf GitHub](https://github.com/git-sanbu/awesome-rea) · [Suchen Sie nach Software, Zweck oder Schlüsselwörtern](https://awesome-rea-e7l.pages.dev/de/) · [Senden Sie einen Fall](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**34 öffentliche Fälle** — Offizielle 5-Showcases und 29-Community-Projekte oder Autorenexperimente. Aktualisiert: 2026-10-21. Jeder Fall behält sein eigenes Datum für die Quellenüberprüfung.
+**38 öffentliche Fälle** — Offizielle 5-Showcases und 33-Community-Projekte oder Autorenexperimente. Aktualisiert: 2026-10-26. Jeder Fall behält sein eigenes Datum für die Quellenüberprüfung.
 
 > Quellen überprüft; Autorentests werden nicht unabhängig wiederholt.
 
@@ -20,13 +20,15 @@ Diese Ausgabe wurde maschinell aus der redaktionellen englischen Version überse
 
 ## Beliebte Projekte
 
-Schnappschuss: 2026-10-21. Quellengeprüfte Katalogprojekte mit mindestens 100 GitHub Stars, sortiert nach Sternen. Stars weisen auf Aufmerksamkeit hin, nicht auf unabhängige Reproduktion oder Produktionsbereitschaft. [Snapshot-Quellen](data/popularity.json).
+Schnappschuss: 2026-10-26. Quellengeprüfte Katalogprojekte mit mindestens 100 GitHub Stars, sortiert nach Sternen. Stars weisen auf Aufmerksamkeit hin, nicht auf unabhängige Reproduktion oder Produktionsbereitschaft. [Snapshot-Quellen](data/popularity.json).
 
 | Projekt / Demo | GitHub Stars | Prozess und Einschränkungen |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash: Integration der REA-Analyse in ein Dashboard für mehrere Geräte](cases/de/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything: Untersuchung der Einstiegspunkte für den Mehrspielermodus der Kampagne](cases/de/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs: ein Marktterminal, das durch TradingView-Interaktionen informiert wird](cases/de/terminal-rs.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: Desktop-Interaktionen dokumentieren und wiederverwendbare UI-Komponenten veröffentlichen](cases/de/open-claude-ui.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: Untersuchung der Einstiegspunkte für den Mehrspielermodus der Kampagne](cases/de/coop-anything.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: Integration der REA-Analyse in ein Dashboard für mehrere Geräte](cases/de/sparkdash-rea.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: ein Marktterminal, das durch TradingView-Interaktionen informiert wird](cases/de/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: ein OBS-inspirierter nativer macOS-Recorder](cases/de/rec-rs.md) |
 
 ## Offizielle Vitrinen
 
@@ -47,6 +49,7 @@ Schnappschuss: 2026-10-21. Quellengeprüfte Katalogprojekte mit mindestens 100 G
 | [OpenBattlefield2: -Funktionsebene Evidence für einen Battlefield 2-Client](cases/de/openbattlefield2.md) | Wie können Fadenkreuz-, HUD- und binäre Verhaltensforschung in eine nachvollziehbare Engine-Implementierung einfließen? | [Primärquelle](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | [GunZRs: Identifizieren einer Packgrenze vor dem Neuaufbau aus Spieldaten](cases/de/gunzrs.md) | Wie kann die Rekonstruktion fortgesetzt werden, wenn eine gepackte ausführbare Datei die statische Wiederherstellung der Spiellogik verhindert? | [Primärquelle](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | [Co-op Anything: Untersuchung der Einstiegspunkte für den Mehrspielermodus der Kampagne](cases/de/coop-anything.md) | Wie kann eine Kampagne ihre Skripte und Seiten beibehalten und gleichzeitig einen zweiten Spieler beitreten lassen? | [Primärquelle](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| [Open Scrantic: Neuerstellung der Johnny Castaway-Bildschirmschoner-Engine in Rust](cases/de/open-scrantic.md) | Wie können der Skriptinterpreter, der Storyplan und das Zufallsverhalten eines 16-bit-Bildschirmschoners auf modernen Systemen ausgeführt werden? | [Primärquelle](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) |
 
 ## Anwendungen
 
@@ -61,6 +64,7 @@ Schnappschuss: 2026-10-21. Quellengeprüfte Katalogprojekte mit mindestens 100 G
 | [Ledger Reborn: ein lokales Hauptbuch, das auf der QuickBooks-Forschung basiert](cases/de/ledger-reborn.md) | Wie können Desktop-Buchhaltungsworkflows eine unabhängige lokale App informieren? | [Primärquelle](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
 | [DiskLens: Überprüfung von Festplatten-Scan- und Treemap-Algorithmen in einer veröffentlichten Binärdatei](cases/de/disklens.md) | Wie können Festplattenscans, Treemaps und Duplikaterkennung überprüft werden, bevor eine neue Schnittstelle erstellt wird? | [Primärquelle](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: von erfassten Web-Bundles bis hin zu einem unabhängigen 3D-Prototyp](cases/de/hyper3d-clone.md) | Wie können Schnittstellen- und API-Beobachtungen einen Prototyp beeinflussen, der 3D-Modelle exportiert? | [Primärquelle](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| [Open Claude UI: Desktop-Interaktionen dokumentieren und wiederverwendbare UI-Komponenten veröffentlichen](cases/de/open-claude-ui.md) | Wie können Eingabezusammensetzungs-, Scroll- und Desktop-Interaktionsregeln wiederverwendbare Schnittstellenkomponenten beeinflussen? | [Primärquelle](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 
 ## Hardware und Kompatibilität
 
@@ -90,12 +94,14 @@ Schnappschuss: 2026-10-21. Quellengeprüfte Katalogprojekte mit mindestens 100 G
 | --- | --- | --- |
 | [rea-playbook: Electron Evidence in einen Bericht und eine Rekonstruktion verwandeln](cases/de/rea-playbook.md) | Wie kann aus großem Evidence JSON lesbare Fakten und eine überprüfte Rekonstruktion werden? | [Primärquelle](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
 | [ReaFuse: Kombinieren zweier Bibliotheken nach Untersuchung ihres Verhaltens](cases/de/reafuse.md) | Wie können zwei Projekte zu Verhaltensspezifikationen und dann zu einem neuen kombinierten Tool werden? | [Primärquelle](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+| [REA in Spanish: Rekonstruktion eines autoreneigenen Schlüsselvalidators](cases/de/rea-spanish-lab.md) | Wie kann die Akzeptanzregel eines kleinen, gestrippten Programms rekonstruiert und mit dem Original verglichen werden? | [Primärquelle](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) |
 
 ## Tools und Integrationen
 
 | Projekt / Demo | Die Frage | Primärquelle |
 | --- | --- | --- |
 | [sparkDash: Integration der REA-Analyse in ein Dashboard für mehrere Geräte](cases/de/sparkdash-rea.md) | Wie kann eine Webschnittstelle lang laufende Remote-Jobs REA übermitteln und große Ergebnisse bei Bedarf laden? | [Primärquelle](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [REA Safe Agent: Vermittlung statischer Analysen zwischen zwei enthaltenen Prozessen](cases/de/rea-safe-agents.md) | Wie kann ein Agent REA abfragen, während der Zugriff auf Eingaben, Host-Tools und Modellanforderungen begrenzt bleibt? | [Primärquelle](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
 
 ## Welche Fälle sind enthalten?
 

@@ -1,6 +1,6 @@
 # 检索与来源记录
 
-最近更新：**2026-10-21**；每条来源保留各自核对日期。对象：morluto/rea（npm `rea-agents`），而非其他同名 REA 项目。
+最近更新：**2026-10-26**；每条来源保留各自核对日期。对象：morluto/rea（npm `rea-agents`），而非其他同名 REA 项目。
 
 ## 检索方法
 
@@ -56,6 +56,14 @@
 | [v5vpn-rea-client](cases/zh-CN/v5vpn-rea-client.md) | 作者项目 / 调查记录 | [原文](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) | 2026-10-21 |
 | [coop-anything](cases/zh-CN/coop-anything.md) | 作者项目 / 具体游戏调查笔记 | [原文](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) | 2026-10-21 |
 | [sparkdash-rea](cases/zh-CN/sparkdash-rea.md) | 作者项目 / 已实现的 REA 集成 | [原文](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) | 2026-10-21 |
+| [open-claude-ui](cases/zh-CN/open-claude-ui.md) | 作者项目 / 交互调查与实现 | [原文](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) | 2026-10-26 |
+| [open-scrantic](cases/zh-CN/open-scrantic.md) | 作者项目 / 引擎重建 | [原文](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) | 2026-10-26 |
+| [rea-safe-agents](cases/zh-CN/rea-safe-agents.md) | 作者项目 / 已实现的 REA 集成 | [原文](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) | 2026-10-26 |
+| [rea-spanish-lab](cases/zh-CN/rea-spanish-lab.md) | 作者自有程序 / 教学案例 | [原文](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) | 2026-10-26 |
+
+## 2026-10-26 更新
+
+新增 Open Claude UI、Open Scrantic、REA Safe Agent 与作者自有的西班牙语实验，案例共 38 项；新增来源固定到完整提交，同步 12 种语言及 31 个项目的 Stars 快照。既有案例正文和核对日期保留。检索覆盖、候选处理和局限见[本轮审阅记录](research/2026-10-26.md)。
 
 ## 2026-10-21 热门项目补充
 

@@ -10,7 +10,7 @@
 
 [在 GitHub 檢視與收藏案例集](https://github.com/git-sanbu/awesome-rea) · [搜尋軟體、用途或關鍵詞](https://awesome-rea-e7l.pages.dev/zh-TW/) · [投稿案例](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**34 個公開案例** — 其中 5 個官方案例、29 個社群專案與作者實驗. 最近更新：2026-10-21；各案例保留獨立核對日期。
+**38 個公開案例** — 其中 5 個官方案例、33 個社群專案與作者實驗. 最近更新：2026-10-26；各案例保留獨立核對日期。
 
 > 已閱讀公開原文，未獨立復跑作者測試。
 
@@ -20,13 +20,15 @@
 
 ## 熱門專案
 
-2026-10-21 快照 · 本目錄已核對、達到 100 GitHub Stars 的專案，按星標排序。Stars 表示關注度，不代表復現成功或生產可用。 [檢視快照來源](data/popularity.json).
+2026-10-26 快照 · 本目錄已核對、達到 100 GitHub Stars 的專案，按星標排序。Stars 表示關注度，不代表復現成功或生產可用。 [檢視快照來源](data/popularity.json).
 
 | 專案 / 演示 | GitHub Stars | 過程與侷限 |
 | --- | ---: | --- |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 738 | [sparkDash：把 REA 分析任務接入多裝置儀表盤](cases/zh-TW/sparkdash-rea.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 721 | [Co-op Anything：用 REA 調查單機戰役的聯機接入點](cases/zh-TW/coop-anything.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 259 | [terminal-rs：研究 TradingView 互動後做行情終端](cases/zh-TW/terminal-rs.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI：從桌面互動調查到可複用介面元件](cases/zh-TW/open-claude-ui.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything：用 REA 調查單機戰役的聯機接入點](cases/zh-TW/coop-anything.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash：把 REA 分析任務接入多裝置儀表盤](cases/zh-TW/sparkdash-rea.md) |
+| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs：研究 TradingView 互動後做行情終端](cases/zh-TW/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs：研究 OBS 後做原生 macOS 錄屏工具](cases/zh-TW/rec-rs.md) |
 
 ## 官方案例
 
@@ -47,6 +49,7 @@
 | [OpenBattlefield2：用函式級 Evidence 重建戰地 2 客戶端](cases/zh-TW/openbattlefield2.md) | 怎樣把準星、HUD 與客戶端行為的二進位制調查，轉成可追溯的引擎實現？ | [原始出處](https://github.com/Moxnatiy/OpenBattlefield2/blob/48078865c89ab6c3a98af8ecb06a40349b640e34/docs/functions/hud-crosshair.md) |
 | [GunZRs：先確認加殼邊界，再從遊戲資料重建](cases/zh-TW/gunzrs.md) | 原生主程式被加殼、遊戲邏輯不能靜態讀取時，怎樣界定調查範圍並繼續重建？ | [原始出處](https://github.com/OpenRsG/GunZRs/blob/485575b7451912ed1d62661c388663b08dce4faf/docs/formats.md) |
 | [Co-op Anything：用 REA 調查單機戰役的聯機接入點](cases/zh-TW/coop-anything.md) | 單機戰役怎樣保留任務指令碼和陣營，再允許第二位玩家加入？ | [原始出處](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) |
+| [Open Scrantic：用 Rust 重建 Johnny Castaway 屏保引擎](cases/zh-TW/open-scrantic.md) | 16 位屏保的指令碼直譯器、劇情排程與隨機行為，怎樣在現代系統執行？ | [原始出處](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) |
 
 ## 應用實踐
 
@@ -61,6 +64,7 @@
 | [Ledger Reborn：研究 QuickBooks 後做本地賬本](cases/zh-TW/ledger-reborn.md) | 如何理解桌面會計工作流，並做獨立本地應用？ | [原始出處](https://github.com/lxistired/ledger-reborn/blob/d7f6b8a1f4ad6c4ae8b10100d1c93cf15940c21d/README.md) |
 | [DiskLens：用已釋出程式核對磁碟掃描與樹圖演算法](cases/zh-TW/disklens.md) | 怎樣確認磁碟掃描、矩形樹圖和重複檔案檢測的實現，再做獨立介面？ | [原始出處](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D：從網頁包分析到獨立 3D 生成原型](cases/zh-TW/hyper3d-clone.md) | 怎樣把網頁分析得到的介面與介面觀察轉化為一個可匯出模型的原型？ | [原始出處](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
+| [Open Claude UI：從桌面互動調查到可複用介面元件](cases/zh-TW/open-claude-ui.md) | 輸入法合成、滾動與桌面互動規則，如何轉化為可複用介面元件？ | [原始出處](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 
 ## 硬體與相容
 
@@ -90,12 +94,14 @@
 | --- | --- | --- |
 | [rea-playbook：把 Electron Evidence 變成可讀報告與重建](cases/zh-TW/rea-playbook.md) | 拿到巨大 Evidence JSON 後，怎樣提取可讀事實並驗證重建？ | [原始出處](https://github.com/jinshi666888/rea-playbook/blob/0ad65a85139025f32402be13ed64c8003e39b00a/README.md) |
 | [ReaFuse：分析兩個開源庫的行為後組合新工具](cases/zh-TW/reafuse.md) | 怎樣把兩個專案的行為整理成規格，再實現一個同時利用兩者的新工具？ | [原始出處](https://github.com/sickpyramid/ReaFuse/blob/c64502a2827832c042d894ba90dc678a95772cb1/README.md) |
+| [西班牙語 REA 實驗：重建作者自有的金鑰校驗器](cases/zh-TW/rea-spanish-lab.md) | 如何從小型無符號程式恢復接受規則，並與原始程式核對？ | [原始出處](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) |
 
 ## 工具與整合
 
 | 專案 / 演示 | 想解決什麼問題 | 原始出處 |
 | --- | --- | --- |
 | [sparkDash：把 REA 分析任務接入多裝置儀表盤](cases/zh-TW/sparkdash-rea.md) | 怎樣從網頁提交遠端 REA 任務，讓長分析在斷開瀏覽器後繼續，並按需檢視大結果？ | [原始出處](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
+| [REA Safe Agent：在兩個受限程序之間轉發靜態分析](cases/zh-TW/rea-safe-agents.md) | 怎樣讓代理查詢 REA，同時約束輸入、主機工具和模型請求的訪問範圍？ | [原始出處](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
 
 ## 什麼樣的實踐會被收錄？
 

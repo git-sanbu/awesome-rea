@@ -2,7 +2,7 @@
 
 [简体中文](SOURCES.zh-CN.md) · [Catalog](README.md)
 
-Updated **2026-10-21**. Each entry retains its own source-review date. This collection concerns `morluto/rea` (npm `rea-agents`), not unrelated projects sharing the name REA.
+Updated **2026-10-26**. Each entry retains its own source-review date. This collection concerns `morluto/rea` (npm `rea-agents`), not unrelated projects sharing the name REA.
 
 ## Method
 
@@ -58,6 +58,14 @@ Source review establishes explicit REA attribution, not independent verification
 | [v5vpn-rea-client](cases/v5vpn-rea-client.md) | Author project / investigation | [Source](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) | 2026-10-21 |
 | [coop-anything](cases/coop-anything.md) | Author project / investigation | [Source](https://github.com/cranebeaker/coop-anything/blob/9e972b6d8e8aa62c53ad933cff3b64ae489e4ee3/games/command-and-conquer-3/NOTES.md) | 2026-10-21 |
 | [sparkdash-rea](cases/sparkdash-rea.md) | Implemented REA integration | [Source](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) | 2026-10-21 |
+| [open-claude-ui](cases/open-claude-ui.md) | Author project / investigation | [Source](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) | 2026-10-26 |
+| [open-scrantic](cases/open-scrantic.md) | Author project / investigation | [Source](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) | 2026-10-26 |
+| [rea-safe-agents](cases/rea-safe-agents.md) | Implemented REA integration | [Source](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) | 2026-10-26 |
+| [rea-spanish-lab](cases/rea-spanish-lab.md) | Author-owned educational case | [Source](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) | 2026-10-26 |
+
+## 2026-10-26 updates
+
+Four newly reviewed projects bring the catalog to 38 distinct cases: Open Claude UI, Open Scrantic, REA Safe Agent and an author-owned Spanish lab. All sources are pinned to full commits; all 12 editions and the 31-repository Stars snapshot are refreshed. Existing case text and review dates are retained. See [review decisions, limitations and discovery coverage](research/2026-10-26.md).
 
 ## 2026-10-21 updates
 

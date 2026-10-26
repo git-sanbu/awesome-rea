@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-21",
+  "updated_on": "2026-10-26",
   "translation_method": "Original Chinese editorial text.",
   "cases": {
     "dx-ball": {
@@ -341,6 +341,46 @@
       "limitations": "本条为工具集成案例，不是用 REA 重建 sparkDash，也不证明所有上游分析路径已通过实机验收。仅支持 Linux 设备，功能默认关闭，目标格式依赖额外 provider。所读 manager 测试使用 fake REA 和本地 shell，不能替代真实 Ghidra/远程设备验证；本仓库未安装、运行或复跑。",
       "takeaway": "将上游能力和自己的调度界面分开归因，保留分析结果的证据、限制和失败状态，而不只显示任务成功。",
       "author": "MiaAI-Lab"
+    },
+    "open-claude-ui": {
+      "title": "Open Claude UI：从桌面交互调查到可复用界面组件",
+      "target": "Claude Desktop macOS 安装包；作者声明的 @ant/desktop 2.37337.1 基线及捆绑网页界面",
+      "question": "输入法合成、滚动与桌面交互规则，如何转化为可复用界面组件？",
+      "rea_role": "作者将 ASAR、JavaScript AST 与 CSS 调查明确归于 REA 6.5.0；交互章节把打包代码片段与输入守卫、滚动规则对应，另以 TypeScript 示例实现这些行为。",
+      "reported_result": "仓库公开了按版本组织的设计笔记、组件故事书、CSS 令牌和实现示例；RichComposerWithMentions.tsx 包含合成状态检查及合成结束后的 Enter 守卫。",
+      "limitations": "这是界面库和作者报告的拆解，不是完整 Claude 客户端或模型服务。所读材料未见原始 REA 会话记录及独立行为、视觉等价测试；版本与还原程度仍属于作者声明。",
+      "takeaway": "把一个交互规则对应到其引用的打包位置和实现，区分设计文档与经过测量的等价性。",
+      "author": "Caho1"
+    },
+    "open-scrantic": {
+      "title": "Open Scrantic：用 Rust 重建 Johnny Castaway 屏保引擎",
+      "target": "1992 年 Screen Antics: Johnny Castaway 的 Windows 3.1 SCRANTIC.SCR 及匹配资源文件",
+      "question": "16 位屏保的脚本解释器、剧情调度与随机行为，怎样在现代系统运行？",
+      "rea_role": "开发者明确说明使用 Claude Code 与 REA 反汇编、反编译 SCRANTIC.SCR，恢复资源格式和脚本语义，并生成 Rust 实现及文档。",
+      "reported_result": "公开 Rust 引擎实现资源加载、TTM/ADS 脚本执行、剧情推进、计时及原随机数生成器；ENGINE.md 记录恢复出的规则和有意差异，作者提供 Windows、macOS、Linux 发布入口。",
+      "limitations": "运行需要用户自备匹配的原始文件，加载器会拒绝其他可执行文件版本。整帧重绘、可选图像音频处理和设置与原作存在差异；本目录未独立测试跨平台行为或等价性，所读文件未见原始 REA 会话。",
+      "takeaway": "把原始素材权属与引擎代码分开，保留算术及调度规则，并记录有意采用的兼容差异。",
+      "author": "glauberlima"
+    },
+    "rea-safe-agents": {
+      "title": "REA Safe Agent：在两个受限进程之间转发静态分析",
+      "target": "REA 6.7.0、Ghidra 12.1.4 与 JADX 集成；无害 ELF 测试样本及 F-Droid APK",
+      "question": "怎样让代理查询 REA，同时约束输入、主机工具和模型请求的访问范围？",
+      "rea_role": "实现将 REA 与接收结果的代理放在两个独立 Docker 容器，由主机控制器转发允许的 MCP 调用；冻结输入副本、工具路径检查和结果大小限制约束跨界数据，实际静态分析由 REA 提供。",
+      "reported_result": "带日期的 macOS ARM64 回执报告：Claude 对同一无害 ELF 成功调用 REA 11 次，Codex 成功调用 9 次，并与已知源码核对哈希、FNV-1a 常量及解码字符串；验证记录另报告对 F-Droid 2.0.2 的实时分析成功调用 REA 39 次。",
+      "limitations": "这是作者公开的回执，不是独立安全认证。静态分析不执行目标。隔离依赖 Docker 与主机控制器；分析文本会送到模型服务，Windows Docker 集成仍为实验性。整镜像仍有漏洞扫描发现，不能与单独的干净 npm 审计混为一谈。",
+      "takeaway": "区分模拟策略测试、真实工具调用和实时模型运行，将每项结论绑定到带日期的目标、主机和回执。",
+      "author": "dagoSte"
+    },
+    "rea-spanish-lab": {
+      "title": "西班牙语 REA 实验：重建作者自有的密钥校验器",
+      "target": "作者自编教学程序 licencia-cli.stripped 及带符号参考版本",
+      "question": "如何从小型无符号程序恢复接受规则，并与原始程序核对？",
+      "rea_role": "作者报告使用 REA 与 Ghidra 返回的伪代码，以及从 0x102040 读取的字节，恢复字符转换、加权累积、循环移位和接受条件，再编写独立 Python 校验器。",
+      "reported_result": "免费西班牙语样例包含实验环境搭建、完整案例、无符号与带符号练习二进制、参考 C 源码及重建的 Python 校验器；校验器列出 4 个预期样例，作者报告已与真实二进制比较。",
+      "limitations": "练习对象是作者自有的小型无保护程序，不是商业授权绕过，也不代表对受保护软件普遍有效。4 个样例只是有限检查，不是穷尽等价验证；本目录未执行二进制或复跑比较，计划中的完整课程尚未交付。",
+      "takeaway": "用自有样本和暂时隐藏的参考源码恢复一个有边界的规则，先测试接受与拒绝输入，再对照源码。",
+      "author": "harkiventures"
     }
   },
   "ui": {
@@ -419,5 +459,5 @@
     "category_learning": "学习与复现",
     "category_integrations": "工具与集成"
   },
-  "source_digest": "fe8cde5466ac700e20ee0c2e0052d7afdc1ae94c5de21ffc8a4d62b19d8fcb30"
+  "source_digest": "59e191cf47c02978a7ee19505c29c38bc167b77975a4288691128d1f593c1ff1"
 }
