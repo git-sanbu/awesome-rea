@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-10-26",
+  "updated_on": "2026-11-03",
   "translation_method": "Original Chinese editorial text.",
   "cases": {
     "dx-ball": {
@@ -77,8 +77,8 @@
       "target": "Paper 桌面设计应用的行为",
       "question": "怎样理解画布、布局和编辑器交互，并实现独立设计工具？",
       "rea_role": "作者声明用 REA 与 Claude Code 研究 Paper 桌面应用行为，再用 wgpu、winit、egui 实现独立 Rust 应用。",
-      "reported_result": "公开项目包含无限画布、页面、布局、矢量编辑、白板与 MCP 接口，并列出测试与功能差异。 2026-10-21 复核：项目已更名 Sketch，程序名为 sketch-rs，作者说明首次启动迁移旧项目目录，并兼容旧文件和环境变量；不另计新案例。",
-      "limitations": "作者明确未在真实 macOS 硬件启动过；部分功能近似或缺失。收录依据是作者公开声明，不是完整 Paper 等价验证。",
+      "reported_result": "公开项目包含无限画布、页面、布局、矢量编辑、白板与 MCP 接口，并列出测试与功能差异。 2026-10-21 复核：项目已更名 Sketch，程序名为 sketch-rs，作者说明首次启动迁移旧项目目录，并兼容旧文件和环境变量；不另计新案例。 2026-11-03 复查：作者现报告经公证的 macOS 通用构建已在 M4 Pro 运行，检查包含 Metal 窗口启动、Sparkle 加载、MCP 编辑和自动保存。",
+      "limitations": "2026-10-21 来源称尚未在 macOS 硬件运行；新报告仅覆盖有限的 M4 Pro 检查。作者明确表示鼠标、触控板、键盘、菜单、更新窗口及 Intel 架构仍未在 Mac 实测。部分功能近似或缺失。公开归因及这些检查不能证明与 Paper 等价，本目录未复跑。",
       "takeaway": "学习目标软件的行为和交互契约，明确独立实现的功能边界。",
       "author": "michaelshimeles"
     },
@@ -87,18 +87,18 @@
       "target": "OBS Studio 的架构和行为",
       "question": "怎样做更聚焦的屏幕、摄像头与音频录制工具？",
       "rea_role": "作者声明使用 REA 与 Claude Code 研究 OBS，再以 Rust 和 Apple 原生框架实现独立工具。",
-      "reported_result": "项目公开屏幕/摄像头录制、音频混合、回放缓冲与直播功能；作者报告在 Apple Silicon Mac 上开发和测试。 2026-10-21 的 README 增加 Apple Silicon + Intel universal 发布、签名/公证及 Sparkle 更新说明。",
-      "limitations": "要求 macOS 15+；作者实测环境仍是 Apple Silicon M4 Pro，新增 Intel 下载与构建说明不能当成 Intel 实机录制验收。属于特定场景实现，不能理解为完整 OBS 替代或跨平台重建；本仓库未复跑。",
+      "reported_result": "项目公开屏幕/摄像头录制、音频混合、回放缓冲与直播功能；作者报告在 Apple Silicon Mac 上开发和测试。 2026-10-21 的 README 增加 Apple Silicon + Intel universal 发布、签名/公证及 Sparkle 更新说明。 2026-11-03 复查：应用新增实时逐来源音量推子/静音及单次编码的多目的地同时推流。作者报告在本地 MediaMTX 服务器同时测试了两条 RTMP 路径与一个 WHIP 端点。",
+      "limitations": "要求 macOS 15+；作者实测环境仍是 Apple Silicon M4 Pro，新增 Intel 下载与构建说明不能当成 Intel 实机录制验收。属于特定场景实现，不能理解为完整 OBS 替代或跨平台重建；本仓库未复跑。 据报告未直接向 YouTube、Twitch 或 Kick 推流。目的地共享同一编码并采用最低配置限制；更改目的地需停止推流。本地服务器结果不能证明外部服务互通。",
       "takeaway": "从成熟应用提取所需架构，为一个具体使用场景实现较小的产品。",
       "author": "michaelshimeles"
     },
     "terminal-rs": {
-      "title": "terminal-rs：研究 TradingView 交互后做行情终端",
+      "title": "Terminal（原 terminal-rs）：参考 TradingView 交互的行情终端",
       "target": "TradingView 公开、未登录图表页面的行为",
       "question": "如何把图表交互调查转化为独立 Rust 行情界面？",
       "rea_role": "作者使用 REA website mode 做公开页面的被动捕获，在 docs/analysis 记录发现、Evidence IDs 与设计含义。",
-      "reported_result": "项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。 2026-10-21 复核：作者新增 151 个内置指标及参数、边界输入测试说明，并提供 macOS universal 发布脚本；这些是后续实现进展，不代表新做了 REA 分析。",
-      "limitations": "仅研究网页可见行为，不是 TradingView/Bloomberg 源码恢复；数据源、限流和数据使用条款另有约束。",
+      "reported_result": "项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。 2026-10-21 复核：作者新增 151 个内置指标及参数、边界输入测试说明，并提供 macOS universal 发布脚本；这些是后续实现进展，不代表新做了 REA 分析。 2026-11-03 复查：仓库现名 Terminal，目录 ID 保留。README 记录披露信息流、SnapTrade 账户视图及主动启用的交易功能；这些实现功能与 REA 图表行为调查分别归因。",
+      "limitations": "仅研究网页可见行为，不是 TradingView/Bloomberg 源码恢复；数据源、限流和数据使用条款另有约束。 作者区分了模拟券商/订单测试、模拟数据与线上服务。本目录未连接券商、下单或验证当前数据准确性。旧版 README 提交保留为历史来源，但本轮访问返回 HTTP 404。",
       "takeaway": "公开网页行为观察也可以形成可追溯的设计输入，无需把它称为二进制反编译。",
       "author": "michaelshimeles"
     },
@@ -381,6 +381,66 @@
       "limitations": "练习对象是作者自有的小型无保护程序，不是商业授权绕过，也不代表对受保护软件普遍有效。4 个样例只是有限检查，不是穷尽等价验证；本目录未执行二进制或复跑比较，计划中的完整课程尚未交付。",
       "takeaway": "用自有样本和暂时隐藏的参考源码恢复一个有边界的规则，先测试接受与拒绝输入，再对照源码。",
       "author": "harkiventures"
+    },
+    "screenstudio-research": {
+      "title": "Screen Studio：区分静态检查、录制与导出证据",
+      "target": "Screen Studio 3.7.3-4540，包含本地重新打包的 Apple Silicon 副本",
+      "question": "如何区分 Electron 与原生辅助程序的静态发现，以及录制、导出和兼容性的实际证据？",
+      "rea_role": "REA 的 fuse 与 Mach-O 检查提供了带 Evidence ID 和哈希的选编静态记录。限定范围的 JavaScript 应用分析两次超时，作者未声称得到完整图谱或原生函数反编译结果。",
+      "reported_result": "作者公开了应用检查、项目事件汇总与导出验证工具。历史原生录制据报导出了 3,337 帧、1104 × 720、60 fps 的视频并完整解码；后续只读工具复查检查了已保存的视频及人工输入事件汇总。",
+      "limitations": "私人录制及完整证据账本未公开，无法重放。Mach-O 哈希对应本地重打包副本。联网授权失败，裁剪尝试未生效，最终签名后未完整重测录制；仅测试一种 Apple Silicon/macOS 环境。解码通过不能证明录制来源或画面等价，本目录未复跑实验。",
+      "takeaway": "分别记录静态元数据、界面观察、文件解码与人工反馈，并同时公开失败项。",
+      "author": "Royo-Qiao"
+    },
+    "icsee-localmod": {
+      "title": "iCSee localmod：追踪摄像头命令并保留原厂驱动",
+      "target": "一台 XM530V200 / IPG-X2-WQ-BL 摄像头及原厂 Sofia 应用",
+      "question": "如何利用原生命令调查实现本地控制，同时保留可用驱动和 SD 录像？",
+      "rea_role": "REA 6.8.0 与 Ghidra 通过 Sofia 命令字符串及交叉引用追踪灯光、云台处理函数。公开流程记录了特定二进制的地址线索；协议响应与物理行为另行验证。",
+      "reported_result": "作者公开了本地 C 面板/API、源码与 Home Assistant 示例。设备所有者报告了云台、白灯实测、音视频解码、重启持久化及原生 WFS 录像继续工作。另一个公开模拟后端记录列出 22 项通过测试，并明确 hardware_tested=false。",
+      "limitations": "完整固件、反编译内容和私人 Evidence 包未公开。硬件结果是单台设备的所有者报告；模拟测试不能验证刷写或物理行为。这是原厂固件扩展，没有通用镜像、完整对讲或实测延迟改善。删除路由的防护不等于防火墙，本目录未测试设备。",
+      "takeaway": "先追踪一个限定命令，再核对认证响应，并分别验证物理动作与重启持久性。",
+      "author": "Vittuu"
+    },
+    "rea-studio": {
+      "title": "REA Studio：在本地网页展示 MCP 工具与已录制 Evidence",
+      "target": "REA MCP 工具发现、按 schema 生成的表单，以及小型 C、JavaScript、Python 样例",
+      "question": "如何在本地界面呈现已安装的 REA 工具，并让证据及局限易于阅读？",
+      "rea_role": "后端通过 stdio MCP 启动 REA，分页读取 tools/list，并转发带进度与取消信号的 tools/call。录制脚本对微型样例调用 REA，再保存结果供独立的静态演示构建使用。",
+      "reported_result": "公开源码包含本地网页界面、按 schema 生成的输入、历史记录与 Evidence 视图。仓库演示文件标注 REA 6.8.0，提供 229 个工具的目录及 9 条样例调用记录（8 条完成、1 条错误）；未录制操作明确返回错误。",
+      "limitations": "线上演示回放保存的响应并模拟进度；上传文件留在浏览器中，不会被分析。录制结果由作者发布，未独立复跑。本地模式可对主机文件调用工具，依赖已配置的 provider；本目录未安装测试后端，也未作安全审计。",
+      "takeaway": "从实时工具 schema 生成表单，在结果中保留局限，并明确区分录制演示与实时分析。",
+      "author": "theyishaik-lab"
+    },
+    "dsh-rea": {
+      "title": "dsh-rea：保持 MCP 契约并按需展示工具",
+      "target": "DeepSeek Harness 中的 REA 6.8.0 MCP 工具、提示词及 skill",
+      "question": "如何在保留上游工具契约的同时，让未使用的 schema 不占每次代理请求？",
+      "rea_role": "适配器通过 DSH 桥启动固定版本的上游 MCP 程序，提示词与补全共享连接，并使用逐代理工具遮罩。/rea 显示目录与 skill，/rea off 再次隐藏。",
+      "reported_result": "作者公开适配代码、schema 测量及限定范围的差分报告，记录 229 个工具，以及 native、PTC 模式下确定性调用的比较。模型输入目录测量为 273,264 字节；这是 schema 载荷，不是 LLM token 或费用基准。",
+      "limitations": "仓库包含一份通过的比较报告，以及验证命令出现 Windows integrity_mismatch 错误的单独说明。本目录无法确认该命令目前能在 Windows 通过。工具定义匹配不代表执行过全部工具。原生引擎、实时捕获、全部 provider 和模型回答等价均不在该比较范围内。目录维护者未运行这些测试。",
+      "takeaway": "比较 schema 与完整确定性结果，保留历史通过记录，并单独披露当前失败。",
+      "author": "JeremyWangCY"
+    },
+    "app-xray": {
+      "title": "App X-Ray：把 REA 发现转换为可分享的应用报告",
+      "target": "开源 Electron 应用源码，以及额外的 APK、原生二进制和模型文件分析路径",
+      "question": "如何将静态 REA 证据转化为可读的组件报告和版本差异？",
+      "rea_role": "集成调用固定的 REA 6.7.0 CLI 并解析 JSON Evidence。JavaScript 分批分析让文件保留在同一根目录，维持导入解析；Electron fuse 检查是另一个 REA 操作。",
+      "reported_result": "项目公开了报告生成、规则、CI 差异和展示目录。注明日期的第 5 周报告称扫描了 20 个 Electron 应用，全部识别到版本，其中 18 项在该容器上少于 60 秒。REA-Bench 从 20 应用语料的报告生成了 54 个问题。",
+      "limitations": "这些是注明日期的作者扫描报告，不是当前漏洞或运行时联网结论。规则可能遗漏辅助函数创建的窗口、动态频道和发送方验证；静态地址不能证明网络流量。REA-Bench 衡量与 App X-Ray 报告的一致程度，不是独立真值，也未直接证明使用工具的代理更优。本目录未复跑扫描。",
+      "takeaway": "让报告结论链接到源码，保留扫描提交与日期，并将静态规则和自动生成的基准答案视为可能出错。",
+      "author": "Eliot5566"
+    },
+    "eleven": {
+      "title": "Eleven：将代理驱动的桌面工作台连接到 REA",
+      "target": "通过 REA/Ghidra 分析原生二进制，以及 ACP 代理桌面工作台",
+      "question": "如何让代理检查二进制，同时在共享工作台中展示导航与可编辑标注？",
+      "rea_role": "引擎启动 REA MCP，调用 open_binary 与函数视图。独立代理转发分析工具，但屏蔽 REA 的标注写入工具，将这些修改引导至带可见历史的 Eleven 项目工具。",
+      "reported_result": "公开产出包括桌面应用源码、MCP 工具文档、项目标注与补丁建议流程，以及要求真实代理在界面中打开 /bin/ls 函数的测试定义。README 和上游展示帖描述了可运行的工作台。",
+      "limitations": "本目录检查的是源码和测试定义，没有执行测试凭据，也未安装发行版。桌面平台支持、调试器行为、缓存加速和分析完整性均未独立核验。Rizin、jadx 等是独立引擎，不将其结果归于 REA。上游展示帖的耗时是作者观察，不是本目录基准。",
+      "takeaway": "将分析转发与项目编辑分开，显示作者和撤销历史，并区分可执行测试与实际测试结果。",
+      "author": "Zfinix"
     }
   },
   "ui": {
@@ -459,5 +519,5 @@
     "category_learning": "学习与复现",
     "category_integrations": "工具与集成"
   },
-  "source_digest": "59e191cf47c02978a7ee19505c29c38bc167b77975a4288691128d1f593c1ff1"
+  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486"
 }

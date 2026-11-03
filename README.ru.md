@@ -10,7 +10,7 @@
 
 [Исследуйте и отмечайте коллекцию на GitHub](https://github.com/git-sanbu/awesome-rea) · [Программное обеспечение для поиска, цель или ключевые слова](https://awesome-rea-e7l.pages.dev/ru/) · [Отправить дело](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**38 общественные дела** — Официальные презентации 5 и проекты сообщества 33 или авторские эксперименты. Обновлено: 2026-10-26. В каждом случае сохраняется своя дата рассмотрения источника.
+**44 общественные дела** — Официальные презентации 5 и проекты сообщества 39 или авторские эксперименты. Обновлено: 2026-11-03. В каждом случае сохраняется своя дата рассмотрения источника.
 
 > Источники рассмотрены; авторские тесты самостоятельно не перепроводятся.
 
@@ -20,15 +20,16 @@
 
 ## Популярные проекты
 
-Снимок: 2026-10-26. Проекты каталога с рецензированием источника с минимумом 100 GitHub Stars, отсортированные по звездам. Stars указывают на внимание, а не на самостоятельное воспроизведение или готовность к производству. [Источники снимков](data/popularity.json).
+Снимок: 2026-11-03. Проекты каталога с рецензированием источника с минимумом 100 GitHub Stars, отсортированные по звездам. Stars указывают на внимание, а не на самостоятельное воспроизведение или готовность к производству. [Источники снимков](data/popularity.json).
 
 | Проект/демо | GitHub Stars | Процесс и ограничения |
 | --- | ---: | --- |
-| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: документирование взаимодействия с рабочим столом и публикация повторно используемых компонентов пользовательского интерфейса.](cases/ru/open-claude-ui.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: исследование точек входа в многопользовательскую кампанию.](cases/ru/coop-anything.md) |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: интеграция анализа REA в панель мониторинга для нескольких устройств.](cases/ru/sparkdash-rea.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: рыночный терминал, информированный о взаимодействиях TradingView](cases/ru/terminal-rs.md) |
-| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: встроенный рекордер macOS в стиле OBS.](cases/ru/rec-rs.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1837 | [Co-op Anything: исследование точек входа в многопользовательскую кампанию.](cases/ru/coop-anything.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1666 | [Open Claude UI: документирование взаимодействия с рабочим столом и публикация повторно используемых компонентов пользовательского интерфейса.](cases/ru/open-claude-ui.md) |
+| [Zfinix/eleven](https://github.com/Zfinix/eleven) | 961 | [Eleven: подключение управляемого агентом рабочего стола к REA](cases/ru/eleven.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 816 | [sparkDash: интеграция анализа REA в панель мониторинга для нескольких устройств.](cases/ru/sparkdash-rea.md) |
+| [michaelshimeles/terminal](https://github.com/michaelshimeles/terminal) | 327 | [Terminal (formerly terminal-rs): рыночный терминал, получающий информацию о взаимодействиях TradingView.](cases/ru/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 115 | [rec-rs: встроенный рекордер macOS в стиле OBS.](cases/ru/rec-rs.md) |
 
 ## Официальные витрины
 
@@ -55,9 +56,9 @@
 
 | Проект/демо | Вопрос | Первоисточник |
 | --- | --- | --- |
-| [Sketch (formerly paper-rs): бесконечный холст Rust, вдохновленный Paper.](cases/ru/paper-rs.md) | Как взаимодействие холста, макета и редактора может стать основой для независимого инструмента дизайна? | [Первоисточник](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
-| [rec-rs: встроенный рекордер macOS в стиле OBS.](cases/ru/rec-rs.md) | Как можно построить сфокусированный экран, камеру и диктофон? | [Первоисточник](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
-| [terminal-rs: рыночный терминал, информированный о взаимодействиях TradingView](cases/ru/terminal-rs.md) | Как исследование взаимодействия графиков может помочь в создании независимого рыночного интерфейса Rust? | [Первоисточник](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
+| [Sketch (formerly paper-rs): бесконечный холст Rust, вдохновленный Paper.](cases/ru/paper-rs.md) | Как взаимодействие холста, макета и редактора может стать основой для независимого инструмента дизайна? | [Первоисточник](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) |
+| [rec-rs: встроенный рекордер macOS в стиле OBS.](cases/ru/rec-rs.md) | Как можно построить сфокусированный экран, камеру и диктофон? | [Первоисточник](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) |
+| [Terminal (formerly terminal-rs): рыночный терминал, получающий информацию о взаимодействиях TradingView.](cases/ru/terminal-rs.md) | Как исследование взаимодействия графиков может помочь в создании независимого рыночного интерфейса Rust? | [Первоисточник](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) |
 | [Wispr Flow: разборка речевого ввода и небольшой локальный прототип](cases/ru/wispr-flow.md) | Как связаны запись, транскрипция, контекст и вставка? | [Первоисточник](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
 | [hexgrab: исследование палитры цветов PowerToys](cases/ru/hexgrab.md) | Как глобальные горячие клавиши, выборка пикселей и буфер обмена работают вместе? | [Первоисточник](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
 | [AdamTerm: исследование оболочки Ghostty и создание терминала](cases/ru/adamterm.md) | Как разделены ядро терминала, собственные окна, меню и сервисы? | [Первоисточник](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
@@ -65,6 +66,7 @@
 | [DiskLens: проверка алгоритмов сканирования диска и древовидной карты в выпущенном двоичном файле](cases/ru/disklens.md) | Как можно проверить сканирование диска, древовидные карты и обнаружение дубликатов перед созданием нового интерфейса? | [Первоисточник](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: от захваченных веб-пакетов к независимому прототипу 3D](cases/ru/hyper3d-clone.md) | Как наблюдения интерфейса и API могут дать информацию прототипу, который экспортирует модели 3D? | [Первоисточник](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: документирование взаимодействия с рабочим столом и публикация повторно используемых компонентов пользовательского интерфейса.](cases/ru/open-claude-ui.md) | Как правила композиции ввода, прокрутки и взаимодействия с рабочим столом могут информировать повторно используемые компоненты интерфейса? | [Первоисточник](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
+| [Screen Studio: отделение статического контроля от регистрации и экспорта доказательств](cases/ru/screenstudio-research.md) | Как можно хранить данные Electron и встроенных помощников отдельно от доказательств записи, экспорта и совместимости? | [Первоисточник](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
 
 ## Аппаратное обеспечение и совместимость
 
@@ -75,6 +77,7 @@
 | [Pixel Watch: помощник по передаче обслуживания eSIM, основанный на анализе сопутствующих APK](cases/ru/watch-esim-helper.md) | Как отдельный помощник может найти и открыть существующий поток загрузки Watch-eSIM сопутствующего приложения? | [Первоисточник](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
 | [PicoPrint: подключение мобильного термопринтера к печати Windows](cases/ru/picoprint.md) | Когда драйвер подключается, но не печатает, как можно найти различия в рукопожатии? | [Первоисточник](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
 | [V5VPN: исследование протокола для портала с ограниченной областью и туннельного клиента.](cases/ru/v5vpn-rea-client.md) | Как аутентификация, обнаружение ресурсов и исследование соединений могут предоставить информацию независимому клиенту с ограниченной областью действия? | [Первоисточник](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
+| [iCSee localmod: отслеживание команд камеры с сохранением штатных драйверов](cases/ru/icsee-localmod.md) | Как исследование собственных команд может обеспечить локальное управление камерой, сохраняя при этом рабочие драйверы и запись на SD-карту? | [Первоисточник](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) |
 
 ## Анализ и оценка
 
@@ -102,6 +105,10 @@
 | --- | --- | --- |
 | [sparkDash: интеграция анализа REA в панель мониторинга для нескольких устройств.](cases/ru/sparkdash-rea.md) | Как веб-интерфейс может отправлять длительные удаленные задания REA и загружать большие результаты по требованию? | [Первоисточник](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
 | [REA Safe Agent: проведение статического анализа между двумя изолированными процессами.](cases/ru/rea-safe-agents.md) | Как агент может запросить REA, если доступ к входным данным, инструментам хоста и запросам моделей остается ограниченным? | [Первоисточник](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
+| [REA Studio: представление инструментов MCP и запись Evidence в локальном веб-интерфейсе.](cases/ru/rea-studio.md) | Как локальный интерфейс может предоставить доступ к установленным инструментам REA и сделать их данные и ограничения доступными для чтения? | [Первоисточник](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) |
+| [dsh-rea: сохранение контрактов MCP и предоставление инструментов по запросу.](cases/ru/dsh-rea.md) | Как адаптер может сохранить контракты вышестоящих инструментов, не допуская при этом неиспользуемых схем в каждом запросе агента? | [Первоисточник](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) |
+| [App X-Ray: преобразование результатов REA в отчеты о приложениях, которыми можно поделиться](cases/ru/app-xray.md) | Как статическое свидетельство REA может стать читаемым отчетом о компонентах и разницей между версиями? | [Первоисточник](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) |
+| [Eleven: подключение управляемого агентом рабочего стола к REA](cases/ru/eleven.md) | Как агент может проверять двоичный файл, в то время как навигация и редактируемые аннотации остаются видимыми в общей рабочей среде? | [Первоисточник](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) |
 
 ## Какие случаи включены?
 

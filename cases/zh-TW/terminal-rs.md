@@ -1,4 +1,4 @@
-# terminal-rs：研究 TradingView 互動後做行情終端
+# Terminal（原 terminal-rs）：參考 TradingView 互動的行情終端
 
 [← 返回全部案例](../../README.zh-TW.md) · 應用實踐
 
@@ -7,7 +7,7 @@
 本語言版本由簡體中文編輯稿自動轉換為繁體中文；引文保留原文語言。措辭不明時請參考英文主版本及原始來源。
 
 - **作者 / 歸屬:** michaelshimeles
-- **核對日期:** 2026-10-21
+- **核對日期:** 2026-11-03
 - **收錄狀態:** 已閱讀公開原文，未獨立復跑作者測試。
 - **分析目標:** TradingView 公開、未登入圖表頁面的行為
 
@@ -21,11 +21,11 @@
 
 ## 原作者報告的成果
 
-專案公開 Rust GPU 圖表、鍵盤命令、面板佈局與資料接入；介面採用 Bloomberg 風格。 2026-10-21 複核：作者新增 151 個內建指標及引數、邊界輸入測試說明，並提供 macOS universal 釋出指令碼；這些是後續實現進展，不代表新做了 REA 分析。
+專案公開 Rust GPU 圖表、鍵盤命令、面板佈局與資料接入；介面採用 Bloomberg 風格。 2026-10-21 複核：作者新增 151 個內建指標及引數、邊界輸入測試說明，並提供 macOS universal 釋出指令碼；這些是後續實現進展，不代表新做了 REA 分析。 2026-11-03 複查：倉庫現名 Terminal，目錄 ID 保留。README 記錄披露資訊流、SnapTrade 賬戶檢視及主動啟用的交易功能；這些實現功能與 REA 圖表行為調查分別歸因。
 
 ## 侷限與未驗證項
 
-僅研究網頁可見行為，不是 TradingView/Bloomberg 原始碼恢復；資料來源、限流和資料使用條款另有約束。
+僅研究網頁可見行為，不是 TradingView/Bloomberg 原始碼恢復；資料來源、限流和資料使用條款另有約束。 作者區分了模擬券商/訂單測試、模擬資料與線上服務。本目錄未連線券商、下單或驗證當前資料準確性。舊版 README 提交保留為歷史來源，但本輪訪問返回 HTTP 404。
 
 ## 可以借鑑什麼
 
@@ -35,13 +35,14 @@
 
 短摘錄簡化了排版，完整上下文以原文為準。
 
-> tradingview.com with REA in website mode
+> tradingview.com with [REA](https://github.com/morluto/rea) in website mode
 
 ## 原始來源
 
-- [公開原文 / 固定版本證據](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
-- [專案 / 演示](https://github.com/michaelshimeles/terminal-rs)
-- [補充來源 1](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
+- [公開原文 / 固定版本證據](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md)
+- [專案 / 演示](https://github.com/michaelshimeles/terminal)
+- [補充來源 1](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
+- [補充來源 2](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
 
 本頁為獨立整理，成果歸原作者。目標軟體、安裝包和完整反編譯輸出不在此分發。
 

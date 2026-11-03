@@ -10,7 +10,7 @@
 
 [GitHub पर संग्रह को खोजें और तारांकित करें](https://github.com/git-sanbu/awesome-rea) · [सॉफ़्टवेयर, उद्देश्य या कीवर्ड खोजें](https://awesome-rea-e7l.pages.dev/hi/) · [एक मामला प्रस्तुत करें](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**38 सार्वजनिक मामले** — 5 आधिकारिक शोकेस और 33 सामुदायिक परियोजनाएं या लेखक प्रयोग. अपडेट किया गया: 2026-10-26। प्रत्येक मामले की अपनी स्रोत-समीक्षा तिथि बरकरार रहती है।
+**44 सार्वजनिक मामले** — 5 आधिकारिक शोकेस और 39 सामुदायिक परियोजनाएं या लेखक प्रयोग. अपडेट किया गया: 2026-11-03। प्रत्येक मामले की अपनी स्रोत-समीक्षा तिथि बरकरार रहती है।
 
 > सूत्रों की समीक्षा की गई; लेखक परीक्षण स्वतंत्र रूप से दोबारा नहीं चलाए गए।
 
@@ -20,15 +20,16 @@
 
 ## लोकप्रिय परियोजनाएँ
 
-स्नैपशॉट: 2026-10-26. सितारों द्वारा क्रमबद्ध, कम से कम 100 GitHub Stars के साथ स्रोत-समीक्षित कैटलॉग परियोजनाएं। Stars ध्यान का संकेत देता है, स्वतंत्र पुनरुत्पादन या उत्पादन की तैयारी का नहीं। [स्नैपशॉट स्रोत](data/popularity.json).
+स्नैपशॉट: 2026-11-03. सितारों द्वारा क्रमबद्ध, कम से कम 100 GitHub Stars के साथ स्रोत-समीक्षित कैटलॉग परियोजनाएं। Stars ध्यान का संकेत देता है, स्वतंत्र पुनरुत्पादन या उत्पादन की तैयारी का नहीं। [स्नैपशॉट स्रोत](data/popularity.json).
 
 | प्रोजेक्ट/डेमो | GitHub Stars | प्रक्रिया और सीमाएँ |
 | --- | ---: | --- |
-| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: डेस्कटॉप इंटरैक्शन का दस्तावेजीकरण करना और पुन: प्रयोज्य यूआई घटकों को प्रकाशित करना](cases/hi/open-claude-ui.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: अभियान मल्टीप्लेयर प्रवेश बिंदुओं की जांच](cases/hi/coop-anything.md) |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: REA विश्लेषण को मल्टी-डिवाइस डैशबोर्ड में एकीकृत करना](cases/hi/sparkdash-rea.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: TradingView इंटरैक्शन द्वारा सूचित एक मार्केट टर्मिनल](cases/hi/terminal-rs.md) |
-| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: एक OBS-प्रेरित देशी macOS रिकॉर्डर](cases/hi/rec-rs.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1837 | [Co-op Anything: अभियान मल्टीप्लेयर प्रवेश बिंदुओं की जांच](cases/hi/coop-anything.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1666 | [Open Claude UI: डेस्कटॉप इंटरैक्शन का दस्तावेजीकरण करना और पुन: प्रयोज्य यूआई घटकों को प्रकाशित करना](cases/hi/open-claude-ui.md) |
+| [Zfinix/eleven](https://github.com/Zfinix/eleven) | 961 | [Eleven: एजेंट-संचालित डेस्कटॉप वर्कबेंच को REA से कनेक्ट करना](cases/hi/eleven.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 816 | [sparkDash: REA विश्लेषण को मल्टी-डिवाइस डैशबोर्ड में एकीकृत करना](cases/hi/sparkdash-rea.md) |
+| [michaelshimeles/terminal](https://github.com/michaelshimeles/terminal) | 327 | [Terminal (formerly terminal-rs): TradingView इंटरैक्शन द्वारा सूचित एक बाज़ार टर्मिनल](cases/hi/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 115 | [rec-rs: एक OBS-प्रेरित देशी macOS रिकॉर्डर](cases/hi/rec-rs.md) |
 
 ## आधिकारिक शोकेस
 
@@ -55,9 +56,9 @@
 
 | प्रोजेक्ट/डेमो | सवाल | प्राथमिक स्रोत |
 | --- | --- | --- |
-| [Sketch (formerly paper-rs): एक Paper-प्रेरित Rust अनंत कैनवास](cases/hi/paper-rs.md) | कैनवास, लेआउट और संपादक इंटरैक्शन एक स्वतंत्र डिज़ाइन टूल को कैसे सूचित कर सकते हैं? | [प्राथमिक स्रोत](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
-| [rec-rs: एक OBS-प्रेरित देशी macOS रिकॉर्डर](cases/hi/rec-rs.md) | एक केंद्रित स्क्रीन, कैमरा और ऑडियो रिकॉर्डर कैसे बनाया जा सकता है? | [प्राथमिक स्रोत](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
-| [terminal-rs: TradingView इंटरैक्शन द्वारा सूचित एक मार्केट टर्मिनल](cases/hi/terminal-rs.md) | चार्ट-इंटरैक्शन अनुसंधान एक स्वतंत्र Rust बाज़ार इंटरफ़ेस को कैसे सूचित कर सकता है? | [प्राथमिक स्रोत](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
+| [Sketch (formerly paper-rs): एक Paper-प्रेरित Rust अनंत कैनवास](cases/hi/paper-rs.md) | कैनवास, लेआउट और संपादक इंटरैक्शन एक स्वतंत्र डिज़ाइन टूल को कैसे सूचित कर सकते हैं? | [प्राथमिक स्रोत](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) |
+| [rec-rs: एक OBS-प्रेरित देशी macOS रिकॉर्डर](cases/hi/rec-rs.md) | एक केंद्रित स्क्रीन, कैमरा और ऑडियो रिकॉर्डर कैसे बनाया जा सकता है? | [प्राथमिक स्रोत](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) |
+| [Terminal (formerly terminal-rs): TradingView इंटरैक्शन द्वारा सूचित एक बाज़ार टर्मिनल](cases/hi/terminal-rs.md) | चार्ट-इंटरैक्शन अनुसंधान एक स्वतंत्र Rust बाज़ार इंटरफ़ेस को कैसे सूचित कर सकता है? | [प्राथमिक स्रोत](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) |
 | [Wispr Flow: एक स्पीच-इनपुट टियरडाउन और एक छोटा स्थानीय प्रोटोटाइप](cases/hi/wispr-flow.md) | रिकॉर्डिंग, ट्रांसक्रिप्शन, संदर्भ और पेस्टिंग कैसे जुड़े हुए हैं? | [प्राथमिक स्रोत](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
 | [hexgrab: PowerToys रंग पिकर की जांच](cases/hi/hexgrab.md) | वैश्विक हॉटकी, पिक्सेल नमूनाकरण और क्लिपबोर्ड एक साथ कैसे काम करते हैं? | [प्राथमिक स्रोत](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
 | [AdamTerm: Ghostty के शेल की जांच करना और एक टर्मिनल का निर्माण करना](cases/hi/adamterm.md) | टर्मिनल कोर, नेटिव विंडो, मेनू और सेवाओं को कैसे विभाजित किया जाता है? | [प्राथमिक स्रोत](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
@@ -65,6 +66,7 @@
 | [DiskLens: जारी बाइनरी में डिस्क-स्कैनिंग और ट्रीमैप एल्गोरिदम की जाँच करना](cases/hi/disklens.md) | नया इंटरफ़ेस बनाने से पहले डिस्क स्कैनिंग, ट्रीमैप्स और डुप्लिकेट डिटेक्शन की जाँच कैसे की जा सकती है? | [प्राथमिक स्रोत](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: कैप्चर किए गए वेब बंडलों से एक स्वतंत्र 3D प्रोटोटाइप तक](cases/hi/hyper3d-clone.md) | इंटरफ़ेस और एपीआई अवलोकन एक प्रोटोटाइप को कैसे सूचित कर सकते हैं जो 3D मॉडल निर्यात करता है? | [प्राथमिक स्रोत](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: डेस्कटॉप इंटरैक्शन का दस्तावेजीकरण करना और पुन: प्रयोज्य यूआई घटकों को प्रकाशित करना](cases/hi/open-claude-ui.md) | इनपुट संरचना, स्क्रॉलिंग और डेस्कटॉप इंटरैक्शन नियम पुन: प्रयोज्य इंटरफ़ेस घटकों को कैसे सूचित कर सकते हैं? | [प्राथमिक स्रोत](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
+| [Screen Studio: स्थैतिक निरीक्षण को रिकॉर्डिंग और निर्यात साक्ष्य से अलग करना](cases/hi/screenstudio-research.md) | Electron और देशी-सहायक निष्कर्षों को रिकॉर्डिंग, निर्यात और संगतता के प्रमाण से अलग कैसे रखा जा सकता है? | [प्राथमिक स्रोत](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
 
 ## हार्डवेयर और अनुकूलता
 
@@ -75,6 +77,7 @@
 | [Pixel Watch: कंपेनियन-एपीके विश्लेषण द्वारा सूचित एक eSIM हैंडऑफ़ सहायक](cases/hi/watch-esim-helper.md) | एक अलग सहायक सहयोगी ऐप के मौजूदा वॉच-ई-सिम डाउनलोड प्रवाह को कैसे ढूंढ और खोल सकता है? | [प्राथमिक स्रोत](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
 | [PicoPrint: एक मोबाइल थर्मल प्रिंटर को Windows प्रिंटिंग से कनेक्ट करना](cases/hi/picoprint.md) | जब कोई ड्राइवर कनेक्ट करता है लेकिन प्रिंट नहीं करता है, तो हैंडशेक अंतर कैसे पाया जा सकता है? | [प्राथमिक स्रोत](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
 | [V5VPN: एक स्कोप्ड पोर्टल और टनल क्लाइंट के लिए प्रोटोकॉल अनुसंधान](cases/hi/v5vpn-rea-client.md) | प्रमाणीकरण, संसाधन खोज और कनेक्शन अनुसंधान एक दायरे वाले स्वतंत्र ग्राहक को कैसे सूचित कर सकते हैं? | [प्राथमिक स्रोत](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
+| [iCSee localmod: स्टॉक ड्राइवरों को संरक्षित करते हुए कैमरा कमांड का पता लगाना](cases/hi/icsee-localmod.md) | काम कर रहे ड्राइवरों और एसडी रिकॉर्डिंग को संरक्षित करते हुए देशी कमांड अनुसंधान स्थानीय कैमरा नियंत्रण को कैसे सक्षम कर सकता है? | [प्राथमिक स्रोत](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) |
 
 ## विश्लेषण एवं मूल्यांकन
 
@@ -102,6 +105,10 @@
 | --- | --- | --- |
 | [sparkDash: REA विश्लेषण को मल्टी-डिवाइस डैशबोर्ड में एकीकृत करना](cases/hi/sparkdash-rea.md) | एक वेब इंटरफ़ेस लंबे समय से चलने वाली दूरस्थ REA नौकरियां कैसे सबमिट कर सकता है और मांग पर बड़े परिणाम कैसे लोड कर सकता है? | [प्राथमिक स्रोत](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
 | [REA Safe Agent: दो निहित प्रक्रियाओं के बीच स्थैतिक विश्लेषण करना](cases/hi/rea-safe-agents.md) | एक एजेंट REA से कैसे पूछताछ कर सकता है जबकि इनपुट, होस्ट टूल और मॉडल अनुरोधों तक पहुंच सीमित है? | [प्राथमिक स्रोत](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
+| [REA Studio: MCP टूल प्रस्तुत करता है और स्थानीय वेब यूआई में Evidence रिकॉर्ड करता है](cases/hi/rea-studio.md) | एक स्थानीय इंटरफ़ेस कैसे स्थापित REA टूल को उजागर कर सकता है और उनके साक्ष्य और सीमाओं को पढ़ने योग्य बना सकता है? | [प्राथमिक स्रोत](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) |
+| [dsh-rea: मांग पर टूल का खुलासा करते हुए MCP अनुबंधों को संरक्षित करना](cases/hi/dsh-rea.md) | प्रत्येक एजेंट अनुरोध से अप्रयुक्त स्कीमा को बाहर रखते हुए एक एडाप्टर अपस्ट्रीम टूल अनुबंधों को कैसे संरक्षित कर सकता है? | [प्राथमिक स्रोत](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) |
+| [App X-Ray: REA निष्कर्षों को साझा करने योग्य ऐप रिपोर्ट में बदलना](cases/hi/app-xray.md) | स्थिर REA साक्ष्य एक पठनीय घटक रिपोर्ट और संस्करण-दर-संस्करण अंतर कैसे बन सकता है? | [प्राथमिक स्रोत](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) |
+| [Eleven: एजेंट-संचालित डेस्कटॉप वर्कबेंच को REA से कनेक्ट करना](cases/hi/eleven.md) | एक एजेंट बाइनरी का निरीक्षण कैसे कर सकता है जबकि नेविगेशन और संपादन योग्य एनोटेशन एक साझा कार्यक्षेत्र में दृश्यमान रहते हैं? | [प्राथमिक स्रोत](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) |
 
 ## कौन से मामले शामिल हैं?
 

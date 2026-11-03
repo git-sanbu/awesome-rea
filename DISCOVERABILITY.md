@@ -48,3 +48,5 @@ npx wrangler pages deploy docs --project-name awesome-rea --branch main
 - `"REA" "实践" in:description user:git-sanbu`
 
 这是关键词/主题可检出的证据，不表示通用词搜索排名、个性化推荐、Trending 或 Google/Bing 收录。
+
+2026-11-03 仓库更新：数据与生成目录现含 44 个案例、12 种语言、540 个 HTML 页面；这表示仓库构建产出，不单独证明 Cloudflare 生产部署已更新。

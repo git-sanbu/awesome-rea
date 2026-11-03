@@ -10,7 +10,7 @@ Entdecken Sie öffentliche Projekte mit Reverse Engineer Anything, von älteren 
 
 [Entdecken und präsentieren Sie die Kollektion auf GitHub](https://github.com/git-sanbu/awesome-rea) · [Suchen Sie nach Software, Zweck oder Schlüsselwörtern](https://awesome-rea-e7l.pages.dev/de/) · [Senden Sie einen Fall](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**38 öffentliche Fälle** — Offizielle 5-Showcases und 33-Community-Projekte oder Autorenexperimente. Aktualisiert: 2026-10-26. Jeder Fall behält sein eigenes Datum für die Quellenüberprüfung.
+**44 öffentliche Fälle** — Offizielle 5-Showcases und 39-Community-Projekte oder Autorenexperimente. Aktualisiert: 2026-11-03. Jeder Fall behält sein eigenes Datum für die Quellenüberprüfung.
 
 > Quellen überprüft; Autorentests werden nicht unabhängig wiederholt.
 
@@ -20,15 +20,16 @@ Diese Ausgabe wurde maschinell aus der redaktionellen englischen Version überse
 
 ## Beliebte Projekte
 
-Schnappschuss: 2026-10-26. Quellengeprüfte Katalogprojekte mit mindestens 100 GitHub Stars, sortiert nach Sternen. Stars weisen auf Aufmerksamkeit hin, nicht auf unabhängige Reproduktion oder Produktionsbereitschaft. [Snapshot-Quellen](data/popularity.json).
+Schnappschuss: 2026-11-03. Quellengeprüfte Katalogprojekte mit mindestens 100 GitHub Stars, sortiert nach Sternen. Stars weisen auf Aufmerksamkeit hin, nicht auf unabhängige Reproduktion oder Produktionsbereitschaft. [Snapshot-Quellen](data/popularity.json).
 
 | Projekt / Demo | GitHub Stars | Prozess und Einschränkungen |
 | --- | ---: | --- |
-| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: Desktop-Interaktionen dokumentieren und wiederverwendbare UI-Komponenten veröffentlichen](cases/de/open-claude-ui.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: Untersuchung der Einstiegspunkte für den Mehrspielermodus der Kampagne](cases/de/coop-anything.md) |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: Integration der REA-Analyse in ein Dashboard für mehrere Geräte](cases/de/sparkdash-rea.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: ein Marktterminal, das durch TradingView-Interaktionen informiert wird](cases/de/terminal-rs.md) |
-| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: ein OBS-inspirierter nativer macOS-Recorder](cases/de/rec-rs.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1837 | [Co-op Anything: Untersuchung der Einstiegspunkte für den Mehrspielermodus der Kampagne](cases/de/coop-anything.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1666 | [Open Claude UI: Desktop-Interaktionen dokumentieren und wiederverwendbare UI-Komponenten veröffentlichen](cases/de/open-claude-ui.md) |
+| [Zfinix/eleven](https://github.com/Zfinix/eleven) | 961 | [Eleven: Verbinden einer agentengesteuerten Desktop-Workbench mit REA](cases/de/eleven.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 816 | [sparkDash: Integration der REA-Analyse in ein Dashboard für mehrere Geräte](cases/de/sparkdash-rea.md) |
+| [michaelshimeles/terminal](https://github.com/michaelshimeles/terminal) | 327 | [Terminal (formerly terminal-rs): ein Marktterminal, das durch TradingView-Interaktionen informiert wird](cases/de/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 115 | [rec-rs: ein OBS-inspirierter nativer macOS-Recorder](cases/de/rec-rs.md) |
 
 ## Offizielle Vitrinen
 
@@ -55,9 +56,9 @@ Schnappschuss: 2026-10-26. Quellengeprüfte Katalogprojekte mit mindestens 100 G
 
 | Projekt / Demo | Die Frage | Primärquelle |
 | --- | --- | --- |
-| [Sketch (formerly paper-rs): eine von Paper inspirierte unendliche Rust-Leinwand](cases/de/paper-rs.md) | Wie können die Interaktionen zwischen Leinwand, Layout und Editor ein unabhängiges Designtool beeinflussen? | [Primärquelle](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
-| [rec-rs: ein OBS-inspirierter nativer macOS-Recorder](cases/de/rec-rs.md) | Wie können ein fokussierter Bildschirm, eine Kamera und ein Audiorecorder gebaut werden? | [Primärquelle](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
-| [terminal-rs: ein Marktterminal, das durch TradingView-Interaktionen informiert wird](cases/de/terminal-rs.md) | Wie kann die Chart-Interaktionsforschung eine unabhängige Rust-Marktschnittstelle beeinflussen? | [Primärquelle](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
+| [Sketch (formerly paper-rs): eine von Paper inspirierte unendliche Rust-Leinwand](cases/de/paper-rs.md) | Wie können die Interaktionen zwischen Leinwand, Layout und Editor ein unabhängiges Designtool beeinflussen? | [Primärquelle](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) |
+| [rec-rs: ein OBS-inspirierter nativer macOS-Recorder](cases/de/rec-rs.md) | Wie können ein fokussierter Bildschirm, eine Kamera und ein Audiorecorder gebaut werden? | [Primärquelle](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) |
+| [Terminal (formerly terminal-rs): ein Marktterminal, das durch TradingView-Interaktionen informiert wird](cases/de/terminal-rs.md) | Wie kann die Chart-Interaktionsforschung eine unabhängige Rust-Marktschnittstelle beeinflussen? | [Primärquelle](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) |
 | [Wispr Flow: ein Spracheingabe-Teardown und ein kleiner lokaler Prototyp](cases/de/wispr-flow.md) | Wie hängen Aufnahme, Transkription, Kontext und Einfügen zusammen? | [Primärquelle](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
 | [hexgrab: Untersuchung des Farbwählers PowerToys](cases/de/hexgrab.md) | Wie funktionieren globale Hotkeys, Pixelsampling und die Zwischenablage? | [Primärquelle](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
 | [AdamTerm: Untersuchung der Shell von Ghostty und Aufbau eines Terminals](cases/de/adamterm.md) | Wie sind der Terminalkern, native Fenster, Menüs und Dienste aufgeteilt? | [Primärquelle](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
@@ -65,6 +66,7 @@ Schnappschuss: 2026-10-26. Quellengeprüfte Katalogprojekte mit mindestens 100 G
 | [DiskLens: Überprüfung von Festplatten-Scan- und Treemap-Algorithmen in einer veröffentlichten Binärdatei](cases/de/disklens.md) | Wie können Festplattenscans, Treemaps und Duplikaterkennung überprüft werden, bevor eine neue Schnittstelle erstellt wird? | [Primärquelle](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: von erfassten Web-Bundles bis hin zu einem unabhängigen 3D-Prototyp](cases/de/hyper3d-clone.md) | Wie können Schnittstellen- und API-Beobachtungen einen Prototyp beeinflussen, der 3D-Modelle exportiert? | [Primärquelle](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: Desktop-Interaktionen dokumentieren und wiederverwendbare UI-Komponenten veröffentlichen](cases/de/open-claude-ui.md) | Wie können Eingabezusammensetzungs-, Scroll- und Desktop-Interaktionsregeln wiederverwendbare Schnittstellenkomponenten beeinflussen? | [Primärquelle](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
+| [Screen Studio: Trennung der statischen Inspektion von der Aufzeichnung und dem Export von Beweisen](cases/de/screenstudio-research.md) | Wie können Electron- und Native-Helper-Ergebnisse vom Aufzeichnungs-, Export- und Kompatibilitätsnachweis getrennt gehalten werden? | [Primärquelle](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
 
 ## Hardware und Kompatibilität
 
@@ -75,6 +77,7 @@ Schnappschuss: 2026-10-26. Quellengeprüfte Katalogprojekte mit mindestens 100 G
 | [Pixel Watch: ein eSIM-Übergabehelfer, der durch eine Companion-APK-Analyse informiert wird](cases/de/watch-esim-helper.md) | Wie kann ein separater Helfer den vorhandenen Watch-eSIM-Download-Flow der Begleit-App finden und öffnen? | [Primärquelle](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
 | [PicoPrint: Anschluss eines mobilen Thermodruckers an den Windows-Drucker](cases/de/picoprint.md) | Wie können Handshake-Unterschiede festgestellt werden, wenn ein Treiber eine Verbindung herstellt, aber nicht druckt? | [Primärquelle](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
 | [V5VPN: Protokollrecherche für einen bereichsbezogenen Portal- und Tunnel-Client](cases/de/v5vpn-rea-client.md) | Wie können Authentifizierung, Ressourcenerkennung und Verbindungsforschung einen bereichsbezogenen unabhängigen Client informieren? | [Primärquelle](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
+| [iCSee localmod: Verfolgen von Kamerabefehlen unter Beibehaltung der Standardtreiber](cases/de/icsee-localmod.md) | Wie kann die native Befehlsforschung eine lokale Kamerasteuerung ermöglichen und gleichzeitig funktionierende Treiber und SD-Aufzeichnung erhalten? | [Primärquelle](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) |
 
 ## Analyse und Bewertung
 
@@ -102,6 +105,10 @@ Schnappschuss: 2026-10-26. Quellengeprüfte Katalogprojekte mit mindestens 100 G
 | --- | --- | --- |
 | [sparkDash: Integration der REA-Analyse in ein Dashboard für mehrere Geräte](cases/de/sparkdash-rea.md) | Wie kann eine Webschnittstelle lang laufende Remote-Jobs REA übermitteln und große Ergebnisse bei Bedarf laden? | [Primärquelle](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
 | [REA Safe Agent: Vermittlung statischer Analysen zwischen zwei enthaltenen Prozessen](cases/de/rea-safe-agents.md) | Wie kann ein Agent REA abfragen, während der Zugriff auf Eingaben, Host-Tools und Modellanforderungen begrenzt bleibt? | [Primärquelle](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
+| [REA Studio: Präsentation der MCP-Tools und aufgezeichnetes Evidence in einer lokalen Web-Benutzeroberfläche](cases/de/rea-studio.md) | Wie kann eine lokale Schnittstelle installierte REA-Tools offenlegen und deren Beweise und Einschränkungen lesbar machen? | [Primärquelle](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) |
+| [dsh-rea: Beibehaltung von MCP-Verträgen bei gleichzeitiger Offenlegung von Tools bei Bedarf](cases/de/dsh-rea.md) | Wie kann ein Adapter Upstream-Tool-Verträge beibehalten und gleichzeitig ungenutzte Schemata aus jeder Agent-Anfrage heraushalten? | [Primärquelle](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) |
+| [App X-Ray: REA-Ergebnisse in gemeinsam nutzbare App-Berichte umwandeln](cases/de/app-xray.md) | Wie können aus statischen REA-Beweisen ein lesbarer Komponentenbericht und ein Unterschied zwischen Versionen werden? | [Primärquelle](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) |
+| [Eleven: Verbinden einer agentengesteuerten Desktop-Workbench mit REA](cases/de/eleven.md) | Wie kann ein Agent eine Binärdatei überprüfen, während Navigation und bearbeitbare Anmerkungen in einer gemeinsam genutzten Workbench sichtbar bleiben? | [Primärquelle](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) |
 
 ## Welche Fälle sind enthalten?
 

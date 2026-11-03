@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-10-26",
+  "checked_on": "2026-11-03",
   "metric": "GitHub repository stargazers_count; point-in-time attention only, not growth, quality or compatibility.",
   "scope": "Catalog entries whose project_url is a GitHub repository; primary-source-reviewed entries only.",
   "repositories": [
@@ -12,37 +12,37 @@
     {
       "case_id": "ski-or-die",
       "repository": "tuunanet/rea-ski-or-die-reconstruction",
-      "stars": 2,
+      "stars": 3,
       "source_url": "https://api.github.com/repos/tuunanet/rea-ski-or-die-reconstruction"
     },
     {
       "case_id": "paper-rs",
-      "repository": "michaelshimeles/paper-rs",
-      "stars": 68,
-      "source_url": "https://api.github.com/repos/michaelshimeles/paper-rs"
+      "repository": "michaelshimeles/sketch",
+      "stars": 81,
+      "source_url": "https://api.github.com/repos/michaelshimeles/sketch"
     },
     {
       "case_id": "rec-rs",
       "repository": "michaelshimeles/rec-rs",
-      "stars": 104,
+      "stars": 115,
       "source_url": "https://api.github.com/repos/michaelshimeles/rec-rs"
     },
     {
       "case_id": "terminal-rs",
-      "repository": "michaelshimeles/terminal-rs",
-      "stars": 301,
-      "source_url": "https://api.github.com/repos/michaelshimeles/terminal-rs"
+      "repository": "michaelshimeles/terminal",
+      "stars": 327,
+      "source_url": "https://api.github.com/repos/michaelshimeles/terminal"
     },
     {
       "case_id": "wispr-flow",
       "repository": "az9713/wispr-flow-rea-teardown",
-      "stars": 1,
+      "stars": 2,
       "source_url": "https://api.github.com/repos/az9713/wispr-flow-rea-teardown"
     },
     {
       "case_id": "hexgrab",
       "repository": "iammukeshm/hexgrab",
-      "stars": 2,
+      "stars": 5,
       "source_url": "https://api.github.com/repos/iammukeshm/hexgrab"
     },
     {
@@ -54,7 +54,7 @@
     {
       "case_id": "ledger-reborn",
       "repository": "lxistired/ledger-reborn",
-      "stars": 38,
+      "stars": 47,
       "source_url": "https://api.github.com/repos/lxistired/ledger-reborn"
     },
     {
@@ -66,25 +66,25 @@
     {
       "case_id": "vd-streamer-linux",
       "repository": "cudanexus/vd-streamer-linux",
-      "stars": 2,
+      "stars": 4,
       "source_url": "https://api.github.com/repos/cudanexus/vd-streamer-linux"
     },
     {
       "case_id": "netcat-analysis",
       "repository": "NullLabTests/OpenBSD_netcat_REA",
-      "stars": 5,
+      "stars": 7,
       "source_url": "https://api.github.com/repos/NullLabTests/OpenBSD_netcat_REA"
     },
     {
       "case_id": "rea-on-rea",
       "repository": "az9713/REA-demo",
-      "stars": 0,
+      "stars": 2,
       "source_url": "https://api.github.com/repos/az9713/REA-demo"
     },
     {
       "case_id": "rea-groundtruth",
       "repository": "UnknownHacker1/rea-groundtruth",
-      "stars": 0,
+      "stars": 1,
       "source_url": "https://api.github.com/repos/UnknownHacker1/rea-groundtruth"
     },
     {
@@ -102,7 +102,7 @@
     {
       "case_id": "disklens",
       "repository": "KarlssonChristoffer/DiskLens",
-      "stars": 1,
+      "stars": 2,
       "source_url": "https://api.github.com/repos/KarlssonChristoffer/DiskLens"
     },
     {
@@ -138,7 +138,7 @@
     {
       "case_id": "openbattlefield2",
       "repository": "Moxnatiy/OpenBattlefield2",
-      "stars": 57,
+      "stars": 62,
       "source_url": "https://api.github.com/repos/Moxnatiy/OpenBattlefield2"
     },
     {
@@ -150,31 +150,31 @@
     {
       "case_id": "v5vpn-rea-client",
       "repository": "hygkui/v5vpn-rea-client",
-      "stars": 9,
+      "stars": 15,
       "source_url": "https://api.github.com/repos/hygkui/v5vpn-rea-client"
     },
     {
       "case_id": "coop-anything",
       "repository": "cranebeaker/coop-anything",
-      "stars": 1391,
+      "stars": 1837,
       "source_url": "https://api.github.com/repos/cranebeaker/coop-anything"
     },
     {
       "case_id": "sparkdash-rea",
       "repository": "MiaAI-Lab/sparkDash",
-      "stars": 763,
+      "stars": 816,
       "source_url": "https://api.github.com/repos/MiaAI-Lab/sparkDash"
     },
     {
       "case_id": "open-claude-ui",
       "repository": "Caho1/open-claude-ui",
-      "stars": 1415,
+      "stars": 1666,
       "source_url": "https://api.github.com/repos/Caho1/open-claude-ui"
     },
     {
       "case_id": "open-scrantic",
       "repository": "glauberlima/open-scrantic",
-      "stars": 33,
+      "stars": 44,
       "source_url": "https://api.github.com/repos/glauberlima/open-scrantic"
     },
     {
@@ -188,6 +188,42 @@
       "repository": "harkiventures/rea-muestra-gratuita",
       "stars": 0,
       "source_url": "https://api.github.com/repos/harkiventures/rea-muestra-gratuita"
+    },
+    {
+      "case_id": "screenstudio-research",
+      "repository": "Royo-Qiao/screenstudio-rea-research",
+      "stars": 1,
+      "source_url": "https://api.github.com/repos/Royo-Qiao/screenstudio-rea-research"
+    },
+    {
+      "case_id": "icsee-localmod",
+      "repository": "Vittuu/icsee-localmod",
+      "stars": 2,
+      "source_url": "https://api.github.com/repos/Vittuu/icsee-localmod"
+    },
+    {
+      "case_id": "rea-studio",
+      "repository": "theyishaik-lab/rea-studio",
+      "stars": 0,
+      "source_url": "https://api.github.com/repos/theyishaik-lab/rea-studio"
+    },
+    {
+      "case_id": "dsh-rea",
+      "repository": "JeremyWangCY/dsh-rea",
+      "stars": 4,
+      "source_url": "https://api.github.com/repos/JeremyWangCY/dsh-rea"
+    },
+    {
+      "case_id": "app-xray",
+      "repository": "Eliot5566/app-xray",
+      "stars": 1,
+      "source_url": "https://api.github.com/repos/Eliot5566/app-xray"
+    },
+    {
+      "case_id": "eleven",
+      "repository": "Zfinix/eleven",
+      "stars": 961,
+      "source_url": "https://api.github.com/repos/Zfinix/eleven"
     }
   ]
 }

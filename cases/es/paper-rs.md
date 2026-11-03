@@ -7,7 +7,7 @@
 Esta edición está traducida automáticamente de la versión editorial en inglés. Las citas originales permanecen en su idioma de origen. Cuando la redacción no esté clara, consulte el inglés y las fuentes vinculadas.
 
 - **Autor / atribución:** michaelshimeles
-- **Fecha de revisión de la fuente:** 2026-10-21
+- **Fecha de revisión de la fuente:** 2026-11-03
 - **Estado de revisión:** Fuentes revisadas; Las pruebas del autor no se vuelven a ejecutar de forma independiente.
 - **Objetivo:** Comportamiento de la aplicación de diseño de escritorio Paper
 
@@ -17,15 +17,15 @@ Esta edición está traducida automáticamente de la versión editorial en ingl�
 
 ## Lo que hizo REA
 
-El autor afirma que REA y Claude Code se utilizaron para investigar el comportamiento del escritorio de Paper antes de implementar una aplicación Rust separada con wgpu, winit y egui.
+El autor afirma que REA y Claude Code se utilizaron para investigar el comportamiento del escritorio de Paper antes de implementar una aplicación Rust independiente con wgpu, winit y egui.
 
 ## Resultados informados por el autor
 
-El proyecto publica un lienzo infinito, páginas, diseños, edición de vectores, pizarras e interfaces MCP, con pruebas y diferencias de funciones. Revisado en 2026-10-21:, ahora se llama Sketch, con el ejecutable sketch-rs, migración de primer inicio del antiguo directorio del proyecto y compatibilidad con archivos antiguos y variables de entorno. Sigue siendo un caso.
+El proyecto publica un lienzo infinito, páginas, diseños, edición de vectores, pizarras e interfaces MCP, con pruebas y diferencias de funciones. Revisado en 2026-10-21:, ahora se llama Sketch, con el ejecutable sketch-rs, migración de primer inicio del antiguo directorio del proyecto y compatibilidad con archivos antiguos y variables de entorno. Sigue siendo un caso. Revisado en 2026-11-03:, el autor ahora informa sobre una compilación universal certificada de macOS que se ejecuta en un M4 Pro, que incluye el inicio de la ventana Metal, la carga de Sparkle, las ediciones de MCP y el guardado automático.
 
 ## Limitaciones y afirmaciones no verificadas
 
-El autor explícitamente no lo había iniciado en hardware macOS real. Algunas características son aproximadas o faltan. La inclusión se basa en la atribución pública del autor, no en una equivalencia verificada con Paper.
+La fuente 2026-10-21 dijo que el hardware macOS no había sido ejercido; el informe más reciente cubre únicamente comprobaciones limitadas de M4 Pro. Según el autor, el mouse, el trackpad, el teclado, los menús, la ventana de actualización y el segmento Intel aún no se han probado en Mac. Algunas características son aproximadas o faltan. La atribución pública y estas comprobaciones no establecen equivalencia con Paper; este catálogo no los volvió a ejecutar.
 
 ## que aprender
 
@@ -39,9 +39,10 @@ El formato de los extractos está simplificado. Lea la fuente original para cono
 
 ## Fuentes originales
 
-- [Fuente primaria/evidencia fijada](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
-- [Proyecto / demostración](https://github.com/michaelshimeles/paper-rs)
-- [Fuente adicional 1](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
+- [Fuente primaria/evidencia fijada](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md)
+- [Proyecto / demostración](https://github.com/michaelshimeles/sketch)
+- [Fuente adicional 1](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
+- [Fuente adicional 2](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
 
 Resumen editorial independiente. El crédito pertenece a los autores originales. El software de destino, los instaladores y el resultado completo del descompilador no se redistribuyen aquí.
 

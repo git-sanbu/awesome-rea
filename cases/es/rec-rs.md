@@ -7,7 +7,7 @@
 Esta edición está traducida automáticamente de la versión editorial en inglés. Las citas originales permanecen en su idioma de origen. Cuando la redacción no esté clara, consulte el inglés y las fuentes vinculadas.
 
 - **Autor / atribución:** michaelshimeles
-- **Fecha de revisión de la fuente:** 2026-10-21
+- **Fecha de revisión de la fuente:** 2026-11-03
 - **Estado de revisión:** Fuentes revisadas; Las pruebas del autor no se vuelven a ejecutar de forma independiente.
 - **Objetivo:** Arquitectura y comportamiento de OBS Studio
 
@@ -21,11 +21,11 @@ El autor afirma que REA y Claude Code se utilizaron para investigar OBS antes de
 
 ## Resultados informados por el autor
 
-El proyecto publica funciones de grabación, mezcla de audio, búfer de reproducción y transmisión screen/camera. El autor informa sobre el desarrollo y las pruebas en una Apple Silicon Mac. El 2026-10-21 README agrega versiones universales de Apple Silicon + Intel, signing/notarization y actualizaciones Sparkle.
+El proyecto publica funciones de grabación, mezcla de audio, búfer de reproducción y transmisión screen/camera. El autor informa sobre el desarrollo y las pruebas en una Apple Silicon Mac. El 2026-10-21 README agrega versiones universales de Apple Silicon + Intel, signing/notarization y actualizaciones Sparkle. Revisada en 2026-11-03:, la aplicación agrega faders/mute en vivo por fuente y destinos de transmisión simultánea desde una codificación. El autor informa haber probado dos rutas RTMP y un punto final WHIP juntos contra un servidor MediaMTX local.
 
 ## Limitaciones y afirmaciones no verificadas
 
-Requiere macOS 15+. El hardware informado sigue siendo un Apple Silicon M4 Pro; Las instrucciones de descarga y compilación de Intel no verifican la grabación en una Mac Intel real. Esta es una implementación de alcance, no un reemplazo completo de OBS o una reconstrucción multiplataforma. Este catálogo no lo volvió a ejecutar.
+Requiere macOS 15+. El hardware informado sigue siendo un Apple Silicon M4 Pro; Las instrucciones de descarga y compilación de Intel no verifican la grabación en una Mac Intel real. Esta es una implementación de alcance, no un reemplazo completo de OBS o una reconstrucción multiplataforma. Este catálogo no lo volvió a ejecutar. En las pruebas informadas no se transmitieron directamente a YouTube, Twitch y Kick. Los destinos comparten una codificación con los límites configurados más bajos; cambiar de destino requiere que se detenga la transmisión. Los resultados del servidor local no verifican la interoperabilidad del servicio.
 
 ## que aprender
 
@@ -39,9 +39,10 @@ El formato de los extractos está simplificado. Lea la fuente original para cono
 
 ## Fuentes originales
 
-- [Fuente primaria/evidencia fijada](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [Fuente primaria/evidencia fijada](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md)
 - [Proyecto / demostración](https://github.com/michaelshimeles/rec-rs)
-- [Fuente adicional 1](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
+- [Fuente adicional 1](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [Fuente adicional 2](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
 
 Resumen editorial independiente. El crédito pertenece a los autores originales. El software de destino, los instaladores y el resultado completo del descompilador no se redistribuyen aquí.
 

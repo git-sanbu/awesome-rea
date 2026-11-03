@@ -7,7 +7,7 @@
 Cette édition est traduite automatiquement à partir de la version éditoriale anglaise. Les citations originales restent dans leur langue source. Lorsque la formulation n’est pas claire, consultez l’anglais et les sources liées.
 
 - **Auteur / attribution:** michaelshimeles
-- **Date d'examen des sources:** 2026-10-21
+- **Date d'examen des sources:** 2026-11-03
 - **Statut de l'examen:** Sources examinées ; les tests de l'auteur ne sont pas réexécutés indépendamment.
 - **Cible:** Comportement de l'application de conception de bureau Paper
 
@@ -21,11 +21,11 @@ L'auteur déclare que REA et Claude Code ont été utilisés pour étudier le co
 
 ## Résultats rapportés par l'auteur
 
-Le projet publie un canevas infini, des pages, des mises en page, une édition vectorielle, un tableau blanc et des interfaces MCP, avec des tests et des différences de fonctionnalités. Examiné sur 2026-10-21:, il s'appelle désormais Sketch, avec l'exécutable sketch-rs, migration au premier lancement de l'ancien répertoire du projet et compatibilité avec les anciens fichiers et variables d'environnement. Cela reste un cas.
+Le projet publie un canevas infini, des pages, des mises en page, une édition vectorielle, un tableau blanc et des interfaces MCP, avec des tests et des différences de fonctionnalités. Examiné sur 2026-10-21:, il s'appelle désormais Sketch, avec l'exécutable sketch-rs, migration au premier lancement de l'ancien répertoire du projet et compatibilité avec les anciens fichiers et variables d'environnement. Cela reste un cas. Examiné sur 2026-11-03:, l'auteur rapporte désormais une version universelle notariée de macOS fonctionnant sur un M4 Pro, comprenant le lancement de fenêtre Metal, le chargement de Sparkle, les modifications MCP et la sauvegarde automatique.
 
 ## Limitations et réclamations non vérifiées
 
-L'auteur ne l'avait explicitement pas lancé sur du matériel réel macOS. Certaines fonctionnalités sont approximatives ou manquantes. L'inclusion repose sur l'attribution publique de l'auteur et non sur l'équivalence vérifiée avec Paper.
+La source 2026-10-21 a déclaré que le matériel macOS n'avait pas été utilisé ; le rapport le plus récent couvre uniquement les contrôles limités M4 Pro. La souris, le trackpad, le clavier, les menus, la fenêtre de mise à jour et la tranche Intel restent non testés sur Mac selon l'auteur. Certaines fonctionnalités sont approximatives ou manquantes. L'attribution publique et ces contrôles n'établissent pas d'équivalence avec Paper ; ce catalogue ne les a pas réédités.
 
 ## Quoi apprendre
 
@@ -39,9 +39,10 @@ Le formatage des extraits est simplifié. Lisez la source originale pour le cont
 
 ## Sources originales
 
-- [Source principale/preuve épinglée](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
-- [Projet / démo](https://github.com/michaelshimeles/paper-rs)
-- [Source supplémentaire 1](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
+- [Source principale/preuve épinglée](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md)
+- [Projet / démo](https://github.com/michaelshimeles/sketch)
+- [Source supplémentaire 1](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
+- [Source supplémentaire 2](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
 
 Résumé éditorial indépendant. Le crédit appartient aux auteurs originaux. Les logiciels cibles, les installateurs et la sortie complète du décompilateur ne sont pas redistribués ici.
 

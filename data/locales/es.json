@@ -1,6 +1,6 @@
 {
-  "source_digest": "59e191cf47c02978a7ee19505c29c38bc167b77975a4288691128d1f593c1ff1",
-  "updated_on": "2026-10-26",
+  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486",
+  "updated_on": "2026-11-03",
   "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA — Casos de uso y ejemplos de Reverse Engineer Anything",
@@ -153,9 +153,9 @@
       "title": "Sketch (formerly paper-rs): un lienzo infinito Rust inspirado en Paper",
       "target": "Comportamiento de la aplicación de diseño de escritorio Paper",
       "question": "¿Cómo pueden las interacciones entre el lienzo, el diseño y el editor informar a una herramienta de diseño independiente?",
-      "rea_role": "El autor afirma que REA y Claude Code se utilizaron para investigar el comportamiento del escritorio de Paper antes de implementar una aplicación Rust separada con wgpu, winit y egui.",
-      "reported_result": "El proyecto publica un lienzo infinito, páginas, diseños, edición de vectores, pizarras e interfaces MCP, con pruebas y diferencias de funciones. Revisado en 2026-10-21:, ahora se llama Sketch, con el ejecutable sketch-rs, migración de primer inicio del antiguo directorio del proyecto y compatibilidad con archivos antiguos y variables de entorno. Sigue siendo un caso.",
-      "limitations": "El autor explícitamente no lo había iniciado en hardware macOS real. Algunas características son aproximadas o faltan. La inclusión se basa en la atribución pública del autor, no en una equivalencia verificada con Paper.",
+      "rea_role": "El autor afirma que REA y Claude Code se utilizaron para investigar el comportamiento del escritorio de Paper antes de implementar una aplicación Rust independiente con wgpu, winit y egui.",
+      "reported_result": "El proyecto publica un lienzo infinito, páginas, diseños, edición de vectores, pizarras e interfaces MCP, con pruebas y diferencias de funciones. Revisado en 2026-10-21:, ahora se llama Sketch, con el ejecutable sketch-rs, migración de primer inicio del antiguo directorio del proyecto y compatibilidad con archivos antiguos y variables de entorno. Sigue siendo un caso. Revisado en 2026-11-03:, el autor ahora informa sobre una compilación universal certificada de macOS que se ejecuta en un M4 Pro, que incluye el inicio de la ventana Metal, la carga de Sparkle, las ediciones de MCP y el guardado automático.",
+      "limitations": "La fuente 2026-10-21 dijo que el hardware macOS no había sido ejercido; el informe más reciente cubre únicamente comprobaciones limitadas de M4 Pro. Según el autor, el mouse, el trackpad, el teclado, los menús, la ventana de actualización y el segmento Intel aún no se han probado en Mac. Algunas características son aproximadas o faltan. La atribución pública y estas comprobaciones no establecen equivalencia con Paper; este catálogo no los volvió a ejecutar.",
       "takeaway": "Aprenda los contratos de comportamiento e interacción mientras establece los límites de la implementación independiente.",
       "author": "michaelshimeles"
     },
@@ -164,18 +164,18 @@
       "target": "Arquitectura y comportamiento de OBS Studio",
       "question": "¿Cómo se puede construir una pantalla enfocada, una cámara y una grabadora de audio?",
       "rea_role": "El autor afirma que REA y Claude Code se utilizaron para investigar OBS antes de crear una herramienta independiente con Rust y los marcos de Apple.",
-      "reported_result": "El proyecto publica funciones de grabación, mezcla de audio, búfer de reproducción y transmisión screen/camera. El autor informa sobre el desarrollo y las pruebas en una Apple Silicon Mac. El 2026-10-21 README agrega versiones universales de Apple Silicon + Intel, signing/notarization y actualizaciones Sparkle.",
-      "limitations": "Requiere macOS 15+. El hardware informado sigue siendo un Apple Silicon M4 Pro; Las instrucciones de descarga y compilación de Intel no verifican la grabación en una Mac Intel real. Esta es una implementación de alcance, no un reemplazo completo de OBS o una reconstrucción multiplataforma. Este catálogo no lo volvió a ejecutar.",
+      "reported_result": "El proyecto publica funciones de grabación, mezcla de audio, búfer de reproducción y transmisión screen/camera. El autor informa sobre el desarrollo y las pruebas en una Apple Silicon Mac. El 2026-10-21 README agrega versiones universales de Apple Silicon + Intel, signing/notarization y actualizaciones Sparkle. Revisada en 2026-11-03:, la aplicación agrega faders/mute en vivo por fuente y destinos de transmisión simultánea desde una codificación. El autor informa haber probado dos rutas RTMP y un punto final WHIP juntos contra un servidor MediaMTX local.",
+      "limitations": "Requiere macOS 15+. El hardware informado sigue siendo un Apple Silicon M4 Pro; Las instrucciones de descarga y compilación de Intel no verifican la grabación en una Mac Intel real. Esta es una implementación de alcance, no un reemplazo completo de OBS o una reconstrucción multiplataforma. Este catálogo no lo volvió a ejecutar. En las pruebas informadas no se transmitieron directamente a YouTube, Twitch y Kick. Los destinos comparten una codificación con los límites configurados más bajos; cambiar de destino requiere que se detenga la transmisión. Los resultados del servidor local no verifican la interoperabilidad del servicio.",
       "takeaway": "Extraiga la arquitectura necesaria para un caso de uso específico y cree un producto más pequeño a su alrededor.",
       "author": "michaelshimeles"
     },
     "terminal-rs": {
-      "title": "terminal-rs: una terminal de mercado informada por interacciones TradingView",
+      "title": "Terminal (formerly terminal-rs): una terminal de mercado informada por interacciones TradingView",
       "target": "Comportamiento de las páginas de gráficos TradingView públicas y desconectadas",
-      "question": "¿Cómo puede la investigación de interacción de gráficos informar a una interfaz de mercado Rust independiente?",
+      "question": "¿Cómo puede la investigación de la interacción de gráficos informar a una interfaz de mercado Rust independiente?",
       "rea_role": "El autor utiliza el modo de sitio web REA para la captura pasiva de páginas públicas. Los hallazgos, las identificaciones de Evidence y las implicaciones de diseño se registran en docs/analysis..",
-      "reported_result": "El proyecto publica gráficos de GPU Rust, comandos de teclado, diseños de paneles e integración de datos con una interfaz estilo Bloomberg. Revisado en 2026-10-21: 151, se agregaron indicadores integrados, pruebas de entrada de parámetros y límites, y un script de lanzamiento universal macOS. Estos son cambios de implementación posteriores, no una nueva investigación REA.",
-      "limitations": "Sólo se estudió el comportamiento visible en la web; Esto no es una recuperación del código fuente TradingView o Bloomberg. Las fuentes de datos, los límites de tasas y los términos de uso de datos imponen restricciones separadas.",
+      "reported_result": "El proyecto publica gráficos de GPU Rust, comandos de teclado, diseños de paneles e integración de datos con una interfaz estilo Bloomberg. Revisado en 2026-10-21: 151, se agregaron indicadores integrados, pruebas de entrada de límites y parámetros, y un script de lanzamiento universal macOS. Estos son cambios de implementación posteriores, no una nueva investigación REA. Revisado en 2026-11-03:, el repositorio ahora es Terminal, con el mismo ID de catálogo estable. Sus feeds de divulgación de documentos README, vistas de cuentas SnapTrade y operaciones de suscripción voluntaria; esas características de implementación están separadas de la investigación de comportamiento de gráficos REA.",
+      "limitations": "Sólo se estudió el comportamiento visible en la web; Esto no es una recuperación del código fuente TradingView o Bloomberg. Las fuentes de datos, los límites de tasas y los términos de uso de datos imponen restricciones separadas. El autor distingue las pruebas brokerage/order simuladas y los datos simulados de los servicios en vivo. Este catálogo no conecta una correduría, realiza pedidos ni verifica la exactitud de los datos actuales. La confirmación README anterior se conserva como procedencia histórica, pero devolvió HTTP 404 durante esta revisión.",
       "takeaway": "Las observaciones web públicas pueden proporcionar información de diseño rastreable sin describirse como descompilación binaria.",
       "author": "michaelshimeles"
     },
@@ -458,6 +458,66 @@
       "limitations": "El ejercicio es el pequeño programa desprotegido del autor, no una elusión de una licencia comercial ni un resultado general para el software protegido. Los ejemplos de 4 son comprobaciones limitadas, no equivalencias exhaustivas. Este catálogo no ejecutó los archivos binarios ni volvió a ejecutar la comparación; el curso completo propuesto aún no se ha entregado.",
       "takeaway": "Utilice un dispositivo propio con una fuente de referencia oculta, recupere una regla limitada y pruebe las entradas aceptadas y rechazadas antes de compararlas con la fuente.",
       "author": "harkiventures"
+    },
+    "screenstudio-research": {
+      "title": "Screen Studio: separación de la inspección estática del registro y exportación de evidencia",
+      "target": "Screen Studio 3.7.3-4540, incluida una copia de Apple Silicon reempaquetada localmente",
+      "question": "¿Cómo se pueden mantener los hallazgos de Electron y del asistente nativo separados de la prueba de grabación, exportación y compatibilidad?",
+      "rea_role": "Las inspecciones de fusibles REA y Mach-O proporcionaron extractos estáticos seleccionados de Evidence con ID y hashes. Se agotó el tiempo de espera de un análisis de aplicación JavaScript limitado dos veces; no se afirma ningún gráfico completo o descompilación de funciones nativas.",
+      "reported_result": "El autor publica herramientas de inspección, estadísticas agregadas de proyectos y validación de exportaciones. Según se informa, una grabación nativa histórica exportó cuadros 3, 337 a 1104 × 720 y 60 fps y fue completamente decodificada; una verificación posterior de la herramienta de solo lectura examinó la exportación guardada y agregó eventos de entrada humana.",
+      "limitations": "Las grabaciones privadas y los libros de contabilidad completos no están disponibles para su reproducción. El hash Mach-O identifica una copia reempaquetada localmente. La autorización de red falló, un intento de recorte no tuvo efecto, la firma final no fue seguida por una nueva prueba de captura completa y solo se ejecutó una configuración Apple Silicon/macOS. La decodificación de archivos no prueba la procedencia de la grabación ni la equivalencia visual; este catálogo no volvió a ejecutar el experimento.",
+      "takeaway": "Mantenga los metadatos estáticos, las observaciones de la interfaz de usuario, la decodificación de archivos y los comentarios humanos como evidencia separada y publique las comprobaciones fallidas junto con las exitosas.",
+      "author": "Royo-Qiao"
+    },
+    "icsee-localmod": {
+      "title": "iCSee localmod: seguimiento de comandos de cámara conservando los controladores originales",
+      "target": "Una cámara XM530V200 / IPG-X2-WQ-BL y su aplicación original Sofia",
+      "question": "¿Cómo puede la investigación de comandos nativos habilitar controles de cámara locales y al mismo tiempo preservar los controladores en funcionamiento y la grabación SD?",
+      "rea_role": "REA 6.8.0 y Ghidra rastrearon cadenas de comandos Sofia y referencias cruzadas a controladores de iluminación y PTZ. El flujo de trabajo publicado registra anclajes específicos de binarios; las respuestas del protocolo y el comportamiento físico se validaron por separado.",
+      "reported_result": "El autor publica un C panel/API local, fuente y ejemplos de Home Assistant. El propietario informa comprobaciones físicas de PTZ y LED blanco, audio/video decodificado, persistencia de arranque y grabación nativa continua de WFS después de reinicios independientes. Un registro público separado de backend simulado enumera las pruebas aprobadas de 22 y dice explícitamente hardware_tested=false.",
+      "limitations": "El firmware completo, la descompilación y los paquetes privados Evidence no se publican. Los resultados del hardware son informes del propietario de una unidad; Las pruebas simuladas no validan la instalación del firmware ni el comportamiento físico. Se trata de una extensión del firmware original, sin imagen universal, intercomunicador completo ni mejora de la latencia medida. El protector de eliminación de rutas no es un firewall; este catálogo no probó un dispositivo.",
+      "takeaway": "Rastree un comando limitado, verifique las respuestas autenticadas y luego verifique la acción física y la persistencia como pasos separados.",
+      "author": "Vittuu"
+    },
+    "rea-studio": {
+      "title": "REA Studio: presentación de herramientas MCP y Evidence grabado en una interfaz de usuario web local",
+      "target": "REA MCP descubrimiento de herramientas, formularios generados por esquemas y pequeños ejemplos de C, JavaScript y Python",
+      "question": "¿Cómo puede una interfaz local exponer las herramientas REA instaladas y hacer legibles sus pruebas y limitaciones?",
+      "rea_role": "El backend lanza REA sobre stdio MCP, pagina tools/list y reenvía tools/call con señales de progreso y cancelación. Un script de grabación llama a REA en pequeños artefactos de muestra y guarda los resultados para una compilación de demostración estática separada.",
+      "reported_result": "La fuente pública incluye una interfaz web local, entradas basadas en esquemas, historial y una vista Evidence. Los artefactos de demostración registrados identifican REA 6.8.0 y proporcionan un catálogo de 229-tool más ejecuciones de muestra registradas de 9 (8 completado, error de 1); Las acciones de demostración no admitidas devuelven un error explícito no registrado.",
+      "limitations": "La demostración alojada reproduce las respuestas guardadas y el progreso simulado; las cargas permanecen en el navegador y no se analizan. Las grabaciones son publicadas por el autor, no reposiciones independientes. El uso local puede invocar herramientas en archivos host y depende de los proveedores configurados; el catálogo no instaló ni probó el backend ni estableció una auditoría de seguridad.",
+      "takeaway": "Genere formularios a partir del esquema de la herramienta en vivo, mantenga las limitaciones en la vista de resultados y distinga claramente las demostraciones grabadas de los análisis en vivo.",
+      "author": "theyishaik-lab"
+    },
+    "dsh-rea": {
+      "title": "dsh-rea: preservando contratos MCP mientras revela herramientas bajo demanda",
+      "target": "REA 6.8.0 MCP herramientas, indicaciones y habilidades dentro de DeepSeek Harness",
+      "question": "¿Cómo puede un adaptador preservar los contratos de herramientas ascendentes y al mismo tiempo mantener los esquemas no utilizados fuera de cada solicitud de agente?",
+      "rea_role": "El adaptador lanza el ejecutable MCP ascendente fijado a través de un puente DSH, comparte su conexión para indicaciones y finalizaciones, y utiliza máscaras de herramientas por agente. El comando /rea revela el catálogo y la habilidad; /rea off los esconde de nuevo.",
+      "reported_result": "El autor publica código de adaptador, mediciones de esquema y un informe diferencial acotado que enumera las herramientas 229 y comparaciones de llamadas deterministas en modos nativo y PTC. El catálogo de entrada de modelo medido es 273, 264 bytes; Esta es una medición de la carga útil del esquema, no un token LLM ni un punto de referencia de costos.",
+      "limitations": "El repositorio contiene un informe de comparación aprobado y documentación separada de un error Windows integrity_mismatch en el comando de verificación. Los mantenedores del catálogo no han confirmado una verificación exitosa en Windows. Hacer coincidir las definiciones de herramientas no significa que se ejecutaron todas las herramientas. La comparación informada no cubre los motores nativos, la captura en vivo ni todos los proveedores, y no establece respuestas de modelos de lenguaje equivalentes. Los mantenedores del catálogo no ejecutaron estas pruebas.",
+      "takeaway": "Compare esquemas y complete sobres de resultados deterministas, conserve registros de pases históricos y divulgue las fallas actuales por separado.",
+      "author": "JeremyWangCY"
+    },
+    "app-xray": {
+      "title": "App X-Ray: convertir los hallazgos de REA en informes de aplicaciones que se pueden compartir",
+      "target": "Fuente de aplicación Electron de código abierto, con rutas adicionales de archivo APK, binario nativo y modelo",
+      "question": "¿Cómo puede la evidencia estática REA convertirse en un informe de componentes legible y una diferencia entre versiones?",
+      "rea_role": "La integración invoca operaciones fijadas REA 6.7.0 CLI y analiza JSON Evidence. Los lotes de análisis JavaScript mantienen los archivos bajo la misma raíz para preservar la resolución de importación; La inspección de fusibles Electron es una operación independiente del REA.",
+      "reported_result": "El proyecto publica generación de informes, reglas, diferencias de CI y una galería. Su informe week-5 fechado dice que se escanearon las aplicaciones 20 Electron y se encontraron versiones para todos los 20, con escaneos de 18 en segundos de 60 en ese contenedor. REA-Bench proporciona preguntas 54 derivadas de informes de todo el corpus 20-app.",
+      "limitations": "Estos son análisis fechados informados por el autor, no vulnerabilidades actuales ni hallazgos de la red en tiempo de ejecución. Las reglas pueden omitir ventanas creadas por el asistente, canales calculados y validación del remitente; Las direcciones estáticas no prueban el tráfico. REA-Bench mide la concordancia con los informes App X-Ray en lugar de la verdad sobre el terreno independiente y no demuestra en sí misma una ventaja del agente habilitado por herramientas. Este catálogo no volvió a ejecutar análisis.",
+      "takeaway": "Vincular las afirmaciones del informe sobre la fuente, conservar las confirmaciones y fechas del escaneo, y tratar las reglas estáticas y las respuestas de los puntos de referencia generados como falibles.",
+      "author": "Eliot5566"
+    },
+    "eleven": {
+      "title": "Eleven: conectar un banco de trabajo de escritorio controlado por agente a REA",
+      "target": "Análisis binario nativo a través de REA/Ghidra y un banco de trabajo de escritorio con agente ACP",
+      "question": "¿Cómo puede un agente inspeccionar un binario mientras la navegación y las anotaciones editables permanecen visibles en un banco de trabajo compartido?",
+      "rea_role": "El motor inicia REA MCP y llama a las vistas open_binary y de procedimiento. Un proxy separado reenvía herramientas de análisis mientras retiene las herramientas de escritura de anotaciones REA, dirigiendo esos cambios a través de herramientas de proyecto Eleven con historial visible.",
+      "reported_result": "La salida pública incluye el origen de la aplicación de escritorio, la documentación de la herramienta MCP, anotaciones del proyecto y rutas de sugerencia de parches, además de una prueba de agente en vivo proporcionada por el autor que le pide a un agente que abra una función /bin/ls en la interfaz de usuario. README y el escaparate anterior describen el banco de trabajo en funcionamiento.",
+      "limitations": "El catálogo inspeccionó las definiciones de fuente y prueba, no un recibo de prueba ejecutado o una versión instalada. La compatibilidad con la plataforma de escritorio, el comportamiento del depurador, la aceleración de la caché y la integridad del análisis binario no se verificaron de forma independiente. Rizin, jadx y otras rutas son motores separados; sus resultados no se atribuyen a REA. Los tiempos de exhibición ascendentes son observaciones del autor, no puntos de referencia del catálogo.",
+      "takeaway": "Separe el paso de análisis de las ediciones del proyecto, mantenga visible la autoría y el historial de deshacer, y distinga las pruebas ejecutables de los resultados de las pruebas observadas.",
+      "author": "Zfinix"
     }
   }
 }

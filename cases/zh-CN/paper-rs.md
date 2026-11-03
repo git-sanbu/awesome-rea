@@ -5,7 +5,7 @@
 [English](../paper-rs.md) · [简体中文](../zh-CN/paper-rs.md) · [繁體中文](../zh-TW/paper-rs.md) · [日本語](../ja/paper-rs.md) · [한국어](../ko/paper-rs.md) · [Español](../es/paper-rs.md) · [Français](../fr/paper-rs.md) · [Deutsch](../de/paper-rs.md) · [Português (Brasil)](../pt-BR/paper-rs.md) · [Русский](../ru/paper-rs.md) · [العربية](../ar/paper-rs.md) · [हिन्दी](../hi/paper-rs.md)
 
 - **作者 / 归属:** michaelshimeles
-- **核对日期:** 2026-10-21
+- **核对日期:** 2026-11-03
 - **收录状态:** 已阅读公开原文，未独立复跑作者测试。
 - **分析目标:** Paper 桌面设计应用的行为
 
@@ -19,11 +19,11 @@
 
 ## 原作者报告的成果
 
-公开项目包含无限画布、页面、布局、矢量编辑、白板与 MCP 接口，并列出测试与功能差异。 2026-10-21 复核：项目已更名 Sketch，程序名为 sketch-rs，作者说明首次启动迁移旧项目目录，并兼容旧文件和环境变量；不另计新案例。
+公开项目包含无限画布、页面、布局、矢量编辑、白板与 MCP 接口，并列出测试与功能差异。 2026-10-21 复核：项目已更名 Sketch，程序名为 sketch-rs，作者说明首次启动迁移旧项目目录，并兼容旧文件和环境变量；不另计新案例。 2026-11-03 复查：作者现报告经公证的 macOS 通用构建已在 M4 Pro 运行，检查包含 Metal 窗口启动、Sparkle 加载、MCP 编辑和自动保存。
 
 ## 局限与未验证项
 
-作者明确未在真实 macOS 硬件启动过；部分功能近似或缺失。收录依据是作者公开声明，不是完整 Paper 等价验证。
+2026-10-21 来源称尚未在 macOS 硬件运行；新报告仅覆盖有限的 M4 Pro 检查。作者明确表示鼠标、触控板、键盘、菜单、更新窗口及 Intel 架构仍未在 Mac 实测。部分功能近似或缺失。公开归因及这些检查不能证明与 Paper 等价，本目录未复跑。
 
 ## 可以借鉴什么
 
@@ -37,9 +37,10 @@
 
 ## 原始来源
 
-- [公开原文 / 固定版本证据](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
-- [项目 / 演示](https://github.com/michaelshimeles/paper-rs)
-- [补充来源 1](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
+- [公开原文 / 固定版本证据](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md)
+- [项目 / 演示](https://github.com/michaelshimeles/sketch)
+- [补充来源 1](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
+- [补充来源 2](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
 
 本页为独立整理，成果归原作者。目标软件、安装包和完整反编译输出不在此分发。
 

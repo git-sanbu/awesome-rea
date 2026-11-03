@@ -7,7 +7,7 @@
 Cette édition est traduite automatiquement à partir de la version éditoriale anglaise. Les citations originales restent dans leur langue source. Lorsque la formulation n’est pas claire, consultez l’anglais et les sources liées.
 
 - **Auteur / attribution:** michaelshimeles
-- **Date d'examen des sources:** 2026-10-21
+- **Date d'examen des sources:** 2026-11-03
 - **Statut de l'examen:** Sources examinées ; les tests de l'auteur ne sont pas réexécutés indépendamment.
 - **Cible:** Architecture et comportement d'OBS Studio
 
@@ -17,15 +17,15 @@ Comment construire un écran, une caméra et un enregistreur audio ciblés ?
 
 ## Ce que REA a fait
 
-L'auteur déclare que REA et Claude Code ont été utilisés pour enquêter sur OBS avant de créer un outil indépendant avec Rust et les frameworks Apple.
+L'auteur déclare que REA et Claude Code ont été utilisés pour étudier OBS avant de créer un outil indépendant avec Rust et les frameworks Apple.
 
 ## Résultats rapportés par l'auteur
 
-Le projet publie des fonctionnalités d'enregistrement, de mixage audio, de tampon de relecture et de streaming screen/camera. L'auteur rapporte le développement et les tests sur un Mac Apple Silicon. Le 2026-10-21 README ajoute les versions universelles Apple Silicon + Intel, les mises à jour signing/notarization et Sparkle.
+Le projet publie des fonctionnalités d'enregistrement, de mixage audio, de tampon de relecture et de streaming screen/camera. L'auteur rapporte le développement et les tests sur un Mac Apple Silicon. Le 2026-10-21 README ajoute les versions universelles Apple Silicon + Intel, les mises à jour signing/notarization et Sparkle. Examinée sur 2026-11-03:, l'application ajoute faders/mute en direct par source et des destinations de streaming simultanées à partir d'un seul encodage. L'auteur rapporte avoir testé ensemble deux chemins RTMP et un point de terminaison WHIP sur un serveur MediaMTX local.
 
 ## Limitations et réclamations non vérifiées
 
-Nécessite macOS 15+. Le matériel signalé reste un Apple Silicon M4 Pro ; un téléchargement Intel et des instructions de construction ne vérifient pas l'enregistrement sur un vrai Mac Intel. Il s'agit d'une implémentation limitée, et non d'un remplacement complet d'OBS ou d'une reconstruction multiplateforme. Ce catalogue ne l'a pas réédité.
+Nécessite macOS 15+. Le matériel signalé reste un Apple Silicon M4 Pro ; un téléchargement Intel et des instructions de construction ne vérifient pas l'enregistrement sur un vrai Mac Intel. Il s'agit d'une implémentation limitée, et non d'un remplacement complet d'OBS ou d'une reconstruction multiplateforme. Ce catalogue ne l'a pas réédité. YouTube, Twitch et Kick n'ont pas été directement diffusés lors des tests rapportés. Les destinations partagent un encodage avec les limites configurées les plus basses ; le changement de destination nécessite l’arrêt du streaming. Les résultats du serveur local ne vérifient pas l’interopérabilité des services.
 
 ## Quoi apprendre
 
@@ -39,9 +39,10 @@ Le formatage des extraits est simplifié. Lisez la source originale pour le cont
 
 ## Sources originales
 
-- [Source principale/preuve épinglée](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [Source principale/preuve épinglée](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md)
 - [Projet / démo](https://github.com/michaelshimeles/rec-rs)
-- [Source supplémentaire 1](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
+- [Source supplémentaire 1](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [Source supplémentaire 2](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
 
 Résumé éditorial indépendant. Le crédit appartient aux auteurs originaux. Les logiciels cibles, les installateurs et la sortie complète du décompilateur ne sont pas redistribués ici.
 

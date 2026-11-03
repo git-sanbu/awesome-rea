@@ -7,7 +7,7 @@
 Esta edição foi traduzida automaticamente da versão editorial em inglês. As citações originais permanecem no idioma de origem. Quando o texto não estiver claro, consulte o inglês e as fontes vinculadas.
 
 - **Autor / atribuição:** michaelshimeles
-- **Data de revisão da fonte:** 2026-10-21
+- **Data de revisão da fonte:** 2026-11-03
 - **Rever estado:** Fontes revisadas; os testes do autor não são executados de forma independente.
 - **Alvo:** Arquitetura e comportamento do OBS Studio
 
@@ -21,11 +21,11 @@ O autor afirma que REA e Claude Code foram usados para investigar OBS antes de c
 
 ## Resultados relatados pelo autor
 
-O projeto publica gravação screen/camera, mixagem de áudio, buffer de repetição e recursos de streaming. O autor relata desenvolvimento e testes em um Apple Silicon Mac. O 2026-10-21 README adiciona lançamentos universais Apple Silicon + Intel, atualizações signing/notarization e Sparkle.
+O projeto publica gravação screen/camera, mixagem de áudio, buffer de repetição e recursos de streaming. O autor relata desenvolvimento e testes em um Apple Silicon Mac. O 2026-10-21 README adiciona lançamentos universais Apple Silicon + Intel, atualizações signing/notarization e Sparkle. Revisado em 2026-11-03:, o aplicativo adiciona faders/mute ao vivo por fonte e destinos de streaming simultâneos de uma codificação. O autor relata o teste de dois caminhos RTMP e um endpoint WHIP juntos em um servidor MediaMTX local.
 
 ## Limitações e reivindicações não verificadas
 
-Requer macOS 15+. O hardware relatado continua sendo um Apple Silicon M4 Pro; as instruções de download e construção da Intel não verificam a gravação em um Mac Intel real. Esta é uma implementação com escopo definido, não uma substituição completa do OBS ou reconstrução de plataforma cruzada. Este catálogo não foi executado novamente.
+Requer macOS 15+. O hardware relatado continua sendo um Apple Silicon M4 Pro; as instruções de download e construção da Intel não verificam a gravação em um Mac Intel real. Esta é uma implementação com escopo definido, não uma substituição completa do OBS ou reconstrução de plataforma cruzada. Este catálogo não foi executado novamente. YouTube, Twitch e Kick não foram transmitidos diretamente nos testes relatados. Os destinos compartilham uma codificação com os limites configurados mais baixos; mudar de destino exige que a transmissão seja interrompida. Os resultados do servidor local não verificam a interoperabilidade do serviço.
 
 ## O que aprender
 
@@ -39,9 +39,10 @@ A formatação do trecho é simplificada. Leia a fonte original para o contexto 
 
 ## Fontes originais
 
-- [Fonte primária/evidência fixada](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [Fonte primária/evidência fixada](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md)
 - [Projeto / demonstração](https://github.com/michaelshimeles/rec-rs)
-- [Fonte adicional 1](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
+- [Fonte adicional 1](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [Fonte adicional 2](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
 
 Resumo editorial independente. O crédito pertence aos autores originais. O software alvo, os instaladores e a saída completa do descompilador não são redistribuídos aqui.
 

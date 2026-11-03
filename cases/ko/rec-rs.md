@@ -7,7 +7,7 @@
 이 버전은 편집 영어 버전에서 기계 번역되었습니다. 원래 인용문은 원어로 유지됩니다. 표현이 불분명할 경우 영어 및 링크된 소스를 참조하세요.
 
 - **저자 / 저작자:** michaelshimeles
-- **소스 검토 날짜:** 2026-10-21
+- **소스 검토 날짜:** 2026-11-03
 - **검토 상태:** 검토된 출처; 작성자 테스트는 독립적으로 다시 실행되지 않습니다.
 - **대상:** OBS Studio의 아키텍처 및 동작
 
@@ -21,11 +21,11 @@
 
 ## 저자 보고 결과
 
-이 프로젝트는 screen/camera 녹음, 오디오 믹싱, 재생 버퍼 및 스트리밍 기능을 게시합니다. 저자는 Apple Silicon Mac에서의 개발 및 테스트를 보고합니다. 2026-10-21 README는 Apple Silicon + Intel 범용 릴리스, signing/notarization 및 Sparkle 업데이트를 추가합니다.
+이 프로젝트는 screen/camera 녹음, 오디오 믹싱, 재생 버퍼 및 스트리밍 기능을 게시합니다. 저자는 Apple Silicon Mac에서의 개발 및 테스트를 보고합니다. 2026-10-21 README는 Apple Silicon + Intel 범용 릴리스, signing/notarization 및 Sparkle 업데이트를 추가합니다. 2026-11-03:에서 검토한 이 앱은 소스별 라이브 faders/mute와 하나의 인코딩에서 동시 스트리밍 대상을 추가합니다. 저자는 로컬 MediaMTX 서버에 대해 두 개의 RTMP 경로와 하나의 WHIP 엔드포인트를 함께 테스트했다고 보고합니다.
 
 ## 제한 사항 및 확인되지 않은 주장
 
-macOS 15+. 필요 보고된 하드웨어는 여전히 Apple Silicon M4 Pro입니다. Intel 다운로드 및 빌드 지침은 실제 Intel Mac에서의 기록을 확인하지 않습니다. 이는 완전한 OBS 교체 또는 크로스 플랫폼 재구성이 아닌 범위가 지정된 구현입니다. 이 카탈로그는 재실행되지 않았습니다.
+macOS 15+. 필요 보고된 하드웨어는 여전히 Apple Silicon M4 Pro입니다. Intel 다운로드 및 빌드 지침은 실제 Intel Mac에서의 기록을 확인하지 않습니다. 이는 완전한 OBS 교체 또는 크로스 플랫폼 재구성이 아닌 범위가 지정된 구현입니다. 이 카탈로그는 재실행되지 않았습니다. YouTube, Twitch 및 Kick은 보고된 테스트에서 직접 스트리밍되지 않았습니다. 대상은 구성된 최저 제한으로 하나의 인코딩을 공유합니다. 대상을 변경하려면 스트리밍을 중지해야 합니다. 로컬 서버 결과는 서비스 상호 운용성을 확인하지 않습니다.
 
 ## 무엇을 배울 것인가
 
@@ -39,9 +39,10 @@ macOS 15+. 필요 보고된 하드웨어는 여전히 Apple Silicon M4 Pro입니
 
 ## 원본 소스
 
-- [주요 출처/고정된 증거](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [주요 출처/고정된 증거](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md)
 - [프로젝트/데모](https://github.com/michaelshimeles/rec-rs)
-- [추가 소스 1](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
+- [추가 소스 1](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [추가 소스 2](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
 
 독립적인 편집 요약. 크레딧은 원저자에게 있습니다. 대상 소프트웨어, 설치 프로그램 및 전체 디컴파일러 출력은 여기에 재배포되지 않습니다.
 

@@ -10,7 +10,7 @@
 
 [GitHub でコレクションを探索してスターを付けましょう](https://github.com/git-sanbu/awesome-rea) · [ソフトウェア、目的、キーワードを検索する](https://awesome-rea-e7l.pages.dev/ja/) · [ケースを送信する](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**38 公開ケース** — 5 公式ショーケースおよび 33 コミュニティ プロジェクトまたは著者の実験. 更新日: 2026-10-26。各ケースには独自の情報源レビュー日が保持されます。
+**44 公開ケース** — 5 公式ショーケースおよび 39 コミュニティ プロジェクトまたは著者の実験. 更新日: 2026-11-03。各ケースには独自の情報源レビュー日が保持されます。
 
 > 情報源をレビューしました。著者のテストは独立して再実行されません。
 
@@ -20,15 +20,16 @@
 
 ## 人気プロジェクト
 
-スナップショット: 2026-10-26。少なくとも 100 GitHub Stars を含む、ソースでレビューされたカタログ プロジェクト (星順に並べ替え)。 Stars は注意を示すものであり、独立した複製や制作の準備が整っていることを示すものではありません。 [スナップショットソース](data/popularity.json).
+スナップショット: 2026-11-03。少なくとも 100 GitHub Stars を含む、ソースでレビューされたカタログ プロジェクト (星順に並べ替え)。 Stars は注意を示すものであり、独立した複製や制作の準備が整っていることを示すものではありません。 [スナップショットソース](data/popularity.json).
 
 | プロジェクト/デモ | GitHub Stars | プロセスと制限事項 |
 | --- | ---: | --- |
-| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: デスクトップ操作の文書化と再利用可能な UI コンポーネントの公開](cases/ja/open-claude-ui.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: キャンペーンのマルチプレイヤー エントリ ポイントを調査しています](cases/ja/coop-anything.md) |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: REA 分析をマルチデバイス ダッシュボードに統合](cases/ja/sparkdash-rea.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: TradingView インタラクションによって通知される市場端末](cases/ja/terminal-rs.md) |
-| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: OBS からインスピレーションを得たネイティブ macOS レコーダー](cases/ja/rec-rs.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1837 | [Co-op Anything: キャンペーンのマルチプレイヤー エントリ ポイントを調査しています](cases/ja/coop-anything.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1666 | [Open Claude UI: デスクトップ操作の文書化と再利用可能な UI コンポーネントの公開](cases/ja/open-claude-ui.md) |
+| [Zfinix/eleven](https://github.com/Zfinix/eleven) | 961 | [Eleven: エージェント駆動のデスクトップ ワークベンチを REA に接続する](cases/ja/eleven.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 816 | [sparkDash: REA 分析をマルチデバイス ダッシュボードに統合](cases/ja/sparkdash-rea.md) |
+| [michaelshimeles/terminal](https://github.com/michaelshimeles/terminal) | 327 | [Terminal (formerly terminal-rs): TradingView インタラクションによって通知されるマーケットターミナル](cases/ja/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 115 | [rec-rs: OBS からインスピレーションを得たネイティブ macOS レコーダー](cases/ja/rec-rs.md) |
 
 ## 公式ショーケース
 
@@ -55,9 +56,9 @@
 
 | プロジェクト/デモ | 質問 | 一次情報源 |
 | --- | --- | --- |
-| [Sketch (formerly paper-rs): Paper からインスピレーションを得た Rust 無限キャンバス](cases/ja/paper-rs.md) | キャンバス、レイアウト、エディターの相互作用は、独立したデザイン ツールにどのように情報を提供できるのでしょうか? | [一次情報源](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
-| [rec-rs: OBS からインスピレーションを得たネイティブ macOS レコーダー](cases/ja/rec-rs.md) | 焦点を合わせたスクリーン、カメラ、オーディオレコーダーはどのように構築できますか? | [一次情報源](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
-| [terminal-rs: TradingView インタラクションによって通知される市場端末](cases/ja/terminal-rs.md) | チャートとの相互作用の調査は、独立した Rust 市場インターフェイスにどのように情報を提供できるでしょうか? | [一次情報源](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
+| [Sketch (formerly paper-rs): Paper からインスピレーションを得た Rust 無限キャンバス](cases/ja/paper-rs.md) | キャンバス、レイアウト、エディターの相互作用は、独立したデザイン ツールにどのように情報を提供できるのでしょうか? | [一次情報源](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) |
+| [rec-rs: OBS からインスピレーションを得たネイティブ macOS レコーダー](cases/ja/rec-rs.md) | 焦点を合わせたスクリーン、カメラ、オーディオレコーダーはどのように構築できますか? | [一次情報源](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) |
+| [Terminal (formerly terminal-rs): TradingView インタラクションによって通知されるマーケットターミナル](cases/ja/terminal-rs.md) | チャートとの相互作用の調査は、独立した Rust 市場インターフェイスにどのように情報を提供できるでしょうか? | [一次情報源](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) |
 | [Wispr Flow: 音声入力の分解と小さなローカル プロトタイプ](cases/ja/wispr-flow.md) | 録音、文字起こし、コンテキスト、貼り付けはどのように接続されていますか? | [一次情報源](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
 | [hexgrab: PowerToys カラーピッカーを調査しています](cases/ja/hexgrab.md) | グローバル ホットキー、ピクセル サンプリング、クリップボードはどのように連携しますか? | [一次情報源](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
 | [AdamTerm: Ghostty のシェルを調査し、端末を構築しています](cases/ja/adamterm.md) | ターミナルコア、ネイティブウィンドウ、メニュー、サービスはどのように分割されていますか? | [一次情報源](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
@@ -65,6 +66,7 @@
 | [DiskLens: リリースされたバイナリでのディスク スキャンおよびツリーマップ アルゴリズムのチェック](cases/ja/disklens.md) | 新しいインターフェイスを構築する前に、ディスク スキャン、ツリーマップ、重複検出をどのようにチェックできますか? | [一次情報源](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: キャプチャされた Web バンドルから独立した 3D プロトタイプまで](cases/ja/hyper3d-clone.md) | インターフェイスと API の観察は、3D モデルをエクスポートするプロトタイプにどのように情報を提供できるでしょうか? | [一次情報源](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: デスクトップ操作の文書化と再利用可能な UI コンポーネントの公開](cases/ja/open-claude-ui.md) | 入力構成、スクロール、およびデスクトップのインタラクション ルールは、再利用可能なインターフェイス コンポーネントにどのように通知されるのでしょうか? | [一次情報源](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
+| [Screen Studio: 静的検査を記録および輸出証拠から分離する](cases/ja/screenstudio-research.md) | Electron とネイティブ ヘルパーの検出結果を、記録、エクスポート、および互換性の証拠から分離するにはどうすればよいでしょうか? | [一次情報源](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
 
 ## ハードウェアと互換性
 
@@ -75,6 +77,7 @@
 | [Pixel Watch: コンパニオン APK 分析によって通知される eSIM ハンドオフ ヘルパー](cases/ja/watch-esim-helper.md) | 別のヘルパーは、コンパニオン アプリの既存の watch-eSIM ダウンロード フローをどのように見つけて開くことができますか? | [一次情報源](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
 | [PicoPrint: モバイル サーマル プリンターを Windows 印刷に接続する](cases/ja/picoprint.md) | ドライバーが接続しても印刷できない場合、ハンドシェイクの違いはどのようにして見つけられるのでしょうか? | [一次情報源](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
 | [V5VPN: スコープ付きポータルおよびトンネル クライアントのプロトコル調査](cases/ja/v5vpn-rea-client.md) | 認証、リソース検出、接続調査はどのようにしてスコープ指定された独立したクライアントに情報を提供できるのでしょうか? | [一次情報源](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
+| [iCSee localmod: ストックドライバーを保持しながらカメラコマンドをトレースします](cases/ja/icsee-localmod.md) | ネイティブ コマンドの研究により、動作するドライバーと SD 録画を維持しながら、ローカル カメラの制御を有効にするにはどうすればよいでしょうか? | [一次情報源](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) |
 
 ## 分析と評価
 
@@ -102,6 +105,10 @@
 | --- | --- | --- |
 | [sparkDash: REA 分析をマルチデバイス ダッシュボードに統合](cases/ja/sparkdash-rea.md) | Web インターフェイスは、長時間実行されるリモート REA ジョブを送信し、オンデマンドで大量の結果を読み込むにはどうすればよいでしょうか? | [一次情報源](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
 | [REA Safe Agent: 含まれる 2 つのプロセス間の静的分析を仲介します](cases/ja/rea-safe-agents.md) | 入力、ホスト ツール、モデル リクエストへのアクセスが制限されている間、エージェントはどのようにして REA をクエリできるでしょうか? | [一次情報源](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
+| [REA Studio: ローカル Web UI での MCP ツールと記録された Evidence の表示](cases/ja/rea-studio.md) | ローカル インターフェイスは、インストールされている REA ツールを公開し、その証拠と制限を読み取れるようにするにはどうすればよいでしょうか? | [一次情報源](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) |
+| [dsh-rea: MCP コントラクトを保持しながら、オンデマンドでツールを公開する](cases/ja/dsh-rea.md) | アダプターは、各エージェントのリクエストから未使用のスキーマを排除しながら、アップストリーム ツールのコントラクトをどのように保持できるでしょうか? | [一次情報源](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) |
+| [App X-Ray: REA の結果を共有可能なアプリ レポートに変換](cases/ja/app-xray.md) | 静的な REA の証拠は、どのようにして読みやすいコンポーネント レポートやバージョン間の差分になるのでしょうか? | [一次情報源](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) |
+| [Eleven: エージェント駆動のデスクトップ ワークベンチを REA に接続する](cases/ja/eleven.md) | 共有ワークベンチにナビゲーションと編集可能な注釈を表示したままにして、エージェントがバイナリを検査するにはどうすればよいでしょうか? | [一次情報源](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) |
 
 ## どのケースが含まれますか?
 

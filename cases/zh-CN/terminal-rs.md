@@ -1,11 +1,11 @@
-# terminal-rs：研究 TradingView 交互后做行情终端
+# Terminal（原 terminal-rs）：参考 TradingView 交互的行情终端
 
 [← 返回全部案例](../../README.zh-CN.md) · 应用实践
 
 [English](../terminal-rs.md) · [简体中文](../zh-CN/terminal-rs.md) · [繁體中文](../zh-TW/terminal-rs.md) · [日本語](../ja/terminal-rs.md) · [한국어](../ko/terminal-rs.md) · [Español](../es/terminal-rs.md) · [Français](../fr/terminal-rs.md) · [Deutsch](../de/terminal-rs.md) · [Português (Brasil)](../pt-BR/terminal-rs.md) · [Русский](../ru/terminal-rs.md) · [العربية](../ar/terminal-rs.md) · [हिन्दी](../hi/terminal-rs.md)
 
 - **作者 / 归属:** michaelshimeles
-- **核对日期:** 2026-10-21
+- **核对日期:** 2026-11-03
 - **收录状态:** 已阅读公开原文，未独立复跑作者测试。
 - **分析目标:** TradingView 公开、未登录图表页面的行为
 
@@ -19,11 +19,11 @@
 
 ## 原作者报告的成果
 
-项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。 2026-10-21 复核：作者新增 151 个内置指标及参数、边界输入测试说明，并提供 macOS universal 发布脚本；这些是后续实现进展，不代表新做了 REA 分析。
+项目公开 Rust GPU 图表、键盘命令、面板布局与数据接入；界面采用 Bloomberg 风格。 2026-10-21 复核：作者新增 151 个内置指标及参数、边界输入测试说明，并提供 macOS universal 发布脚本；这些是后续实现进展，不代表新做了 REA 分析。 2026-11-03 复查：仓库现名 Terminal，目录 ID 保留。README 记录披露信息流、SnapTrade 账户视图及主动启用的交易功能；这些实现功能与 REA 图表行为调查分别归因。
 
 ## 局限与未验证项
 
-仅研究网页可见行为，不是 TradingView/Bloomberg 源码恢复；数据源、限流和数据使用条款另有约束。
+仅研究网页可见行为，不是 TradingView/Bloomberg 源码恢复；数据源、限流和数据使用条款另有约束。 作者区分了模拟券商/订单测试、模拟数据与线上服务。本目录未连接券商、下单或验证当前数据准确性。旧版 README 提交保留为历史来源，但本轮访问返回 HTTP 404。
 
 ## 可以借鉴什么
 
@@ -33,13 +33,14 @@
 
 短摘录简化了排版，完整上下文以原文为准。
 
-> tradingview.com with REA in website mode
+> tradingview.com with [REA](https://github.com/morluto/rea) in website mode
 
 ## 原始来源
 
-- [公开原文 / 固定版本证据](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
-- [项目 / 演示](https://github.com/michaelshimeles/terminal-rs)
-- [补充来源 1](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
+- [公开原文 / 固定版本证据](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md)
+- [项目 / 演示](https://github.com/michaelshimeles/terminal)
+- [补充来源 1](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
+- [补充来源 2](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
 
 本页为独立整理，成果归原作者。目标软件、安装包和完整反编译输出不在此分发。
 

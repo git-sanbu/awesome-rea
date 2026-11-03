@@ -1,6 +1,6 @@
 {
-  "source_digest": "59e191cf47c02978a7ee19505c29c38bc167b77975a4288691128d1f593c1ff1",
-  "updated_on": "2026-10-26",
+  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486",
+  "updated_on": "2026-11-03",
   "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA – Reverse Engineer Anything Anwendungsfälle und Beispiele",
@@ -154,8 +154,8 @@
       "target": "Verhalten der Desktop-Designanwendung Paper",
       "question": "Wie können die Interaktionen zwischen Leinwand, Layout und Editor ein unabhängiges Designtool beeinflussen?",
       "rea_role": "Der Autor gibt an, dass REA und Claude Code verwendet wurden, um das Desktop-Verhalten von Paper zu untersuchen, bevor eine separate Rust-App mit wgpu, winit und egui implementiert wurde.",
-      "reported_result": "Das Projekt veröffentlicht eine unendliche Leinwand, Seiten, Layouts, Vektorbearbeitung, Whiteboarding und MCP-Schnittstellen mit Tests und Funktionsunterschieden. Auf 2026-10-21: geprüft, heißt es jetzt Sketch, mit der ausführbaren Datei „sketch-rs“, der Migration des alten Projektverzeichnisses beim ersten Start und der Kompatibilität mit alten Dateien und Umgebungsvariablen. Es bleibt ein Fall.",
-      "limitations": "Der Autor hatte es ausdrücklich nicht auf echter macOS-Hardware gestartet. Einige Merkmale sind angenähert oder fehlen. Die Aufnahme basiert auf der öffentlichen Nennung des Autors und nicht auf einer überprüften Gleichwertigkeit mit Paper.",
+      "reported_result": "Das Projekt veröffentlicht eine unendliche Leinwand, Seiten, Layouts, Vektorbearbeitung, Whiteboarding und MCP-Schnittstellen mit Tests und Funktionsunterschieden. Bewertet am 2026-10-21: heißt es jetzt Sketch, mit der ausführbaren Datei „sketch-rs“, Migration des alten Projektverzeichnisses beim ersten Start und Kompatibilität mit alten Dateien und Umgebungsvariablen. Es bleibt ein Fall. Bewertet auf 2026-11-03: berichtet der Autor nun über einen notariell beglaubigten universellen macOS-Build, der auf einem M4 Pro läuft, einschließlich Metal-Fensterstart, Sparkle-Laden, MCP-Bearbeitungen und automatischer Speicherung.",
+      "limitations": "Die 2026-10-21-Quelle sagte, dass die macOS-Hardware nicht getestet wurde; Der neuere Bericht deckt nur begrenzte M4 Pro-Prüfungen ab. Laut Autor bleiben Maus, Trackpad, Tastatur, Menüs, das Update-Fenster und der Intel-Slice auf dem Mac ungetestet. Einige Merkmale sind angenähert oder fehlen. Die öffentliche Nennung und diese Prüfungen stellen keine Gleichwertigkeit mit Paper dar; Dieser Katalog hat sie nicht erneut ausgeführt.",
       "takeaway": "Lernen Sie Verhaltens- und Interaktionsverträge und geben Sie dabei die Grenzen der unabhängigen Umsetzung an.",
       "author": "michaelshimeles"
     },
@@ -164,18 +164,18 @@
       "target": "Architektur und Verhalten von OBS Studio",
       "question": "Wie können ein fokussierter Bildschirm, eine Kamera und ein Audiorecorder gebaut werden?",
       "rea_role": "Der Autor gibt an, dass REA und Claude Code zur Untersuchung von OBS verwendet wurden, bevor ein unabhängiges Tool mit Rust und Apple-Frameworks erstellt wurde.",
-      "reported_result": "Das Projekt veröffentlicht screen/camera-Funktionen für Aufnahme, Audiomischung, Wiedergabepuffer und Streaming. Der Autor berichtet über Entwicklung und Tests auf einem Apple Silicon Mac. Der 2026-10-21 README fügt Apple Silicon + Intel Universal-Releases, signing/notarization und Sparkle-Updates hinzu.",
-      "limitations": "Erfordert macOS 15+. Die gemeldete Hardware bleibt ein Apple Silicon M4 Pro; Eine Intel-Download- und Build-Anleitung verifiziert nicht die Aufzeichnung auf einem echten Intel-Mac. Hierbei handelt es sich um eine bereichsbezogene Implementierung, nicht um einen vollständigen OBS-Ersatz oder eine plattformübergreifende Rekonstruktion. Dieser Katalog hat es nicht erneut ausgeführt.",
+      "reported_result": "Das Projekt veröffentlicht screen/camera-Funktionen für Aufnahme, Audiomischung, Wiedergabepuffer und Streaming. Der Autor berichtet über Entwicklung und Tests auf einem Apple Silicon Mac. Der 2026-10-21 README fügt Apple Silicon + Intel Universal-Releases, signing/notarization und Sparkle-Updates hinzu. Die am 2026-11-03: überprüfte App fügt Live-Streaming-Ziele pro Quelle faders/mute und gleichzeitige Streaming-Ziele aus einer Kodierung hinzu. Der Autor berichtet, dass er zwei RTMP-Pfade und einen WHIP-Endpunkt gemeinsam mit einem lokalen MediaMTX-Server getestet hat.",
+      "limitations": "Erfordert macOS 15+.. Die gemeldete Hardware bleibt ein Apple Silicon M4 Pro; Eine Intel-Download- und Build-Anleitung verifiziert nicht die Aufzeichnung auf einem echten Intel-Mac. Hierbei handelt es sich um eine bereichsbezogene Implementierung, nicht um einen vollständigen OBS-Ersatz oder eine plattformübergreifende Rekonstruktion. Dieser Katalog hat es nicht erneut ausgeführt. YouTube, Twitch und Kick wurden in den gemeldeten Tests nicht direkt gestreamt. Ziele teilen sich eine Kodierung mit den niedrigsten konfigurierten Grenzwerten; Wenn sich das Ziel ändert, muss das Streaming gestoppt werden. Die Ergebnisse des lokalen Servers bestätigen nicht die Dienstinteroperabilität.",
       "takeaway": "Extrahieren Sie die für einen bestimmten Anwendungsfall benötigte Architektur und bauen Sie darauf ein kleineres Produkt auf.",
       "author": "michaelshimeles"
     },
     "terminal-rs": {
-      "title": "terminal-rs: ein Marktterminal, das durch TradingView-Interaktionen informiert wird",
+      "title": "Terminal (formerly terminal-rs): ein Marktterminal, das durch TradingView-Interaktionen informiert wird",
       "target": "Verhalten öffentlicher, abgemeldeter TradingView-Kartenseiten",
       "question": "Wie kann die Chart-Interaktionsforschung eine unabhängige Rust-Marktschnittstelle beeinflussen?",
       "rea_role": "Der Autor verwendet den Website-Modus REA zur passiven Erfassung öffentlicher Seiten. Ergebnisse, Evidence-IDs und Auswirkungen auf das Design werden in docs/analysis. aufgezeichnet",
-      "reported_result": "Das Projekt veröffentlicht Rust-GPU-Diagramme, Tastaturbefehle, Panel-Layouts und Datenintegration mit einer Schnittstelle im Bloomberg-Stil. Überprüft auf 2026-10-21: 151 integrierte Indikatoren, Parameter- und Grenzeingabetests sowie ein universelles Release-Skript macOS wurden hinzugefügt. Hierbei handelt es sich um spätere Implementierungsänderungen, nicht um eine neue REA-Untersuchung.",
-      "limitations": "Es wurde nur das im Internet sichtbare Verhalten untersucht; Dies ist keine Wiederherstellung des TradingView- oder Bloomberg-Quellcodes. Für Datenquellen, Ratenbeschränkungen und Datennutzungsbedingungen gelten separate Einschränkungen.",
+      "reported_result": "Das Projekt veröffentlicht Rust-GPU-Diagramme, Tastaturbefehle, Panel-Layouts und Datenintegration mit einer Schnittstelle im Bloomberg-Stil. Überprüft auf 2026-10-21: 151 integrierte Indikatoren, Parameter- und Grenzeingabetests sowie ein universelles Release-Skript macOS wurden hinzugefügt. Hierbei handelt es sich um spätere Implementierungsänderungen, nicht um eine neue REA-Untersuchung. Auf 2026-11-03: überprüft, heißt das Repository jetzt Terminal mit derselben stabilen Katalog-ID. Sein README dokumentiert Offenlegungs-Feeds, SnapTrade-Kontoansichten und Opt-in-Handel; Diese Implementierungsfunktionen sind von der REA-Diagrammverhaltensforschung getrennt.",
+      "limitations": "Es wurde nur das im Internet sichtbare Verhalten untersucht; Dies ist keine Wiederherstellung des TradingView- oder Bloomberg-Quellcodes. Für Datenquellen, Ratenbeschränkungen und Datennutzungsbedingungen gelten separate Einschränkungen. Der Autor unterscheidet simulierte brokerage/order-Tests und simulierte Daten von Live-Diensten. Mit diesem Katalog wurde weder ein Maklerunternehmen verbunden, noch wurden Bestellungen aufgegeben oder die Richtigkeit der aktuellen Daten wurde überprüft. Der ältere README-Commit wird als historischer Ursprung beibehalten, während dieser Überprüfung wurde jedoch HTTP 404 zurückgegeben.",
       "takeaway": "Öffentliche Webbeobachtungen können nachvollziehbare Designeingaben liefern, ohne dass sie als binäre Dekompilierung bezeichnet werden.",
       "author": "michaelshimeles"
     },
@@ -458,6 +458,66 @@
       "limitations": "Bei der Übung handelt es sich um das eigene kleine ungeschützte Programm des Autors, nicht um eine kommerzielle Lizenzumgehung oder ein allgemeines Ergebnis für geschützte Software. Bei den 4-Beispielen handelt es sich um begrenzte Prüfungen und nicht um eine erschöpfende Äquivalenz. Dieser Katalog hat die Binärdateien nicht ausgeführt oder den Vergleich nicht erneut ausgeführt. Der vorgeschlagene vollständige Kurs wurde noch nicht durchgeführt.",
       "takeaway": "Verwenden Sie ein eigenes Gerät mit einer versteckten Referenzquelle, stellen Sie eine begrenzte Regel wieder her und testen Sie akzeptierte und abgelehnte Eingaben, bevor Sie sie mit der Quelle vergleichen.",
       "author": "harkiventures"
+    },
+    "screenstudio-research": {
+      "title": "Screen Studio: Trennung der statischen Inspektion von der Aufzeichnung und dem Export von Beweisen",
+      "target": "Screen Studio 3.7.3-4540, einschließlich einer lokal neu verpackten Kopie von Apple Silicon",
+      "question": "Wie können Electron- und Native-Helper-Ergebnisse vom Aufzeichnungs-, Export- und Kompatibilitätsnachweis getrennt gehalten werden?",
+      "rea_role": "REA-Sicherungs- und Mach-O-Inspektionen lieferten kuratierte statische Evidence-Auszüge mit IDs und Hashes. Bei einer begrenzten JavaScript-Anwendungsanalyse kam es zweimal zu einer Zeitüberschreitung. Es wird keine vollständige Dekompilierung von Diagrammen oder nativen Funktionen beansprucht.",
+      "reported_result": "Der Autor veröffentlicht Inspektions-, aggregierte Projektstatistik- und Exportvalidierungstools. Eine historische native Aufnahme exportierte angeblich 3-, 337-Frames mit 1104 × 720 und 60 fps und wurde vollständig dekodiert; Eine spätere schreibgeschützte Toolprüfung untersuchte die gespeicherten Export- und aggregierten menschlichen Eingabeereignisse.",
+      "limitations": "Private Aufzeichnungen und vollständige Bücher können nicht wiedergegeben werden. Der Mach-O-Hash identifiziert eine lokal neu verpackte Kopie. Die Netzwerkautorisierung schlug fehl, ein Trimmversuch war nicht wirksam, auf die endgültige Signatur folgte kein vollständiger erneuter Erfassungstest und es wurde nur ein Apple Silicon/macOS-Setup durchgeführt. Die Dekodierung einer Datei ist kein Beweis für die Herkunft oder visuelle Äquivalenz der Aufzeichnung; Dieser Katalog hat das Experiment nicht erneut ausgeführt.",
+      "takeaway": "Bewahren Sie statische Metadaten, UI-Beobachtungen, Dateidekodierung und menschliches Feedback als separate Beweise auf und veröffentlichen Sie fehlgeschlagene Prüfungen zusammen mit Erfolgen.",
+      "author": "Royo-Qiao"
+    },
+    "icsee-localmod": {
+      "title": "iCSee localmod: Verfolgen von Kamerabefehlen unter Beibehaltung der Standardtreiber",
+      "target": "Eine XM530V200/IPG-X2-WQ-BL-Kamera und ihre Standardanwendung Sofia",
+      "question": "Wie kann die native Befehlsforschung eine lokale Kamerasteuerung ermöglichen und gleichzeitig funktionierende Treiber und SD-Aufzeichnung erhalten?",
+      "rea_role": "REA 6.8.0 und Ghidra verfolgten Sofia-Befehlszeichenfolgen und Querverweise zu Beleuchtungs- und PTZ-Handlern. Der veröffentlichte Workflow zeichnet binärspezifische Anker auf; Protokollreaktionen und körperliches Verhalten wurden separat validiert.",
+      "reported_result": "Der Autor veröffentlicht ein lokales C-panel/API-, Quell- und Home Assistant-Beispiel. Der Besitzer meldet physische PTZ- und weiße LED-Prüfungen, dekodiertes audio/video, Boot-Persistenz und fortgesetzte native WFS-Aufzeichnung nach unabhängigen Neustarts. Ein separater öffentlicher simulierter Backend-Datensatz listet die bestandenen Tests von 22 auf und sagt ausdrücklich „hardware_tested=false“.",
+      "limitations": "Die vollständigen Firmware-, Dekompilierungs- und privaten Evidence-Bundles werden nicht veröffentlicht. Bei den Hardware-Ergebnissen handelt es sich um Besitzerberichte für eine Einheit. Simulierte Tests validieren weder die Firmware-Installation noch das physische Verhalten. Dies ist eine Erweiterung der Standard-Firmware ohne universelles Image, vollständige Gegensprechanlage oder gemessene Latenzverbesserung. Der Route-Removal-Guard ist keine Firewall; In diesem Katalog wurde kein Gerät getestet.",
+      "takeaway": "Verfolgen Sie einen begrenzten Befehl, überprüfen Sie authentifizierte Antworten und überprüfen Sie dann die physische Aktion und Persistenz als separate Schritte.",
+      "author": "Vittuu"
+    },
+    "rea-studio": {
+      "title": "REA Studio: Präsentation der MCP-Tools und aufgezeichnetes Evidence in einer lokalen Web-Benutzeroberfläche",
+      "target": "REA MCP Tool-Erkennung, schemagenerierte Formulare und kleine C-, JavaScript- und Python-Beispiele",
+      "question": "Wie kann eine lokale Schnittstelle installierte REA-Tools offenlegen und deren Beweise und Einschränkungen lesbar machen?",
+      "rea_role": "Das Backend startet REA über stdio MCP, paginiert tools/list und leitet tools/call mit Fortschritts- und Abbruchsignalen weiter. Ein Aufzeichnungsskript ruft REA für winzige Beispielartefakte auf und speichert die Ergebnisse für einen separaten statischen Demo-Build.",
+      "reported_result": "Die öffentliche Quelle umfasst eine lokale Weboberfläche, schemagesteuerte Eingaben, einen Verlauf und eine Evidence-Ansicht. Eingecheckte Demo-Artefakte identifizieren REA 6.8.0 und stellen einen 229-tool-Katalog sowie aufgezeichnete 9-Beispielläufe bereit (8 abgeschlossen, 1-Fehler); Nicht unterstützte Demo-Aktionen geben einen expliziten, nicht aufgezeichneten Fehler zurück.",
+      "limitations": "Die gehostete Demo spielt gespeicherte Antworten und simulierte Fortschritte ab; Uploads bleiben im Browser und werden nicht analysiert. Bei den Aufnahmen handelt es sich um vom Autor veröffentlichte, keine unabhängigen Wiederholungen. Die lokale Verwendung kann Tools für Hostdateien aufrufen und hängt von konfigurierten Anbietern ab; Der Katalog hat das Backend nicht installiert oder getestet oder eine Sicherheitsüberprüfung durchgeführt.",
+      "takeaway": "Generieren Sie Formulare aus dem Live-Tool-Schema, behalten Sie Einschränkungen in der Ergebnisansicht bei und unterscheiden Sie aufgezeichnete Demos klar von Live-Analysen.",
+      "author": "theyishaik-lab"
+    },
+    "dsh-rea": {
+      "title": "dsh-rea: Beibehaltung von MCP-Verträgen bei gleichzeitiger Offenlegung von Tools bei Bedarf",
+      "target": "REA 6.8.0 MCP Werkzeuge, Eingabeaufforderungen und Fähigkeiten in DeepSeek Harness",
+      "question": "Wie kann ein Adapter Upstream-Tool-Verträge beibehalten und gleichzeitig ungenutzte Schemata aus jeder Agent-Anfrage heraushalten?",
+      "rea_role": "Der Adapter startet die angeheftete ausführbare Upstream-Datei MCP über eine DSH-Brücke, teilt seine Verbindung für Eingabeaufforderungen und Vervollständigungen und verwendet Toolmasken pro Agent. Der Befehl /rea zeigt den Katalog und die Fertigkeit an; /rea off blendet sie wieder aus.",
+      "reported_result": "Der Autor veröffentlicht Adaptercode, Schemamessungen und einen begrenzten Differenzialbericht, der 229-Tools und Vergleiche deterministischer Aufrufe im nativen und PTC-Modus auflistet. Der gemessene Modelleingabekatalog umfasst 273,264 Bytes; Dies ist eine Schema-Nutzlastmessung, kein LLM-Token oder Kostenbenchmark.",
+      "limitations": "Das Repository enthält einen bestandenen Vergleichsbericht und eine separate Dokumentation eines Windows integrity_mismatch-Fehlers im Verifizierungsbefehl. Die Katalogbetreuer haben keinen erfolgreichen Überprüfungslauf für Windows bestätigt. Übereinstimmende Werkzeugdefinitionen bedeuten nicht, dass alle Werkzeuge ausgeführt wurden. Der gemeldete Vergleich deckt weder native Engines, Live-Capture noch alle Anbieter ab und ermittelt keine gleichwertigen Sprachmodellantworten. Die Katalogbetreuer haben diese Tests nicht durchgeführt.",
+      "takeaway": "Vergleichen Sie Schemata und vervollständigen Sie deterministische Ergebnisumschläge, bewahren Sie historische Bestandsaufzeichnungen auf und legen Sie aktuelle Fehler separat offen.",
+      "author": "JeremyWangCY"
+    },
+    "app-xray": {
+      "title": "App X-Ray: REA-Ergebnisse in gemeinsam nutzbare App-Berichte umwandeln",
+      "target": "Open-Source-Anwendungsquelle Electron mit zusätzlichen APK-, nativen Binär- und Modelldateipfaden",
+      "question": "Wie können aus statischen REA-Beweisen ein lesbarer Komponentenbericht und ein Unterschied zwischen Versionen werden?",
+      "rea_role": "Die Integration ruft angeheftete REA 6.7.0 CLI-Vorgänge auf und analysiert JSON Evidence. Bei JavaScript-Analysestapeln bleiben Dateien unter demselben Stammverzeichnis, um die Importauflösung beizubehalten. Die Inspektion der Electron-Sicherungen ist ein separater REA-Vorgang.",
+      "reported_result": "Das Projekt veröffentlicht Berichtserstellung, Regeln, CI-Unterschiede und eine Galerie. Im datierten week-5-Bericht heißt es, dass 20 Electron-Apps gescannt und Versionen für alle 20 gefunden wurden, wobei 18-Scans für diesen Container weniger als 60 Sekunden dauern. REA-Bench stellt 54-Fragen bereit, die aus Berichten im gesamten 20-app-Korpus abgeleitet sind.",
+      "limitations": "Hierbei handelt es sich um veraltete, vom Autor gemeldete Scans, nicht um aktuelle Schwachstellen- oder Laufzeitnetzwerkergebnisse. Regeln können von Helfern erstellte Fenster, berechnete Kanäle und Absendervalidierung übersehen; Statische Adressen beweisen keinen Datenverkehr. REA-Bench misst die Übereinstimmung mit App X-Ray-Berichten und nicht mit der unabhängigen Grundwahrheit und weist selbst keinen Tool-fähigen Agentenvorteil nach. Dieser Katalog hat die Scans nicht erneut ausgeführt.",
+      "takeaway": "Verknüpfen Sie Berichtsansprüche mit der Quelle, behalten Sie Scan-Commits und -Daten bei und behandeln Sie statische Regeln und generierte Benchmark-Antworten als fehlbar.",
+      "author": "Eliot5566"
+    },
+    "eleven": {
+      "title": "Eleven: Verbinden einer agentengesteuerten Desktop-Workbench mit REA",
+      "target": "Native Binäranalyse über REA/Ghidra und eine ACP-Agent-Desktop-Workbench",
+      "question": "Wie kann ein Agent eine Binärdatei überprüfen, während Navigation und bearbeitbare Anmerkungen in einer gemeinsam genutzten Workbench sichtbar bleiben?",
+      "rea_role": "Die Engine startet REA MCP und ruft open_binary- und Prozeduransichten auf. Ein separater Proxy leitet Analysetools weiter, während er die Annotations- und Schreibtools REA zurückhält, und leitet diese Änderungen über Eleven-Projekttools mit sichtbarem Verlauf weiter.",
+      "reported_result": "Die öffentliche Ausgabe umfasst die Desktop-Anwendungsquelle, die Dokumentation des MCP-Tools, Projektanmerkungen und Patch-Vorschlagspfade sowie einen vom Autor bereitgestellten Live-Agent-Test, der einen Agenten auffordert, eine /bin/ls-Funktion in der Benutzeroberfläche zu öffnen. README und Upstream-Showcase beschreiben die funktionierende Workbench.",
+      "limitations": "Der Katalog überprüfte Quell- und Testdefinitionen, keinen ausgeführten Testempfang oder eine installierte Version. Die Unterstützung der Desktop-Plattform, das Debugger-Verhalten, die Cache-Beschleunigung und die Vollständigkeit der Binäranalyse wurden nicht unabhängig überprüft. Rizin, jadx und andere Pfade sind separate Engines; Ihre Ergebnisse werden nicht REA zugeschrieben. Bei den Upstream-Showcase-Timings handelt es sich um Beobachtungen des Autors, nicht um Katalog-Benchmarks.",
+      "takeaway": "Trennen Sie Analyse-Passthrough von Projektbearbeitungen, halten Sie die Autorenschaft und den Rückgängig-Verlauf sichtbar und unterscheiden Sie ausführbare Tests von beobachteten Testergebnissen.",
+      "author": "Zfinix"
     }
   }
 }

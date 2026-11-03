@@ -10,7 +10,7 @@
 
 [استكشف المجموعة وقم بتمييزها بنجمة على GitHub](https://github.com/git-sanbu/awesome-rea) · [برنامج البحث أو الغرض أو الكلمات الرئيسية](https://awesome-rea-e7l.pages.dev/ar/) · [إرسال حالة](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**38 الحالات العامة** — يعرض 5 الرسمي ومشاريع مجتمع 33 أو تجارب المؤلف. تم التحديث: 2026-10-26. تحتفظ كل حالة بتاريخ مراجعة المصدر الخاص بها.
+**44 الحالات العامة** — يعرض 5 الرسمي ومشاريع مجتمع 39 أو تجارب المؤلف. تم التحديث: 2026-11-03. تحتفظ كل حالة بتاريخ مراجعة المصدر الخاص بها.
 
 > تمت مراجعة المصادر؛ لا يتم إعادة تشغيل اختبارات المؤلف بشكل مستقل.
 
@@ -20,15 +20,16 @@
 
 ## مشاريع شعبية
 
-لقطة: 2026-10-26. مشاريع الكتالوج التي تمت مراجعتها من المصدر والتي تحتوي على الأقل على 100 GitHub Stars، مرتبة حسب النجوم. تشير Stars إلى الاهتمام، وليس التكاثر المستقل أو الاستعداد للإنتاج. [مصادر اللقطات](data/popularity.json).
+لقطة: 2026-11-03. مشاريع الكتالوج التي تمت مراجعتها من المصدر والتي تحتوي على الأقل على 100 GitHub Stars، مرتبة حسب النجوم. تشير Stars إلى الاهتمام، وليس التكاثر المستقل أو الاستعداد للإنتاج. [مصادر اللقطات](data/popularity.json).
 
 | المشروع / التجريبي | GitHub Stars | العملية والقيود |
 | --- | ---: | --- |
-| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: توثيق تفاعلات سطح المكتب ونشر مكونات واجهة المستخدم القابلة لإعادة الاستخدام](cases/ar/open-claude-ui.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: التحقق من نقاط دخول الحملة متعددة اللاعبين](cases/ar/coop-anything.md) |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: دمج تحليل REA في لوحة معلومات متعددة الأجهزة](cases/ar/sparkdash-rea.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: محطة سوق مستنيرة بتفاعلات TradingView](cases/ar/terminal-rs.md) |
-| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: مسجل macOS أصلي مستوحى من OBS](cases/ar/rec-rs.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1837 | [Co-op Anything: التحقق من نقاط دخول الحملة متعددة اللاعبين](cases/ar/coop-anything.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1666 | [Open Claude UI: توثيق تفاعلات سطح المكتب ونشر مكونات واجهة المستخدم القابلة لإعادة الاستخدام](cases/ar/open-claude-ui.md) |
+| [Zfinix/eleven](https://github.com/Zfinix/eleven) | 961 | [Eleven: توصيل طاولة عمل سطح المكتب التي يحركها الوكيل بـ REA](cases/ar/eleven.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 816 | [sparkDash: دمج تحليل REA في لوحة معلومات متعددة الأجهزة](cases/ar/sparkdash-rea.md) |
+| [michaelshimeles/terminal](https://github.com/michaelshimeles/terminal) | 327 | [Terminal (formerly terminal-rs): محطة سوق مستنيرة بتفاعلات TradingView](cases/ar/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 115 | [rec-rs: مسجل macOS أصلي مستوحى من OBS](cases/ar/rec-rs.md) |
 
 ## المعارض الرسمية
 
@@ -55,9 +56,9 @@
 
 | المشروع / التجريبي | السؤال | المصدر الأساسي |
 | --- | --- | --- |
-| [Sketch (formerly paper-rs): لوحة قماشية لا نهائية Paper مستوحاة من Rust](cases/ar/paper-rs.md) | كيف يمكن لتفاعلات اللوحة والتخطيط والمحرر أن تفيد أداة تصميم مستقلة؟ | [المصدر الأساسي](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
-| [rec-rs: مسجل macOS أصلي مستوحى من OBS](cases/ar/rec-rs.md) | كيف يمكن بناء شاشة مركزة وكاميرا ومسجل صوت؟ | [المصدر الأساسي](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
-| [terminal-rs: محطة سوق مستنيرة بتفاعلات TradingView](cases/ar/terminal-rs.md) | كيف يمكن لأبحاث التفاعل بين الرسوم البيانية أن تفيد واجهة سوق Rust المستقلة؟ | [المصدر الأساسي](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
+| [Sketch (formerly paper-rs): لوحة قماشية لا نهائية Paper مستوحاة من Rust](cases/ar/paper-rs.md) | كيف يمكن لتفاعلات اللوحة والتخطيط والمحرر أن تفيد أداة تصميم مستقلة؟ | [المصدر الأساسي](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) |
+| [rec-rs: مسجل macOS أصلي مستوحى من OBS](cases/ar/rec-rs.md) | كيف يمكن بناء شاشة مركزة وكاميرا ومسجل صوت؟ | [المصدر الأساسي](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) |
+| [Terminal (formerly terminal-rs): محطة سوق مستنيرة بتفاعلات TradingView](cases/ar/terminal-rs.md) | كيف يمكن لأبحاث التفاعل بين الرسوم البيانية أن تفيد واجهة سوق Rust المستقلة؟ | [المصدر الأساسي](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) |
 | [Wispr Flow: تحليل لإدخال الكلام ونموذج أولي محلي صغير](cases/ar/wispr-flow.md) | كيف يتم ربط التسجيل والنسخ والسياق واللصق؟ | [المصدر الأساسي](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
 | [hexgrab: التحقيق في منتقي الألوان PowerToys](cases/ar/hexgrab.md) | كيف تعمل مفاتيح التشغيل السريع العالمية وأخذ عينات البكسل والحافظة معًا؟ | [المصدر الأساسي](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
 | [AdamTerm: فحص هيكل Ghostty وبناء محطة طرفية](cases/ar/adamterm.md) | كيف يتم تقسيم النواة الطرفية والنوافذ الأصلية والقوائم والخدمات؟ | [المصدر الأساسي](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
@@ -65,6 +66,7 @@
 | [DiskLens: فحص خوارزميات مسح القرص والتخطيط الهيكلي في ملف ثنائي تم إصداره](cases/ar/disklens.md) | كيف يمكن التحقق من فحص القرص والخرائط الهيكلية والكشف عن التكرارات قبل إنشاء واجهة جديدة؟ | [المصدر الأساسي](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: من حزم الويب التي تم التقاطها إلى نموذج 3D الأولي المستقل](cases/ar/hyper3d-clone.md) | كيف يمكن لملاحظات الواجهة وواجهة برمجة التطبيقات (API) إبلاغ النموذج الأولي الذي يصدر نماذج 3D؟ | [المصدر الأساسي](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: توثيق تفاعلات سطح المكتب ونشر مكونات واجهة المستخدم القابلة لإعادة الاستخدام](cases/ar/open-claude-ui.md) | كيف يمكن لقواعد تكوين الإدخال والتمرير وتفاعل سطح المكتب إبلاغ مكونات الواجهة القابلة لإعادة الاستخدام؟ | [المصدر الأساسي](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
+| [Screen Studio: فصل الفحص الثابت عن أدلة التسجيل والتصدير](cases/ar/screenstudio-research.md) | كيف يمكن فصل نتائج Electron والمساعد الأصلي عن إثبات التسجيل والتصدير والتوافق؟ | [المصدر الأساسي](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
 
 ## الأجهزة والتوافق
 
@@ -75,6 +77,7 @@
 | [Pixel Watch: أداة مساعدة لتسليم شريحة eSIM مبنية على تحليل APK المصاحب](cases/ar/watch-esim-helper.md) | كيف يمكن لمساعد منفصل العثور على تدفق تنزيل watch-eSIM الحالي للتطبيق المصاحب وفتحه؟ | [المصدر الأساسي](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
 | [PicoPrint: توصيل الطابعة الحرارية المحمولة بطباعة Windows](cases/ar/picoprint.md) | عندما يتصل برنامج التشغيل ولكن لا يقوم بالطباعة، كيف يمكن العثور على اختلافات المصافحة؟ | [المصدر الأساسي](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
 | [V5VPN: بحث البروتوكول لبوابة ذات نطاق محدد وعميل النفق](cases/ar/v5vpn-rea-client.md) | كيف يمكن للمصادقة واكتشاف الموارد وأبحاث الاتصال إبلاغ عميل مستقل محدد النطاق؟ | [المصدر الأساسي](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
+| [iCSee localmod: تتبع أوامر الكاميرا مع الحفاظ على برامج تشغيل المخزون](cases/ar/icsee-localmod.md) | كيف يمكن لأبحاث الأوامر الأصلية تمكين عناصر التحكم في الكاميرا المحلية مع الحفاظ على برامج التشغيل العاملة وتسجيل SD؟ | [المصدر الأساسي](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) |
 
 ## التحليل والتقييم
 
@@ -102,6 +105,10 @@
 | --- | --- | --- |
 | [sparkDash: دمج تحليل REA في لوحة معلومات متعددة الأجهزة](cases/ar/sparkdash-rea.md) | كيف يمكن لواجهة الويب إرسال مهام REA عن بعد طويلة الأمد وتحميل نتائج كبيرة عند الطلب؟ | [المصدر الأساسي](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
 | [REA Safe Agent: وسيط في التحليل الثابت بين عمليتين مضمنتين](cases/ar/rea-safe-agents.md) | كيف يمكن للوكيل الاستعلام عن REA بينما يظل الوصول إلى المدخلات وأدوات المضيف وطلبات النماذج محدودًا؟ | [المصدر الأساسي](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
+| [REA Studio: تقديم أدوات MCP وتسجيل Evidence في واجهة مستخدم الويب المحلية](cases/ar/rea-studio.md) | كيف يمكن للواجهة المحلية كشف أدوات REA المثبتة وجعل الأدلة والقيود الخاصة بها قابلة للقراءة؟ | [المصدر الأساسي](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) |
+| [dsh-rea: الحفاظ على عقود MCP مع الكشف عن الأدوات عند الطلب](cases/ar/dsh-rea.md) | كيف يمكن للمحول الحفاظ على عقود الأدوات الأولية مع إبقاء المخططات غير المستخدمة خارج كل طلب وكيل؟ | [المصدر الأساسي](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) |
+| [App X-Ray: تحويل نتائج REA إلى تقارير تطبيقات قابلة للمشاركة](cases/ar/app-xray.md) | كيف يمكن أن يصبح دليل REA الثابت تقرير مكون قابل للقراءة وفرق من إصدار إلى إصدار؟ | [المصدر الأساسي](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) |
+| [Eleven: توصيل طاولة عمل سطح المكتب التي يحركها الوكيل بـ REA](cases/ar/eleven.md) | كيف يمكن للوكيل فحص ملف ثنائي بينما تظل التعليقات التوضيحية القابلة للتحرير مرئية في طاولة العمل المشتركة؟ | [المصدر الأساسي](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) |
 
 ## ما هي الحالات المشمولة؟
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-03
+
+- Add six source-reviewed cases: Screen Studio (static/runtime evidence boundaries), iCSee localmod (camera interoperability), REA Studio (local MCP UI), dsh-rea (lazy contract-preserving adapter), App X-Ray (static reports) and Eleven (agent-driven desktop workbench). Total: 44 distinct cases, 5 official and 39 community.
+- Refresh Sketch’s limited M4 Pro checks, rec-rs live mixing/multiple streaming destinations and Terminal’s repository rename and implementation progress. Preserve prior sources, stable IDs and separate REA attribution from later features.
+- Retain author-reported failures: Screen Studio JavaScript timeouts, a REA Studio recorded error and dsh-rea’s documented Windows verification failure. No third-party project or author test was executed.
+- Synchronize all 12 editions, READMEs, case notes and 540 static HTML pages; preserve unchanged editorial/UI text. Refresh 37 GitHub repository Stars snapshots, following Sketch and Terminal renames.
+- Record immutable source links, discovery limits, historical-source access gaps and verification in [research notes](research/2026-11-03.md).
+
 ## 2026-10-26
 
 - Add four source-reviewed projects: Open Claude UI (desktop interaction notes and reusable components), Open Scrantic (Johnny Castaway engine), REA Safe Agent (implemented static-analysis integration) and a Spanish lab using an author-owned validator. The catalog now contains 38 distinct cases: 5 official and 33 community projects or experiments.

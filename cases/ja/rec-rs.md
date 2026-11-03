@@ -7,7 +7,7 @@
 この版は編集英語版から機械翻訳されたものです。元の引用は原文言語のままです。表現が不明瞭な場合は、英語とリンク先の情報源を参照してください。
 
 - **著者/帰属:** michaelshimeles
-- **ソースレビュー日:** 2026-10-21
+- **ソースレビュー日:** 2026-11-03
 - **レビュー状況:** 情報源をレビューしました。著者のテストは独立して再実行されません。
 - **ターゲット:** OBS Studioのアーキテクチャと動作
 
@@ -21,11 +21,11 @@
 
 ## 著者が報告した結果
 
-このプロジェクトは、screen/camera 録音、オーディオ ミキシング、リプレイ バッファー、およびストリーミング機能を公開します。著者は、Apple Silicon Mac での開発とテストを報告します。 2026-10-21 README には、Apple Silicon + Intel ユニバーサル リリース、signing/notarization、および Sparkle アップデートが追加されます。
+このプロジェクトは、screen/camera 録音、オーディオ ミキシング、リプレイ バッファー、およびストリーミング機能を公開します。著者は、Apple Silicon Mac での開発とテストを報告します。 2026-10-21 README には、Apple Silicon + Intel ユニバーサル リリース、signing/notarization、および Sparkle アップデートが追加されます。 2026-11-03: でレビューされたこのアプリは、ソースごとのライブ faders/mute と 1 つのエンコードからの同時ストリーミング宛先を追加します。著者は、ローカル MediaMTX サーバーに対して 2 つの RTMP パスと 1 つの WHIP エンドポイントを一緒にテストしたと報告しています。
 
 ## 制限と未検証の主張
 
-macOS 15+. が必要 報告されたハードウェアは Apple Silicon M4 Pro のままです。 Intel のダウンロードおよびビルド手順では、実際の Intel Mac での記録は検証されません。これは範囲を限定した実装であり、完全な OBS の置き換えやクロスプラットフォームの再構築ではありません。このカタログではそれを再掲載しませんでした。
+macOS 15+. が必要 報告されたハードウェアは Apple Silicon M4 Pro のままです。 Intel のダウンロードおよびビルド手順では、実際の Intel Mac での記録は検証されません。これは範囲を限定した実装であり、完全な OBS の置き換えやクロスプラットフォームの再構築ではありません。このカタログではそれを再掲載しませんでした。報告されたテストでは、YouTube、Twitch、Kick には直接ストリーミングされませんでした。宛先は、構成された制限が最も低い 1 つのエンコードを共有します。宛先を変更するにはストリーミングを停止する必要があります。ローカルサーバーの結果では、サービスの相互運用性は検証されません。
 
 ## 何を学ぶか
 
@@ -39,9 +39,10 @@ macOS 15+. が必要 報告されたハードウェアは Apple Silicon M4 Pro �
 
 ## オリジナルの情報源
 
-- [一次情報源/固定された証拠](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [一次情報源/固定された証拠](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md)
 - [プロジェクト/デモ](https://github.com/michaelshimeles/rec-rs)
-- [追加ソース 1](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
+- [追加ソース 1](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [追加ソース 2](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
 
 独立した編集者の要約。クレジットは原作者に帰属します。ターゲット ソフトウェア、インストーラー、および完全な逆コンパイラー出力は、ここでは再配布されません。
 

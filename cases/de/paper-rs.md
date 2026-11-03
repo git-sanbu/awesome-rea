@@ -7,7 +7,7 @@
 Diese Ausgabe wurde maschinell aus der redaktionellen englischen Version übersetzt. Originalzitate bleiben in ihrer Ausgangssprache. Wenn der Wortlaut unklar ist, konsultieren Sie Englisch und die verlinkten Quellen.
 
 - **Autor / Namensnennung:** michaelshimeles
-- **Datum der Quellenüberprüfung:** 2026-10-21
+- **Datum der Quellenüberprüfung:** 2026-11-03
 - **Überprüfungsstatus:** Quellen überprüft; Autorentests werden nicht unabhängig wiederholt.
 - **Ziel:** Verhalten der Desktop-Designanwendung Paper
 
@@ -21,11 +21,11 @@ Der Autor gibt an, dass REA und Claude Code verwendet wurden, um das Desktop-Ver
 
 ## Vom Autor gemeldete Ergebnisse
 
-Das Projekt veröffentlicht eine unendliche Leinwand, Seiten, Layouts, Vektorbearbeitung, Whiteboarding und MCP-Schnittstellen mit Tests und Funktionsunterschieden. Auf 2026-10-21: geprüft, heißt es jetzt Sketch, mit der ausführbaren Datei „sketch-rs“, der Migration des alten Projektverzeichnisses beim ersten Start und der Kompatibilität mit alten Dateien und Umgebungsvariablen. Es bleibt ein Fall.
+Das Projekt veröffentlicht eine unendliche Leinwand, Seiten, Layouts, Vektorbearbeitung, Whiteboarding und MCP-Schnittstellen mit Tests und Funktionsunterschieden. Bewertet am 2026-10-21: heißt es jetzt Sketch, mit der ausführbaren Datei „sketch-rs“, Migration des alten Projektverzeichnisses beim ersten Start und Kompatibilität mit alten Dateien und Umgebungsvariablen. Es bleibt ein Fall. Bewertet auf 2026-11-03: berichtet der Autor nun über einen notariell beglaubigten universellen macOS-Build, der auf einem M4 Pro läuft, einschließlich Metal-Fensterstart, Sparkle-Laden, MCP-Bearbeitungen und automatischer Speicherung.
 
 ## Einschränkungen und unbestätigte Ansprüche
 
-Der Autor hatte es ausdrücklich nicht auf echter macOS-Hardware gestartet. Einige Merkmale sind angenähert oder fehlen. Die Aufnahme basiert auf der öffentlichen Nennung des Autors und nicht auf einer überprüften Gleichwertigkeit mit Paper.
+Die 2026-10-21-Quelle sagte, dass die macOS-Hardware nicht getestet wurde; Der neuere Bericht deckt nur begrenzte M4 Pro-Prüfungen ab. Laut Autor bleiben Maus, Trackpad, Tastatur, Menüs, das Update-Fenster und der Intel-Slice auf dem Mac ungetestet. Einige Merkmale sind angenähert oder fehlen. Die öffentliche Nennung und diese Prüfungen stellen keine Gleichwertigkeit mit Paper dar; Dieser Katalog hat sie nicht erneut ausgeführt.
 
 ## Was zu lernen ist
 
@@ -39,9 +39,10 @@ Die Formatierung von Auszügen wird vereinfacht. Lesen Sie die Originalquelle f�
 
 ## Originalquellen
 
-- [Primärquelle / angeheftete Beweise](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
-- [Projekt / Demo](https://github.com/michaelshimeles/paper-rs)
-- [Zusätzliche Quelle 1](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
+- [Primärquelle / angeheftete Beweise](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md)
+- [Projekt / Demo](https://github.com/michaelshimeles/sketch)
+- [Zusätzliche Quelle 1](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
+- [Zusätzliche Quelle 2](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
 
 Unabhängige redaktionelle Zusammenfassung. Die Urheberschaft liegt bei den Originalautoren. Zielsoftware, Installationsprogramme und die komplette Dekompilerausgabe werden hier nicht weitergegeben.
 

@@ -7,7 +7,7 @@
 Diese Ausgabe wurde maschinell aus der redaktionellen englischen Version übersetzt. Originalzitate bleiben in ihrer Ausgangssprache. Wenn der Wortlaut unklar ist, konsultieren Sie Englisch und die verlinkten Quellen.
 
 - **Autor / Namensnennung:** michaelshimeles
-- **Datum der Quellenüberprüfung:** 2026-10-21
+- **Datum der Quellenüberprüfung:** 2026-11-03
 - **Überprüfungsstatus:** Quellen überprüft; Autorentests werden nicht unabhängig wiederholt.
 - **Ziel:** Architektur und Verhalten von OBS Studio
 
@@ -21,11 +21,11 @@ Der Autor gibt an, dass REA und Claude Code zur Untersuchung von OBS verwendet w
 
 ## Vom Autor gemeldete Ergebnisse
 
-Das Projekt veröffentlicht screen/camera-Funktionen für Aufnahme, Audiomischung, Wiedergabepuffer und Streaming. Der Autor berichtet über Entwicklung und Tests auf einem Apple Silicon Mac. Der 2026-10-21 README fügt Apple Silicon + Intel Universal-Releases, signing/notarization und Sparkle-Updates hinzu.
+Das Projekt veröffentlicht screen/camera-Funktionen für Aufnahme, Audiomischung, Wiedergabepuffer und Streaming. Der Autor berichtet über Entwicklung und Tests auf einem Apple Silicon Mac. Der 2026-10-21 README fügt Apple Silicon + Intel Universal-Releases, signing/notarization und Sparkle-Updates hinzu. Die am 2026-11-03: überprüfte App fügt Live-Streaming-Ziele pro Quelle faders/mute und gleichzeitige Streaming-Ziele aus einer Kodierung hinzu. Der Autor berichtet, dass er zwei RTMP-Pfade und einen WHIP-Endpunkt gemeinsam mit einem lokalen MediaMTX-Server getestet hat.
 
 ## Einschränkungen und unbestätigte Ansprüche
 
-Erfordert macOS 15+. Die gemeldete Hardware bleibt ein Apple Silicon M4 Pro; Eine Intel-Download- und Build-Anleitung verifiziert nicht die Aufzeichnung auf einem echten Intel-Mac. Hierbei handelt es sich um eine bereichsbezogene Implementierung, nicht um einen vollständigen OBS-Ersatz oder eine plattformübergreifende Rekonstruktion. Dieser Katalog hat es nicht erneut ausgeführt.
+Erfordert macOS 15+.. Die gemeldete Hardware bleibt ein Apple Silicon M4 Pro; Eine Intel-Download- und Build-Anleitung verifiziert nicht die Aufzeichnung auf einem echten Intel-Mac. Hierbei handelt es sich um eine bereichsbezogene Implementierung, nicht um einen vollständigen OBS-Ersatz oder eine plattformübergreifende Rekonstruktion. Dieser Katalog hat es nicht erneut ausgeführt. YouTube, Twitch und Kick wurden in den gemeldeten Tests nicht direkt gestreamt. Ziele teilen sich eine Kodierung mit den niedrigsten konfigurierten Grenzwerten; Wenn sich das Ziel ändert, muss das Streaming gestoppt werden. Die Ergebnisse des lokalen Servers bestätigen nicht die Dienstinteroperabilität.
 
 ## Was zu lernen ist
 
@@ -39,9 +39,10 @@ Die Formatierung von Auszügen wird vereinfacht. Lesen Sie die Originalquelle f�
 
 ## Originalquellen
 
-- [Primärquelle / angeheftete Beweise](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [Primärquelle / angeheftete Beweise](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md)
 - [Projekt / Demo](https://github.com/michaelshimeles/rec-rs)
-- [Zusätzliche Quelle 1](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
+- [Zusätzliche Quelle 1](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md)
+- [Zusätzliche Quelle 2](https://github.com/michaelshimeles/rec-rs/blob/d5a7920cd00d96dcabc779750e8316f23e8c048f/README.md)
 
 Unabhängige redaktionelle Zusammenfassung. Die Urheberschaft liegt bei den Originalautoren. Zielsoftware, Installationsprogramme und die komplette Dekompilerausgabe werden hier nicht weitergegeben.
 

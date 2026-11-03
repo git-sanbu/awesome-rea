@@ -10,7 +10,7 @@
 
 [GitHub에서 컬렉션을 탐색하고 별표를 표시하세요.](https://github.com/git-sanbu/awesome-rea) · [소프트웨어, 목적 또는 키워드 검색](https://awesome-rea-e7l.pages.dev/ko/) · [사례 제출](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**38 공개 사례** — 5 공식 쇼케이스 및 33 커뮤니티 프로젝트 또는 작가 실험. 업데이트됨: 2026-10-26. 각 사례는 자체 출처 검토 날짜를 유지합니다.
+**44 공개 사례** — 5 공식 쇼케이스 및 39 커뮤니티 프로젝트 또는 작가 실험. 업데이트됨: 2026-11-03. 각 사례는 자체 출처 검토 날짜를 유지합니다.
 
 > 검토된 출처; 작성자 테스트는 독립적으로 다시 실행되지 않습니다.
 
@@ -20,15 +20,16 @@
 
 ## 인기 프로젝트
 
-스냅샷: 2026-10-26. 별표별로 정렬된 최소 100 GitHub Stars가 포함된 소스 검토 카탈로그 프로젝트입니다. Stars는 독립적인 재생산이나 생산 준비가 아닌 관심을 나타냅니다. [스냅샷 소스](data/popularity.json).
+스냅샷: 2026-11-03. 별표별로 정렬된 최소 100 GitHub Stars가 포함된 소스 검토 카탈로그 프로젝트입니다. Stars는 독립적인 재생산이나 생산 준비가 아닌 관심을 나타냅니다. [스냅샷 소스](data/popularity.json).
 
 | 프로젝트/데모 | GitHub Stars | 프로세스 및 제한사항 |
 | --- | ---: | --- |
-| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI: 데스크톱 상호 작용 문서화 및 재사용 가능한 UI 구성 요소 게시](cases/ko/open-claude-ui.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything: 캠페인 멀티플레이어 진입점 조사](cases/ko/coop-anything.md) |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash: REA 분석을 다중 장치 대시보드에 통합](cases/ko/sparkdash-rea.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs: TradingView 상호작용을 통해 정보를 제공받는 시장 터미널](cases/ko/terminal-rs.md) |
-| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs: OBS에서 영감을 받은 기본 macOS 레코더](cases/ko/rec-rs.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1837 | [Co-op Anything: 캠페인 멀티플레이어 진입점 조사](cases/ko/coop-anything.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1666 | [Open Claude UI: 데스크톱 상호 작용 문서화 및 재사용 가능한 UI 구성 요소 게시](cases/ko/open-claude-ui.md) |
+| [Zfinix/eleven](https://github.com/Zfinix/eleven) | 961 | [Eleven: 에이전트 기반 데스크톱 워크벤치를 REA에 연결](cases/ko/eleven.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 816 | [sparkDash: REA 분석을 다중 장치 대시보드에 통합](cases/ko/sparkdash-rea.md) |
+| [michaelshimeles/terminal](https://github.com/michaelshimeles/terminal) | 327 | [Terminal (formerly terminal-rs): TradingView 상호작용을 통해 정보를 받는 시장 터미널](cases/ko/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 115 | [rec-rs: OBS에서 영감을 받은 기본 macOS 레코더](cases/ko/rec-rs.md) |
 
 ## 공식 쇼케이스
 
@@ -55,9 +56,9 @@
 
 | 프로젝트/데모 | 질문 | 기본 소스 |
 | --- | --- | --- |
-| [Sketch (formerly paper-rs): Paper에서 영감을 받은 Rust 무한 캔버스](cases/ko/paper-rs.md) | 캔버스, 레이아웃 및 편집기 상호 작용이 독립적인 디자인 도구에 어떻게 정보를 제공할 수 있습니까? | [기본 소스](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
-| [rec-rs: OBS에서 영감을 받은 기본 macOS 레코더](cases/ko/rec-rs.md) | 초점이 맞춰진 화면, 카메라, 오디오 레코더를 어떻게 만들 수 있나요? | [기본 소스](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
-| [terminal-rs: TradingView 상호작용을 통해 정보를 제공받는 시장 터미널](cases/ko/terminal-rs.md) | 차트 상호 작용 연구는 어떻게 독립적인 Rust 시장 인터페이스에 정보를 제공할 수 있습니까? | [기본 소스](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
+| [Sketch (formerly paper-rs): Paper에서 영감을 받은 Rust 무한 캔버스](cases/ko/paper-rs.md) | 캔버스, 레이아웃 및 편집기 상호 작용이 독립적인 디자인 도구에 어떻게 정보를 제공할 수 있습니까? | [기본 소스](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) |
+| [rec-rs: OBS에서 영감을 받은 기본 macOS 레코더](cases/ko/rec-rs.md) | 초점이 맞춰진 화면, 카메라, 오디오 레코더를 어떻게 만들 수 있나요? | [기본 소스](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) |
+| [Terminal (formerly terminal-rs): TradingView 상호작용을 통해 정보를 받는 시장 터미널](cases/ko/terminal-rs.md) | 차트 상호 작용 연구는 어떻게 독립적인 Rust 시장 인터페이스에 정보를 제공할 수 있습니까? | [기본 소스](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) |
 | [Wispr Flow: 음성 입력 분해 및 소형 로컬 프로토타입](cases/ko/wispr-flow.md) | 녹음, 전사, 컨텍스트 및 붙여넣기는 어떻게 연결됩니까? | [기본 소스](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
 | [hexgrab: PowerToys 색상 선택기 조사 중](cases/ko/hexgrab.md) | 전역 단축키, 픽셀 샘플링 및 클립보드는 어떻게 함께 작동합니까? | [기본 소스](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
 | [AdamTerm: Ghostty의 쉘 조사 및 터미널 구축](cases/ko/adamterm.md) | 터미널 코어, 기본 창, 메뉴 및 서비스는 어떻게 구분됩니까? | [기본 소스](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
@@ -65,6 +66,7 @@
 | [DiskLens: 릴리스된 바이너리에서 디스크 검색 및 트리맵 알고리즘 확인](cases/ko/disklens.md) | 새 인터페이스를 구축하기 전에 디스크 스캐닝, 트리맵 및 중복 감지를 어떻게 확인할 수 있습니까? | [기본 소스](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D: 캡처된 웹 번들부터 독립적인 3D 프로토타입까지](cases/ko/hyper3d-clone.md) | 인터페이스 및 API 관찰은 3D 모델을 내보내는 프로토타입에 어떻게 정보를 제공할 수 있습니까? | [기본 소스](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: 데스크톱 상호 작용 문서화 및 재사용 가능한 UI 구성 요소 게시](cases/ko/open-claude-ui.md) | 입력 구성, 스크롤 및 데스크탑 상호 작용 규칙은 재사용 가능한 인터페이스 구성 요소에 어떻게 알릴 수 있습니까? | [기본 소스](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
+| [Screen Studio: 정적 검사를 기록 및 내보내기 증거에서 분리](cases/ko/screenstudio-research.md) | Electron 및 기본 도우미 결과를 기록, 내보내기 및 호환성 증명과 별도로 어떻게 보관할 수 있습니까? | [기본 소스](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
 
 ## 하드웨어 및 호환성
 
@@ -75,6 +77,7 @@
 | [Pixel Watch: 동반 APK 분석을 통해 정보를 얻은 eSIM 핸드오프 도우미](cases/ko/watch-esim-helper.md) | 별도의 도우미가 컴패니언 앱의 기존 watch-eSIM 다운로드 흐름을 어떻게 찾아 열 수 있나요? | [기본 소스](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
 | [PicoPrint: 모바일 감열식 프린터를 Windows 인쇄에 연결](cases/ko/picoprint.md) | 드라이버가 연결되었지만 인쇄되지 않는 경우 핸드셰이크 차이점을 어떻게 찾을 수 있습니까? | [기본 소스](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
 | [V5VPN: 범위가 지정된 포털 및 터널 클라이언트에 대한 프로토콜 연구](cases/ko/v5vpn-rea-client.md) | 인증, 리소스 검색 및 연결 연구는 범위가 지정된 독립 클라이언트에 어떻게 알릴 수 있습니까? | [기본 소스](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
+| [iCSee localmod: 스톡 드라이버를 유지하면서 카메라 명령 추적](cases/ko/icsee-localmod.md) | 작동 중인 드라이버와 SD 녹화를 유지하면서 기본 명령 연구를 통해 로컬 카메라 제어를 어떻게 활성화할 수 있습니까? | [기본 소스](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) |
 
 ## 분석 및 평가
 
@@ -102,6 +105,10 @@
 | --- | --- | --- |
 | [sparkDash: REA 분석을 다중 장치 대시보드에 통합](cases/ko/sparkdash-rea.md) | 웹 인터페이스는 어떻게 장기 실행 원격 REA 작업을 제출하고 요청 시 큰 결과를 로드할 수 있습니까? | [기본 소스](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
 | [REA Safe Agent: 포함된 두 프로세스 간의 정적 분석 중개](cases/ko/rea-safe-agents.md) | 입력, 호스트 도구 및 모델 요청에 대한 액세스가 제한된 상태에서 에이전트가 REA를 쿼리하려면 어떻게 해야 합니까? | [기본 소스](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
+| [REA Studio: MCP 도구를 제공하고 로컬 웹 UI에 Evidence를 기록했습니다.](cases/ko/rea-studio.md) | 로컬 인터페이스는 어떻게 설치된 REA 도구를 노출하고 해당 도구의 증거와 제한 사항을 읽을 수 있게 만들 수 있습니까? | [기본 소스](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) |
+| [dsh-rea: MCP 계약을 유지하면서 주문형 도구 공개](cases/ko/dsh-rea.md) | 어댑터는 어떻게 각 에이전트 요청에서 사용되지 않는 스키마를 유지하면서 업스트림 도구 계약을 보존할 수 있습니까? | [기본 소스](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) |
+| [App X-Ray: REA 조사 결과를 공유 가능한 앱 보고서로 전환](cases/ko/app-xray.md) | 정적 REA 증거가 어떻게 읽을 수 있는 구성 요소 보고서와 버전 간 차이점이 될 수 있습니까? | [기본 소스](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) |
+| [Eleven: 에이전트 기반 데스크톱 워크벤치를 REA에 연결](cases/ko/eleven.md) | 탐색 및 편집 가능한 주석이 공유 워크벤치에 계속 표시되는 동안 에이전트는 어떻게 바이너리를 검사할 수 있나요? | [기본 소스](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) |
 
 ## 어떤 경우가 포함되나요?
 

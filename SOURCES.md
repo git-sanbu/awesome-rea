@@ -2,7 +2,7 @@
 
 [简体中文](SOURCES.zh-CN.md) · [Catalog](README.md)
 
-Updated **2026-10-26**. Each entry retains its own source-review date. This collection concerns `morluto/rea` (npm `rea-agents`), not unrelated projects sharing the name REA.
+Updated **2026-11-03**. Each entry retains its own source-review date. This collection concerns `morluto/rea` (npm `rea-agents`), not unrelated projects sharing the name REA.
 
 ## Method
 
@@ -31,9 +31,9 @@ Source review establishes explicit REA attribution, not independent verification
 | [ductf-masked-squares](cases/ductf-masked-squares.md) | Official showcase | [Source](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/ctf-masked-squares.md) | 2026-10-16 |
 | [desktop-games-nostalgia](cases/desktop-games-nostalgia.md) | Author project / investigation | [Source](https://github.com/ucodia/desktop-games-nostalgia/blob/27946dfe49d4a9b522dfe017c14eefbc0ca40b2a/README.md) | 2026-10-16 |
 | [ski-or-die](cases/ski-or-die.md) | Author project / investigation | [Source](https://github.com/tuunanet/rea-ski-or-die-reconstruction/blob/0eac0671c90e21a16e663da7772b60710101ef7f/README.md) | 2026-10-16 |
-| [paper-rs](cases/paper-rs.md) | Author project / investigation | [Source](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) | 2026-10-21 |
-| [rec-rs](cases/rec-rs.md) | Author project / investigation | [Source](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) | 2026-10-21 |
-| [terminal-rs](cases/terminal-rs.md) | Author project / investigation | [Source](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) | 2026-10-21 |
+| [paper-rs](cases/paper-rs.md) | Author project / investigation | [Source](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) | 2026-11-03 |
+| [rec-rs](cases/rec-rs.md) | Author project / investigation | [Source](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) | 2026-11-03 |
+| [terminal-rs](cases/terminal-rs.md) | Author project / investigation | [Source](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) | 2026-11-03 |
 | [wispr-flow](cases/wispr-flow.md) | Author project / investigation | [Source](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) | 2026-10-16 |
 | [hexgrab](cases/hexgrab.md) | Author project / investigation | [Source](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) | 2026-10-16 |
 | [adamterm](cases/adamterm.md) | Author project / investigation | [Source](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) | 2026-10-16 |
@@ -62,6 +62,16 @@ Source review establishes explicit REA attribution, not independent verification
 | [open-scrantic](cases/open-scrantic.md) | Author project / investigation | [Source](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) | 2026-10-26 |
 | [rea-safe-agents](cases/rea-safe-agents.md) | Implemented REA integration | [Source](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) | 2026-10-26 |
 | [rea-spanish-lab](cases/rea-spanish-lab.md) | Author-owned educational case | [Source](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) | 2026-10-26 |
+| [screenstudio-research](cases/screenstudio-research.md) | Author project / investigation | [Source](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) | 2026-11-03 |
+| [icsee-localmod](cases/icsee-localmod.md) | Author project / investigation | [Source](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) | 2026-11-03 |
+| [rea-studio](cases/rea-studio.md) | Implemented REA integration | [Source](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) | 2026-11-03 |
+| [dsh-rea](cases/dsh-rea.md) | Implemented REA integration | [Source](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) | 2026-11-03 |
+| [app-xray](cases/app-xray.md) | Implemented REA integration | [Source](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) | 2026-11-03 |
+| [eleven](cases/eleven.md) | Implemented REA integration | [Source](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) | 2026-11-03 |
+
+## 2026-11-03 updates
+
+Six additions bring the catalog to 44 cases (5 official, 39 community): Screen Studio, iCSee localmod, REA Studio, dsh-rea, App X-Ray and Eleven. Refresh Sketch, rec-rs and the renamed Terminal while retaining historical sources and evidence limits. Synchronize all 12 editions, 540 static pages and a 37-repository Stars snapshot. Terminal’s old README commit returned 404; its current repository and new pinned source remain accessible. See [review decisions and coverage](research/2026-11-03.md).
 
 ## 2026-10-26 updates
 

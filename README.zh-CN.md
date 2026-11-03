@@ -10,7 +10,7 @@
 
 [在 GitHub 查看与收藏案例集](https://github.com/git-sanbu/awesome-rea) · [搜索软件、用途或关键词](https://awesome-rea-e7l.pages.dev/zh-CN/) · [投稿案例](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**38 个公开案例** — 其中 5 个官方案例、33 个社区项目与作者实验. 最近更新：2026-10-26；各案例保留独立核对日期。
+**44 个公开案例** — 其中 5 个官方案例、39 个社区项目与作者实验. 最近更新：2026-11-03；各案例保留独立核对日期。
 
 > 已阅读公开原文，未独立复跑作者测试。
 
@@ -18,15 +18,16 @@
 
 ## 热门项目
 
-2026-10-26 快照 · 本目录已核对、达到 100 GitHub Stars 的项目，按星标排序。Stars 表示关注度，不代表复现成功或生产可用。 [查看快照来源](data/popularity.json).
+2026-11-03 快照 · 本目录已核对、达到 100 GitHub Stars 的项目，按星标排序。Stars 表示关注度，不代表复现成功或生产可用。 [查看快照来源](data/popularity.json).
 
 | 项目 / 演示 | GitHub Stars | 过程与局限 |
 | --- | ---: | --- |
-| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1415 | [Open Claude UI：从桌面交互调查到可复用界面组件](cases/zh-CN/open-claude-ui.md) |
-| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1391 | [Co-op Anything：用 REA 调查单机战役的联机接入点](cases/zh-CN/coop-anything.md) |
-| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 763 | [sparkDash：把 REA 分析任务接入多设备仪表盘](cases/zh-CN/sparkdash-rea.md) |
-| [michaelshimeles/terminal-rs](https://github.com/michaelshimeles/terminal-rs) | 301 | [terminal-rs：研究 TradingView 交互后做行情终端](cases/zh-CN/terminal-rs.md) |
-| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 104 | [rec-rs：研究 OBS 后做原生 macOS 录屏工具](cases/zh-CN/rec-rs.md) |
+| [cranebeaker/coop-anything](https://github.com/cranebeaker/coop-anything) | 1837 | [Co-op Anything：用 REA 调查单机战役的联机接入点](cases/zh-CN/coop-anything.md) |
+| [Caho1/open-claude-ui](https://github.com/Caho1/open-claude-ui) | 1666 | [Open Claude UI：从桌面交互调查到可复用界面组件](cases/zh-CN/open-claude-ui.md) |
+| [Zfinix/eleven](https://github.com/Zfinix/eleven) | 961 | [Eleven：将代理驱动的桌面工作台连接到 REA](cases/zh-CN/eleven.md) |
+| [MiaAI-Lab/sparkDash](https://github.com/MiaAI-Lab/sparkDash) | 816 | [sparkDash：把 REA 分析任务接入多设备仪表盘](cases/zh-CN/sparkdash-rea.md) |
+| [michaelshimeles/terminal](https://github.com/michaelshimeles/terminal) | 327 | [Terminal（原 terminal-rs）：参考 TradingView 交互的行情终端](cases/zh-CN/terminal-rs.md) |
+| [michaelshimeles/rec-rs](https://github.com/michaelshimeles/rec-rs) | 115 | [rec-rs：研究 OBS 后做原生 macOS 录屏工具](cases/zh-CN/rec-rs.md) |
 
 ## 官方案例
 
@@ -53,9 +54,9 @@
 
 | 项目 / 演示 | 想解决什么问题 | 原始出处 |
 | --- | --- | --- |
-| [Sketch（原 paper-rs）：研究 Paper 后构建 Rust 无限画布](cases/zh-CN/paper-rs.md) | 怎样理解画布、布局和编辑器交互，并实现独立设计工具？ | [原始出处](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) |
-| [rec-rs：研究 OBS 后做原生 macOS 录屏工具](cases/zh-CN/rec-rs.md) | 怎样做更聚焦的屏幕、摄像头与音频录制工具？ | [原始出处](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) |
-| [terminal-rs：研究 TradingView 交互后做行情终端](cases/zh-CN/terminal-rs.md) | 如何把图表交互调查转化为独立 Rust 行情界面？ | [原始出处](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) |
+| [Sketch（原 paper-rs）：研究 Paper 后构建 Rust 无限画布](cases/zh-CN/paper-rs.md) | 怎样理解画布、布局和编辑器交互，并实现独立设计工具？ | [原始出处](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) |
+| [rec-rs：研究 OBS 后做原生 macOS 录屏工具](cases/zh-CN/rec-rs.md) | 怎样做更聚焦的屏幕、摄像头与音频录制工具？ | [原始出处](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) |
+| [Terminal（原 terminal-rs）：参考 TradingView 交互的行情终端](cases/zh-CN/terminal-rs.md) | 如何把图表交互调查转化为独立 Rust 行情界面？ | [原始出处](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) |
 | [Wispr Flow：拆解语音输入链路并做本地小原型](cases/zh-CN/wispr-flow.md) | 录音、转写、上下文和粘贴是如何串起来的？ | [原始出处](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) |
 | [hexgrab：从 PowerToys 二进制研究取色器](cases/zh-CN/hexgrab.md) | 全局快捷键、像素取色和剪贴板怎样配合？ | [原始出处](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) |
 | [AdamTerm：研究 Ghostty 外壳后做自己的终端](cases/zh-CN/adamterm.md) | 终端核心、原生窗口、菜单和服务之间怎么分工？ | [原始出处](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) |
@@ -63,6 +64,7 @@
 | [DiskLens：用已发布程序核对磁盘扫描与树图算法](cases/zh-CN/disklens.md) | 怎样确认磁盘扫描、矩形树图和重复文件检测的实现，再做独立界面？ | [原始出处](https://github.com/KarlssonChristoffer/DiskLens/blob/c7d67f4b084b408d9b3e1bb22ee8723727494488/README.md) |
 | [Hyper3D：从网页包分析到独立 3D 生成原型](cases/zh-CN/hyper3d-clone.md) | 怎样把网页分析得到的界面与接口观察转化为一个可导出模型的原型？ | [原始出处](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI：从桌面交互调查到可复用界面组件](cases/zh-CN/open-claude-ui.md) | 输入法合成、滚动与桌面交互规则，如何转化为可复用界面组件？ | [原始出处](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
+| [Screen Studio：区分静态检查、录制与导出证据](cases/zh-CN/screenstudio-research.md) | 如何区分 Electron 与原生辅助程序的静态发现，以及录制、导出和兼容性的实际证据？ | [原始出处](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
 
 ## 硬件与兼容
 
@@ -73,6 +75,7 @@
 | [Pixel Watch：分析配套 APK 后做 eSIM 导航助手](cases/zh-CN/watch-esim-helper.md) | 怎样找到配套应用已有的手表 eSIM 下载入口，并从独立助手交接？ | [原始出处](https://github.com/AllMySlop/pixel-watch-esim-writer/blob/a097e819556430bd98c1e7a797016209839c9b1b/README.md) |
 | [PicoPrint：让手机热敏打印机接入 Windows 打印](cases/zh-CN/picoprint.md) | 已有驱动能连接却不出纸时，怎样定位握手差异并接入 Windows 打印系统？ | [原始出处](https://github.com/bigtower17/picoprint/blob/2a366129ffd21b2c8238608caa060efa957e00d7/README.md) |
 | [V5VPN：研究客户端协议后实现独立门户与隧道工具](cases/zh-CN/v5vpn-rea-client.md) | 怎样从原厂客户端调查认证、资源发现与连接流程，做一个范围明确的独立客户端？ | [原始出处](https://github.com/hygkui/v5vpn-rea-client/blob/9a82b4029feae8e9c5031197b3a448b723684d36/README.md) |
+| [iCSee localmod：追踪摄像头命令并保留原厂驱动](cases/zh-CN/icsee-localmod.md) | 如何利用原生命令调查实现本地控制，同时保留可用驱动和 SD 录像？ | [原始出处](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) |
 
 ## 分析与评测
 
@@ -100,6 +103,10 @@
 | --- | --- | --- |
 | [sparkDash：把 REA 分析任务接入多设备仪表盘](cases/zh-CN/sparkdash-rea.md) | 怎样从网页提交远程 REA 任务，让长分析在断开浏览器后继续，并按需查看大结果？ | [原始出处](https://github.com/MiaAI-Lab/sparkDash/blob/be35be9f594c65a3324f1d97ace58668d3a22068/README.md) |
 | [REA Safe Agent：在两个受限进程之间转发静态分析](cases/zh-CN/rea-safe-agents.md) | 怎样让代理查询 REA，同时约束输入、主机工具和模型请求的访问范围？ | [原始出处](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) |
+| [REA Studio：在本地网页展示 MCP 工具与已录制 Evidence](cases/zh-CN/rea-studio.md) | 如何在本地界面呈现已安装的 REA 工具，并让证据及局限易于阅读？ | [原始出处](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) |
+| [dsh-rea：保持 MCP 契约并按需展示工具](cases/zh-CN/dsh-rea.md) | 如何在保留上游工具契约的同时，让未使用的 schema 不占每次代理请求？ | [原始出处](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) |
+| [App X-Ray：把 REA 发现转换为可分享的应用报告](cases/zh-CN/app-xray.md) | 如何将静态 REA 证据转化为可读的组件报告和版本差异？ | [原始出处](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) |
+| [Eleven：将代理驱动的桌面工作台连接到 REA](cases/zh-CN/eleven.md) | 如何让代理检查二进制，同时在共享工作台中展示导航与可编辑标注？ | [原始出处](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) |
 
 ## 什么样的实践会被收录？
 

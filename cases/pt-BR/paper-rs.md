@@ -7,7 +7,7 @@
 Esta edição foi traduzida automaticamente da versão editorial em inglês. As citações originais permanecem no idioma de origem. Quando o texto não estiver claro, consulte o inglês e as fontes vinculadas.
 
 - **Autor / atribuição:** michaelshimeles
-- **Data de revisão da fonte:** 2026-10-21
+- **Data de revisão da fonte:** 2026-11-03
 - **Rever estado:** Fontes revisadas; os testes do autor não são executados de forma independente.
 - **Alvo:** Comportamento do aplicativo de design de desktop Paper
 
@@ -21,11 +21,11 @@ O autor afirma que REA e Claude Code foram usados para investigar o comportament
 
 ## Resultados relatados pelo autor
 
-O projeto publica telas infinitas, páginas, layouts, edição vetorial, quadro branco e interfaces MCP, com testes e diferenças de recursos. Revisado em 2026-10-21: agora é denominado Sketch, com o executável sketch-rs, migração de primeira inicialização do antigo diretório do projeto e compatibilidade com arquivos antigos e variáveis ​​de ambiente. Resta um caso.
+O projeto publica telas infinitas, páginas, layouts, edição vetorial, quadro branco e interfaces MCP, com testes e diferenças de recursos. Revisado em 2026-10-21: agora é denominado Sketch, com o executável sketch-rs, migração de primeira inicialização do antigo diretório do projeto e compatibilidade com arquivos antigos e variáveis ​​de ambiente. Resta um caso. Revisado em 2026-11-03:, o autor agora relata uma construção macOS universal autenticada em execução em um M4 Pro, incluindo inicialização de janela de metal, carregamento de Sparkle, edições de MCP e salvamento automático.
 
 ## Limitações e reivindicações não verificadas
 
-O autor explicitamente não o lançou em hardware macOS real. Alguns recursos são aproximados ou ausentes. A inclusão depende de atribuição pública do autor, não sendo verificada equivalência a Paper.
+A fonte 2026-10-21 disse que o hardware macOS não foi exercido; o relatório mais recente cobre apenas verificações limitadas do M4 Pro. Mouse, trackpad, teclado, menus, janela de atualização e fatia Intel não foram testados no Mac, de acordo com o autor. Alguns recursos são aproximados ou ausentes. A atribuição pública e estas verificações não estabelecem equivalência a Paper; este catálogo não os reexecutou.
 
 ## O que aprender
 
@@ -39,9 +39,10 @@ A formatação do trecho é simplificada. Leia a fonte original para o contexto 
 
 ## Fontes originais
 
-- [Fonte primária/evidência fixada](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
-- [Projeto / demonstração](https://github.com/michaelshimeles/paper-rs)
-- [Fonte adicional 1](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
+- [Fonte primária/evidência fixada](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md)
+- [Projeto / demonstração](https://github.com/michaelshimeles/sketch)
+- [Fonte adicional 1](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md)
+- [Fonte adicional 2](https://github.com/michaelshimeles/paper-rs/blob/0b1b91da7caa10abae7cbf75d2ce003822c85fe9/README.md)
 
 Resumo editorial independente. O crédito pertence aos autores originais. O software alvo, os instaladores e a saída completa do descompilador não são redistribuídos aqui.
 

@@ -1,6 +1,6 @@
 # 检索与来源记录
 
-最近更新：**2026-10-26**；每条来源保留各自核对日期。对象：morluto/rea（npm `rea-agents`），而非其他同名 REA 项目。
+最近更新：**2026-11-03**；每条来源保留各自核对日期。对象：morluto/rea（npm `rea-agents`），而非其他同名 REA 项目。
 
 ## 检索方法
 
@@ -29,9 +29,9 @@
 | [ductf-masked-squares](cases/zh-CN/ductf-masked-squares.md) | 官方案例 / evidence notes | [原文](https://github.com/morluto/rea/blob/42fc6c53ae188978deb3bedfe88287b6b316ba22/website/evidence/ctf-masked-squares.md) | 2026-10-16 |
 | [desktop-games-nostalgia](cases/zh-CN/desktop-games-nostalgia.md) | 作者项目 README | [原文](https://github.com/ucodia/desktop-games-nostalgia/blob/27946dfe49d4a9b522dfe017c14eefbc0ca40b2a/README.md) | 2026-10-16 |
 | [ski-or-die](cases/zh-CN/ski-or-die.md) | 作者项目 README | [原文](https://github.com/tuunanet/rea-ski-or-die-reconstruction/blob/0eac0671c90e21a16e663da7772b60710101ef7f/README.md) | 2026-10-16 |
-| [paper-rs](cases/zh-CN/paper-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/paper-rs/blob/2a7db544b4d4fc81397a4b2c30ba66757c8cc928/README.md) | 2026-10-21 |
-| [rec-rs](cases/zh-CN/rec-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/rec-rs/blob/c8791be63d25f056a7f4705fba64c55774511708/README.md) | 2026-10-21 |
-| [terminal-rs](cases/zh-CN/terminal-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md) | 2026-10-21 |
+| [paper-rs](cases/zh-CN/paper-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/sketch/blob/af814b7ab2bd77328a906a1986a048c233e25f9c/README.md) | 2026-11-03 |
+| [rec-rs](cases/zh-CN/rec-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/rec-rs/blob/93dd4948cdc8919e8b444a5af0141cf7c3628e7c/README.md) | 2026-11-03 |
+| [terminal-rs](cases/zh-CN/terminal-rs.md) | 作者项目 / 调查记录 | [原文](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md) | 2026-11-03 |
 | [wispr-flow](cases/zh-CN/wispr-flow.md) | 作者项目 README | [原文](https://github.com/az9713/wispr-flow-rea-teardown/blob/5edbe6fcf70bbb4594d565212a5ecc7b0c7dfe68/README.md) | 2026-10-16 |
 | [hexgrab](cases/zh-CN/hexgrab.md) | 作者项目 README | [原文](https://github.com/iammukeshm/hexgrab/blob/511c58078776af4fb0d2e3601e098f98e9f90c9a/README.md) | 2026-10-16 |
 | [adamterm](cases/zh-CN/adamterm.md) | 作者项目 README | [原文](https://github.com/AdamLinCodes/AdamTerm/blob/5278f12a7e885c793bbf5aeb567950fa17798ba5/README.md) | 2026-10-16 |
@@ -60,6 +60,16 @@
 | [open-scrantic](cases/zh-CN/open-scrantic.md) | 作者项目 / 引擎重建 | [原文](https://github.com/glauberlima/open-scrantic/blob/8c049614158f2adb09e517ce9e29da89e8a3ac38/README.md) | 2026-10-26 |
 | [rea-safe-agents](cases/zh-CN/rea-safe-agents.md) | 作者项目 / 已实现的 REA 集成 | [原文](https://github.com/dagoSte/rea-safe-agents/blob/c6f45cd27f1ed8ca774d5438d86d4b4f81c484fe/docs/validation.md) | 2026-10-26 |
 | [rea-spanish-lab](cases/zh-CN/rea-spanish-lab.md) | 作者自有程序 / 教学案例 | [原文](https://github.com/harkiventures/rea-muestra-gratuita/blob/210febeb7b43392b3d09147695e7a193c5c4de5d/practica/verificador-reconstruido.py) | 2026-10-26 |
+| [screenstudio-research](cases/zh-CN/screenstudio-research.md) | 作者项目 / 调查记录 | [原文](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) | 2026-11-03 |
+| [icsee-localmod](cases/zh-CN/icsee-localmod.md) | 作者项目 / 调查记录 | [原文](https://github.com/Vittuu/icsee-localmod/blob/52f0ca06064faa2e62ee6d9c600f048bd1768207/docs/REA-GHIDRA-WORKFLOW.md) | 2026-11-03 |
+| [rea-studio](cases/zh-CN/rea-studio.md) | 作者项目 / 已实现的 REA 集成 | [原文](https://github.com/theyishaik-lab/rea-studio/blob/aee05c85c45bbbaf3b50f3527d216702365b8cf2/server/rea.js) | 2026-11-03 |
+| [dsh-rea](cases/zh-CN/dsh-rea.md) | 作者项目 / 已实现的 REA 集成 | [原文](https://github.com/JeremyWangCY/dsh-rea/blob/6f4f0fb52533664baa98adb7bd50f20492bfb7e7/verification/README.md) | 2026-11-03 |
+| [app-xray](cases/zh-CN/app-xray.md) | 作者项目 / 已实现的 REA 集成 | [原文](https://github.com/Eliot5566/app-xray/blob/66a7b06fb45d99e0e1d1dbcf221856a62639faab/src/core/rea.ts) | 2026-11-03 |
+| [eleven](cases/zh-CN/eleven.md) | 作者项目 / 已实现的 REA 集成 | [原文](https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/src/bridge/reaProxy.ts) | 2026-11-03 |
+
+## 2026-11-03 更新
+
+新增 Screen Studio、iCSee localmod、REA Studio、dsh-rea、App X-Ray 和 Eleven，目录共 44 项（5 个官方、39 个社区）。刷新 Sketch、rec-rs 与更名后的 Terminal 三个既有案例，保留历史来源和未验证范围。同步 12 种语言、540 个静态页面及 37 个项目的 Stars 快照。终端旧 README 提交返回 404，当前仓库及新来源可访问；详见[审阅与覆盖记录](research/2026-11-03.md)。
 
 ## 2026-10-26 更新
 

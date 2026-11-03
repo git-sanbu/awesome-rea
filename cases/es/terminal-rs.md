@@ -1,4 +1,4 @@
-# terminal-rs: una terminal de mercado informada por interacciones TradingView
+# Terminal (formerly terminal-rs): una terminal de mercado informada por interacciones TradingView
 
 [← Volver a todos los casos](../../README.es.md) · Aplicaciones
 
@@ -7,13 +7,13 @@
 Esta edición está traducida automáticamente de la versión editorial en inglés. Las citas originales permanecen en su idioma de origen. Cuando la redacción no esté clara, consulte el inglés y las fuentes vinculadas.
 
 - **Autor / atribución:** michaelshimeles
-- **Fecha de revisión de la fuente:** 2026-10-21
+- **Fecha de revisión de la fuente:** 2026-11-03
 - **Estado de revisión:** Fuentes revisadas; Las pruebas del autor no se vuelven a ejecutar de forma independiente.
 - **Objetivo:** Comportamiento de las páginas de gráficos TradingView públicas y desconectadas
 
 ## la pregunta
 
-¿Cómo puede la investigación de interacción de gráficos informar a una interfaz de mercado Rust independiente?
+¿Cómo puede la investigación de la interacción de gráficos informar a una interfaz de mercado Rust independiente?
 
 ## Lo que hizo REA
 
@@ -21,11 +21,11 @@ El autor utiliza el modo de sitio web REA para la captura pasiva de páginas pú
 
 ## Resultados informados por el autor
 
-El proyecto publica gráficos de GPU Rust, comandos de teclado, diseños de paneles e integración de datos con una interfaz estilo Bloomberg. Revisado en 2026-10-21: 151, se agregaron indicadores integrados, pruebas de entrada de parámetros y límites, y un script de lanzamiento universal macOS. Estos son cambios de implementación posteriores, no una nueva investigación REA.
+El proyecto publica gráficos de GPU Rust, comandos de teclado, diseños de paneles e integración de datos con una interfaz estilo Bloomberg. Revisado en 2026-10-21: 151, se agregaron indicadores integrados, pruebas de entrada de límites y parámetros, y un script de lanzamiento universal macOS. Estos son cambios de implementación posteriores, no una nueva investigación REA. Revisado en 2026-11-03:, el repositorio ahora es Terminal, con el mismo ID de catálogo estable. Sus feeds de divulgación de documentos README, vistas de cuentas SnapTrade y operaciones de suscripción voluntaria; esas características de implementación están separadas de la investigación de comportamiento de gráficos REA.
 
 ## Limitaciones y afirmaciones no verificadas
 
-Sólo se estudió el comportamiento visible en la web; Esto no es una recuperación del código fuente TradingView o Bloomberg. Las fuentes de datos, los límites de tasas y los términos de uso de datos imponen restricciones separadas.
+Sólo se estudió el comportamiento visible en la web; Esto no es una recuperación del código fuente TradingView o Bloomberg. Las fuentes de datos, los límites de tasas y los términos de uso de datos imponen restricciones separadas. El autor distingue las pruebas brokerage/order simuladas y los datos simulados de los servicios en vivo. Este catálogo no conecta una correduría, realiza pedidos ni verifica la exactitud de los datos actuales. La confirmación README anterior se conserva como procedencia histórica, pero devolvió HTTP 404 durante esta revisión.
 
 ## que aprender
 
@@ -35,13 +35,14 @@ Las observaciones web públicas pueden proporcionar información de diseño rast
 
 El formato de los extractos está simplificado. Lea la fuente original para conocer el contexto completo.
 
-> tradingview.com with REA in website mode
+> tradingview.com with [REA](https://github.com/morluto/rea) in website mode
 
 ## Fuentes originales
 
-- [Fuente primaria/evidencia fijada](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
-- [Proyecto / demostración](https://github.com/michaelshimeles/terminal-rs)
-- [Fuente adicional 1](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
+- [Fuente primaria/evidencia fijada](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md)
+- [Proyecto / demostración](https://github.com/michaelshimeles/terminal)
+- [Fuente adicional 1](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
+- [Fuente adicional 2](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
 
 Resumen editorial independiente. El crédito pertenece a los autores originales. El software de destino, los instaladores y el resultado completo del descompilador no se redistribuyen aquí.
 

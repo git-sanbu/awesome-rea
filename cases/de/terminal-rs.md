@@ -1,4 +1,4 @@
-# terminal-rs: ein Marktterminal, das durch TradingView-Interaktionen informiert wird
+# Terminal (formerly terminal-rs): ein Marktterminal, das durch TradingView-Interaktionen informiert wird
 
 [← Zurück zu allen Fällen](../../README.de.md) · Anwendungen
 
@@ -7,7 +7,7 @@
 Diese Ausgabe wurde maschinell aus der redaktionellen englischen Version übersetzt. Originalzitate bleiben in ihrer Ausgangssprache. Wenn der Wortlaut unklar ist, konsultieren Sie Englisch und die verlinkten Quellen.
 
 - **Autor / Namensnennung:** michaelshimeles
-- **Datum der Quellenüberprüfung:** 2026-10-21
+- **Datum der Quellenüberprüfung:** 2026-11-03
 - **Überprüfungsstatus:** Quellen überprüft; Autorentests werden nicht unabhängig wiederholt.
 - **Ziel:** Verhalten öffentlicher, abgemeldeter TradingView-Kartenseiten
 
@@ -21,11 +21,11 @@ Der Autor verwendet den Website-Modus REA zur passiven Erfassung öffentlicher S
 
 ## Vom Autor gemeldete Ergebnisse
 
-Das Projekt veröffentlicht Rust-GPU-Diagramme, Tastaturbefehle, Panel-Layouts und Datenintegration mit einer Schnittstelle im Bloomberg-Stil. Überprüft auf 2026-10-21: 151 integrierte Indikatoren, Parameter- und Grenzeingabetests sowie ein universelles Release-Skript macOS wurden hinzugefügt. Hierbei handelt es sich um spätere Implementierungsänderungen, nicht um eine neue REA-Untersuchung.
+Das Projekt veröffentlicht Rust-GPU-Diagramme, Tastaturbefehle, Panel-Layouts und Datenintegration mit einer Schnittstelle im Bloomberg-Stil. Überprüft auf 2026-10-21: 151 integrierte Indikatoren, Parameter- und Grenzeingabetests sowie ein universelles Release-Skript macOS wurden hinzugefügt. Hierbei handelt es sich um spätere Implementierungsänderungen, nicht um eine neue REA-Untersuchung. Auf 2026-11-03: überprüft, heißt das Repository jetzt Terminal mit derselben stabilen Katalog-ID. Sein README dokumentiert Offenlegungs-Feeds, SnapTrade-Kontoansichten und Opt-in-Handel; Diese Implementierungsfunktionen sind von der REA-Diagrammverhaltensforschung getrennt.
 
 ## Einschränkungen und unbestätigte Ansprüche
 
-Es wurde nur das im Internet sichtbare Verhalten untersucht; Dies ist keine Wiederherstellung des TradingView- oder Bloomberg-Quellcodes. Für Datenquellen, Ratenbeschränkungen und Datennutzungsbedingungen gelten separate Einschränkungen.
+Es wurde nur das im Internet sichtbare Verhalten untersucht; Dies ist keine Wiederherstellung des TradingView- oder Bloomberg-Quellcodes. Für Datenquellen, Ratenbeschränkungen und Datennutzungsbedingungen gelten separate Einschränkungen. Der Autor unterscheidet simulierte brokerage/order-Tests und simulierte Daten von Live-Diensten. Mit diesem Katalog wurde weder ein Maklerunternehmen verbunden, noch wurden Bestellungen aufgegeben oder die Richtigkeit der aktuellen Daten wurde überprüft. Der ältere README-Commit wird als historischer Ursprung beibehalten, während dieser Überprüfung wurde jedoch HTTP 404 zurückgegeben.
 
 ## Was zu lernen ist
 
@@ -35,13 +35,14 @@ Es wurde nur das im Internet sichtbare Verhalten untersucht; Dies ist keine Wied
 
 Die Formatierung von Auszügen wird vereinfacht. Lesen Sie die Originalquelle für den vollständigen Kontext.
 
-> tradingview.com with REA in website mode
+> tradingview.com with [REA](https://github.com/morluto/rea) in website mode
 
 ## Originalquellen
 
-- [Primärquelle / angeheftete Beweise](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
-- [Projekt / Demo](https://github.com/michaelshimeles/terminal-rs)
-- [Zusätzliche Quelle 1](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
+- [Primärquelle / angeheftete Beweise](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md)
+- [Projekt / Demo](https://github.com/michaelshimeles/terminal)
+- [Zusätzliche Quelle 1](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
+- [Zusätzliche Quelle 2](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
 
 Unabhängige redaktionelle Zusammenfassung. Die Urheberschaft liegt bei den Originalautoren. Zielsoftware, Installationsprogramme und die komplette Dekompilerausgabe werden hier nicht weitergegeben.
 

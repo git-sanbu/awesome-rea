@@ -1,4 +1,4 @@
-# terminal-rs: um terminal de mercado informado pelas interações TradingView
+# Terminal (formerly terminal-rs): um terminal de mercado informado pelas interações TradingView
 
 [← Voltar para todos os casos](../../README.pt-BR.md) · Aplicativos
 
@@ -7,7 +7,7 @@
 Esta edição foi traduzida automaticamente da versão editorial em inglês. As citações originais permanecem no idioma de origem. Quando o texto não estiver claro, consulte o inglês e as fontes vinculadas.
 
 - **Autor / atribuição:** michaelshimeles
-- **Data de revisão da fonte:** 2026-10-21
+- **Data de revisão da fonte:** 2026-11-03
 - **Rever estado:** Fontes revisadas; os testes do autor não são executados de forma independente.
 - **Alvo:** Comportamento de páginas do gráfico TradingView públicas e desconectadas
 
@@ -21,11 +21,11 @@ O autor usa o modo site REA para captura passiva de páginas públicas. Descober
 
 ## Resultados relatados pelo autor
 
-O projeto publica gráficos de GPU Rust, comandos de teclado, layouts de painel e integração de dados com uma interface estilo Bloomberg. Revisado em 2026-10-21: Indicadores integrados 151, testes de parâmetro e entrada de limite e um script de liberação universal macOS foram adicionados. Estas são alterações de implementação posteriores, não uma nova investigação REA.
+O projeto publica gráficos de GPU Rust, comandos de teclado, layouts de painel e integração de dados com uma interface estilo Bloomberg. Revisado em 2026-10-21: Indicadores integrados 151, testes de parâmetros e limites de entrada e um script de liberação universal macOS foram adicionados. Estas são alterações de implementação posteriores, não uma nova investigação REA. Revisado em 2026-11-03: o repositório agora é Terminal, com o mesmo ID de catálogo estável. Seu README documenta feeds de divulgação, visualizações de contas SnapTrade e negociação opcional; esses recursos de implementação são separados da pesquisa de comportamento gráfico REA.
 
 ## Limitações e reivindicações não verificadas
 
-Apenas o comportamento visível na web foi estudado; esta não é uma recuperação do código-fonte TradingView ou Bloomberg. As fontes de dados, os limites de taxas e os termos de utilização dos dados impõem restrições distintas.
+Apenas o comportamento visível na web foi estudado; esta não é uma recuperação do código-fonte TradingView ou Bloomberg. As fontes de dados, os limites de taxas e os termos de utilização dos dados impõem restrições distintas. O autor distingue testes brokerage/order simulados e dados simulados de serviços ativos. Este catálogo não conectou uma corretora, não fez pedidos nem verificou a precisão dos dados atuais. O commit README mais antigo é mantido como origem histórica, mas retornou HTTP 404 durante esta revisão.
 
 ## O que aprender
 
@@ -35,13 +35,14 @@ As observações públicas da web podem fornecer informações de design rastre�
 
 A formatação do trecho é simplificada. Leia a fonte original para o contexto completo.
 
-> tradingview.com with REA in website mode
+> tradingview.com with [REA](https://github.com/morluto/rea) in website mode
 
 ## Fontes originais
 
-- [Fonte primária/evidência fixada](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
-- [Projeto / demonstração](https://github.com/michaelshimeles/terminal-rs)
-- [Fonte adicional 1](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
+- [Fonte primária/evidência fixada](https://github.com/michaelshimeles/terminal/blob/0690de8c6c86e1939d9226a482ebe7476cc79156/README.md)
+- [Projeto / demonstração](https://github.com/michaelshimeles/terminal)
+- [Fonte adicional 1](https://github.com/michaelshimeles/terminal-rs/blob/2ae060d2d0b608aad910ed855039f6795a3322c2/README.md)
+- [Fonte adicional 2](https://github.com/michaelshimeles/terminal-rs/blob/97c96dd09a4ba24e2693202f2012e0e8aa0a8615/README.md)
 
 Resumo editorial independente. O crédito pertence aos autores originais. O software alvo, os instaladores e a saída completa do descompilador não são redistribuídos aqui.
 
