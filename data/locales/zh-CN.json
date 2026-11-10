@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-11-03",
+  "updated_on": "2026-11-10",
   "translation_method": "Original Chinese editorial text.",
   "cases": {
     "dx-ball": {
@@ -441,6 +441,16 @@
       "limitations": "本目录检查的是源码和测试定义，没有执行测试凭据，也未安装发行版。桌面平台支持、调试器行为、缓存加速和分析完整性均未独立核验。Rizin、jadx 等是独立引擎，不将其结果归于 REA。上游展示帖的耗时是作者观察，不是本目录基准。",
       "takeaway": "将分析转发与项目编辑分开，显示作者和撤销历史，并区分可执行测试与实际测试结果。",
       "author": "Zfinix"
+    },
+    "design-os-studio": {
+      "title": "DESIGN:OS Studio：独立读写 Figma .fig 并重实现编辑器的桌面工作室",
+      "target": "Figma Desktop 与 Figma 的 .fig 容器格式（fig-kiwi，写出 version 106）",
+      "question": "怎样在独立的桌面工作室中读写 Figma 的 .fig 容器，并重实现编辑器行为？",
+      "rea_role": "项目公开规格写明用 morluto/rea 6.7.0（`npx -y rea-agents`）逆向 Figma 字段，并记录它对提取出的编辑器 JavaScript 运行了 analyze-javascript-application。同一说明称 wasm 路径当时不可用（未安装 WABT 与 Ghidra），因此用本地读取器解码 kiwi schema。仓库中还存有 rea CLI 输出，包括已完成的 inspect-macho 与 analyze-javascript-application，以及部分失败调用。产品 README 没有提及 REA。",
+      "reported_result": "DESIGN:OS Studio 是已发布的桌面工作室（审阅版本 v0.7.11），可读取 Figma 的 .fig 容器并写出容器版本 106，在本地重实现编辑器行为，并附带 39 个工具的 stdio MCP 服务器及多语言代码生成。README 记载 macOS CI 上有 6000 余项测试以及 designos-fig 往返测试。维护者声明此项 Figma 工作使用了 REA。本目录查阅了公开规格、入库的 rea 输出和 README，未安装该工作室，也未重跑 rea。",
+      "limitations": "产品 README 没有署明 REA。部分入库的 rea 运行失败（未知命令或原生分析提供方未配置）。其他笔记提到的完整会话草稿保存在仓库之外。已知问题 #834 仍未关闭：保存 .fig 时编号列表格式会丢失，实例上继承或变量绑定的填色会写成固定值。许可为 PolyForm Shield 1.0.0（源码可用，不是开源协议）。本目录未独立复现 .fig 兼容性，也未重跑测试套件。",
+      "takeaway": "即使产品 README 未写明，项目规格和入库的 CLI 证据仍可说明使用了 REA；在 REA 的 wasm 路径不可用时，混合流程仍可能需要本地回退。",
+      "author": "jangtrinh"
     }
   },
   "ui": {
@@ -519,5 +529,5 @@
     "category_learning": "学习与复现",
     "category_integrations": "工具与集成"
   },
-  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486"
+  "source_digest": "5bde0cb16caa468752d026638b84587e7925f2613b83cbaa5d9d4d97d96563df"
 }

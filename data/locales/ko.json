@@ -1,7 +1,7 @@
 {
-  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486",
-  "updated_on": "2026-11-03",
-  "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
+  "source_digest": "5bde0cb16caa468752d026638b84587e7925f2613b83cbaa5d9d4d97d96563df",
+  "updated_on": "2026-11-10",
+  "translation_method": "Existing cases: machine translation from en using Google Translate public endpoint. The design-os-studio case was translated editorially on 2026-11-10 because that endpoint returned HTTP 429. Original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA — Reverse Engineer Anything 사용 사례 및 예",
     "description": "{count} 공개 REA 사례 연구: 게임 포트, 데스크탑 앱, 하드웨어 호환성, 리버스 엔지니어링 및 도구 통합. 실제 용도, 보고된 결과 및 원본 소스를 살펴보세요.",
@@ -518,6 +518,16 @@
       "limitations": "카탈로그는 실행된 테스트 영수증이나 설치된 릴리스가 아닌 소스 및 테스트 정의를 검사했습니다. 데스크톱 플랫폼 지원, 디버거 동작, 캐시 속도 향상 및 바이너리 분석 완전성은 독립적으로 확인되지 않았습니다. Rizin, jadx 및 기타 경로는 별도의 엔진입니다. 그 결과는 REA에 귀속되지 않습니다. 업스트림 쇼케이스 타이밍은 카탈로그 벤치마크가 아닌 작성자 관찰입니다.",
       "takeaway": "프로젝트 편집에서 분석 통과를 분리하고, 작성자 및 실행 취소 기록을 표시하고, 실행 가능한 테스트를 관찰된 테스트 결과와 구별합니다.",
       "author": "Zfinix"
+    },
+    "design-os-studio": {
+      "title": "DESIGN:OS Studio: Figma .fig 파일을 읽고 쓰는 독립 데스크톱 스튜디오",
+      "target": "Figma Desktop과 Figma .fig 컨테이너 형식(fig-kiwi, 쓰기 버전 106)",
+      "question": "독립 데스크톱 스튜디오에서 Figma .fig 컨테이너를 읽고 쓰며 편집기 동작을 재구현하려면 어떻게 해야 하는가?",
+      "rea_role": "공개 사양은 Figma 필드 리버스 엔지니어링 도구로 morluto/rea 6.7.0(`npx -y rea-agents`)을 지목하고, 추출한 편집기 JavaScript에 analyze-javascript-application을 실행했다고 기록한다. 같은 설명은 wasm 경로를 당시 쓸 수 없었고(WABT와 Ghidra 미설치) kiwi 스키마는 로컬 리더로 디코딩했다고 한다. 저장된 보고서에는 완료된 inspect-macho 및 analyze-javascript-application rea CLI 출력과 일부 실패한 호출도 있다. 제품 README는 REA를 언급하지 않는다.",
+      "reported_result": "DESIGN:OS Studio는 공개된 데스크톱 스튜디오(검토한 버전 v0.7.11)로, Figma .fig 컨테이너를 읽고 컨테이너 버전 106을 쓰며, 편집기 동작을 로컬에서 재구현하고, 39개 도구의 stdio MCP 서버와 다국어 코드 생성을 포함한다. README는 macOS CI의 6,000개 이상 테스트와 designos-fig 왕복 테스트를 보고한다. 유지관리자는 이 Figma 작업에 REA를 사용했다고 밝힌다. 이 목록은 공개 사양, 저장된 rea 출력, README를 검토했으며 스튜디오를 설치하거나 rea를 다시 실행하지는 않았다.",
+      "limitations": "제품 README는 REA를 크레딧하지 않는다. 기록된 rea 실행 중 일부는 실패했다(알 수 없는 명령 또는 구성되지 않은 네이티브 분석 제공자). 다른 메모에서 언급된 전체 세션 초안은 저장소 밖에 있다. 알려진 문제 #834는 여전히 열려 있다. .fig를 저장하면 번호 매기기 목록 서식이 사라지고, 인스턴스의 상속 또는 변수 바인딩된 페인트가 고정 값으로 기록된다. 라이선스는 PolyForm Shield 1.0.0(소스 이용 가능, 오픈 소스 라이선스 아님)이다. 이 목록은 .fig 호환성을 독자적으로 재현하지 않았고 테스트 모음도 다시 실행하지 않았다.",
+      "takeaway": "REA 사용은 제품 README가 침묵해도 프로젝트 사양과 저장된 CLI 증거에 남을 수 있으며, REA의 wasm 경로를 쓸 수 없을 때는 혼합 워크플로에도 로컬 대안이 필요할 수 있다.",
+      "author": "jangtrinh"
     }
   }
 }

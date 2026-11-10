@@ -10,7 +10,7 @@ Entdecken Sie öffentliche Projekte mit Reverse Engineer Anything, von älteren 
 
 [Entdecken und präsentieren Sie die Kollektion auf GitHub](https://github.com/git-sanbu/awesome-rea) · [Suchen Sie nach Software, Zweck oder Schlüsselwörtern](https://awesome-rea-e7l.pages.dev/de/) · [Senden Sie einen Fall](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**44 öffentliche Fälle** — Offizielle 5-Showcases und 39-Community-Projekte oder Autorenexperimente. Aktualisiert: 2026-11-03. Jeder Fall behält sein eigenes Datum für die Quellenüberprüfung.
+**45 öffentliche Fälle** — Offizielle 5-Showcases und 40-Community-Projekte oder Autorenexperimente. Aktualisiert: 2026-11-10. Jeder Fall behält sein eigenes Datum für die Quellenüberprüfung.
 
 > Quellen überprüft; Autorentests werden nicht unabhängig wiederholt.
 
@@ -67,6 +67,7 @@ Schnappschuss: 2026-11-03. Quellengeprüfte Katalogprojekte mit mindestens 100 G
 | [Hyper3D: von erfassten Web-Bundles bis hin zu einem unabhängigen 3D-Prototyp](cases/de/hyper3d-clone.md) | Wie können Schnittstellen- und API-Beobachtungen einen Prototyp beeinflussen, der 3D-Modelle exportiert? | [Primärquelle](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: Desktop-Interaktionen dokumentieren und wiederverwendbare UI-Komponenten veröffentlichen](cases/de/open-claude-ui.md) | Wie können Eingabezusammensetzungs-, Scroll- und Desktop-Interaktionsregeln wiederverwendbare Schnittstellenkomponenten beeinflussen? | [Primärquelle](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 | [Screen Studio: Trennung der statischen Inspektion von der Aufzeichnung und dem Export von Beweisen](cases/de/screenstudio-research.md) | Wie können Electron- und Native-Helper-Ergebnisse vom Aufzeichnungs-, Export- und Kompatibilitätsnachweis getrennt gehalten werden? | [Primärquelle](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
+| [DESIGN:OS Studio: ein unabhängiges Desktop-Studio, das Figma-.fig-Dateien liest und schreibt](cases/de/design-os-studio.md) | Wie lassen sich Figma-.fig-Container lesen und schreiben und das Editorverhalten in einem unabhängigen Desktop-Studio neu implementieren? | [Primärquelle](https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md) |
 
 ## Hardware und Kompatibilität
 

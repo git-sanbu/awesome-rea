@@ -10,7 +10,7 @@ Des anciens ports de jeu à un petit sélecteur de couleurs, explorez les projet
 
 [Explorez et mettez en vedette la collection sur GitHub](https://github.com/git-sanbu/awesome-rea) · [Rechercher un logiciel, un objectif ou des mots-clés](https://awesome-rea-e7l.pages.dev/fr/) · [Soumettre un cas](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**Affaires publiques 44** — Présentations officielles 5 et projets communautaires 39 ou expériences d'auteurs. Mise à jour : 2026-11-03. Chaque cas conserve sa propre date d’examen des sources.
+**Affaires publiques 45** — Présentations officielles 5 et projets communautaires 40 ou expériences d'auteurs. Mise à jour : 2026-11-10. Chaque cas conserve sa propre date d’examen des sources.
 
 > Sources examinées ; les tests de l'auteur ne sont pas réexécutés indépendamment.
 
@@ -67,6 +67,7 @@ Instantané : 2026-11-03. Projets de catalogue examinés par la source avec au 
 | [Hyper3D: des bundles Web capturés à un prototype 3D indépendant](cases/fr/hyper3d-clone.md) | Comment les observations d’interface et d’API peuvent-elles éclairer un prototype qui exporte des modèles 3D ? | [Source primaire](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: documenter les interactions sur le bureau et publier des composants d'interface utilisateur réutilisables](cases/fr/open-claude-ui.md) | Comment les règles de composition des entrées, de défilement et d’interaction avec le bureau peuvent-elles éclairer les composants d’interface réutilisables ? | [Source primaire](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 | [Screen Studio: séparer l'inspection statique des preuves d'enregistrement et d'exportation](cases/fr/screenstudio-research.md) | Comment les résultats Electron et Native-Helper peuvent-ils être séparés de la preuve d’enregistrement, d’exportation et de compatibilité ? | [Source primaire](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
+| [DESIGN:OS Studio : un studio de bureau indépendant qui lit et écrit les fichiers Figma .fig](cases/fr/design-os-studio.md) | Comment lire et écrire des conteneurs Figma .fig, et réimplémenter le comportement de l’éditeur, dans un studio de bureau indépendant ? | [Source primaire](https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md) |
 
 ## Matériel et compatibilité
 

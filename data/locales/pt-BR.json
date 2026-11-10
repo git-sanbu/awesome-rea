@@ -1,7 +1,7 @@
 {
-  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486",
-  "updated_on": "2026-11-03",
-  "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
+  "source_digest": "5bde0cb16caa468752d026638b84587e7925f2613b83cbaa5d9d4d97d96563df",
+  "updated_on": "2026-11-10",
+  "translation_method": "Existing cases: machine translation from en using Google Translate public endpoint. The design-os-studio case was translated editorially on 2026-11-10 because that endpoint returned HTTP 429. Original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA — Casos de uso e exemplos de Reverse Engineer Anything",
     "description": "{count} estudos de caso públicos de REA: portas de jogos, aplicativos de desktop, compatibilidade de hardware, engenharia reversa e integrações de ferramentas. Explore usos reais, resultados relatados e fontes originais.",
@@ -518,6 +518,16 @@
       "limitations": "O catálogo inspecionou as definições de origem e de teste, não um recibo de teste executado ou uma versão instalada. O suporte à plataforma desktop, o comportamento do depurador, a aceleração do cache e a integridade da análise binária não foram verificados de forma independente. Rizin, jadx e outros caminhos são mecanismos separados; seus resultados não são atribuídos a REA. Os tempos de demonstração upstream são observações do autor, não benchmarks de catálogo.",
       "takeaway": "Separe a passagem de análise das edições do projeto, mantenha a autoria e o histórico de desfazer visíveis e distinga os testes executáveis dos resultados dos testes observados.",
       "author": "Zfinix"
+    },
+    "design-os-studio": {
+      "title": "DESIGN:OS Studio: um estúdio para desktop independente que lê e escreve arquivos Figma .fig",
+      "target": "Figma Desktop e o formato de contêiner Figma .fig (fig-kiwi, grava a versão 106)",
+      "question": "Como ler e gravar contêineres Figma .fig, e reimplementar o comportamento do editor, em um estúdio para desktop independente?",
+      "rea_role": "As especificações públicas do projeto nomeiam morluto/rea 6.7.0 (`npx -y rea-agents`) como a ferramenta para engenharia reversa dos campos do Figma e registram que ela executou analyze-javascript-application no JavaScript extraído do editor. As mesmas notas dizem que as rotas wasm estavam indisponíveis (WABT e Ghidra não estavam instalados), então o esquema kiwi foi decodificado com um leitor local. Relatórios versionados também contêm saída da CLI do rea, incluindo execuções concluídas de inspect-macho e analyze-javascript-application, e algumas invocações com falha. O README do produto não menciona REA.",
+      "reported_result": "DESIGN:OS Studio é um estúdio para desktop publicado (v0.7.11 revisada) que lê contêineres Figma .fig e grava a versão 106, reimplementa o comportamento do editor localmente e inclui um servidor MCP stdio com 39 ferramentas e geração de código em vários idiomas. O README relata mais de 6.000 testes de CI no macOS e testes de ida e volta do designos-fig. O mantenedor afirma que a REA foi usada neste trabalho sobre o Figma. Este catálogo revisou as especificações públicas, a saída do rea versionada e o README; não instalou o estúdio nem reexecutou o rea.",
+      "limitations": "O README do produto não credita a REA. Algumas execuções registradas do rea falharam (comando desconhecido ou um provedor de análise nativa não configurado). Rascunhos completos de sessão citados em outras notas ficam fora do repositório. O problema conhecido #834 permanece aberto: salvar um .fig perde a formatação de listas numeradas e grava como valores fixos pinturas herdadas ou ligadas a variáveis em instâncias. A licença é PolyForm Shield 1.0.0 (código-fonte disponível, não uma licença de código aberto). Este catálogo não reproduziu de forma independente a compatibilidade .fig nem reexecutou a suíte de testes.",
+      "takeaway": "O uso documentado da REA pode estar nas especificações do projeto e em evidências de CLI versionadas mesmo quando o README do produto omite isso, e um fluxo misto ainda pode precisar de um recuo local quando as rotas wasm da REA estão indisponíveis.",
+      "author": "jangtrinh"
     }
   }
 }

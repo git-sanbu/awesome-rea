@@ -10,7 +10,7 @@
 
 [在 GitHub 檢視與收藏案例集](https://github.com/git-sanbu/awesome-rea) · [搜尋軟體、用途或關鍵詞](https://awesome-rea-e7l.pages.dev/zh-TW/) · [投稿案例](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**44 個公開案例** — 其中 5 個官方案例、39 個社群專案與作者實驗. 最近更新：2026-11-03；各案例保留獨立核對日期。
+**45 個公開案例** — 其中 5 個官方案例、40 個社群專案與作者實驗. 最近更新：2026-11-10；各案例保留獨立核對日期。
 
 > 已閱讀公開原文，未獨立復跑作者測試。
 
@@ -67,6 +67,7 @@
 | [Hyper3D：從網頁包分析到獨立 3D 生成原型](cases/zh-TW/hyper3d-clone.md) | 怎樣把網頁分析得到的介面與介面觀察轉化為一個可匯出模型的原型？ | [原始出處](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI：從桌面互動調查到可複用介面元件](cases/zh-TW/open-claude-ui.md) | 輸入法合成、滾動與桌面互動規則，如何轉化為可複用介面元件？ | [原始出處](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 | [Screen Studio：區分靜態檢查、錄製與匯出證據](cases/zh-TW/screenstudio-research.md) | 如何區分 Electron 與原生輔助程式的靜態發現，以及錄製、匯出和相容性的實際證據？ | [原始出處](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
+| [DESIGN:OS Studio：獨立讀寫 Figma .fig 並重實現編輯器的桌面工作室](cases/zh-TW/design-os-studio.md) | 怎樣在獨立的桌面工作室中讀寫 Figma 的 .fig 容器，並重實現編輯器行為？ | [原始出處](https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md) |
 
 ## 硬體與相容
 
