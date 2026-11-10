@@ -10,7 +10,7 @@ Desde portas de jogos antigas até um pequeno seletor de cores, explore projetos
 
 [Explore e marque a coleção em GitHub](https://github.com/git-sanbu/awesome-rea) · [Pesquise software, finalidade ou palavras-chave](https://awesome-rea-e7l.pages.dev/pt-BR/) · [Envie um caso](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**44 casos públicos** — 5 vitrines oficiais e projetos comunitários 39 ou experimentos de autores. Atualizado: 2026-11-03. Cada caso mantém sua própria data de revisão da fonte.
+**45 casos públicos** — 5 vitrines oficiais e projetos comunitários 40 ou experimentos de autores. Atualizado: 2026-11-10. Cada caso mantém sua própria data de revisão da fonte.
 
 > Fontes revisadas; os testes do autor não são executados de forma independente.
 
@@ -67,6 +67,7 @@ Instantâneo: 2026-11-03. Projetos de catálogo revisados ​​pela fonte com p
 | [Hyper3D: de pacotes de web capturados a um protótipo 3D independente](cases/pt-BR/hyper3d-clone.md) | Como as observações de interface e API podem informar um protótipo que exporta modelos 3D? | [Fonte primária](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: documentando interações na área de trabalho e publicando componentes de UI reutilizáveis](cases/pt-BR/open-claude-ui.md) | Como as regras de composição de entrada, rolagem e interação da área de trabalho podem informar componentes de interface reutilizáveis? | [Fonte primária](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 | [Screen Studio: separando a inspeção estática do registro e exportação de evidências](cases/pt-BR/screenstudio-research.md) | Como as descobertas do Electron e do auxiliar nativo podem ser mantidas separadas da prova de gravação, exportação e compatibilidade? | [Fonte primária](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
+| [DESIGN:OS Studio: um estúdio para desktop independente que lê e escreve arquivos Figma .fig](cases/pt-BR/design-os-studio.md) | Como ler e gravar contêineres Figma .fig, e reimplementar o comportamento do editor, em um estúdio para desktop independente? | [Fonte primária](https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md) |
 
 ## Hardware e compatibilidade
 

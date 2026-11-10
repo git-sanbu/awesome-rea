@@ -1,7 +1,7 @@
 {
-  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486",
-  "updated_on": "2026-11-03",
-  "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
+  "source_digest": "5bde0cb16caa468752d026638b84587e7925f2613b83cbaa5d9d4d97d96563df",
+  "updated_on": "2026-11-10",
+  "translation_method": "Existing cases: machine translation from en using Google Translate public endpoint. The design-os-studio case was translated editorially on 2026-11-10 because that endpoint returned HTTP 429. Original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA — Casos de uso y ejemplos de Reverse Engineer Anything",
     "description": "{count} estudios de casos públicos de REA: ports de juegos, aplicaciones de escritorio, compatibilidad de hardware, ingeniería inversa e integraciones de herramientas. Explore usos reales, resultados informados y fuentes originales.",
@@ -518,6 +518,16 @@
       "limitations": "El catálogo inspeccionó las definiciones de fuente y prueba, no un recibo de prueba ejecutado o una versión instalada. La compatibilidad con la plataforma de escritorio, el comportamiento del depurador, la aceleración de la caché y la integridad del análisis binario no se verificaron de forma independiente. Rizin, jadx y otras rutas son motores separados; sus resultados no se atribuyen a REA. Los tiempos de exhibición ascendentes son observaciones del autor, no puntos de referencia del catálogo.",
       "takeaway": "Separe el paso de análisis de las ediciones del proyecto, mantenga visible la autoría y el historial de deshacer, y distinga las pruebas ejecutables de los resultados de las pruebas observadas.",
       "author": "Zfinix"
+    },
+    "design-os-studio": {
+      "title": "DESIGN:OS Studio: un estudio de escritorio independiente que lee y escribe archivos Figma .fig",
+      "target": "Figma Desktop y el formato de contenedor Figma .fig (fig-kiwi, escribe la versión 106)",
+      "question": "¿Cómo se pueden leer y escribir contenedores Figma .fig, y reimplementar el comportamiento del editor, en un estudio de escritorio independiente?",
+      "rea_role": "Las especificaciones públicas del proyecto nombran morluto/rea 6.7.0 (`npx -y rea-agents`) como la herramienta para ingeniería inversa de los campos de Figma, y registran que ejecutó analyze-javascript-application sobre JavaScript extraído del editor. Las mismas notas indican que las rutas wasm no estaban disponibles (WABT y Ghidra no estaban instalados), por lo que el esquema kiwi se decodificó con un lector local. Los informes incluidos en el repositorio también contienen salida de la CLI de rea, incluidas ejecuciones completadas de inspect-macho y analyze-javascript-application, y algunas invocaciones fallidas. El README del producto no menciona REA.",
+      "reported_result": "DESIGN:OS Studio es un estudio de escritorio publicado (v0.7.11 revisada) que lee contenedores Figma .fig y escribe la versión 106, reimplementa el comportamiento del editor en local y ofrece un servidor MCP stdio de 39 herramientas más generación de código en varios lenguajes. El README informa más de 6.000 pruebas de CI en macOS y pruebas de ida y vuelta en designos-fig. El mantenedor afirma que se usó REA para este trabajo sobre Figma. Este catálogo revisó las especificaciones públicas, la salida de rea incluida y el README; no instaló el estudio ni volvió a ejecutar rea.",
+      "limitations": "El README del producto no acredita REA. Algunas ejecuciones registradas de rea fallaron (comando desconocido o un proveedor de análisis nativo sin configurar). Los borradores de sesión completos citados en otras notas se guardan fuera del repositorio. El problema conocido #834 sigue abierto: al guardar un .fig se pierde el formato de listas numeradas y las pinturas heredadas o ligadas a variables en instancias se escriben como valores fijos. La licencia es PolyForm Shield 1.0.0 (código fuente disponible, no una licencia de código abierto). Este catálogo no reprodujo de forma independiente la compatibilidad .fig ni volvió a ejecutar la suite de pruebas.",
+      "takeaway": "El uso documentado de REA puede estar en las especificaciones del proyecto y en evidencia de CLI incluida aunque el README del producto no lo mencione, y un flujo mixto puede seguir necesitando un respaldo local cuando las rutas wasm de REA no están disponibles.",
+      "author": "jangtrinh"
     }
   }
 }

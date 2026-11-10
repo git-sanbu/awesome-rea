@@ -10,7 +10,7 @@
 
 [استكشف المجموعة وقم بتمييزها بنجمة على GitHub](https://github.com/git-sanbu/awesome-rea) · [برنامج البحث أو الغرض أو الكلمات الرئيسية](https://awesome-rea-e7l.pages.dev/ar/) · [إرسال حالة](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**44 الحالات العامة** — يعرض 5 الرسمي ومشاريع مجتمع 39 أو تجارب المؤلف. تم التحديث: 2026-11-03. تحتفظ كل حالة بتاريخ مراجعة المصدر الخاص بها.
+**45 الحالات العامة** — يعرض 5 الرسمي ومشاريع مجتمع 40 أو تجارب المؤلف. تم التحديث: 2026-11-10. تحتفظ كل حالة بتاريخ مراجعة المصدر الخاص بها.
 
 > تمت مراجعة المصادر؛ لا يتم إعادة تشغيل اختبارات المؤلف بشكل مستقل.
 
@@ -67,6 +67,7 @@
 | [Hyper3D: من حزم الويب التي تم التقاطها إلى نموذج 3D الأولي المستقل](cases/ar/hyper3d-clone.md) | كيف يمكن لملاحظات الواجهة وواجهة برمجة التطبيقات (API) إبلاغ النموذج الأولي الذي يصدر نماذج 3D؟ | [المصدر الأساسي](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: توثيق تفاعلات سطح المكتب ونشر مكونات واجهة المستخدم القابلة لإعادة الاستخدام](cases/ar/open-claude-ui.md) | كيف يمكن لقواعد تكوين الإدخال والتمرير وتفاعل سطح المكتب إبلاغ مكونات الواجهة القابلة لإعادة الاستخدام؟ | [المصدر الأساسي](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 | [Screen Studio: فصل الفحص الثابت عن أدلة التسجيل والتصدير](cases/ar/screenstudio-research.md) | كيف يمكن فصل نتائج Electron والمساعد الأصلي عن إثبات التسجيل والتصدير والتوافق؟ | [المصدر الأساسي](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
+| [DESIGN:OS Studio: استوديو سطح مكتب مستقل يقرأ ملفات Figma ذات الامتداد .fig ويكتبها](cases/ar/design-os-studio.md) | كيف يمكن قراءة حاويات Figma .fig وكتابتها، وإعادة تنفيذ سلوك المحرر، في استوديو سطح مكتب مستقل؟ | [المصدر الأساسي](https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md) |
 
 ## الأجهزة والتوافق
 

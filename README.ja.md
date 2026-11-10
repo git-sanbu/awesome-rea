@@ -10,7 +10,7 @@
 
 [GitHub でコレクションを探索してスターを付けましょう](https://github.com/git-sanbu/awesome-rea) · [ソフトウェア、目的、キーワードを検索する](https://awesome-rea-e7l.pages.dev/ja/) · [ケースを送信する](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**44 公開ケース** — 5 公式ショーケースおよび 39 コミュニティ プロジェクトまたは著者の実験. 更新日: 2026-11-03。各ケースには独自の情報源レビュー日が保持されます。
+**45 公開ケース** — 5 公式ショーケースおよび 40 コミュニティ プロジェクトまたは著者の実験. 更新日: 2026-11-10。各ケースには独自の情報源レビュー日が保持されます。
 
 > 情報源をレビューしました。著者のテストは独立して再実行されません。
 
@@ -67,6 +67,7 @@
 | [Hyper3D: キャプチャされた Web バンドルから独立した 3D プロトタイプまで](cases/ja/hyper3d-clone.md) | インターフェイスと API の観察は、3D モデルをエクスポートするプロトタイプにどのように情報を提供できるでしょうか? | [一次情報源](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: デスクトップ操作の文書化と再利用可能な UI コンポーネントの公開](cases/ja/open-claude-ui.md) | 入力構成、スクロール、およびデスクトップのインタラクション ルールは、再利用可能なインターフェイス コンポーネントにどのように通知されるのでしょうか? | [一次情報源](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 | [Screen Studio: 静的検査を記録および輸出証拠から分離する](cases/ja/screenstudio-research.md) | Electron とネイティブ ヘルパーの検出結果を、記録、エクスポート、および互換性の証拠から分離するにはどうすればよいでしょうか? | [一次情報源](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
+| [DESIGN:OS Studio: Figma の .fig を読み書きする独立したデスクトップスタジオ](cases/ja/design-os-studio.md) | 独立したデスクトップスタジオで、Figma の .fig コンテナを読み書きし、エディタの振る舞いを再実装するにはどうすればよいか。 | [一次情報源](https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md) |
 
 ## ハードウェアと互換性
 

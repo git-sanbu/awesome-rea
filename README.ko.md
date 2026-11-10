@@ -10,7 +10,7 @@
 
 [GitHub에서 컬렉션을 탐색하고 별표를 표시하세요.](https://github.com/git-sanbu/awesome-rea) · [소프트웨어, 목적 또는 키워드 검색](https://awesome-rea-e7l.pages.dev/ko/) · [사례 제출](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**44 공개 사례** — 5 공식 쇼케이스 및 39 커뮤니티 프로젝트 또는 작가 실험. 업데이트됨: 2026-11-03. 각 사례는 자체 출처 검토 날짜를 유지합니다.
+**45 공개 사례** — 5 공식 쇼케이스 및 40 커뮤니티 프로젝트 또는 작가 실험. 업데이트됨: 2026-11-10. 각 사례는 자체 출처 검토 날짜를 유지합니다.
 
 > 검토된 출처; 작성자 테스트는 독립적으로 다시 실행되지 않습니다.
 
@@ -67,6 +67,7 @@
 | [Hyper3D: 캡처된 웹 번들부터 독립적인 3D 프로토타입까지](cases/ko/hyper3d-clone.md) | 인터페이스 및 API 관찰은 3D 모델을 내보내는 프로토타입에 어떻게 정보를 제공할 수 있습니까? | [기본 소스](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: 데스크톱 상호 작용 문서화 및 재사용 가능한 UI 구성 요소 게시](cases/ko/open-claude-ui.md) | 입력 구성, 스크롤 및 데스크탑 상호 작용 규칙은 재사용 가능한 인터페이스 구성 요소에 어떻게 알릴 수 있습니까? | [기본 소스](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 | [Screen Studio: 정적 검사를 기록 및 내보내기 증거에서 분리](cases/ko/screenstudio-research.md) | Electron 및 기본 도우미 결과를 기록, 내보내기 및 호환성 증명과 별도로 어떻게 보관할 수 있습니까? | [기본 소스](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
+| [DESIGN:OS Studio: Figma .fig 파일을 읽고 쓰는 독립 데스크톱 스튜디오](cases/ko/design-os-studio.md) | 독립 데스크톱 스튜디오에서 Figma .fig 컨테이너를 읽고 쓰며 편집기 동작을 재구현하려면 어떻게 해야 하는가? | [기본 소스](https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md) |
 
 ## 하드웨어 및 호환성
 

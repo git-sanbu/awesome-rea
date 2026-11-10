@@ -1,7 +1,7 @@
 {
-  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486",
-  "updated_on": "2026-11-03",
-  "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
+  "source_digest": "5bde0cb16caa468752d026638b84587e7925f2613b83cbaa5d9d4d97d96563df",
+  "updated_on": "2026-11-10",
+  "translation_method": "Existing cases: machine translation from en using Google Translate public endpoint. The design-os-studio case was translated editorially on 2026-11-10 because that endpoint returned HTTP 429. Original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA – Reverse Engineer Anything Anwendungsfälle und Beispiele",
     "description": "{count} öffentliche REA-Fallstudien: Game-Ports, Desktop-Apps, Hardware-Kompatibilität, Reverse Engineering und Tool-Integrationen. Entdecken Sie reale Anwendungen, berichtete Ergebnisse und Originalquellen.",
@@ -518,6 +518,16 @@
       "limitations": "Der Katalog überprüfte Quell- und Testdefinitionen, keinen ausgeführten Testempfang oder eine installierte Version. Die Unterstützung der Desktop-Plattform, das Debugger-Verhalten, die Cache-Beschleunigung und die Vollständigkeit der Binäranalyse wurden nicht unabhängig überprüft. Rizin, jadx und andere Pfade sind separate Engines; Ihre Ergebnisse werden nicht REA zugeschrieben. Bei den Upstream-Showcase-Timings handelt es sich um Beobachtungen des Autors, nicht um Katalog-Benchmarks.",
       "takeaway": "Trennen Sie Analyse-Passthrough von Projektbearbeitungen, halten Sie die Autorenschaft und den Rückgängig-Verlauf sichtbar und unterscheiden Sie ausführbare Tests von beobachteten Testergebnissen.",
       "author": "Zfinix"
+    },
+    "design-os-studio": {
+      "title": "DESIGN:OS Studio: ein unabhängiges Desktop-Studio, das Figma-.fig-Dateien liest und schreibt",
+      "target": "Figma Desktop und das Figma-.fig-Containerformat (fig-kiwi, schreibt Version 106)",
+      "question": "Wie lassen sich Figma-.fig-Container lesen und schreiben und das Editorverhalten in einem unabhängigen Desktop-Studio neu implementieren?",
+      "rea_role": "Öffentliche Projektspezifikationen nennen morluto/rea 6.7.0 (`npx -y rea-agents`) als Werkzeug zur Reverse-Analyse von Figma-Feldern und halten fest, dass analyze-javascript-application auf extrahiertem Editor-JavaScript lief. Dieselben Notizen sagen, dass wasm-Pfade nicht verfügbar waren (WABT und Ghidra waren nicht installiert), daher wurde das Kiwi-Schema mit einem lokalen Leser decodiert. Eingecheckte Berichte enthalten außerdem rea-CLI-Ausgaben, darunter abgeschlossene inspect-macho- und analyze-javascript-application-Läufe sowie einige fehlgeschlagene Aufrufe. Die Produkt-README erwähnt REA nicht.",
+      "reported_result": "DESIGN:OS Studio ist ein veröffentlichtes Desktop-Studio (geprüft v0.7.11), das Figma-.fig-Container liest und Containerversion 106 schreibt, Editorverhalten lokal neu implementiert und einen stdio-MCP-Server mit 39 Werkzeugen sowie mehrsprachige Codegenerierung mitliefert. Die README nennt mehr als 6.000 macOS-CI-Tests und designos-fig-Roundtrip-Tests. Der Maintainer erklärt, dass REA für diese Figma-Arbeit verwendet wurde. Dieser Katalog hat die öffentlichen Spezifikationen, die eingecheckte rea-Ausgabe und die README geprüft; das Studio wurde nicht installiert und rea nicht erneut ausgeführt.",
+      "limitations": "Die Produkt-README nennt REA nicht. Einige aufgezeichnete rea-Läufe schlugen fehl (unbekannter Befehl oder ein nicht konfigurierter Native-Analyse-Anbieter). Vollständige Sitzungsentwürfe, die in anderen Notizen genannt werden, liegen außerhalb des Repositories. Das bekannte Problem #834 bleibt offen: Beim Speichern einer .fig geht die Nummerierung von Listen verloren, und vererbte oder an Variablen gebundene Füllungen auf Instanzen werden als feste Werte geschrieben. Die Lizenz ist PolyForm Shield 1.0.0 (source-available, keine Open-Source-Lizenz). Dieser Katalog hat die .fig-Kompatibilität nicht unabhängig reproduziert und die Testsuite nicht erneut ausgeführt.",
+      "takeaway": "Dokumentierte REA-Nutzung kann in Projektspezifikationen und eingecheckter CLI-Evidenz stehen, auch wenn die Produkt-README schweigt, und ein gemischter Ablauf kann weiterhin eine lokale Rückfallebene brauchen, wenn REAs wasm-Pfade nicht verfügbar sind.",
+      "author": "jangtrinh"
     }
   }
 }

@@ -10,7 +10,7 @@
 
 [GitHub पर संग्रह को खोजें और तारांकित करें](https://github.com/git-sanbu/awesome-rea) · [सॉफ़्टवेयर, उद्देश्य या कीवर्ड खोजें](https://awesome-rea-e7l.pages.dev/hi/) · [एक मामला प्रस्तुत करें](https://github.com/git-sanbu/awesome-rea/issues/new?template=case_submission.yml)
 
-**44 सार्वजनिक मामले** — 5 आधिकारिक शोकेस और 39 सामुदायिक परियोजनाएं या लेखक प्रयोग. अपडेट किया गया: 2026-11-03। प्रत्येक मामले की अपनी स्रोत-समीक्षा तिथि बरकरार रहती है।
+**45 सार्वजनिक मामले** — 5 आधिकारिक शोकेस और 40 सामुदायिक परियोजनाएं या लेखक प्रयोग. अपडेट किया गया: 2026-11-10। प्रत्येक मामले की अपनी स्रोत-समीक्षा तिथि बरकरार रहती है।
 
 > सूत्रों की समीक्षा की गई; लेखक परीक्षण स्वतंत्र रूप से दोबारा नहीं चलाए गए।
 
@@ -67,6 +67,7 @@
 | [Hyper3D: कैप्चर किए गए वेब बंडलों से एक स्वतंत्र 3D प्रोटोटाइप तक](cases/hi/hyper3d-clone.md) | इंटरफ़ेस और एपीआई अवलोकन एक प्रोटोटाइप को कैसे सूचित कर सकते हैं जो 3D मॉडल निर्यात करता है? | [प्राथमिक स्रोत](https://github.com/payswapdotorg/hyper3d-clone/blob/b8a3f5fcfb5774c615b1f30372b346274b6e136f/README.md) |
 | [Open Claude UI: डेस्कटॉप इंटरैक्शन का दस्तावेजीकरण करना और पुन: प्रयोज्य यूआई घटकों को प्रकाशित करना](cases/hi/open-claude-ui.md) | इनपुट संरचना, स्क्रॉलिंग और डेस्कटॉप इंटरैक्शन नियम पुन: प्रयोज्य इंटरफ़ेस घटकों को कैसे सूचित कर सकते हैं? | [प्राथमिक स्रोत](https://github.com/Caho1/open-claude-ui/blob/c1f923ae0051a871941b98a0e2e3183a545e6a85/code-examples/RichComposerWithMentions.tsx) |
 | [Screen Studio: स्थैतिक निरीक्षण को रिकॉर्डिंग और निर्यात साक्ष्य से अलग करना](cases/hi/screenstudio-research.md) | Electron और देशी-सहायक निष्कर्षों को रिकॉर्डिंग, निर्यात और संगतता के प्रमाण से अलग कैसे रखा जा सकता है? | [प्राथमिक स्रोत](https://github.com/Royo-Qiao/screenstudio-rea-research/blob/01ef9c96ad7dfc86023fa9254ee96fdfb73d6720/docs/evidence.md) |
+| [DESIGN:OS Studio: एक स्वतंत्र डेस्कटॉप स्टूडियो जो Figma .fig फ़ाइलें पढ़ता और लिखता है](cases/hi/design-os-studio.md) | एक स्वतंत्र डेस्कटॉप स्टूडियो में Figma .fig कंटेनरों को कैसे पढ़ा और लिखा जाए, और संपादक व्यवहार को कैसे फिर से लागू किया जाए? | [प्राथमिक स्रोत](https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md) |
 
 ## हार्डवेयर और अनुकूलता
 

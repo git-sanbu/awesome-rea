@@ -1,7 +1,7 @@
 {
-  "source_digest": "a6f8002d8f7ea6c69511593bc2594e427d6dcd167d7c6cdbaff597e23557a486",
-  "updated_on": "2026-11-03",
-  "translation_method": "Machine translation from en using Google Translate public endpoint; original source quotations preserved. English is the editorial reference.",
+  "source_digest": "5bde0cb16caa468752d026638b84587e7925f2613b83cbaa5d9d4d97d96563df",
+  "updated_on": "2026-11-10",
+  "translation_method": "Existing cases: machine translation from en using Google Translate public endpoint. The design-os-studio case was translated editorially on 2026-11-10 because that endpoint returned HTTP 429. Original source quotations preserved. English is the editorial reference.",
   "ui": {
     "pageTitle": "Awesome REA - حالات وأمثلة استخدام Reverse Engineer Anything",
     "description": "دراسات حالة {count} العامة REA: منافذ الألعاب، وتطبيقات سطح المكتب، وتوافق الأجهزة، والهندسة العكسية، وتكامل الأدوات. استكشف الاستخدامات الحقيقية والنتائج المبلغ عنها والمصادر الأصلية.",
@@ -518,6 +518,16 @@
       "limitations": "قام الكتالوج بفحص تعريفات المصدر والاختبار، وليس إيصال اختبار تم تنفيذه أو إصدار مثبت. لم يتم التحقق بشكل مستقل من دعم النظام الأساسي لسطح المكتب وسلوك مصحح الأخطاء وتسريع ذاكرة التخزين المؤقت واكتمال التحليل الثنائي. Rizin وjadx والمسارات الأخرى هي محركات منفصلة؛ لا تُنسب نتائجها إلى REA. توقيتات العرض الأولية هي ملاحظات المؤلف، وليست معايير الكتالوج.",
       "takeaway": "افصل عبور التحليل عن تعديلات المشروع، واحتفظ بسجل التأليف والتراجع مرئيًا، وميز الاختبارات القابلة للتنفيذ عن نتائج الاختبار التي تمت ملاحظتها.",
       "author": "Zfinix"
+    },
+    "design-os-studio": {
+      "title": "DESIGN:OS Studio: استوديو سطح مكتب مستقل يقرأ ملفات Figma ذات الامتداد .fig ويكتبها",
+      "target": "تطبيق Figma Desktop وتنسيق حاوية Figma .fig (fig-kiwi، ويكتب الإصدار 106)",
+      "question": "كيف يمكن قراءة حاويات Figma .fig وكتابتها، وإعادة تنفيذ سلوك المحرر، في استوديو سطح مكتب مستقل؟",
+      "rea_role": "تسمّي المواصفات العلنية للمشروع morluto/rea 6.7.0 (`npx -y rea-agents`) أداةً لهندسة حقول Figma عكسياً، وتسجل أنه شغّل analyze-javascript-application على جافاسكربت المحرر المستخرجة. وتذكر الملاحظات نفسها أن مسارات wasm لم تكن متاحة (لم يُثبَّت WABT وGhidra)، لذلك فُكّ مخطط kiwi بقارئ محلي. وتحتوي التقارير المحفوظة في المستودع أيضاً على مخرجات واجهة أوامر rea، بما في ذلك تشغيلات مكتملة لـ inspect-macho وanalyze-javascript-application وبعض الاستدعاءات الفاشلة. ولا يذكر ملف README الخاص بالمنتج أداة REA.",
+      "reported_result": "DESIGN:OS Studio استوديو سطح مكتب منشور (النسخة المراجعة v0.7.11) يقرأ حاويات Figma .fig ويكتب إصدار الحاوية 106، ويعيد تنفيذ سلوك المحرر محلياً، ويوفر خادم MCP عبر stdio يضم 39 أداة بالإضافة إلى توليد شيفرة بعدة لغات. ويذكر README أكثر من 6,000 اختبار CI على macOS واختبارات ذهاب وإياب في designos-fig. ويؤكد المسؤول عن المشروع أن REA استُخدمت في هذا العمل المتعلق بـ Figma. راجع هذا الدليل المواصفات العلنية ومخرجات rea المحفوظة وREADME؛ ولم يثبّت الاستوديو ولم يُعد تشغيل rea.",
+      "limitations": "لا ينسب ملف README الخاص بالمنتج العمل إلى REA. وفشل بعض تشغيلات rea المسجلة (أمر غير معروف أو موفر تحليل أصلي غير مُعدّ). ومسودات الجلسات الكاملة المشار إليها في ملاحظات أخرى محفوظة خارج المستودع. وما زالت المشكلة المعروفة #834 مفتوحة: حفظ ملف .fig يُسقط تنسيق القوائم المرقمة ويكتب الدهانات الموروثة أو المرتبطة بمتغيرات على النسخ كقيم ثابتة. والرخصة هي PolyForm Shield 1.0.0 (المصدر متاح، وليست رخصة مصدر مفتوح). ولم يُعد هذا الدليل إنتاج توافق .fig بشكل مستقل ولم يُعد تشغيل مجموعة الاختبارات.",
+      "takeaway": "يمكن أن يظهر استخدام REA الموثَّق في مواصفات المشروع وفي أدلة واجهة الأوامر المحفوظة حتى عندما يصمت README المنتج، وقد يظل المسار المختلط بحاجة إلى بديل محلي عندما تكون مسارات wasm في REA غير متاحة.",
+      "author": "jangtrinh"
     }
   }
 }

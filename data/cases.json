@@ -1,5 +1,5 @@
 {
-  "updated_on": "2026-11-03",
+  "updated_on": "2026-11-10",
   "scope": "Public cases explicitly reporting use of morluto/rea; source review only, no independent reproduction.",
   "cases": [
     {
@@ -950,6 +950,29 @@
         "https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/docs/mcp-tools.md",
         "https://github.com/Zfinix/eleven/blob/9fb1042696a0e0a3387e3c3317b6e697013ae835/app/tests/m4-agent.live.test.tsx"
       ]
+    },
+    {
+      "id": "design-os-studio",
+      "title": "DESIGN:OS Studio: an independent desktop studio that reads and writes Figma .fig files",
+      "category": "apps",
+      "author": "jangtrinh",
+      "project_url": "https://github.com/jangtrinh/design-os-studio",
+      "source_url": "https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/docs/specs/v0.6/E1-4-styles-hold-variable-aliases.md",
+      "checked_on": "2026-11-10",
+      "review_status": "source-reviewed-not-reproduced",
+      "target": "Figma Desktop and the Figma .fig container format (fig-kiwi, writes version 106)",
+      "question": "How can Figma .fig containers be read and written, and editor behaviour reimplemented, in an independent desktop studio?",
+      "rea_role": "Public project specs name morluto/rea 6.7.0 (`npx -y rea-agents`) as the tool for reverse-engineering Figma fields, and record that it ran analyze-javascript-application on extracted editor JavaScript. The same notes say wasm lanes were unavailable (WABT and Ghidra were not installed), so the kiwi schema was decoded with a local reader. Checked-in reports also contain rea CLI output, including completed inspect-macho and analyze-javascript-application runs, and some failed invocations. The product README does not mention REA.",
+      "reported_result": "DESIGN:OS Studio is a released desktop studio (reviewed v0.7.11) that reads Figma .fig containers and writes container version 106, reimplements editor behaviour locally, and ships a 39-tool stdio MCP server plus multi-language codegen. The README reports more than 6,000 macOS CI tests and designos-fig round-trip tests. The maintainer states that REA was used for this Figma work. This catalog reviewed the public specs, checked-in rea output and README; it did not install the studio or rerun rea.",
+      "limitations": "The product README does not credit REA. Some recorded rea runs failed (unknown command or an unconfigured native-analysis provider). Full session scratchpads cited in other notes are kept outside the repository. Known issue #834 remains open: saving a .fig file drops numbered-list formatting and writes inherited or variable-bound paints on instances as fixed values. License is PolyForm Shield 1.0.0 (source-available, not an open-source license). This catalog did not independently reproduce .fig compatibility or rerun the test suite.",
+      "takeaway": "Documented REA use can live in project specs and checked-in CLI evidence even when the product README is silent, and a mixed workflow may still need a local fallback when REA's wasm lanes are unavailable.",
+      "rea_evidence_excerpt": "`rea` (morluto/rea 6.7.0, `npx -y rea-agents`) ran `analyze-javascript-application` over the extracted JS chunks (evidence `ev_2624766…`). Its wasm lanes were unavailable on this machine: WABT and Ghidra are not installed.",
+      "additional_sources": [
+        "https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/plans/261017-figma-parity-wave-ab/rea-findings.md",
+        "https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/plans/reports/agy-1277-shadow-knockout-evidence/step1-figma-re.log",
+        "https://github.com/jangtrinh/design-os-studio/blob/df14c593e86edcc039adc2c67067bf8db64e9e84/README.md"
+      ],
+      "rea_evidence_language": "en"
     }
   ]
 }
