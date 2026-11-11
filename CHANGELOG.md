@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-11
+
+- Build: case pages now carry their own source-review date in the footer and sitemap `lastmod` instead of the catalog-wide `updated_on`, matching the existing JSON-LD `dateModified`. Adding or refreshing one case no longer rewrites every generated page; index pages and READMEs keep the catalog date. One-time regeneration of 420 existing case pages.
+
 ## 2026-11-03
 
 - Add six source-reviewed cases: Screen Studio (static/runtime evidence boundaries), iCSee localmod (camera interoperability), REA Studio (local MCP UI), dsh-rea (lazy contract-preserving adapter), App X-Ray (static reports) and Eleven (agent-driven desktop workbench). Total: 44 distinct cases, 5 official and 39 community.

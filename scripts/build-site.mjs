@@ -64,9 +64,9 @@ function translationNote(language,id) {
  const t=locales[language.id].ui;
  return `<aside class="translation-note"><p>${e(t.translationNote)} <a href="/${casePath(languages[0],id)}" lang="en">${e(t.englishVersion)}</a></p></aside>`;
 }
-function footer(language) {
+function footer(language,date=catalog.updated_on) {
  const t=locales[language.id].ui;
- return `<footer class="footer wrap"><p>${e(t.independent)} <a href="${upstream}">REA</a></p><p>${e(format(t.updated,{date:catalog.updated_on}))} ${e(t.status)}</p><p><a href="${repo}/blob/main/CONTRIBUTING.md">${e(t.contribute)}</a> · <a href="${repo}/blob/main/data/cases.json">${e(t.openData)}</a> · <a href="${repo}/blob/main/LICENSE">MIT</a></p></footer>`;
+ return `<footer class="footer wrap"><p>${e(t.independent)} <a href="${upstream}">REA</a></p><p>${e(format(t.updated,{date}))} ${e(t.status)}</p><p><a href="${repo}/blob/main/CONTRIBUTING.md">${e(t.contribute)}</a> · <a href="${repo}/blob/main/data/cases.json">${e(t.openData)}</a> · <a href="${repo}/blob/main/LICENSE">MIT</a></p></footer>`;
 }
 function sourceLinks(c,t) {
  return [[c.source_url.includes('/discussions/')?t.discussion:t.pinned,c.source_url],[t.project,c.project_url],...c.additional_sources.map((url,i)=>[format(t.supplement,{number:i+1}),url])];
@@ -107,13 +107,13 @@ for(const language of languages) {
  for(const c of cases) {
   const data={'@context':'https://schema.org','@type':'WebPage','name':c.title,'url':caseURL(language,c.id),'description':c.question,'inLanguage':language.id,'dateModified':c.checked_on,'isPartOf':{'@type':'CollectionPage','name':'Awesome REA','url':caseURL(language)},'citation':[c.source_url,...c.additional_sources]};
   const sections=[['question',c.question],['role',c.rea_role],['result',c.reported_result],['limits',c.limitations],['takeaway',c.takeaway]];
-  const page=head(language,`${c.title} | Awesome REA`,c.question,c.id,data)+`<body>${header(language,c.id)}<main class="wrap detail" id="main"><a class="back" href="/${language.path}">${e(t.back)}</a><h1>${e(c.title)}</h1>${translationNote(language,c.id)}<div class="facts"><p><strong>${e(t.target)}:</strong> ${e(c.target)}</p><p><strong>${e(t.author)}:</strong> ${e(c.author)}</p><p><strong>${e(t.checked)}:</strong> <time datetime="${c.checked_on}">${c.checked_on}</time></p><p><strong>${e(t.review)}:</strong> ${e(t.status)}</p></div>${sections.map(([key,text])=>`<section><h2>${e(t[key])}</h2><p>${e(text)}</p></section>`).join('')}<section><h2>${e(t.evidence)}</h2><blockquote lang="${c.rea_evidence_language}" dir="auto">${e(c.rea_evidence_excerpt)}</blockquote><p>${e(t.excerptNote)}</p></section><section><h2>${e(t.sources)}</h2><ul>${sourceLinks(c,t).map(([label,url])=>`<li><a href="${e(url)}">${e(label)}</a></li>`).join('')}</ul><p>${e(t.rights)}</p></section><p><a href="${repo}/blob/main/${markdownPath(language,c.id)}">${e(t.githubCase)}</a> · <a href="${repo}/issues/new?template=correction.yml">${e(t.correct)}</a></p></main>${footer(language)}</body></html>`;
+  const page=head(language,`${c.title} | Awesome REA`,c.question,c.id,data)+`<body>${header(language,c.id)}<main class="wrap detail" id="main"><a class="back" href="/${language.path}">${e(t.back)}</a><h1>${e(c.title)}</h1>${translationNote(language,c.id)}<div class="facts"><p><strong>${e(t.target)}:</strong> ${e(c.target)}</p><p><strong>${e(t.author)}:</strong> ${e(c.author)}</p><p><strong>${e(t.checked)}:</strong> <time datetime="${c.checked_on}">${c.checked_on}</time></p><p><strong>${e(t.review)}:</strong> ${e(t.status)}</p></div>${sections.map(([key,text])=>`<section><h2>${e(t[key])}</h2><p>${e(text)}</p></section>`).join('')}<section><h2>${e(t.evidence)}</h2><blockquote lang="${c.rea_evidence_language}" dir="auto">${e(c.rea_evidence_excerpt)}</blockquote><p>${e(t.excerptNote)}</p></section><section><h2>${e(t.sources)}</h2><ul>${sourceLinks(c,t).map(([label,url])=>`<li><a href="${e(url)}">${e(label)}</a></li>`).join('')}</ul><p>${e(t.rights)}</p></section><p><a href="${repo}/blob/main/${markdownPath(language,c.id)}">${e(t.githubCase)}</a> · <a href="${repo}/issues/new?template=correction.yml">${e(t.correct)}</a></p></main>${footer(language,c.checked_on)}</body></html>`;
   outputs.set(`docs/${casePath(language,c.id)}index.html`,page+'\n');
   outputs.set(markdownPath(language,c.id),caseMarkdown(language,c));
  }
 }
-const urls=languages.flatMap(l=>[caseURL(l),...catalog.cases.map(c=>caseURL(l,c.id))]);
-outputs.set('docs/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(url=>`<url><loc>${e(url)}</loc><lastmod>${catalog.updated_on}</lastmod></url>`).join('')}</urlset>\n`);
+const urls=languages.flatMap(l=>[{url:caseURL(l),lastmod:catalog.updated_on},...catalog.cases.map(c=>({url:caseURL(l,c.id),lastmod:c.checked_on}))]);
+outputs.set('docs/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.map(({url,lastmod})=>`<url><loc>${e(url)}</loc><lastmod>${lastmod}</lastmod></url>`).join('')}</urlset>\n`);
 outputs.set('docs/.nojekyll','');
 outputs.set('docs/favicon.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="13" fill="#1557b0"/><text x="32" y="44" text-anchor="middle" fill="white" font-family="sans-serif" font-size="39" font-weight="700">R</text></svg>\n');
 outputs.set('docs/robots.txt',`User-agent: *\nAllow: /\nSitemap: ${base}sitemap.xml\n`);
